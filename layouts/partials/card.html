@@ -12,7 +12,7 @@
   </li>
 
   {{/* ソースリンク */}}
-  {{ with .Params.CardSource }}
+  {{ with .Params.Cards.Source }}
     <li>
       <a href='{{ . | safeURL | absLangURL }}' target="_blank" rel="noopener">{{ i18n "card_source" }}</a>
     </li>

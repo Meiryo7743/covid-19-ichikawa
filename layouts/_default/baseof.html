@@ -36,15 +36,8 @@
     <title>{{ .Title }} - {{ .Site.Title }}</title>
 
     {{/* Load Chart.js */}}
-    {{ with.Params.Chart }}
+    {{ with .Params.Cards.Chart }}
       <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
-
-      {{/* Chart.js groval settings */}}
-      <script>
-        Chart.defaults.global.devicePixelRatio = 3;
-        Chart.defaults.global.elements.rectangle.borderWidth = 1;
-        Chart.defaults.global.elements.rectangle.borderColor = "rgba(132, 145, 158, 1)";
-      </script>
     {{ end }}
   </head>
   <body class="layout body">
