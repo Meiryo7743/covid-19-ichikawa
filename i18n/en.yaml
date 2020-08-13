@@ -1,0 +1,43 @@
+news:
+  other: "News"
+
+debug_title:
+  other: "Debug"
+
+# Card
+card_lastmod:
+  other: "Last update: "
+card_source:
+  other: "View source"
+
+emergency_title:
+  other: "IMPORTANT NOTICE"
+
+# Notice
+notice_noscript:
+  other: "Contents will not be displayed correctly when JavaScript is disabled."
+notice_translation:
+  other: "This page has been translated from Japanese. Note that it may contain mistranslations."
+
+# Share (Alt text)
+share_other:
+  other: "Share other ways"
+share_facebook:
+  other: "Share via Facebook"
+share_line:
+  other: "Share via LINE"
+share_mastodon:
+  other: "Share via Mastodon"
+share_twitter:
+  other: "Share via Twitter"
+
+footer_repo:
+  other: "Contents are available on GitHub."
+
+# 404 message (markdown)
+luxio_message:
+  other: |
+    The page you are looking for is not found. 原因として
+
+    * The page was deleted
+    * Wrong URL

@@ -1,0 +1,30 @@
+# English
+# Menu
+header_nav:
+  - name: "COVID-19 Info"
+    url: "https://www.city.ichikawa.lg.jp/new01/shingatacoronatokusetupage.html"
+    weight: 10
+  - name: "特別定額給付金の給付"
+    url: "https://www.city.ichikawa.lg.jp/pla13/1111000003.html"
+    weight: 20
+  - name: "市立学校・幼稚園の情報"
+    url: "https://www.city.ichikawa.lg.jp/edu06/1111000082.html"
+    weight: 30
+  - name: "施設等の再開について"
+    url: "https://www.city.ichikawa.lg.jp/pla04/infoheisa.html"
+    weight: 40
+  - name: "燃やすゴミの臨時収集"
+    url: "https://www.city.ichikawa.lg.jp/env09/1111000058.html"
+    weight: 50
+  - name: "Message from the Mayor"
+    url: "https://www.city.ichikawa.lg.jp/new01/covid19_comment.html"
+    weight: 60
+  - name: "City official website"
+    url: "https://www.city.ichikawa.lg.jp/"
+    weight: 70
+  - name: "About"
+    url: "/about/"
+    weight: 80
+  - name: "Contact me"
+    url: "https://forms.gle/rJAhPqckU1Ak7tFQ9"
+    weight: 90

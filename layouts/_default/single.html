@@ -1,0 +1,24 @@
+{{/* _dalault */}}
+{{ define "main" }}
+  <article class="page page--single">
+    <header class="page__content">
+      {{/* Date */}}
+      <p class="date">
+        <time datetime='{{ .Date.Format "2006-01-02T15:04:05" }}'>{{ .Date.Format $.Site.Params.dateFormat }}</time>
+
+        {{/* Lastmod */}}
+        {{ with .Lastmod }}
+          <br>
+          <time class="date__lastmod" datetime='{{ .Format "2006-01-02T15:04:05" }}'>{{ .Format $.Site.Params.dateFormat }}</time>
+        {{ end }}
+      </p>
+
+      {{/* Article title */}}
+      <h1 class="page__title">{{ .Title }}</h1>
+    </header>
+
+    <section class="page__content page__content--single">
+      {{ .Content }}
+    </section>
+  </article>
+{{ end }}

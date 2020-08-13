@@ -1,0 +1,7 @@
+{
+  "[html]": {
+    "editor.formatOnSave": false,
+    "files.insertFinalNewline": false
+  },
+  "prettier.disableLanguages": ["html"]
+}

@@ -1,0 +1,54 @@
+{{ define "main" }}
+  <div class="page page--index">
+    <h1 class="page__title">{{ .Title }}</h1>
+
+    {{/* index.md 緊急のお知らせ */}}
+    {{ with .Content }}
+      <div class="page__content">
+        <article class="card card--important">
+          <h2 class="card__title">{{ i18n "emergency_title" }}</h2>
+          {{ . }}
+        </article>
+      </div>
+    {{ end }}
+
+    {{/* 更新情報 */}}
+    <div class="page__content">
+      <article class="card">
+        <h2 class="card__title">{{ i18n "news" }}</h2>
+        <ul class="news">
+          {{ range (where .Site.RegularPages.ByWeight "Section" "==" "articles") }}
+            <li class="news__item">
+              {{ .Date.Format .Site.Params.DateFormat }} - <a href='{{ .Permalink | safeURL | absLangURL }}' class="news__link">{{ .Title }}</a>
+            </li>
+          {{ end }}
+        </ul>
+      </article>
+    </div>
+
+    <div class="page__content page__content--index">
+      {{/* Cards */}}
+      {{ range (where .Site.RegularPages "Section" "==" "cards") }}
+        <article class="card">
+          {{ partial "card.html" . }}
+        </article>
+      {{ end }}
+    </div>
+
+
+    {{/* For debugging */}}
+    {{ if .Site.IsServer }}
+      <div class="page__content card card--important">
+        <h2 class="card__title">{{ i18n "debug_title" }}</h2>
+
+        <ul>
+          <li><a href='{{ "404.html" | safeURL | absLangURL }}' style="color:var(--black);">404 (Luxio)</a></li>
+
+          {{ range .Site.Pages }}
+            <li><a href='{{ .Permalink | safeURL | absLangURL }}' style="color:var(--black);">{{ .Title }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+    {{ end }}
+  </div>
+{{ end }}

@@ -1,0 +1,73 @@
+// Mixin: Color Scheme
+@mixin color-scheme($color) {
+    @if $color == light {
+        @content;
+    } @else {
+        @media screen and (prefers-color-scheme: $color) {
+            @content;
+        }
+    }
+}
+
+// CSS Variables
+:root {
+    // Colors
+    --color-alert-text: var(--black);
+    --color-alert-background: var(--orange);
+    @include color-scheme(dark) {
+        --color-body-background: var(--eerie-black);
+        --color-card-background: var(--onyx);
+        --color-header-background: var(--onyx);
+        --color-header-border: #555555;
+        --color-nav-link-background: rgba(255, 255, 255, 0.2);
+    }
+    @include color-scheme(light) {
+        --color-body-background: var(--white-smoke);
+        --color-card-background: var(--white);
+        --color-header-background: var(--white);
+        --color-header-border: var(--platinum);
+        --color-nav-link-background: rgba(0, 0, 0, 0.1);
+    }
+
+    // Icons
+    --icon-important: "\e900";
+    --icon-copy: "\e902";
+    --icon-external-link: "\e904";
+    --icon-lastmod: "\e903";
+    --icon-share: "\e905";
+    --icon-sort: "\e901";
+    --icon-translation: "\e906";
+}
+
+// Common Styles
+%margin-block_1rem {
+    margin-block-end: 1rem;
+    margin-block-start: 1rem;
+}
+%padding_1rem {
+    padding: 1rem;
+}
+%line-height_1 {
+    line-height: 1 !important;
+}
+
+// Common Classes
+%scrollable {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+%plane-list {
+    list-style: none;
+    padding-inline-start: 0;
+}
+%icon {
+    @extend %line-height_1;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: "IconFont", var(--sans-serif) !important;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    speak: none;
+    text-transform: none;
+}
