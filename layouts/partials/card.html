@@ -1,53 +1,57 @@
 {{/* Card */}}
-<h1 class="card__title">{{ .Title }}</h1>
+{{/* Sontent */}}
+<section class="card__content">
+  <h1 class="card__title">{{ .Title }}</h1>
 
-{{ .Content }}
-
-<ul class="card__footer">
-  {{/* 最終更新 */}}
-  <li>
-    <time datetime='{{ .Lastmod.Format "2006-01-02T15:04:05" }}'>
-      {{ i18n "card_lastmod" }}{{ .Lastmod.Format "2006/1/2 15:04" }}
+  {{/* Lastmod */}}
+  <p class="date">
+    <time datetime='{{ .Lastmod.Format "2006-01-02T15:04:05" }}' class="date__lastmod">
+      {{ .Lastmod.Format "2006/1/2 15:04" }}
     </time>
-  </li>
+  </p>
 
+  {{ .Content }}
+</section>
+
+{{/* Footer */}}
+<section class="card__footer">
   {{/* ソースリンク */}}
   {{ with .Params.Cards.Data.Source }}
-    <li>
+    <p>
       <a href='{{ . | safeURL | absLangURL }}' target="_blank" rel="noopener">{{ i18n "card_source" }}</a>
-    </li>
+    </p>
   {{ end }}
-</ul>
 
-{{/* AddToAny */}}
-<ul class="share">
-  <li class="share__item">
-    <a href="https://www.addtoany.com/share#url=&amp;title=" target="_blank" rel="noopener" class="share__btn">
-      <img src="https://static.addtoany.com/buttons/a2a.svg" alt='{{ i18n "share_other" }}' class="share__icon" loading="lazy">
-    </a>
-  </li>
+  {{/* AddToAny */}}
+  <ul class="share">
+    <li class="share__item">
+      <a href="https://www.addtoany.com/share#url=&amp;title=" target="_blank" rel="noopener" class="share__btn">
+        <img src="https://static.addtoany.com/buttons/a2a.svg" alt='{{ i18n "share_other" }}' class="share__icon" loading="lazy">
+      </a>
+    </li>
 
-  <li class="share__item">
-    <a href="https://www.addtoany.com/add_to/facebook?linkurl=&amp;linkname=" target="_blank" rel="noopener" class="share__btn">
-      <img src="https://static.addtoany.com/buttons/facebook.svg" alt='{{ i18n "share_facebook" }}' class="share__icon" loading="lazy">
-    </a>
-  </li>
+    <li class="share__item">
+      <a href="https://www.addtoany.com/add_to/facebook?linkurl=&amp;linkname=" target="_blank" rel="noopener" class="share__btn">
+        <img src="https://static.addtoany.com/buttons/facebook.svg" alt='{{ i18n "share_facebook" }}' class="share__icon" loading="lazy">
+      </a>
+    </li>
 
-  <li class="share__item">
-    <a href="https://www.addtoany.com/add_to/line?linkurl=&amp;linkname=" target="_blank" rel="noopener" class="share__btn">
-      <img src="https://static.addtoany.com/buttons/line.svg" alt='{{ i18n "share_line" }}' class="share__icon" loading="lazy">
-    </a>
-  </li>
+    <li class="share__item">
+      <a href="https://www.addtoany.com/add_to/line?linkurl=&amp;linkname=" target="_blank" rel="noopener" class="share__btn">
+        <img src="https://static.addtoany.com/buttons/line.svg" alt='{{ i18n "share_line" }}' class="share__icon" loading="lazy">
+      </a>
+    </li>
 
-  <li class="share__item">
-    <a href="https://www.addtoany.com/add_to/mastodon?linkurl=&amp;linkname=" target="_blank" rel="noopener" class="share__btn">
-      <img src="https://static.addtoany.com/buttons/mastodon.svg" alt='{{ i18n "share_mastodon" }}' class="share__icon" loading="lazy">
-    </a>
-  </li>
+    <li class="share__item">
+      <a href="https://www.addtoany.com/add_to/mastodon?linkurl=&amp;linkname=" target="_blank" rel="noopener" class="share__btn">
+        <img src="https://static.addtoany.com/buttons/mastodon.svg" alt='{{ i18n "share_mastodon" }}' class="share__icon" loading="lazy">
+      </a>
+    </li>
 
-  <li class="share__item">
-    <a href="https://www.addtoany.com/add_to/twitter?linkurl=&amp;linkname=" target="_blank" rel="noopener" class="share__btn">
-      <img src="https://static.addtoany.com/buttons/twitter.svg" alt='{{ i18n "share_twitter" }}' class="share__icon" loading="lazy">
-    </a>
-  </li>
-</ul>
+    <li class="share__item">
+      <a href="https://www.addtoany.com/add_to/twitter?linkurl=&amp;linkname=" target="_blank" rel="noopener" class="share__btn">
+        <img src="https://static.addtoany.com/buttons/twitter.svg" alt='{{ i18n "share_twitter" }}' class="share__icon" loading="lazy">
+      </a>
+    </li>
+  </ul>
+</section>
