@@ -39,6 +39,11 @@
     {{ with .Params.Cards.Chart }}
       <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
     {{ end }}
+
+    {{/* Load Grid.js */}}
+    {{ with .Params.Cards.Table }}
+      <script src="https://cdn.jsdelivr.net/npm/gridjs@1.15.2/dist/gridjs.production.es.min.js"></script>
+    {{ end }}
   </head>
   <body class="layout body">
     <header class="layout__header header">
