@@ -176,6 +176,43 @@ a[href^="#"] {
     }
 }
 
+// data
+.data-table {
+    text-align: center;
+    &__container {
+        @extend %scrollable;
+        display: inline-block;
+        max-block-size: 60vh;
+        vertical-align: top;
+    }
+    &__table {
+        border: none;
+        font-size: var(--small);
+    }
+    tr {
+        &:nth-child(2n) {
+            background: var(--color-tr-even-background);
+        }
+    }
+    &__cell {
+        border: none;
+        padding-block-end: 0.375rem;
+        padding-block-start: 0.375rem;
+        padding-inline-end: 0.5rem;
+        padding-inline-start: 0.5rem;
+        text-align: center;
+        &--header {
+            background: var(--color-card-background);
+            position: sticky;
+            top: 0;
+        }
+        ul {
+            @extend %plane-list;
+            text-align: start;
+        }
+    }
+}
+
 // notice
 .notice {
     @extend %padding_1rem;

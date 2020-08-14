@@ -18,15 +18,17 @@
         --color-body-background: var(--eerie-black);
         --color-card-background: var(--onyx);
         --color-header-background: var(--onyx);
-        --color-header-border: #555555;
-        --color-nav-link-background: rgba(255, 255, 255, 0.2);
+        --color-header-border: #414a4c;
+        --color-nav-link-background: #414a4c;
+        --color-tr-even-background: #414a4c;
     }
     @include color-scheme(light) {
         --color-body-background: var(--white-smoke);
         --color-card-background: var(--white);
         --color-header-background: var(--white);
         --color-header-border: var(--platinum);
-        --color-nav-link-background: rgba(0, 0, 0, 0.1);
+        --color-nav-link-background: var(--platinum);
+        --color-tr-even-background: var(--platinum);
     }
 
     // Icons
@@ -53,6 +55,7 @@
 
 // Common Classes
 %scrollable {
+    max-inline-size: 100%;
     overflow-x: auto;
     white-space: nowrap;
 }

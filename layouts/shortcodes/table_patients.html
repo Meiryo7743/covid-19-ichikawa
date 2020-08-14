@@ -1,0 +1,84 @@
+{{/* データテーブル */}}
+{{/* See: data/patients.yml */}}
+<div class="data-table">
+  <div class="data-table__container">
+    <table class="data-table__table js-sort-table">
+      <tr class="data-table__header">
+        <th class="data-table__cell data-table__cell--header">{{ i18n "patients_検査確定日" }}</th>
+        <th class="data-table__cell data-table__cell--header">{{ i18n "patients_発症日" }}</th>
+        <th class="data-table__cell data-table__cell--header">{{ i18n "patients_年代" }}</th>
+        <th class="data-table__cell data-table__cell--header">{{ i18n "patients_性別" }}</th>
+        <th class="data-table__cell data-table__cell--header">{{ i18n "patients_職業" }}</th>
+        <th class="data-table__cell data-table__cell--header">{{ i18n "patients_推定感染経路" }}</th>
+        <th class="data-table__cell data-table__cell--header">{{ i18n "patients_行動歴" }}</th>
+      </tr>
+
+      {{ range .Site.Data.patients }}
+        <tr>
+          {{/* 検査確定日 */}}
+          <td class="data-table__cell">
+            <time datetime='{{ .検査確定日 }}'>
+              {{ replaceRE "^\\d+-0?(\\d+)-0?(\\d+)$" "$1/$2" .検査確定日 }}
+            </time>
+          </td>
+
+          {{/* 発症日 */}}
+          <td class="data-table__cell">
+            <time datetime='{{ .発症日 }}'>
+              {{ replaceRE "^\\d+-0?(\\d+)-0?(\\d+)$" "$1/$2" .発症日 }}
+            </time>
+          </td>
+
+          {{/* 年代 */}}
+          <td class="data-table__cell">
+            {{ with (i18n (replace "patients_年代_key" "key" .年代 )) }}
+              {{ . }}
+            {{ else }}
+              {{ .年代 }}
+            {{ end }}
+          </td>
+
+          {{/* 性別 */}}
+          <td class="data-table__cell">
+            {{ with (i18n (replace "patients_性別_key" "key" .性別 )) }}
+              {{ . }}
+            {{ else }}
+              {{ .性別 }}
+            {{ end }}
+          </td>
+
+          {{/* 職業 */}}
+          <td class="data-table__cell">
+            {{ with (i18n (replace "patients_職業_key" "key" .職業 )) }}
+              {{ . }}
+            {{ else }}
+              {{ .職業 }}
+            {{ end }}
+          </td>
+
+          {{/* 推定感染経路 */}}
+          <td class="data-table__cell">
+            {{ with .推定感染経路 }}
+              <ul>
+                {{ range . }}
+                  <li>{{ . }}</li>
+                {{ end }}
+              </ul>
+            {{ end }}
+          </td>
+
+          {{/* 行動歴 */}}
+          <td class="data-table__cell">
+            {{ with .行動歴 }}
+              <ul>
+                {{ range . }}
+                  <li>{{ . }}</li>
+                {{ end }}
+              </ul>
+            {{ end }}
+          </td>
+        </tr>
+      {{ end }}
+    </table>
+  </div>
+</div>

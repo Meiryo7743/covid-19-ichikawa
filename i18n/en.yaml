@@ -10,6 +10,72 @@ card_lastmod:
 card_source:
   other: "View source"
 
+# Patients
+patients_検査確定日:
+  other: "検査確定日"
+patients_発症日:
+  other: "発症日"
+patients_年代:
+  other: "Age"
+patients_年代_10代:
+  other: 10’s
+patients_年代_20代:
+  other: 20’s
+patients_年代_30代:
+  other: 30’s
+patients_年代_40代:
+  other: 40’s
+patients_年代_50代:
+  other: 50’s
+patients_年代_60代:
+  other: 60’s
+patients_年代_70代:
+  other: 70’s
+patients_年代_80代:
+  other: 80’s
+patients_年代_90代:
+  other: 90’s
+patients_年代_90代以上:
+  other: <90’s
+patients_性別:
+  other: "Sex"
+patients_性別_女性:
+  other: "female"
+patients_性別_男性:
+  other: "male"
+patients_職業:
+  other: "Occupation"
+patients_職業_教員:
+  other: theacher
+patients_職業_学生:
+  other: student
+patients_職業_生徒:
+  other: student
+patients_職業_自営業:
+  other: self-employed
+patients_職業_看護師:
+  other: nurse
+patients_職業_会社員:
+  other: employee
+patients_職業_会社役員:
+  other: executive
+patients_職業_介護士:
+  other: caregiver
+patients_職業_保育士:
+  other: childcare worker
+patients_職業_公務員:
+  other: public servant
+patients_職業_アルバイト:
+  other: part-time job
+patients_職業_無職:
+  other: unemployed
+patients_職業_歯科医師:
+  other: dentist
+patients_推定感染経路:
+  other: "感染経路"
+patients_行動歴:
+  other: "行動歴"
+
 emergency_title:
   other: "IMPORTANT NOTICE"
 
