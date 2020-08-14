@@ -1,5 +1,5 @@
 ---
-catds:
+cards:
   chart: false
   data: "{{ .Section }}/{{ .Name }}/data.json"
   source: ""

@@ -1,5 +1,5 @@
 ---
-catds:
+cards:
   chart: false
   data: "cards/details-of-confirmed-cases/data.json"
   source: ""

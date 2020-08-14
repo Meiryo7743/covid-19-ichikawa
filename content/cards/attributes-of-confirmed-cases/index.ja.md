@@ -1,5 +1,5 @@
 ---
-catds:
+cards:
   chart: false
   data: "cards/attributes-of-confirmed-cases/data.json"
   source: "https://www.city.ichikawa.lg.jp/pub01/hasseijokyo.html"
