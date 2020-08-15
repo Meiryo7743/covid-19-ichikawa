@@ -320,8 +320,12 @@ table.js-sort-table.js-sort-asc thead tr > .js-sort-active:not(.js-sort-none) {
         }
     }
     &__btn {
+        &::before {
+            @extend %icon;
+            content: var(--icon-share);
+        }
         &::after {
-            content: "" !important; // disable external link icon
+            content: ""; // disable external link icon
         }
     }
     &__icon {

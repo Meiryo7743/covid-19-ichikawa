@@ -59,17 +59,9 @@ notice_noscript:
 notice_translation:
   other: "This page has been translated from Japanese. Note that it may contain mistranslations."
 
-# Share (Alt text)
-share_other:
-  other: "その他の方法で共有する"
-share_facebook:
-  other: "Facebook で共有する"
-share_line:
-  other: "LINE で共有する"
-share_mastodon:
-  other: "Mastodon で共有する"
-share_twitter:
-  other: "Twitter で共有する"
+# Share
+share_btn:
+  other: 共有
 
 footer_repo:
   other: "当サイトの内容物は，GitHub 上にて公開されています。"
