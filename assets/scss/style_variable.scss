@@ -20,7 +20,6 @@
         --color-header-background: var(--onyx);
         --color-header-border: #414a4c;
         --color-nav-link-background: #414a4c;
-        --color-tr-even-background: #414a4c;
     }
     @include color-scheme(light) {
         --color-body-background: var(--white-smoke);
@@ -28,7 +27,6 @@
         --color-header-background: var(--white);
         --color-header-border: var(--platinum);
         --color-nav-link-background: var(--platinum);
-        --color-tr-even-background: var(--platinum);
     }
 
     // Icons

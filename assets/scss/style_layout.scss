@@ -195,9 +195,8 @@ a[href^="#"] {
         font-size: var(--small);
     }
     tr {
-        &:nth-child(2n) {
-            background: var(--color-tr-even-background);
-        }
+        border-block-end: var(--border);
+        border-width: 2px;
     }
     &__cell {
         border: none;
