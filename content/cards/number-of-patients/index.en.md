@@ -13,4 +13,5 @@ weight: 20
 
 {{<list_number_of_patients>}}
 
-- 日付は，検査確定日のものをカウントしている
+- 検査確定日を基準にカウントしている
+- Including the returnees on charter flights or the cruise ship passengers
