@@ -17,7 +17,6 @@ languages:
     title: "【非公式】市川市新型コロナウイルス感染症対策サイト"
     weight: 10
     params:
-      dateFormat: "2006 年 1 月 2 日"
       description: "当サイトは，市川市内における新型コロナウイルス感染症（COVID-19）に関する最新情報を提供いたします。なお，当サイトは非公式です。"
       logoImage: "/img/logo_ja.png"
       ogpImage: "/img/ogp_ja.png"
@@ -27,7 +26,6 @@ languages:
     title: "【UNOFFICIAL】Ichikawa COVID-19 information website"
     weight: 20
     params:
-      dateFormat: "January 2, 2006"
       description: "The website that provides the latest infomation on COVID-19 in Ichikawa. Note that this is unofficial."
       logoImage: "/img/logo_en.png"
       ogpImage: "/img/ogp_en.png"
