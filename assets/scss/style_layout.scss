@@ -262,7 +262,7 @@ a[href^="#"] {
     &::before {
         @extend %icon;
         content: var(--icon-important);
-        font-size: 2rem;
+        font-size: var(--xx-large);
         margin-inline-end: 1rem;
     }
     &--important {
