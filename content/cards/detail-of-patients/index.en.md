@@ -7,8 +7,8 @@ cards:
     chart: false
     table: true
 date: "2020-05-22T00:00:00+09:00"
-title: "Attributes of confirmed cases"
+title: "Detail of patients"
 weight: 30
 ---
 
-{{<table_patients>}}
+{{<table_detail_of_patients>}}
