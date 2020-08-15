@@ -7,8 +7,10 @@ cards:
     chart: true
     table: false
 date: "2020-05-22T00:00:00+09:00"
-title: "Number of confirmed cases"
+title: "Number of patients"
 weight: 20
 ---
+
+{{<list_number_of_patients>}}
 
 - 日付は，検査確定日のものをカウントしている

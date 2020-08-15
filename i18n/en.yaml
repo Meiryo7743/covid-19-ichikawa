@@ -11,6 +11,8 @@ card_source:
   other: "View source"
 
 # Patients
+patients_total:
+  other: "Total"
 patients_検査確定日:
   other: "検査確定日"
 patients_発症日:
@@ -18,25 +20,27 @@ patients_発症日:
 patients_年代:
   other: "Age"
 patients_年代_10代:
-  other: 10’s
+  other: 10s
+patients_年代_10代:
+  other: 10s
 patients_年代_20代:
-  other: 20’s
+  other: 20s
 patients_年代_30代:
-  other: 30’s
+  other: 30s
 patients_年代_40代:
-  other: 40’s
+  other: 40s
 patients_年代_50代:
-  other: 50’s
+  other: 50s
 patients_年代_60代:
-  other: 60’s
+  other: 60s
 patients_年代_70代:
-  other: 70’s
+  other: 70s
 patients_年代_80代:
-  other: 80’s
+  other: 80s
 patients_年代_90代:
-  other: 90’s
+  other: 90s
 patients_年代_90代以上:
-  other: <90’s
+  other: <90s
 patients_性別:
   other: "Sex"
 patients_性別_女性:

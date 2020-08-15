@@ -11,4 +11,6 @@ title: "陽性患者数"
 weight: 20
 ---
 
+{{<list_number_of_patients>}}
+
 - 日付は，検査確定日のものをカウントしている
