@@ -1,7 +1,9 @@
+{{/* 年代別人数 */}}
+{{/* 全年代の合計人数は，datail_of_patients.yml のデータ件数を表示している */}}
 <ul class="data-list">
     {{ range .Site.Data.number_of_patients }}
     <li class="data-list__item">
-        <span>{{ i18n "patients_total" }}</span><span>{{ .sum }}</span>
+        <span>{{ i18n "patients_total" }}</span><span>{{ len $.Site.Data.detail_of_patients }}</span>
             <ul class="data-list__child">
                 <li class="data-list__item data-list__item--child">
                     <span>{{ i18n "patients_年代_10代" }}</span><span>{{ .teens }}</span>
