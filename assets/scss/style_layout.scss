@@ -15,16 +15,18 @@ html {
 }
 
 // External Link
-a:not([href^="https://stopcovid19-ichikawa.netlify.app"])
-{
-    &::after {
-        @extend %icon;
-        content: var(--icon-external-link);
+a {
+    &:not([href^="https://stopcovid19-ichikawa.netlify.app"])
+    {
+        &::after {
+            @extend %icon;
+            content: var(--icon-external-link);
+        }
     }
-}
-a[href^="#"] {
-    &::after {
-        content: "";
+    &[href^="#"] {
+        &::after {
+            content: "";
+        }
     }
 }
 
@@ -87,11 +89,17 @@ a[href^="#"] {
         &:hover {
             background: var(--color-nav-link-background);
         }
-        &--logo {
-            padding: 0.5rem;
-            img {
-                max-block-size: 3rem;
+        &--lang {
+            color: var(--color-text) !important;
+            &::before {
+                @extend %icon;
+                content: var(--icon-translation);
             }
+        }
+        &--logo {
+            color: var(--color-text) !important;
+            display: inline-grid;
+            grid-template-columns: 2rem 1fr;
         }
     }
 }

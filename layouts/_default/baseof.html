@@ -9,7 +9,6 @@
     {{/* OGP */}}
     <meta property="og:description" content='{{ .Site.Params.Description }}'>
     <meta property="og:image" content='{{ .Site.Params.OgpImage | safeURL | absURL }}'>
-    <meta property="og:image" content="">
     <meta property="og:site_name" content='{{ .Site.Title }}'>
     <meta property="og:title" content='{{ .Title }} - {{ .Site.Title }}'>
     <meta property="og:type" content="article">
@@ -20,7 +19,8 @@
 
     {{/* Favicons */}}
     <link rel="apple-touch-icon" sizes="180x180" href='{{ "/apple-touch-icon.png" | absURL }}'>
-    <link rel="icon" type="image/png" sizes="512x512" href='{{ "/android-chrome-512x512.png" | absURL }}'>
+    <link rel=icon type=image/svg+xml href='{{ "img/logo.svg" | safeURL | absURL }}'>
+    <link rel="icon alternate" type="image/png" sizes="512x512" href='{{ "/android-chrome-512x512.png" | absURL }}'>
 
     {{/* reset.css */}}
     {{ $style_reset := resources.Get "css/meiryo_reset.css" | resources.Minify }}
@@ -62,18 +62,19 @@
           {{/* Logo */}}
           <li class="nav__item">
             <a href='{{ .Site.Home.Permalink | safeURL | absLangURL }}' class="nav__link nav__link--logo">
-              <img src='{{ .Site.Params.LogoImage | safeURL | absURL }}' alt='{{ .Site.Title }}'>
+              <img src='{{ "img/logo.svg" | safeURL | absURL }}' alt='{{ .Site.Title }}'>
+              <span>{{ .Site.Title }}</span>
             </a>
           </li>
 
           {{/* Language */}}
           <li class="nav__item nav__item--lang">
               {{ if eq .Site.Language.Lang "ja" }}
-                  <a href='{{ replace .Permalink .Site.Language.Lang "en" | safeURL }}' class="nav__link">
+                  <a href='{{ replace .Permalink .Site.Language.Lang "en" | safeURL }}' class="nav__link nav__link--lang">
                       English
                   </a>
               {{ else if eq .Site.Language.Lang "en" }}
-                  <a href='{{ replace .Permalink .Site.Language.Lang "ja" | safeURL }}' class="nav__link">
+                  <a href='{{ replace .Permalink .Site.Language.Lang "ja" | safeURL }}' class="nav__link nav__link--lang">
                       日本語
                   </a>
               {{ end }}
