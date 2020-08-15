@@ -21,7 +21,7 @@ languages:
 
   en:
     languageName: "English"
-    title: "【UNOFFICIAL】Ichikawa COVID-19 information website"
+    title: "【UNOFFICIAL】Ichikawa COVID-19 Information Website"
     weight: 20
     params:
       description: "The website that provides the latest infomation on COVID-19 in Ichikawa. Note that this is unofficial."
