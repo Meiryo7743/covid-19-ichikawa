@@ -18,14 +18,14 @@
           {{/* 検査確定日 */}}
           <td class="data-table__cell">
             <time datetime='{{ .検査確定日 }}'>
-              {{ replaceRE "^\\d+-0?(\\d+)-0?(\\d+)$" "$1/$2" .検査確定日 }}
+              {{ replaceRE "^\\d+-(\\d+-\\d+)$" "$1" .検査確定日 }}
             </time>
           </td>
 
           {{/* 発症日 */}}
           <td class="data-table__cell">
             <time datetime='{{ .発症日 }}'>
-              {{ replaceRE "^\\d+-0?(\\d+)-0?(\\d+)$" "$1/$2" .発症日 }}
+              {{ replaceRE "^\\d+-(\\d+-\\d+)$" "$1" .発症日 }}
             </time>
           </td>
 
