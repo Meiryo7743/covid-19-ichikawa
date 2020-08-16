@@ -38,6 +38,20 @@
     {{/* Load Chart.js */}}
     {{ with .Params.Cards.Display.Chart }}
       <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+      <script>
+        // chart.js global settings
+        Chart.defaults.global.defaultFontColor = "#84919e";
+        Chart.defaults.global.defaultFontFamily = "'Roboto','Helvetica',sans-serif";
+        Chart.defaults.global.devicePixelRatio = 3;
+        Chart.defaults.global.responsive = false;
+
+        // draw chart
+        function drawChart(ID, DATA) {
+            const data = JSON.parse(JSON.stringify(DATA));
+            const ctx = document.getElementById(ID).getContext("2d");
+            const renderChart = new Chart(ctx, data);
+        }
+      </script>
     {{ end }}
   </head>
   <body class="layout body">

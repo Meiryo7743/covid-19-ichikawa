@@ -1,0 +1,14 @@
+<div class="data-chart">
+    <canvas id="chart-subway"></canvas>
+</div>
+
+<script>
+  // グラフの高さを設定する
+  document.getElementById('chart-subway').style.height = "300px";
+
+  // readFile で強引に JSON を読み込ませる
+  const jsonSubway = {{ readFile "data/subway.json" | safeJS }};
+
+  // draw the chart
+  drawChart("chart-subway",jsonSubway);
+</script>

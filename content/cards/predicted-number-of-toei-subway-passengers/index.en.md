@@ -11,5 +11,7 @@ title: "Estimated number of Toei subway passengers"
 weight: 40
 ---
 
+{{<chart_subway>}}
+
 - Relative figure based on the average number of users from January 20 to 24 (Total number of passengers passing through the ticket gates of the four Toei subway lines).
 - The number is published as preliminary figures and may be revised as confirmed data at a later date

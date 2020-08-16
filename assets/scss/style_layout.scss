@@ -275,6 +275,11 @@ table.js-sort-table.js-sort-asc thead tr > .js-sort-active:not(.js-sort-none) {
     }
 }
 
+// data-chart
+.data-chart {
+    @extend %scrollable;
+}
+
 // notice
 .notice {
     @extend %padding_1rem;
