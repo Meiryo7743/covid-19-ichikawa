@@ -75,9 +75,9 @@
       <nav class="header__nav">
         <ul class="nav nav--header">
           {{/* Logo */}}
-          <li class="nav__item">
+          <li class="nav__item nav__item--logo">
             <a href='{{ .Site.Home.Permalink | safeURL | absLangURL }}' class="nav__link nav__link--logo">
-              <img src='{{ "img/logo.svg" | safeURL | absURL }}' alt='{{ .Site.Title }}'><span>{{ .Site.Title }}</span>
+              <img src='{{ "img/logo.svg" | safeURL | absURL }}' alt='{{ .Site.Title }}' loading="lazy"><span>{{ .Site.Title }}</span>
             </a>
           </li>
 

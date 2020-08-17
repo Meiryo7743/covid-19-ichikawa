@@ -9,6 +9,29 @@
     }
 }
 
+// Mixin: screen-size
+@mixin min-screen-size($size) {
+    @if $size == 0 {
+        @content;
+    } @else {
+        @media screen and (min-width: $size + px) {
+            @content;
+        }
+    }
+}
+
+// Mixin: margin-block
+@mixin margin-block($margin) {
+    margin-block-end: $margin;
+    margin-block-start: $margin;
+}
+
+// Mixin: margin-inline
+@mixin margin-inline($margin) {
+    margin-inline-end: $margin;
+    margin-inline-start: $margin;
+}
+
 // CSS Variables
 :root {
     // Colors
