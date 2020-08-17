@@ -6,7 +6,7 @@ cards:
     chart: true
     table: false
 date: "2020-05-22T00:00:00+09:00"
-title: "都営地下鉄の利用者数の推移"
+title: "都営線利用者数の推移"
 weight: 30
 ---
 
