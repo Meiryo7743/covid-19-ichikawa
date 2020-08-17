@@ -12,5 +12,4 @@ weight: 10
 
 {{<list_number_of_patients>}}
 
-- 検査確定日を基準にカウントしている
 - Including the returnees on charter flights or the cruise ship passengers
