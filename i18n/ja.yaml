@@ -1,26 +1,24 @@
 news:
-  other: "更新情報"
+  other: 更新情報
 
 debug_title:
-  other: "デバッグ"
+  other: デバッグ
 
 # Card
 card_lastmod:
-  other: "最終更新："
+  other: 最終更新：
 card_source:
-  other: "ソースを見る"
+  other: ソースを見る
 
 # Patients
 patients_total:
   other: 計
 patients_検査確定日:
-  other: "検査確定日"
+  other: 検査確定日
 patients_発症日:
-  other: "発症日"
+  other: 発症日
 patients_年代:
-  other: "年代"
-patients_年代_10代:
-  other: 10代
+  other: 年代
 patients_年代_10代:
   other: 10代
 patients_年代_20代:
@@ -42,34 +40,26 @@ patients_年代_90代:
 patients_年代_90代以上:
   other: 90代超
 patients_性別:
-  other: "性別"
+  other: 性別
 patients_職業:
-  other: "職業"
+  other: 職業
 patients_推定感染経路:
-  other: "感染経路"
+  other: 感染経路
 patients_行動歴:
-  other: "行動歴"
+  other: 行動歴
 
 emergency_title:
-  other: "重要なお知らせ"
+  other: 重要なお知らせ
 
 # Notice
 notice_noscript:
-  other: "JavaScript が無効な場合，ページが正常に動作しない場合があります。"
+  other: JavaScript が無効な場合，ページが正常に動作しない場合があります。
 notice_translation:
-  other: "This page has been translated from Japanese. Note that it may contain mistranslations."
+  other: This page has been translated from Japanese. Note that it may contain mistranslations.
 
 # Share
 share_btn:
   other: 共有
 
 footer_repo:
-  other: "当サイトの内容物は，GitHub 上にて公開されています。"
-
-# 404 message (markdown)
-luxio_message:
-  other: |
-    お探しのページは見つかりませんでした。原因として，次のことが挙げられます。
-
-    * ページが削除された
-    * 指定された URL が間違っている
+  other: GitHub でコードを見る

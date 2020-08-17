@@ -1,26 +1,24 @@
 news:
-  other: "News"
+  other: News
 
 debug_title:
-  other: "Debug"
+  other: Debug
 
 # Card
 card_lastmod:
   other: "Last update: "
 card_source:
-  other: "View source"
+  other: View source
 
 # Patients
 patients_total:
-  other: "Total"
+  other: Total
 patients_検査確定日:
-  other: "検査確定日"
+  other: 検査確定日
 patients_発症日:
-  other: "発症日"
+  other: 発症日
 patients_年代:
-  other: "Age"
-patients_年代_10代:
-  other: 10s
+  other: Age
 patients_年代_10代:
   other: 10s
 patients_年代_20代:
@@ -42,13 +40,13 @@ patients_年代_90代:
 patients_年代_90代以上:
   other: <90s
 patients_性別:
-  other: "Sex"
+  other: Sex
 patients_性別_女性:
-  other: "female"
+  other: female
 patients_性別_男性:
-  other: "male"
+  other: male
 patients_職業:
-  other: "Occupation"
+  other: Occupation
 patients_職業_教員:
   other: theacher
 patients_職業_学生:
@@ -76,30 +74,22 @@ patients_職業_無職:
 patients_職業_歯科医師:
   other: dentist
 patients_推定感染経路:
-  other: "感染経路"
+  other: 感染経路
 patients_行動歴:
-  other: "行動歴"
+  other: 行動歴
 
 emergency_title:
-  other: "IMPORTANT NOTICE"
+  other: IMPORTANT NOTICE
 
 # Notice
 notice_noscript:
-  other: "Contents will not be displayed correctly when JavaScript is disabled."
+  other: Contents will not be displayed correctly when JavaScript is disabled.
 notice_translation:
-  other: "This page has been translated from Japanese. Note that it may contain mistranslations."
+  other: This page has been translated from Japanese. Note that it may contain mistranslations.
 
 # Share
 share_btn:
   other: Share
 
 footer_repo:
-  other: "Contents are available on GitHub."
-
-# 404 message (markdown)
-luxio_message:
-  other: |
-    The page you are looking for is not found. 原因として
-
-    * The page was deleted
-    * Wrong URL
+  other: View the code on GitHub
