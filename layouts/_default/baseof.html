@@ -77,8 +77,7 @@
           {{/* Logo */}}
           <li class="nav__item">
             <a href='{{ .Site.Home.Permalink | safeURL | absLangURL }}' class="nav__link nav__link--logo">
-              <img src='{{ "img/logo.svg" | safeURL | absURL }}' alt='{{ .Site.Title }}'>
-              <span>{{ .Site.Title }}</span>
+              <img src='{{ "img/logo.svg" | safeURL | absURL }}' alt='{{ .Site.Title }}'><span>{{ .Site.Title }}</span>
             </a>
           </li>
 
@@ -135,7 +134,8 @@
     {{/* https://github.com/stationer/SortTable */}}
     {{ with .Params.Cards.Display.Table }}
       <script>
-        {{ readFile "assets/js/sort-table.js" | safeJS }}
+        {{/* 強引なインラインスクリプト */}}
+        {{ readFile "assets/js/sort-table.min.js" | safeJS }}
       </script>
     {{ end }}
   </body>
