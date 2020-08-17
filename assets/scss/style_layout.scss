@@ -172,6 +172,7 @@ a {
     box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
+    font-size: var(--small);
     &--important {
         background-color: var(--orange);
         color: var(--black);
@@ -182,10 +183,11 @@ a {
     }
     &__content {
         flex-grow: 1;
-    }
-    &__footer {
-        font-size: var(--small);
+        margin-block-end: 1rem;
         margin-block-start: 1rem;
+        &--footer {
+            flex-grow: 0;
+        }
     }
 }
 
@@ -333,6 +335,7 @@ table.js-sort-table.js-sort-asc thead tr > .js-sort-active:not(.js-sort-none) {
         }
     }
     &__btn {
+        color: var(--color-text) !important;
         &::before {
             @extend %icon;
             content: var(--icon-share);
