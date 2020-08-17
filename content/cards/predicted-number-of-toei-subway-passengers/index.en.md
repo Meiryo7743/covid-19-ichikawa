@@ -1,14 +1,13 @@
 ---
 cards:
   data:
-    path: "cards/predicted-number-of-toei-subway-passengers/data.json"
     source: "https://github.com/tokyo-metropolitan-gov/covid19/blob/development/data/metro.json"
   display:
     chart: true
     table: false
 date: "2020-05-22T00:00:00+09:00"
 title: "Estimated number of Toei subway passengers"
-weight: 40
+weight: 30
 ---
 
 {{<chart_subway>}}

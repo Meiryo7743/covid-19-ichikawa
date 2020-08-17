@@ -1,8 +1,7 @@
 ---
 cards:
   data:
-    path: "{{ .Section }}/{{ .Name }}/data.json"
-    source: "https://www.city.ichikawa.lg.jp/pub01/hasseijokyo.html"
+    source: ""
   display:
     chart: false
     table: false
