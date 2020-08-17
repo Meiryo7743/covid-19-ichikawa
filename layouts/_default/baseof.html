@@ -37,6 +37,7 @@
 
     {{/* Load Chart.js */}}
     {{ with .Params.Cards.Display.Chart }}
+      <link rel="preload" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js">
       <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
       <script>
         // chart.js global settings
@@ -47,9 +48,9 @@
 
         // draw chart
         function drawChart(ID, DATA) {
-            const data = JSON.parse(JSON.stringify(DATA));
-            const ctx = document.getElementById(ID).getContext("2d");
-            const renderChart = new Chart(ctx, data);
+          const data = JSON.parse(JSON.stringify(DATA));
+          const ctx = document.getElementById(ID).getContext("2d");
+          const renderChart = new Chart(ctx, data);
         }
       </script>
     {{ end }}
