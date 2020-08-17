@@ -1,5 +1,5 @@
-baseURL: ""
-DefaultContentLanguage: ja
+baseURL: "https://stopcovid19-ichikawa.netlify.app"
+defaultContentLanguage: ja
 defaultContentLanguageInSubdir: true
 enableGitInfo: true
 enableInlineShortcodes: true
