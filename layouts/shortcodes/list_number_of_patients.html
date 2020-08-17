@@ -6,6 +6,9 @@
         <span>{{ i18n "patients_total" }}</span><span>{{ len $.Site.Data.detail_of_patients }}</span>
             <ul class="data-list__child">
                 <li class="data-list__item data-list__item--child">
+                    <span>{{ i18n "patients_年代_10歳未満" }}</span><span>{{ .under_teens }}</span>
+                </li>
+                <li class="data-list__item data-list__item--child">
                     <span>{{ i18n "patients_年代_10代" }}</span><span>{{ .teens }}</span>
                 </li>
                 <li class="data-list__item data-list__item--child">

@@ -19,6 +19,8 @@ patients_発症日:
   other: 発症日
 patients_年代:
   other: Age
+patients_年代_10歳未満:
+  other: ">10s"
 patients_年代_10代:
   other: 10s
 patients_年代_20代:
