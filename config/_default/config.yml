@@ -1,7 +1,7 @@
 baseURL: ""
 DefaultContentLanguage: ja
 defaultContentLanguageInSubdir: true
-# enableGitInfo: true
+enableGitInfo: true
 enableInlineShortcodes: true
 enableRobotsTXT: true
 hasCJKLanguage: true
@@ -34,6 +34,7 @@ markup:
 
 # Minification
 minify:
+  minifyOutput: true
   tdewolff:
     html:
       keepEndTags: false
