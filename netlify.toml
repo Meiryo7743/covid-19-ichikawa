@@ -1,0 +1,13 @@
+# 404
+[[redirects]]
+  from = "/*"
+  to = "/ja/404.html"
+  status = 404
+  force = false
+
+ [[redirects]]
+  from = "/*"
+  to = "/en/404.html"
+  status = 404
+  force = false
+  conditions = {Language = ["en"]}
