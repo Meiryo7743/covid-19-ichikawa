@@ -4,6 +4,7 @@
   <div class="data-table__container">
     <table class="data-table__table js-sort-table">
       <tr class="data-table__header">
+        <th class="data-table__cell data-table__cell--header">No.</th>
         <th class="data-table__cell data-table__cell--header">{{ i18n "patients_検査確定日" }}</th>
         <th class="data-table__cell data-table__cell--header">{{ i18n "patients_発症日" }}</th>
         <th class="data-table__cell data-table__cell--header">{{ i18n "patients_年代" }}</th>
@@ -13,8 +14,13 @@
         <th class="data-table__cell data-table__cell--header">{{ i18n "patients_行動歴" }}</th>
       </tr>
 
-      {{ range .Site.Data.detail_of_patients }}
+      {{ range sort .Site.Data.detail_of_patients "市内" "desc" }}
         <tr>
+          {{/* 市内 */}}
+          <td class="data-table__cell">
+              {{ .市内 }}
+          </td>
+
           {{/* 検査確定日 */}}
           <td class="data-table__cell">
             <time datetime='{{ .検査確定日 }}'>
