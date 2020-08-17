@@ -16,13 +16,12 @@ html {
 
 // External Link
 a {
-    &:not([href^="https://stopcovid19-ichikawa.netlify.app"])
-    {
-        &::after {
-            @extend %icon;
-            content: var(--icon-external-link);
-        }
+    &::after {
+        @extend %icon;
+        content: var(--icon-external-link);
     }
+    &[href^="https://stopcovid19-ichikawa.netlify.app"],
+    &[href^="http://localhost:"],
     &[href^="#"] {
         &::after {
             content: "";
@@ -342,9 +341,5 @@ table.js-sort-table.js-sort-asc thead tr > .js-sort-active:not(.js-sort-none) {
         &::after {
             content: ""; // disable external link icon
         }
-    }
-    &__icon {
-        inline-size: 2rem;
-        block-size: 2rem;
     }
 }
