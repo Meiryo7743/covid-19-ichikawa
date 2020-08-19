@@ -6,54 +6,42 @@
       <thead>
         <tr>
           {{/* th 市内 */}}
-          <th
-            class="data-table__cell data-table__cell--header sort"
-            data-sort="市内"
-          >
+          <th class="sort" data-sort="市内">
             No.
           </th>
 
           {{/* th 検査確定日 */}}
-          <th
-            class="data-table__cell data-table__cell--header sort"
-            data-sort="検査確定日"
-          >
+          <th class="sort" data-sort="検査確定日">
             {{ i18n "patients_検査確定日" }}
           </th>
 
           {{/* th 発症日 */}}
-          <th
-            class="data-table__cell data-table__cell--header sort"
-            data-sort="発症日"
-          >
+          <th class="sort" data-sort="発症日">
             {{ i18n "patients_発症日" }}
           </th>
 
           {{/* th 年代 */}}
-          <th
-            class="data-table__cell data-table__cell--header sort"
-            data-sort="年代"
-          >
+          <th class="sort" data-sort="年代">
             {{ i18n "patients_年代" }}
           </th>
 
           {{/* th 性別 */}}
-          <th class="data-table__cell data-table__cell--header">
+          <th>
             {{ i18n "patients_性別" }}
           </th>
 
           {{/* th 職業 */}}
-          <th class="data-table__cell data-table__cell--header">
+          <th>
             {{ i18n "patients_職業" }}
           </th>
 
           {{/* th 推定感染経路 */}}
-          <th class="data-table__cell data-table__cell--header">
+          <th>
             {{ i18n "patients_推定感染経路" }}
           </th>
 
           {{/* th 行動歴 */}}
-          <th class="data-table__cell data-table__cell--header">
+          <th>
             {{ i18n "patients_行動歴" }}
           </th>
         </tr>
@@ -63,12 +51,12 @@
         {{ range sort .Site.Data.detail_of_patients "市内" "desc" }}
           <tr>
             {{/* 市内 */}}
-            <td class="data-table__cell 市内">
+            <td class="市内">
                 {{ .市内 }}
             </td>
 
             {{/* 検査確定日 */}}
-            <td class="data-table__cell 検査確定日">
+            <td class="検査確定日">
               {{ with .検査確定日 }}
                 <time datetime='{{ . }}'
                   >{{ replaceRE "^\\d+-(\\d+-\\d+)$" "$1" . }}</time
@@ -77,7 +65,7 @@
             </td>
 
             {{/* 発症日 */}}
-            <td class="data-table__cell 発症日">
+            <td class="発症日">
               {{ with .発症日 }}
                 <time datetime='{{ . }}'
                   >{{ replaceRE "^\\d+-(\\d+-\\d+)$" "$1" . }}</time
@@ -86,7 +74,7 @@
             </td>
 
             {{/* 年代 */}}
-            <td class="data-table__cell 年代">
+            <td class="年代">
               {{ with (i18n (replace "patients_年代_key" "key" .年代 )) }}
                 {{ . }}
               {{ else }}
@@ -95,7 +83,7 @@
             </td>
 
             {{/* 性別 */}}
-            <td class="data-table__cell">
+            <td>
               {{ with (i18n (replace "patients_性別_key" "key" .性別 )) }}
                 {{ . }}
               {{ else }}
@@ -104,7 +92,7 @@
             </td>
 
             {{/* 職業 */}}
-            <td class="data-table__cell">
+            <td>
               {{ with (i18n (replace "patients_職業_key" "key" .職業 )) }}
                 {{ . }}
               {{ else }}
@@ -113,9 +101,9 @@
             </td>
 
             {{/* 推定感染経路 */}}
-            <td class="data-table__cell">
+            <td>
               {{ with .推定感染経路 }}
-                <ul class="data-table__list">
+                <ul>
                   {{ range . }}
                     <li>{{ . }}</li>
                   {{ end }}
@@ -124,9 +112,9 @@
             </td>
 
             {{/* 行動歴 */}}
-            <td class="data-table__cell">
+            <td>
               {{ with .行動歴 }}
-                <ul class="data-table__list">
+                <ul>
                   {{ range . }}
                     <li>{{ . }}</li>
                   {{ end }}
