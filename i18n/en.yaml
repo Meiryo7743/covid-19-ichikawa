@@ -9,6 +9,8 @@ card_lastmod:
   other: "Last update: "
 card_source:
   other: View source
+card_chart_subway:
+  other: Changes in number of Toei Subway passenger
 
 # Patients
 patients_total:
