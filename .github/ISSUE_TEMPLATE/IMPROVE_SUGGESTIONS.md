@@ -9,7 +9,7 @@ labels: improvement
 <!-- できるだけ簡潔に -->
 <!-- as concise as possible -->
 
-- xxxx
+- 
 
 ## スクリーンショット / Screenshot
 
@@ -18,7 +18,7 @@ labels: improvement
 <!-- できるだけ簡潔に -->
 <!-- as concise as possible -->
 
-- xxxx
+- 
 
 ## 動作環境 / Environment
 
