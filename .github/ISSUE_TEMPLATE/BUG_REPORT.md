@@ -9,7 +9,7 @@ labels: bug
 <!-- できるだけ簡潔に -->
 <!-- as concise as possible -->
 
-- xxxx
+- 
 
 ## スクリーンショット / Screenshot
 
@@ -18,13 +18,11 @@ labels: bug
 <!-- できるだけ簡潔に -->
 <!-- as concise as possible -->
 
-- xxxx
+- 
 
 ## 再現方法 / Steps to Reproduce
 
-1. xxxx
-2. xxxx
-3. xxxx
+1. 
 
 ## 動作環境 / Environment
 
