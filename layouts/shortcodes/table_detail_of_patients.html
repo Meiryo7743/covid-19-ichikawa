@@ -69,16 +69,20 @@
 
             {{/* 検査確定日 */}}
             <td class="data-table__cell 検査確定日">
-              <time datetime='{{ .検査確定日 }}'
-                >{{ replaceRE "^\\d+-(\\d+-\\d+)$" "$1" .検査確定日 }}</time
-              >
+              {{ with .検査確定日 }}
+                <time datetime='{{ . }}'
+                  >{{ replaceRE "^\\d+-(\\d+-\\d+)$" "$1" . }}</time
+                >
+              {{ end }}
             </td>
 
             {{/* 発症日 */}}
             <td class="data-table__cell 発症日">
-              <time datetime='{{ .発症日 }}'
-                >{{ replaceRE "^\\d+-(\\d+-\\d+)$" "$1" .発症日 }}</time
-              >
+              {{ with .発症日 }}
+                <time datetime='{{ . }}'
+                  >{{ replaceRE "^\\d+-(\\d+-\\d+)$" "$1" . }}</time
+                >
+              {{ end }}
             </td>
 
             {{/* 年代 */}}
@@ -111,7 +115,7 @@
             {{/* 推定感染経路 */}}
             <td class="data-table__cell">
               {{ with .推定感染経路 }}
-                <ul>
+                <ul class="data-table__list">
                   {{ range . }}
                     <li>{{ . }}</li>
                   {{ end }}
@@ -122,7 +126,7 @@
             {{/* 行動歴 */}}
             <td class="data-table__cell">
               {{ with .行動歴 }}
-                <ul>
+                <ul class="data-table__list">
                   {{ range . }}
                     <li>{{ . }}</li>
                   {{ end }}

@@ -211,9 +211,9 @@ a {
             position: sticky;
             top: 0;
         }
-        ul {
-            @extend %plane-list;
-        }
+    }
+    &__list {
+        @extend %plane-list;
     }
 }
 
