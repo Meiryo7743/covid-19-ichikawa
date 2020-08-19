@@ -1,11 +1,11 @@
-- under_teens: 4
-  teens: 15
+- teens: 16
+  under_teens: 4
   twenties: 70
   thirties: 44
-  forties: 30
+  forties: 34
   fifties: 26
   sixties: 13
-  seventies: 9
+  seventies: 10
   eighties: 19
   nineties: 2
   over_nineties: 8

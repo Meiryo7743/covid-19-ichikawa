@@ -54,6 +54,12 @@
         }
       </script>
     {{ end }}
+
+    {{/* Load list.js */}}
+    {{ with .Params.Cards.Display.Table }}
+      <link rel="preload" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+    {{ end }}
   </head>
   <body class="layout body">
     <header class="layout__header header">
@@ -129,14 +135,5 @@
         <small>&copy; {{ now.Year }} {{ .Site.Params.Author }}</small>
       </p>
     </footer>
-
-    {{/* sort-table.js (MIT License) */}}
-    {{/* https://github.com/stationer/SortTable */}}
-    {{ with .Params.Cards.Display.Table }}
-      <script>
-        // 強引なインラインスクリプト
-        {{ readFile "assets/js/sort-table.min.js" | safeJS }}
-      </script>
-    {{ end }}
   </body>
 </html>

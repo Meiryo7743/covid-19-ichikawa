@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b30d38da-34ef-424d-ac99-15754c78a693/deploy-status)](https://app.netlify.com/sites/stopcovid19-ichikawa/deploys)
+
 # 【非公式】市川市新型コロナウイルス感染症対策サイト
 
 <!-- img タグ同士が同一行に存在しないと，横並びになってくれない -->

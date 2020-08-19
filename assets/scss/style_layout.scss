@@ -211,23 +211,25 @@ a {
             position: sticky;
             top: 0;
         }
-        ul {
-            @extend %plane-list;
-        }
+    }
+    &__list {
+        @extend %plane-list;
     }
 }
 
 // table sort
-table.js-sort-table.js-sort-desc thead tr > .js-sort-active:not(.js-sort-none) {
-    &::after {
-        @extend %icon;
-        content: var(--icon-arrow-down);
+.sort {
+    &.asc {
+        &::after {
+            @extend %icon;
+            content: var(--icon-arrow-up);
+        }
     }
-}
-table.js-sort-table.js-sort-asc thead tr > .js-sort-active:not(.js-sort-none) {
-    &::after {
-        @extend %icon;
-        content: var(--icon-arrow-up);
+    &.desc {
+        &::after {
+            @extend %icon;
+            content: var(--icon-arrow-down);
+        }
     }
 }
 
