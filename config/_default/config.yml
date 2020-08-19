@@ -18,6 +18,7 @@ languages:
     weight: 10
     params:
       description: "当サイトは，市川市内における新型コロナウイルス感染症（COVID-19）に関する最新情報を提供いたします。なお，当サイトは非公式です。"
+      ogpImage: "img/ogp_ja.png"
 
   en:
     languageName: "English"
@@ -25,6 +26,7 @@ languages:
     weight: 20
     params:
       description: "The website that provides the latest infomation on COVID-19 in Ichikawa. Note that this is unofficial."
+      ogpImage: "img/ogp_en.png"
 
 # Markup
 markup:
