@@ -1,6 +1,7 @@
 htmlWhitespaceSensitivity: "ignore"
 overrides:
   - files:
+      - "*.yaml"
       - "*.yml"
       - "*.md"
     options:
