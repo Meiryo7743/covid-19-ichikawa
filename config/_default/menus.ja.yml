@@ -28,3 +28,6 @@ header_nav:
   - name: "お問い合わせ"
     url: "https://forms.gle/rJAhPqckU1Ak7tFQ9"
     weight: 90
+  - name: "GitHub"
+    url: "https://github.com/Meiryo7743/COVID-19-Ichikawa"
+    weight: 100
