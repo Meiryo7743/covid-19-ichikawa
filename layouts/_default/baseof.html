@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang='{{ .Site.Language.Lang }}'>
   <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    {{ $style_reset := resources.Get "css/meiryo_reset.css" | resources.Minify }}
+    {{ $style_screen := resources.Get "scss/style.scss" | toCSS | minify }}
+
+    {{/* Preloads */}}
+    <link rel="preload" as="style" href='{{ $style_reset.Permalink }}'>
+    <link rel="preload" as="style" href='{{ $style_screen.Permalink }}'>
+    {{ with .Params.Cards.Display.Chart }}
+      <link rel="preload" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js">
+    {{ end }}
+    {{ with .Params.Cards.Display.Table }}
+      <link rel="preload" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js">
+    {{ end }}
+
     <meta charset="utf-8">
     <meta name="description" content='{{ .Site.Params.Description }}'>
     <meta name="format-detection" content="telephone=no,address=no,email=no">
@@ -23,13 +36,9 @@
     <link rel="icon alternate" type="image/png" sizes="512x512" href='{{ "/android-chrome-512x512.png" | absURL }}'>
 
     {{/* reset.css */}}
-    {{ $style_reset := resources.Get "css/meiryo_reset.css" | resources.Minify }}
-    <link rel="preload" as="style" href='{{ $style_reset.Permalink }}'>
     <link rel="stylesheet" href='{{ $style_reset.Permalink }}'>
 
     {{/* style.scss */}}
-    {{ $style_screen := resources.Get "scss/style.scss" | toCSS | minify }}
-    <link rel="preload" as="style" href='{{ $style_screen.Permalink }}'>
     <link rel="stylesheet" href='{{ $style_screen.Permalink }}'>
 
     {{/* Page title */}}
@@ -37,7 +46,6 @@
 
     {{/* Load Chart.js */}}
     {{ with .Params.Cards.Display.Chart }}
-      <link rel="preload" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js">
       <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
       <script>
         // chart.js global settings
@@ -57,7 +65,6 @@
 
     {{/* Load list.js */}}
     {{ with .Params.Cards.Display.Table }}
-      <link rel="preload" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js">
       <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
     {{ end }}
   </head>
@@ -81,24 +88,21 @@
       <nav class="header__nav">
         <ul class="nav nav--header">
           {{/* Logo */}}
-          <li class="nav__item nav__item--logo">
+          <li class="nav__item">
             <a href='{{ .Site.Home.Permalink | safeURL | absLangURL }}' class="nav__link nav__link--logo">
               <img src='{{ "img/logo.svg" | safeURL | absURL }}' alt='{{ .Site.Title }}' loading="lazy">{{ .Site.Title }}
             </a>
           </li>
 
           {{/* Language */}}
-          <li class="nav__item nav__item--lang">
-              {{ if eq .Site.Language.Lang "ja" }}
-                  <a href='{{ replace .Permalink .Site.Language.Lang "en" | safeURL }}' class="nav__link nav__link--lang">
-                      English
-                  </a>
-              {{ else if eq .Site.Language.Lang "en" }}
-                  <a href='{{ replace .Permalink .Site.Language.Lang "ja" | safeURL }}' class="nav__link nav__link--lang">
-                      日本語
-                  </a>
-              {{ end }}
-          </li>
+          {{ $langPage := cond (gt (len .Translations) 0) . .Site.Home }}
+          {{ range $langPage.Translations }}
+            <li class="nav__item">
+              <a href='{{ .Permalink | safeURL }}' class="nav__link nav__link--lang">
+                {{ .Language.LanguageName }}
+              </a>
+            </li>
+          {{ end }}
         </ul>
 
         {{/* コンテンツメニュー */}}
