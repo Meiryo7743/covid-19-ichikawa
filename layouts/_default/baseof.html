@@ -88,24 +88,21 @@
       <nav class="header__nav">
         <ul class="nav nav--header">
           {{/* Logo */}}
-          <li class="nav__item nav__item--logo">
+          <li class="nav__item">
             <a href='{{ .Site.Home.Permalink | safeURL | absLangURL }}' class="nav__link nav__link--logo">
               <img src='{{ "img/logo.svg" | safeURL | absURL }}' alt='{{ .Site.Title }}' loading="lazy">{{ .Site.Title }}
             </a>
           </li>
 
           {{/* Language */}}
-          <li class="nav__item nav__item--lang">
-              {{ if eq .Site.Language.Lang "ja" }}
-                  <a href='{{ replace .Permalink .Site.Language.Lang "en" | safeURL }}' class="nav__link nav__link--lang">
-                      English
-                  </a>
-              {{ else if eq .Site.Language.Lang "en" }}
-                  <a href='{{ replace .Permalink .Site.Language.Lang "ja" | safeURL }}' class="nav__link nav__link--lang">
-                      日本語
-                  </a>
-              {{ end }}
-          </li>
+          {{ $langPage := cond (gt (len .Translations) 0) . .Site.Home }}
+          {{ range $langPage.Translations }}
+            <li class="nav__item">
+              <a href='{{ .Permalink | safeURL }}' class="nav__link nav__link--lang">
+                {{ .Language.LanguageName }}
+              </a>
+            </li>
+          {{ end }}
         </ul>
 
         {{/* コンテンツメニュー */}}
