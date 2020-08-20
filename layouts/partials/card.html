@@ -16,19 +16,16 @@
 </section>
 
 {{/* Footer */}}
-<section class="card__content card__content--footer">
-  {{/* ソースリンク */}}
+<ul class="card__footer">
   {{ with .Params.Cards.Data.Source }}
-    <p>
+    <li>
       <a href='{{ . | safeURL | absLangURL }}' target="_blank" rel="noopener">{{ i18n "card_source" }}</a>
-    </p>
+    </li>
   {{ end }}
 
   {{/* AddToAny */}}
   {{ $share_url := replaceRE "^" "https://www.addtoany.com/share#url=" .Permalink }}
-  <ul class="share">
-    <li class="share__item">
-      <a href='{{ $share_url | safeURL }}' target="_blank" rel="noopener" class="share__btn">{{ i18n "share_btn"}}</a>
-    </li>
-  </ul>
-</section>
+  <li class="share">
+    <a href='{{ $share_url | safeURL }}' target="_blank" rel="noopener" class="share__btn">{{ i18n "share_btn"}}</a>
+  </li>
+</ul>
