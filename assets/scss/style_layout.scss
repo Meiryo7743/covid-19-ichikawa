@@ -63,7 +63,7 @@ a {
 
 // Navigation
 .nav {
-    @extend %line-height_1;
+    line-height: 1.25;
     @extend %plane-list;
     display: flex;
     flex-wrap: wrap;
@@ -180,16 +180,11 @@ a {
 
 // data-table
 .data-table {
-    text-align: center;
-    &__container {
-        @extend %scrollable;
-        display: inline-block;
-        max-block-size: 50vh;
-        vertical-align: top;
-    }
+    line-height: 1.25;
+    @extend %scrollable;
+    block-size: 50vh;
     &__table {
         border: none;
-        font-size: var(--small);
     }
     tr {
         border-block-end: var(--border);
@@ -232,8 +227,8 @@ a {
 
 // data-list
 .data-list {
+    line-height: 1.25;
     @extend %plane-list;
-    @extend %line-height_1;
     &__child {
         @extend %plane-list;
         margin-inline-start: 1.75rem;
