@@ -28,10 +28,7 @@ The source code is available on GitHub. There is still a lot of work, updating t
 ## Screenshots
 
 ![Old design](./screenshot_old.png)
-Old design
 
 ![New design (light theme)](./screenshot_new_light.png)
-New design (light theme)
 
 ![New design (dark theme)](./screenshot_new_dark.png)
-New design (dark theme)
