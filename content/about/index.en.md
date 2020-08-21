@@ -28,7 +28,7 @@ No permission is required to provide a link to this site.
 
 ## Data sources
 
-- Almost all datas are got from [Ichikawa city official website](https://www.city.ichikawa.lg.jp/).
+- Almost all data are got from [Ichikawa city official website](https://www.city.ichikawa.lg.jp/).
 - The data on Toei Subway is got from [Tokyo Gov. repository](https://github.com/tokyo-metropolitan-gov/covid19).
 
 ## Source code
