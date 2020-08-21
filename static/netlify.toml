@@ -1,3 +1,27 @@
+# 旧デザインからのリダイレクト
+# about
+[[redirects]]
+  from = "/about"
+  to = "/ja/about"
+  force = true
+
+ [[redirects]]
+  from = "/en/about"
+  to = "/en/about"
+  force = true
+  conditions = {Language = ["en"]}
+
+# contacts
+[[redirects]]
+  from = "/contacts"
+  to = "https://forms.gle/rJAhPqckU1Ak7tFQ9"
+  force = true
+
+ [[redirects]]
+  from = "/en/contacts"
+  to = "https://forms.gle/rJAhPqckU1Ak7tFQ9"
+  force = true
+
 # 404
 [[redirects]]
   from = "/*"
