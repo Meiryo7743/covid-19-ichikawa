@@ -30,10 +30,7 @@ title: "サイトをリニューアルしました"
 ## スクリーンショット
 
 ![旧デザイン](./screenshot_old.png)
-旧デザイン
 
 ![新デザイン（ライトテーマ）](./screenshot_new_light.png)
-新デザイン（ライトテーマ）
 
 ![新デザイン（ダークテーマ）](./screenshot_new_dark.png)
-新デザイン（ダークテーマ）
