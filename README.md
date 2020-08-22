@@ -17,6 +17,8 @@
 
 開発をお手伝いできる方は，[開発者向け情報](https://github.com/Meiryo7743/COVID-19-Ichikawa/wiki/%E9%96%8B%E7%99%BA%E8%80%85%E5%90%91%E3%81%91%E6%83%85%E5%A0%B1)をご覧ください。
 
+翻訳に関しましては，[Transifex](https://www.transifex.com/covid-19-ichikawa/i18n-translation/) のページをご覧ください。
+
 ## その他
 
 当サイトのロゴは [8wakei](https://twitter.com/8wakei) 様よりご提供いただきました。ありがとうございます。
