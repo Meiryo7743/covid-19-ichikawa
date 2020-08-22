@@ -45,38 +45,8 @@ patients_年代_90代以上:
   other: <90s
 patients_性別:
   other: Sex
-patients_性別_女性:
-  other: female
-patients_性別_男性:
-  other: male
 patients_職業:
   other: Occupation
-patients_職業_教員:
-  other: theacher
-patients_職業_学生:
-  other: student
-patients_職業_生徒:
-  other: student
-patients_職業_自営業:
-  other: self-employed
-patients_職業_看護師:
-  other: nurse
-patients_職業_会社員:
-  other: employee
-patients_職業_会社役員:
-  other: executive
-patients_職業_介護士:
-  other: caregiver
-patients_職業_保育士:
-  other: childcare worker
-patients_職業_公務員:
-  other: public servant
-patients_職業_アルバイト:
-  other: part-time job
-patients_職業_無職:
-  other: unemployed
-patients_職業_歯科医師:
-  other: dentist
 patients_推定感染経路:
   other: 感染経路
 patients_行動歴:
