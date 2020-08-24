@@ -13,9 +13,9 @@
 - **URL**：[https://stopcovid19-ichikawa.netlify.app](https://stopcovid19-ichikawa.netlify.app/)
 - **ライセンス**：[MIT ライセンス](./LICENSE)
 
-## 開発者向け情報
+## 開発者向けの情報
 
-開発をお手伝いできる方は，[開発者向け情報](https://github.com/Meiryo7743/COVID-19-Ichikawa/wiki/%E9%96%8B%E7%99%BA%E8%80%85%E5%90%91%E3%81%91%E6%83%85%E5%A0%B1)をご覧ください。
+開発・翻訳をお手伝いできる方は，[開発者向け情報](https://github.com/Meiryo7743/COVID-19-Ichikawa/wiki/%E9%96%8B%E7%99%BA%E8%80%85%E5%90%91%E3%81%91%E6%83%85%E5%A0%B1)をご覧ください。
 
 ## その他
 

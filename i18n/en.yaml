@@ -16,9 +16,9 @@ card_chart_subway:
 patients_total:
   other: Total
 patients_検査確定日:
-  other: 検査確定日
+  other: Date of inspection
 patients_発症日:
-  other: 発症日
+  other: Date of onset
 patients_年代:
   other: Age
 patients_年代_10歳未満:
@@ -52,7 +52,7 @@ patients_性別_男性:
 patients_職業:
   other: Occupation
 patients_職業_教員:
-  other: theacher
+  other: teacher
 patients_職業_学生:
   other: student
 patients_職業_生徒:
@@ -78,9 +78,9 @@ patients_職業_無職:
 patients_職業_歯科医師:
   other: dentist
 patients_推定感染経路:
-  other: 感染経路
+  other: Infection source
 patients_行動歴:
-  other: 行動歴
+  other: Activities
 
 emergency_title:
   other: IMPORTANT NOTICE

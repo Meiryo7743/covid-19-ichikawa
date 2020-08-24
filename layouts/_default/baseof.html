@@ -95,8 +95,8 @@
           </li>
 
           {{/* Language */}}
-          {{ $langPage := cond (gt (len .Translations) 0) . .Site.Home }}
-          {{ range $langPage.Translations }}
+          {{ $lang := cond (gt (len .Translations) 0) . .Site.Home }}
+          {{ range $lang.Translations }}
             <li class="nav__item">
               <a href='{{ .Permalink | safeURL }}' class="nav__link nav__link--lang">
                 {{ .Language.LanguageName }}
