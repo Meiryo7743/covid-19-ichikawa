@@ -1,12 +1,12 @@
 {{/* データテーブル */}}
 {{/* See: data/patients.yml */}}
 <div class="data-table">
-  <table class="data-table__table" id="table-detail-of-patients">
+  <table class="data-table__table" id="table-details-of-patients">
     <thead>
       <tr>
         {{/* th 市内 */}}
         <th class="sort" data-sort="市内">
-          No.
+          #
         </th>
 
         {{/* th 検査確定日 */}}
@@ -46,8 +46,12 @@
       </tr>
     </thead>
 
-    <tbody id="table-detail-of-patients-tbody">
-      {{ range sort .Site.Data.detail_of_patients "市内" "desc" }}
+    <tbody id="tbody-details-of-patients">
+      {{/* 表示件数の設定 */}}
+      {{ $len := .Get "latest" | default (len .Site.Data.details_of_patients) }}
+
+      {{/* 表データの出力 */}}
+      {{ range first $len (sort .Site.Data.details_of_patients "市内" "desc") }}
         <tr>
           {{/* 市内 */}}
           <td class="市内">
@@ -128,10 +132,10 @@
 
 {{/* Sort */}}
 <script>
-  const tbody = document.getElementById("table-detail-of-patients-tbody");
+  const tbody = document.getElementById("tbody-details-of-patients");
   tbody.className = "list";
   const options = {
     valueNames: ["市内", "検査確定日", "発症日"],
   };
-  const userList = new List("table-detail-of-patients", options);
+  const userList = new List("table-details-of-patients", options);
 </script>

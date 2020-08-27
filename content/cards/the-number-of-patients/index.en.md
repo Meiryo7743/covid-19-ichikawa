@@ -6,10 +6,10 @@ cards:
     chart: false
     table: false
 date: "2020-05-22T00:00:00+09:00"
-title: "陽性患者数"
+title: "The number of patients"
 weight: 10
 ---
 
-{{<list_number_of_patients>}}
+{{<list_the_number_of_patients>}}
 
-- チャーター機帰国者・クルーズ船乗客等も含まれる
+- Including the returnees on charter flights or the cruise ship passengers
