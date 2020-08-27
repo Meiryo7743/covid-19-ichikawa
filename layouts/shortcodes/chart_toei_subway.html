@@ -1,14 +1,14 @@
 <div class="data-chart">
-    <canvas id="chart-subway" aria-label='{{ i18n "card_chart_subway" }}' role="img"></canvas>
+    <canvas id="chart-toei-subway" aria-label='{{ i18n "card_chart_toei_subway" }}' role="img"></canvas>
 </div>
 
 <script>
   // グラフの高さを設定する
-  document.getElementById('chart-subway').style.height = "300px";
+  document.getElementById('chart-toei-subway').style.height = "300px";
 
   // readFile で強引に JSON を読み込ませる
-  const jsonSubway = {{ readFile "data/subway.json" | safeJS }};
+  const jsonToeiSubway = {{ readFile "data/toei_subway.json" | safeJS }};
 
   // draw the chart
-  drawChart("chart-subway",jsonSubway);
+  drawChart("chart-toei-subway",jsonToeiSubway);
 </script>
