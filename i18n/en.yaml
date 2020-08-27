@@ -16,9 +16,9 @@ card_chart_subway:
 patients_total:
   other: Total
 patients_検査確定日:
-  other: Date of inspection
+  other: Inspected date
 patients_発症日:
-  other: Date of onset
+  other: Onset date
 patients_年代:
   other: Age
 patients_年代_10歳未満:
