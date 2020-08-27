@@ -8,7 +8,7 @@ cards:
     chart: false
     table: true
 date: "2020-05-22T00:00:00+09:00"
-title: "Detail of all patients"
+title: "Details of all patients"
 ---
 
 {{<table_detail_of_patients>}}
