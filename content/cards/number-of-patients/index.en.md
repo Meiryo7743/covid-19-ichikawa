@@ -6,7 +6,7 @@ cards:
     chart: false
     table: false
 date: "2020-05-22T00:00:00+09:00"
-title: "Number of patients"
+title: "The number of patients"
 weight: 10
 ---
 
