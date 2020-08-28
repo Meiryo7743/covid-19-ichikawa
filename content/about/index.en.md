@@ -3,7 +3,7 @@ date: "2020-05-22T00:00:00+09:00"
 title: "About this site"
 ---
 
-This site provides the latest information on COVID-19 in Ichikawa. Note that it is unofficial website.
+This site provides the latest information on COVID-19 in Ichikawa. Note that this is unofficial website.
 
 - Site owner: [Meiryo7743](https://meiryo7743.github.io/en/)
 
@@ -11,20 +11,20 @@ This site provides the latest information on COVID-19 in Ichikawa. Note that it 
 
 ### Browser
 
-These browsers are recommended for viewing this site:
+These browsers are recommended to view this site:
 
-- Microsoft Edge (Latest version)
-- Mozilla Firefox (Latest version)
-- Google Chrome (Latest version)
-- Safari (Latest version)
+- Google Chrome (Latest)
+- Microsoft Edge (Latest)
+- Mozilla Firefox (Latest)
+- Safari (Latest)
 
 ### JavaScript
 
-Some contents use JavaScript. If JavaScript is disabled, the contents will not be displayed correctly. Please make sure to enable JavaScript when browsing.
+Some contents use JavaScript. If JavaScript is disabled, the page will not be displayed correctly.
 
-## About linking to this site
+## Linking
 
-No permission is required to provide a link to this site.
+No permission is required to link this website.
 
 ## Data sources
 
@@ -33,10 +33,12 @@ No permission is required to provide a link to this site.
 
 ## Source code
 
-The source code of this site is MIT licensed code and can be used by anyone for free. For more details, see [GitHub repository](https://github.com/Meiryo7743/COVID-19-Ichikawa).
+The source code of this site is MIT licensed code, and can be used by anyone for free. For more details, see [GitHub repository](https://github.com/Meiryo7743/COVID-19-Ichikawa).
 
 ## Disclaimers
 
-Although every effort has been made to ensure the accuracy of the information posted on this site, the owner will not be responsible for any actions taken by users using the information on this site. The owner will not be responsible for any damage that may occur to a user or damage that the user may cause to a third party, as a result of using this website.
+Any information posted on this site might be modified or deleted without notice.
 
-Any information on this site may be changed or deleted without prior notice.
+This site would not guarantee accuracy or reliability of information on this site, and never take responsibility for it.
+
+This site would never take responsibility for user's damages caused by using this site.
