@@ -22,7 +22,7 @@ patients_発症日:
 patients_年代:
   other: Age
 patients_年代_10歳未満:
-  other: ">10s"
+  other: "<10s"
 patients_年代_10代:
   other: 10s
 patients_年代_20代:
@@ -42,7 +42,7 @@ patients_年代_80代:
 patients_年代_90代:
   other: 90s
 patients_年代_90代以上:
-  other: <90s
+  other: ">90s"
 patients_性別:
   other: Sex
 patients_性別_女性:
