@@ -1,0 +1,72 @@
+{{/* Header */}}
+{{/* Noscript */}}
+<noscript>
+  <aside class="notice notice--important">
+    <p><strong>{{ i18n "notice_noscript" }}</strong></p>
+  </aside>
+</noscript>
+
+{{/* Translation */}}
+{{ if ne .Site.Language.Lang "ja" }}
+  <aside class="notice notice--translation">
+    <p>{{ i18n "notice_translation" }}</p>
+  </aside>
+{{ end }}
+
+{{/* Header nav */}}
+<nav class="header__nav">
+  <ul class="nav nav--header">
+    {{/* Logo */}}
+    <li class="nav__item">
+      <a
+        href='{{ .Site.Home.Permalink }}'
+        class="nav__link nav__link--logo"
+      >
+        <img
+          src='{{ "/img/logo.svg" | safeURL | absURL }}'
+          alt='{{ .Site.Title }}'
+          loading="lazy"
+        >{{ .Site.Title | title }}
+      </a>
+    </li>
+
+    {{/* Languages */}}
+    {{ if .IsTranslated }}
+      {{ range .Translations }}
+        <li class="nav__item">
+          <a
+            href="{{ .Permalink }}"
+            class="nav__link nav__link--lang"
+            lang="{{ .Language.Lang }}"
+          >
+            {{ .Language.LanguageName }}
+          </a>
+        </li>
+      {{ end }}
+    {{ end }}
+  </ul>
+
+  {{/* Contents */}}
+  <ul class="nav">
+    {{/* Home */}}
+    <li class="nav__item">
+      <a
+        href='{{ .Site.Home.Permalink }}'
+        class="nav__link"
+      >
+        {{ .Site.Home.Title | title }}
+      </a>
+    </li>
+
+    {{ range .Site.Menus.header_nav }}
+      <li class="nav__item">
+        <a
+          href='{{ .URL | safeURL | absLangURL }}'
+          class="nav__link"
+        >
+          {{ .Name | title }}
+        </a>
+      </li>
+    {{ end }}
+  </ul>
+</nav>
