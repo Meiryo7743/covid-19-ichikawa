@@ -253,6 +253,11 @@ a {
 // data-chart
 .data-chart {
     @extend %scrollable;
+    &__canvas {
+        display: block;
+        margin-inline-end: auto;
+        margin-inline-start: auto;
+    }
 }
 
 // notice
