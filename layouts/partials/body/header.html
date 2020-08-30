@@ -2,14 +2,20 @@
 {{/* Noscript */}}
 <noscript>
   <aside class="notice notice--important">
-    <p><strong>{{ i18n "notice_noscript" }}</strong></p>
+    <p>
+      <strong>
+        {{ i18n "notice_noscript" }}
+      </strong>
+    </p>
   </aside>
 </noscript>
 
 {{/* Translation */}}
 {{ if ne .Site.Language.Lang "ja" }}
   <aside class="notice notice--translation">
-    <p>{{ i18n "notice_translation" }}</p>
+    <p>
+      {{ i18n "notice_translation" }}
+    </p>
   </aside>
 {{ end }}
 
@@ -26,7 +32,8 @@
           src='{{ "/img/logo.svg" | safeURL | absURL }}'
           alt='{{ .Site.Title }}'
           loading="lazy"
-        >{{ .Site.Title | title }}
+        >
+        {{ .Site.Title | title }}
       </a>
     </li>
 
