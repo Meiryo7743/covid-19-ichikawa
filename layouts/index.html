@@ -47,7 +47,7 @@
       {{/* Cards */}}
       {{ range (where .Site.RegularPages "Section" "==" "cards") }}
         <article class="card">
-          {{ partial "card.html" . }}
+          {{ partial "body/card.html" . }}
         </article>
       {{ end }}
     </div>
