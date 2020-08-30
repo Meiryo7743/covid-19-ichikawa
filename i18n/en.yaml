@@ -9,8 +9,6 @@ card_lastmod:
   other: "Last update: "
 card_source:
   other: View source
-card_chart_toei_subway:
-  other: Changes in the number of passengers on Toei Subway
 
 # Patients
 patients_total:
@@ -94,6 +92,3 @@ notice_translation:
 # Share
 share_btn:
   other: Share
-
-footer_repo:
-  other: View the code on GitHub

@@ -1,4 +1,5 @@
-baseURL: "https://stopcovid19-ichikawa.netlify.app"
+baseURL: "https://stopcovid19-ichikawa.netlify.app/"
+copyright: "&copy; 2020 Meiryo7743"
 defaultContentLanguage: ja
 defaultContentLanguageInSubdir: true
 enableGitInfo: true
@@ -6,48 +7,40 @@ enableInlineShortcodes: true
 enableRobotsTXT: true
 hasCJKLanguage: true
 
-# Params
-params:
-  author: Meiryo7743
+disableKinds:
+  - RSS
+  - section
+  - taxonomyTerm
 
-# Languages
 languages:
   ja:
-    languagename: "日本語"
-    title: "【非公式】市川市新型コロナウイルス感染症対策サイト"
+    languageName: 日本語
+    title: 【非公式】市川市新型コロナウイルス感染症対策サイト
     weight: 10
     params:
       description: 当サイトは，市川市内における新型コロナウイルス感染症（COVID-19）及びそれに関連する情報を提供いたします。当サイトは個人が開設した非公式サイトです。
-      ogpImage: "img/ogp_ja.png"
-
+      images:
+        - "/img/ogp_ja.png"
   en:
-    languageName: "English"
-    title: "【UNOFFICIAL】Ichikawa COVID-19 Information Website"
+    languageName: English
+    title: "[UNOFFICIAL] Ichikawa COVID-19 Information Website"
     weight: 20
     params:
       description: This site provides the latest information on COVID-19 in Ichikawa. Note that this is unofficial website.
-      ogpImage: "img/ogp_en.png"
+      images:
+        - "/img/ogp_en.png"
 
-# Markup
 markup:
   goldmark:
     renderer:
       unsafe: false
 
-# Minification
 minify:
   minifyOutput: true
   tdewolff:
     html:
       keepEndTags: false
 
-# Do not generate
-disableKinds:
-  - RSS
-  - section
-  - taxonomyTerm
-
-# Privacy
 privacy:
   disqus:
     disable: true

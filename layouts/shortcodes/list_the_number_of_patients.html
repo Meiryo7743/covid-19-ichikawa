@@ -1,44 +1,59 @@
 {{/* 年代別人数 */}}
 {{/* 全年代の合計人数は，datails_of_patients.yml のデータ件数を表示している */}}
 <ul class="data-list">
-    {{ range .Site.Data.the_number_of_patients }}
+  {{ range .Site.Data.the_number_of_patients }}
+    {{/* 合計 */}}
     <li class="data-list__item">
-        <span>{{ i18n "patients_total" }}</span><span>{{ len $.Site.Data.details_of_patients }}</span>
-            <ul class="data-list__child">
-                <li class="data-list__item data-list__item--child">
-                    <span>{{ i18n "patients_年代_10歳未満" }}</span><span>{{ .under_teens }}</span>
-                </li>
-                <li class="data-list__item data-list__item--child">
-                    <span>{{ i18n "patients_年代_10代" }}</span><span>{{ .teens }}</span>
-                </li>
-                <li class="data-list__item data-list__item--child">
-                    <span>{{ i18n "patients_年代_20代" }}</span><span>{{ .twenties }}</span>
-                </li>
-                <li class="data-list__item data-list__item--child">
-                    <span>{{ i18n "patients_年代_30代" }}</span><span>{{ .thirties }}</span>
-                </li>
-                <li class="data-list__item data-list__item--child">
-                    <span>{{ i18n "patients_年代_40代" }}</span><span>{{ .forties }}</span>
-                </li>
-                <li class="data-list__item data-list__item--child">
-                    <span>{{ i18n "patients_年代_50代" }}</span><span>{{ .fifties }}</span>
-                </li>
-                <li class="data-list__item data-list__item--child">
-                    <span>{{ i18n "patients_年代_60代" }}</span><span>{{ .sixties }}</span>
-                </li>
-                <li class="data-list__item data-list__item--child">
-                    <span>{{ i18n "patients_年代_70代" }}</span><span>{{ .seventies }}</span>
-                </li>
-                <li class="data-list__item data-list__item--child">
-                    <span>{{ i18n "patients_年代_80代" }}</span><span>{{ .eighties }}</span>
-                </li>
-                <li class="data-list__item data-list__item--child">
-                    <span>{{ i18n "patients_年代_90代" }}</span><span>{{ .nineties }}</span>
-                </li>
-                <li class="data-list__item data-list__item--child">
-                    <span>{{ i18n "patients_年代_90代以上" }}</span><span>{{ .over_nineties }}</span>
-                </li>
-            </ul>
+      <span>{{ i18n "patients_total" }}</span
+      ><span>{{ len $.Site.Data.details_of_patients }}</span>
+
+      {{/* 内訳 */}}
+      <ul class="data-list__child">
+        <li class="data-list__item data-list__item--child">
+          <span>{{ i18n "patients_年代_10歳未満" }}</span
+          ><span>{{ .under_teens }}</span>
         </li>
-    {{ end }}
+        <li class="data-list__item data-list__item--child">
+          <span>{{ i18n "patients_年代_10代" }}</span
+          ><span>{{ .teens }}</span>
+        </li>
+        <li class="data-list__item data-list__item--child">
+          <span>{{ i18n "patients_年代_20代" }}</span
+        ><span>{{ .twenties }}</span>
+        </li>
+        <li class="data-list__item data-list__item--child">
+          <span>{{ i18n "patients_年代_30代" }}</span
+          ><span>{{ .thirties }}</span>
+        </li>
+        <li class="data-list__item data-list__item--child">
+          <span>{{ i18n "patients_年代_40代" }}</span
+          ><span>{{ .forties }}</span>
+        </li>
+        <li class="data-list__item data-list__item--child">
+          <span>{{ i18n "patients_年代_50代" }}</span
+          ><span>{{ .fifties }}</span>
+        </li>
+        <li class="data-list__item data-list__item--child">
+          <span>{{ i18n "patients_年代_60代" }}</span
+          ><span>{{ .sixties }}</span>
+        </li>
+        <li class="data-list__item data-list__item--child">
+          <span>{{ i18n "patients_年代_70代" }}</span
+          ><span>{{ .seventies }}</span>
+        </li>
+        <li class="data-list__item data-list__item--child">
+          <span>{{ i18n "patients_年代_80代" }}</span
+          ><span>{{ .eighties }}</span>
+        </li>
+        <li class="data-list__item data-list__item--child">
+          <span>{{ i18n "patients_年代_90代" }}</span
+          ><span>{{ .nineties }}</span>
+        </li>
+        <li class="data-list__item data-list__item--child">
+          <span>{{ i18n "patients_年代_90代以上" }}</span
+          ><span>{{ .over_nineties }}</span>
+        </li>
+      </ul>
+    </li>
+  {{ end }}
 </ul>

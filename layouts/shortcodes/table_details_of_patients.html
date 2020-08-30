@@ -1,21 +1,33 @@
 {{/* データテーブル */}}
-{{/* See: data/patients.yml */}}
+{{/* See /data/patients.yml */}}
 <div class="data-table">
-  <table class="data-table__table" id="table-details-of-patients">
+  <table
+    class="data-table__table"
+    id="table-details-of-patients"
+  >
     <thead>
       <tr>
         {{/* th 市内 */}}
-        <th class="sort" data-sort="市内">
+        <th
+          class="sort"
+          data-sort="市内"
+        >
           #
         </th>
 
         {{/* th 検査確定日 */}}
-        <th class="sort" data-sort="検査確定日">
+        <th
+          class="sort"
+          data-sort="検査確定日"
+        >
           {{ i18n "patients_検査確定日" }}
         </th>
 
         {{/* th 発症日 */}}
-        <th class="sort" data-sort="発症日">
+        <th
+          class="sort"
+          data-sort="発症日"
+        >
           {{ i18n "patients_発症日" }}
         </th>
 
@@ -61,24 +73,24 @@
           {{/* 検査確定日 */}}
           <td class="検査確定日">
             {{ with .検査確定日 }}
-              <time datetime='{{ . }}'
-                >{{ replaceRE "^\\d+-(\\d+-\\d+)$" "$1" . }}</time
-              >
+              <time datetime='{{ . }}'>
+                {{ replaceRE "^\\d+-(\\d+-\\d+)$" "$1" . }}
+              </time>
             {{ end }}
           </td>
 
           {{/* 発症日 */}}
           <td class="発症日">
             {{ with .発症日 }}
-              <time datetime='{{ . }}'
-                >{{ replaceRE "^\\d+-(\\d+-\\d+)$" "$1" . }}</time
-              >
+              <time datetime='{{ . }}'>
+                {{ replaceRE "^\\d+-(\\d+-\\d+)$" "$1" . }}
+              </time>
             {{ end }}
           </td>
 
           {{/* 年代 */}}
           <td>
-            {{ with (i18n (replace "patients_年代_key" "key" .年代 )) }}
+            {{ with i18n (replace "patients_年代_key" "key" .年代 ) }}
               {{ . }}
             {{ else }}
               {{ .年代 }}
@@ -87,7 +99,7 @@
 
           {{/* 性別 */}}
           <td>
-            {{ with (i18n (replace "patients_性別_key" "key" .性別 )) }}
+            {{ with i18n (replace "patients_性別_key" "key" .性別 ) }}
               {{ . }}
             {{ else }}
               {{ .性別 }}
@@ -96,7 +108,7 @@
 
           {{/* 職業 */}}
           <td>
-            {{ with (i18n (replace "patients_職業_key" "key" .職業 )) }}
+            {{ with i18n (replace "patients_職業_key" "key" .職業 ) }}
               {{ . }}
             {{ else }}
               {{ .職業 }}
@@ -130,7 +142,7 @@
   </table>
 </div>
 
-{{/* Sort */}}
+{{/* List.js sort table */}}
 <script>
   const tbody = document.getElementById("tbody-details-of-patients");
   tbody.className = "list";
