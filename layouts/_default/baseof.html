@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang='{{ .Site.Language.Lang }}'>
   <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    <meta charset="utf-8">
+    <meta name="description" content='{{ .Site.Params.Description }}'>
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {{/* Page title */}}
+    <title>{{ .Title | title }}{{ printf " - " }}{{ .Site.Title | title }}</title>
+
     {{ $style_reset := resources.Get "css/meiryo_reset.css" | resources.Minify }}
     {{ $style_screen := resources.Get "scss/style.scss" | toCSS | minify }}
 
@@ -14,47 +22,29 @@
       <link rel="preload" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js">
     {{ end }}
 
-    <meta charset="utf-8">
-    <meta name="description" content='{{ .Site.Params.Description }}'>
-    <meta name="format-detection" content="telephone=no,address=no,email=no">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     {{/* OGP */}}
-    <meta property="og:description" content='{{ .Site.Params.Description }}'>
-    <meta property="og:image" content='{{ .Site.Params.OgpImage | safeURL | absURL }}'>
-    <meta property="og:site_name" content='{{ .Site.Title }}'>
-    <meta property="og:title" content='{{ .Title }} - {{ .Site.Title }}'>
-    <meta property="og:type" content="article">
-    <meta property="og:url" content='{{ .Permalink }}'>
-
-    {{/* Theme color for Android Chrome */}}
-    <meta name="theme-color" content="#242124">
+    {{ template "_internal/opengraph.html" . }}
 
     {{/* Favicons */}}
-    <link rel="apple-touch-icon" sizes="180x180" href='{{ "/apple-touch-icon.png" | absURL }}'>
-    <link rel=icon type=image/svg+xml href='{{ "img/logo.svg" | safeURL | absURL }}'>
-    <link rel="icon alternate" type="image/png" sizes="512x512" href='{{ "/android-chrome-512x512.png" | absURL }}'>
+    <link rel="apple-touch-icon" sizes="180x180" href='{{ "/apple-touch-icon.png" | safeURL | absURL }}'>
+    <link rel=icon type=image/svg+xml href='{{ "/img/logo.svg" | safeURL | absURL }}'>
+    <link rel="icon alternate" type="image/png" sizes="512x512" href='{{ "/android-chrome-512x512.png" | safeURL | absURL }}'>
 
-    {{/* reset.css */}}
+    {{/* CSS */}}
     <link rel="stylesheet" href='{{ $style_reset.Permalink }}'>
-
-    {{/* style.scss */}}
     <link rel="stylesheet" href='{{ $style_screen.Permalink }}'>
 
-    {{/* Page title */}}
-    <title>{{ .Title }} - {{ .Site.Title }}</title>
-
-    {{/* Load Chart.js */}}
+    {{/* Chart.js */}}
     {{ with .Params.Cards.Display.Chart }}
       <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
       <script>
-        // chart.js global settings
+        // Chart.js global settings
         Chart.defaults.global.defaultFontColor = "#84919e";
         Chart.defaults.global.defaultFontFamily = "'Roboto','Helvetica',sans-serif";
         Chart.defaults.global.devicePixelRatio = 3;
         Chart.defaults.global.responsive = false;
 
-        // draw chart
+        // Draw chart
         function drawChart(ID, DATA) {
           const data = JSON.parse(JSON.stringify(DATA));
           const ctx = document.getElementById(ID).getContext("2d");
@@ -63,66 +53,14 @@
       </script>
     {{ end }}
 
-    {{/* Load list.js */}}
+    {{/* List.js */}}
     {{ with .Params.Cards.Display.Table }}
       <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
     {{ end }}
   </head>
   <body class="layout body">
     <header class="layout__header header">
-      {{/* Notice: noscript */}}
-      <noscript>
-        <aside class="notice notice--important">
-          <p><strong>{{ i18n "notice_noscript" }}</strong></p>
-        </aside>
-      </noscript>
-
-      {{/* Notice: translation */}}
-      {{ if ne .Site.Language.Lang "ja" }}
-        <aside class="notice notice--translation">
-          <p>{{ i18n "notice_translation" }}</p>
-        </aside>
-      {{ end }}
-
-      {{/* Header nav */}}
-      <nav class="header__nav">
-        <ul class="nav nav--header">
-          {{/* Logo */}}
-          <li class="nav__item">
-            <a href='{{ .Site.Home.Permalink | safeURL | absLangURL }}' class="nav__link nav__link--logo">
-              <img src='{{ "img/logo.svg" | safeURL | absURL }}' alt='{{ .Site.Title }}' loading="lazy">{{ .Site.Title }}
-            </a>
-          </li>
-
-          {{/* Language */}}
-          {{ $lang := cond (gt (len .Translations) 0) . .Site.Home }}
-          {{ range $lang.Translations }}
-            <li class="nav__item">
-              <a href='{{ .Permalink | safeURL }}' class="nav__link nav__link--lang">
-                {{ .Language.LanguageName }}
-              </a>
-            </li>
-          {{ end }}
-        </ul>
-
-        {{/* コンテンツメニュー */}}
-        <ul class="nav">
-          {{/* ホームページ */}}
-          <li class="nav__item">
-            <a href='{{ .Site.Home.Permalink | safeURL | absLangURL }}' class="nav__link">
-              {{ .Site.Home.Title }}
-            </a>
-          </li>
-
-          {{ range .Site.Menus.header_nav }}
-            <li class="nav__item">
-              <a href='{{ .URL | safeURL | absLangURL }}' class="nav__link">
-                {{ .Name }}
-              </a>
-            </li>
-          {{ end }}
-        </ul>
-      </nav>
+      {{ partial "body/header.html" . }}
     </header>
 
     <main class="layout__main main">
@@ -130,9 +68,7 @@
     </main>
 
     <footer class="layout__footer footer">
-      <p class="footer__copyright">
-        <small>&copy; {{ now.Year }} {{ .Site.Params.Author }}</small>
-      </p>
+      {{ partial "body/footer.html" . }}
     </footer>
   </body>
 </html>

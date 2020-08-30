@@ -9,8 +9,6 @@ card_lastmod:
   other: 最終更新：
 card_source:
   other: ソースを見る
-card_chart_toei_subway:
-  other: 都営線利用者数の推移
 
 # Patients
 patients_total:
@@ -94,6 +92,3 @@ notice_translation:
 # Share
 share_btn:
   other: 共有
-
-footer_repo:
-  other: GitHub でコードを見る
