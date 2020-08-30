@@ -1,7 +1,9 @@
 {{ define "main" }}
   <div class="page page--single">
     <section class="page__content">
-      <h1 class="page__title">{{ .Title }}</h1>
+      <h1 class="page__title">
+        {{ .Title | title}}
+      </h1>
 
       {{ i18n "luxio_message" | markdownify }}
     </section>
