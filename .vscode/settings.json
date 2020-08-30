@@ -1,7 +1,14 @@
 {
   "[html]": {
     "editor.formatOnSave": false,
+    "editor.tabSize": 2,
     "files.insertFinalNewline": false
+  },
+  "[markdowm]": {
+    "editor.tabSize": 2
+  },
+  "[yaml]": {
+    "editor.tabSize": 2
   },
   "prettier.disableLanguages": ["html"]
 }
