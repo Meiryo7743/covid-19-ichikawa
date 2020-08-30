@@ -1,5 +1,9 @@
 <div class="data-chart">
-    <canvas id="chart-toei-subway" aria-label='{{ i18n "card_chart_toei_subway" }}' role="img"></canvas>
+  <canvas
+    aria-label='{{ i18n "card_chart_toei_subway" }}'
+    role="img"
+    id="chart-toei-subway"
+  ></canvas>
 </div>
 
 <script>
@@ -10,5 +14,5 @@
   const jsonToeiSubway = {{ readFile "data/toei_subway.json" | safeJS }};
 
   // draw the chart
-  drawChart("chart-toei-subway",jsonToeiSubway);
+  drawChart("chart-toei-subway", jsonToeiSubway);
 </script>
