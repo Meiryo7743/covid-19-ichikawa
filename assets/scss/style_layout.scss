@@ -175,10 +175,11 @@ a {
 .data-table {
     line-height: 1.25;
     @extend %scrollable;
-    block-size: 50vh;
+    block-size: 20rem;
     text-align: center;
     &__table {
         border: none;
+        inline-size: 100%;
     }
     tr {
         border-block-end: var(--border);
