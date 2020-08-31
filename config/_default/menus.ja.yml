@@ -1,33 +1,29 @@
 # Japanese
-# Menu
 header_nav:
-  - name: "新型コロナウイルス情報"
+  - name: 新型コロナウイルス情報
     url: "https://www.city.ichikawa.lg.jp/new01/shingatacoronatokusetupage.html"
     weight: 10
-  - name: "特別定額給付金の給付"
+  - name: 特別定額給付金の給付
     url: "https://www.city.ichikawa.lg.jp/pla13/1111000003.html"
     weight: 20
-  - name: "市立学校・幼稚園の情報"
+  - name: 市立学校・幼稚園
     url: "https://www.city.ichikawa.lg.jp/edu06/1111000082.html"
     weight: 30
-  - name: "施設等の再開について"
+  - name: 施設等の再開
     url: "https://www.city.ichikawa.lg.jp/pla04/infoheisa.html"
     weight: 40
-  - name: "燃やすゴミの臨時収集"
-    url: "https://www.city.ichikawa.lg.jp/env09/1111000058.html"
-    weight: 50
-  - name: "市長からのメッセージ"
+  - name: 市長からのメッセージ
     url: "https://www.city.ichikawa.lg.jp/new01/covid19_comment.html"
-    weight: 60
-  - name: "市公式サイト"
+    weight: 50
+  - name: 市公式サイト
     url: "https://www.city.ichikawa.lg.jp/"
-    weight: 70
-  - name: "当サイトについて"
+    weight: 60
+  - name: 当サイトについて
     url: "/about/"
-    weight: 80
-  - name: "お問い合わせ"
+    weight: 70
+  - name: お問い合わせ
     url: "https://forms.gle/rJAhPqckU1Ak7tFQ9"
-    weight: 90
-  - name: "GitHub"
+    weight: 80
+  - name: GitHub
     url: "https://github.com/Meiryo7743/COVID-19-Ichikawa"
-    weight: 100
+    weight: 90
