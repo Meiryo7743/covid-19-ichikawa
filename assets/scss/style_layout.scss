@@ -224,21 +224,24 @@ a {
     @extend %plane-list;
     line-height: 1.25;
     text-align: end;
+    max-inline-size: 20rem;
+    margin-inline-end: auto;
+    margin-inline-start: auto;
     &__child {
         @extend %plane-list;
         border-block-start: var(--border);
         border-inline-start: var(--border);
         border-width: 2px;
-        margin-inline-start: 1.75rem;
-        padding-block-start: 0.25rem;
-        padding-inline-start: 0.25rem;
+        margin-inline-start: 1.75em;
+        padding-block-start: 0.25em;
+        padding-inline-start: 0.25em;
     }
     &__item {
         border: var(--border);
         border-width: 2px;
         &--child {
             border-inline-end: none;
-            margin-block-end: 0.25rem;
+            margin-block-end: 0.25em;
             &:last-child {
                 border-block-end: none;
             }
@@ -246,10 +249,10 @@ a {
         span {
             display: inline-block;
             inline-size: 50%;
-            padding-block-end: 0.375rem;
-            padding-block-start: 0.375rem;
-            padding-inline-end: 0.5rem;
-            padding-inline-start: 0.5rem;
+            padding-block-end: 0.375em;
+            padding-block-start: 0.375em;
+            padding-inline-end: 0.5em;
+            padding-inline-start: 0.5em;
         }
     }
 }
