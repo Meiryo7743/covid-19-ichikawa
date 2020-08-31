@@ -10,6 +10,6 @@ title: "The number of patients"
 weight: 10
 ---
 
-{{<list_the_number_of_patients>}}
+{{<list_the_number_of_patients src="the_number_of_patients">}}
 
 - Including the returnees on charter flights or the cruise ship passengers
