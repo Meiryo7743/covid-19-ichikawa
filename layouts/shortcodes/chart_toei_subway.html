@@ -9,7 +9,7 @@
 
 <script>
   // グラフの高さを設定する
-  document.getElementById('chart-toei-subway').style.height = "300px";
+  document.getElementById("chart-toei-subway").style.height = "18rem";
 
   // readFile で強引に JSON を読み込ませる
   const jsonToeiSubway = {{ readFile "data/toei_subway.json" | safeJS }};
