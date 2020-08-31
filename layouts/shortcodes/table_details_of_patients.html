@@ -134,10 +134,5 @@
 
 {{/* List.js sort table */}}
 <script>
-  const tbody = document.getElementById('{{ $tbody_id }}');
-  tbody.className = "list";
-  const options = {
-    valueNames: ["市内", "検査確定日", "発症日"],
-  };
-  const userList = new List('{{ $table_id }}', options);
+  sortTable("{{ $table_id }}", "{{ $tbody_id }}");
 </script>

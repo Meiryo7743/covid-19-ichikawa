@@ -87,6 +87,16 @@
     {{/* List.js */}}
     {{ with .Params.Cards.Display.Table }}
       <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+      <script>
+        function sortTable(TABLE, TBODY) {
+          const tbody = document.getElementById(TBODY);
+          tbody.className = "list";
+          const options = {
+            valueNames: ["市内", "検査確定日", "発症日"],
+          };
+          const userList = new List(TABLE, options);
+        }
+      </script>
     {{ end }}
   </head>
 
