@@ -1,11 +1,14 @@
 {{/* データテーブル */}}
-{{ $data_src := .Site.Data.details_of_patients }}
+{{ $data_src := index .Site.Data (.Get "src") }}
 {{ $data_len := .Get "len" | default (len $data_src) }}
+
+{{ $table_id := print "table-" (replace (.Get "src") "_" "-") }}
+{{ $tbody_id := print "tbody-" (replace (.Get "src") "_" "-") }}
 
 <div class="data-table">
   <table
     class="data-table__table"
-    id="table-details-of-patients"
+    id='{{ $table_id }}'
   >
     <thead>
       {{ range first 1 $data_src }}
@@ -45,7 +48,7 @@
       {{ end }}
     </thead>
 
-    <tbody id="tbody-details-of-patients">
+    <tbody id='{{ $tbody_id }}'>
       {{/* 表データの出力 */}}
       {{ range first $data_len $data_src }}
         <tr>
@@ -131,10 +134,10 @@
 
 {{/* List.js sort table */}}
 <script>
-  const tbody = document.getElementById("tbody-details-of-patients");
+  const tbody = document.getElementById('{{ $tbody_id }}');
   tbody.className = "list";
   const options = {
     valueNames: ["市内", "検査確定日", "発症日"],
   };
-  const userList = new List("table-details-of-patients", options);
+  const userList = new List('{{ $table_id }}', options);
 </script>

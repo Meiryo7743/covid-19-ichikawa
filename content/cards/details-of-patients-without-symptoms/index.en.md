@@ -10,4 +10,4 @@ title: "Details of Patients Without Symptoms"
 weight: 40
 ---
 
-{{<table_details_of_patients_without_symptoms latest="30">}}
+{{<table_details_of_patients src="details_of_patients_without_symptoms" len="30">}}
