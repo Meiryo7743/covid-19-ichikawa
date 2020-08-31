@@ -10,4 +10,4 @@ title: "無症状患者の詳細"
 weight: 40
 ---
 
-{{<table_details_of_patients src="details_of_patients_without_symptoms" len="30">}}
+{{<table src="details_of_patients_without_symptoms" len="30">}}
