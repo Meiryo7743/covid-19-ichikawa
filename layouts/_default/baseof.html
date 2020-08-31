@@ -7,28 +7,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     {{/* Page title */}}
-    <title>{{ .Title | title }}{{ printf " - " }}{{ .Site.Title | title }}</title>
+    <title>
+      {{ .Title | title }}{{ printf " - " }}{{ .Site.Title | title }}
+    </title>
 
     {{ $style_reset := resources.Get "css/meiryo_reset.css" | resources.Minify }}
     {{ $style_screen := resources.Get "scss/style.scss" | toCSS | minify }}
 
     {{/* Preloads */}}
-    <link rel="preload" as="style" href='{{ $style_reset.Permalink }}'>
-    <link rel="preload" as="style" href='{{ $style_screen.Permalink }}'>
+    <link
+      rel="preload"
+      as="style"
+      href='{{ $style_reset.Permalink }}'
+    >
+    <link
+      rel="preload"
+      as="style"
+      href='{{ $style_screen.Permalink }}'
+    >
     {{ with .Params.Cards.Display.Chart }}
-      <link rel="preload" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js">
+      <link
+        rel="preload"
+        as="script"
+        href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+      >
     {{ end }}
     {{ with .Params.Cards.Display.Table }}
-      <link rel="preload" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js">
+      <link
+        rel="preload"
+        as="script"
+        href="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"
+      >
     {{ end }}
 
     {{/* OGP */}}
     {{ template "_internal/opengraph.html" . }}
 
     {{/* Favicons */}}
-    <link rel="apple-touch-icon" sizes="180x180" href='{{ "/apple-touch-icon.png" | safeURL | absURL }}'>
-    <link rel=icon type=image/svg+xml href='{{ "/img/logo.svg" | safeURL | absURL }}'>
-    <link rel="icon alternate" type="image/png" sizes="512x512" href='{{ "/android-chrome-512x512.png" | safeURL | absURL }}'>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href='{{ "/apple-touch-icon.png" | safeURL | absURL }}'
+    >
+    <link
+      rel=icon
+      type=image/svg+xml
+      href='{{ "/img/logo.svg" | safeURL | absURL }}'
+    >
+    <link
+      rel="icon alternate"
+      type="image/png"
+      sizes="512x512"
+      href='{{ "/android-chrome-512x512.png" | safeURL | absURL }}'
+    >
 
     {{/* CSS */}}
     <link rel="stylesheet" href='{{ $style_reset.Permalink }}'>
@@ -58,6 +89,7 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
     {{ end }}
   </head>
+
   <body class="layout body">
     <header class="layout__header header">
       {{ partial "body/header.html" . }}
