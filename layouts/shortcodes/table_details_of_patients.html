@@ -11,51 +11,35 @@
       {{ range first 1 $data_src }}
         <tr>
           <th class="sort" data-sort="市内">
-            {{ with .市内 }}
-              #
-            {{ end }}
+            #
           </th>
 
           <th class="sort" data-sort="検査確定日">
-            {{ with .検査確定日 }}
-              {{ i18n "patients_検査確定日" }}
-            {{ end }}
+            {{ i18n "patients_検査確定日" }}
           </th>
 
           <th class="sort" data-sort="発症日">
-            {{ with .発症日 }}
               {{ i18n "patients_発症日" }}
-            {{ end }}
           </th>
 
           <th>
-            {{ with .年代 }}
-              {{ i18n "patients_年代" }}
-            {{ end }}
+            {{ i18n "patients_年代" }}
           </th>
 
           <th>
-            {{ with .性別 }}
-              {{ i18n "patients_性別" }}
-            {{ end }}
+            {{ i18n "patients_性別" }}
           </th>
 
           <th>
-            {{ with .職業 }}
-              {{ i18n "patients_職業" }}
-            {{ end }}
+            {{ i18n "patients_職業" }}
           </th>
 
           <th>
-            {{ with .推定感染経路 }}
-              {{ i18n "patients_推定感染経路" }}
-            {{ end }}
+            {{ i18n "patients_推定感染経路" }}
           </th>
 
           <th>
-            {{ with .行動歴 }}
-              {{ i18n "patients_行動歴" }}
-            {{ end }}
+            {{ i18n "patients_行動歴" }}
           </th>
         </tr>
       {{ end }}
