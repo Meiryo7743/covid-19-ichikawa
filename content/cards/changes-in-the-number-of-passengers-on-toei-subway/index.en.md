@@ -7,7 +7,7 @@ cards:
     table: false
 date: "2020-05-22T00:00:00+09:00"
 title: "Changes in the number of passengers on Toei Subway"
-weight: 30
+weight: 50
 ---
 
 {{<chart_toei_subway>}}
