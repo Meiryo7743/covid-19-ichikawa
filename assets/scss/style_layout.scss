@@ -140,9 +140,6 @@ a {
             @include min-screen-size(768) {
                 grid-template-columns: repeat(2, calc((100% - 2rem) / 2));
             }
-            // @include min-screen-size(1024) {
-            //     grid-template-columns: repeat(3, calc((100% - 4rem) / 3));
-            // }
         }
         // &--single{}
     }
