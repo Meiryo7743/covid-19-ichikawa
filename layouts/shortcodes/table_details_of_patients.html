@@ -7,53 +7,53 @@
     <thead>
       {{ range first 1 .Site.Data.details_of_patients }}
         <tr>
-          {{ with .市内 }}
-            <th class="sort" data-sort="市内">
+          <th class="sort" data-sort="市内">
+            {{ with .市内 }}
               #
-            </th>
-          {{ end }}
+            {{ end }}
+          </th>
 
-          {{ with .検査確定日 }}
-            <th class="sort" data-sort="検査確定日">
+          <th class="sort" data-sort="検査確定日">
+            {{ with .検査確定日 }}
               {{ i18n "patients_検査確定日" }}
-            </th>
-          {{ end }}
+            {{ end }}
+          </th>
 
-          {{ with .発症日 }}
-            <th class="sort" data-sort="発症日">
+          <th class="sort" data-sort="発症日">
+            {{ with .発症日 }}
               {{ i18n "patients_発症日" }}
-            </th>
-          {{ end }}
+            {{ end }}
+          </th>
 
-          {{ with .年代 }}
-            <th>
+          <th>
+            {{ with .年代 }}
               {{ i18n "patients_年代" }}
-            </th>
-          {{ end }}
+            {{ end }}
+          </th>
 
-          {{ with .性別 }}
-            <th>
+          <th>
+            {{ with .性別 }}
               {{ i18n "patients_性別" }}
-            </th>
-          {{ end }}
+            {{ end }}
+          </th>
 
-          {{ with .職業 }}
-            <th>
+          <th>
+            {{ with .職業 }}
               {{ i18n "patients_職業" }}
-            </th>
-          {{ end }}
+            {{ end }}
+          </th>
 
-          {{ with .推定感染経路 }}
-            <th>
+          <th>
+            {{ with .推定感染経路 }}
               {{ i18n "patients_推定感染経路" }}
-            </th>
-          {{ end }}
+            {{ end }}
+          </th>
 
-          {{ with .行動歴 }}
-            <th>
+          <th>
+            {{ with .行動歴 }}
               {{ i18n "patients_行動歴" }}
-            </th>
-          {{ end }}
+            {{ end }}
+          </th>
         </tr>
       {{ end }}
     </thead>
@@ -65,12 +65,12 @@
       {{/* 表データの出力 */}}
       {{ range first $len (sort .Site.Data.details_of_patients "市内" "desc") }}
         <tr>
-          {{/* 市内 */}}
           <td class="市内">
-              {{ .市内 }}
+            {{ with .市内 }}
+              {{ . }}
+            {{ end }}
           </td>
 
-          {{/* 検査確定日 */}}
           <td class="検査確定日">
             {{ with .検査確定日 }}
               <time datetime='{{ . }}'>
@@ -79,7 +79,6 @@
             {{ end }}
           </td>
 
-          {{/* 発症日 */}}
           <td class="発症日">
             {{ with .発症日 }}
               <time datetime='{{ . }}'>
@@ -88,34 +87,39 @@
             {{ end }}
           </td>
 
-          {{/* 年代 */}}
           <td>
-            {{ with i18n (replace "patients_年代_key" "key" .年代 ) }}
-              {{ . }}
-            {{ else }}
-              {{ .年代 }}
+            {{ with .年代 }}
+              {{ $i18n := i18n (print "patients_年代_" . ) }}
+              {{ if eq $i18n false }}
+                {{ . }}
+              {{ else }}
+                {{ $i18n }}
+              {{ end }}
             {{ end }}
           </td>
 
-          {{/* 性別 */}}
           <td>
-            {{ with i18n (replace "patients_性別_key" "key" .性別 ) }}
-              {{ . }}
-            {{ else }}
-              {{ .性別 }}
+            {{ with .性別 }}
+              {{ $i18n := i18n (print "patients_性別_" . ) }}
+              {{ if eq $i18n false }}
+                {{ . }}
+              {{ else }}
+                {{ $i18n }}
+              {{ end }}
             {{ end }}
           </td>
 
-          {{/* 職業 */}}
           <td>
-            {{ with i18n (replace "patients_職業_key" "key" .職業 ) }}
-              {{ . }}
-            {{ else }}
-              {{ .職業 }}
+            {{ with .職業 }}
+              {{ $i18n := i18n (print "patients_職業_" . ) }}
+              {{ if eq $i18n false }}
+                {{ . }}
+              {{ else }}
+                {{ $i18n }}
+              {{ end }}
             {{ end }}
           </td>
 
-          {{/* 推定感染経路 */}}
           <td>
             {{ with .推定感染経路 }}
               <ul>
@@ -126,7 +130,6 @@
             {{ end }}
           </td>
 
-          {{/* 行動歴 */}}
           <td>
             {{ with .行動歴 }}
               <ul>
