@@ -1,7 +1,7 @@
 ---
 cards:
   data:
-    source: "https://www.city.ichikawa.lg.jp/pub01/hasseijokyo.html"
+    source: "https://www.city.ichikawa.lg.jp/pub01/hasseijokyo.html#m04"
   display:
     chart: false
     table: false
