@@ -1,61 +1,61 @@
 {{/* データテーブル */}}
-{{/* See /data/patients.yml */}}
 <div class="data-table">
   <table
     class="data-table__table"
     id="table-details-of-patients"
   >
     <thead>
-      <tr>
-        {{/* th 市内 */}}
-        <th
-          class="sort"
-          data-sort="市内"
-        >
-          #
-        </th>
+      {{ range first 1 .Site.Data.details_of_patients }}
+        <tr>
+          {{ with .市内 }}
+            <th class="sort" data-sort="市内">
+              #
+            </th>
+          {{ end }}
 
-        {{/* th 検査確定日 */}}
-        <th
-          class="sort"
-          data-sort="検査確定日"
-        >
-          {{ i18n "patients_検査確定日" }}
-        </th>
+          {{ with .検査確定日 }}
+            <th class="sort" data-sort="検査確定日">
+              {{ i18n "patients_検査確定日" }}
+            </th>
+          {{ end }}
 
-        {{/* th 発症日 */}}
-        <th
-          class="sort"
-          data-sort="発症日"
-        >
-          {{ i18n "patients_発症日" }}
-        </th>
+          {{ with .発症日 }}
+            <th class="sort" data-sort="発症日">
+              {{ i18n "patients_発症日" }}
+            </th>
+          {{ end }}
 
-        {{/* th 年代 */}}
-        <th>
-          {{ i18n "patients_年代" }}
-        </th>
+          {{ with .年代 }}
+            <th>
+              {{ i18n "patients_年代" }}
+            </th>
+          {{ end }}
 
-        {{/* th 性別 */}}
-        <th>
-          {{ i18n "patients_性別" }}
-        </th>
+          {{ with .性別 }}
+            <th>
+              {{ i18n "patients_性別" }}
+            </th>
+          {{ end }}
 
-        {{/* th 職業 */}}
-        <th>
-          {{ i18n "patients_職業" }}
-        </th>
+          {{ with .職業 }}
+            <th>
+              {{ i18n "patients_職業" }}
+            </th>
+          {{ end }}
 
-        {{/* th 推定感染経路 */}}
-        <th>
-          {{ i18n "patients_推定感染経路" }}
-        </th>
+          {{ with .推定感染経路 }}
+            <th>
+              {{ i18n "patients_推定感染経路" }}
+            </th>
+          {{ end }}
 
-        {{/* th 行動歴 */}}
-        <th>
-          {{ i18n "patients_行動歴" }}
-        </th>
-      </tr>
+          {{ with .行動歴 }}
+            <th>
+              {{ i18n "patients_行動歴" }}
+            </th>
+          {{ end }}
+        </tr>
+      {{ end }}
     </thead>
 
     <tbody id="tbody-details-of-patients">
