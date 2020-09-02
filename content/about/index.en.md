@@ -22,6 +22,14 @@ These browsers are recommended to view this site:
 
 Some contents use JavaScript. If JavaScript is disabled, the page will not be displayed correctly.
 
+## Using Google Analytics
+
+This site uses [Google Analytics](https://marketingplatform.google.com/about/analytics/terms/us/) in order to improve user experience and analyze website traffic.
+
+Google Analytics collects data such as access situation, traffic, your environment, IP address and so on, which do not identify as you. These data are managed under the [Google privacy policy](https://policies.google.com/privacy?hl=en).
+
+You can install [Google Analytics Opt-out Browser Add-on](https://tools.google.com/dlpage/gaoptout?hl=en) if you really do not want to be analyzed your information.
+
 ## Linking
 
 No permission is required to link this website.

@@ -5,6 +5,7 @@ defaultContentLanguageInSubdir: true
 enableGitInfo: true
 enableInlineShortcodes: true
 enableRobotsTXT: true
+googleAnalytics: UA-177104755-1
 hasCJKLanguage: true
 
 disableKinds:
@@ -45,7 +46,7 @@ privacy:
   disqus:
     disable: true
   googleAnalytics:
-    disable: true
+  # disable: true
   instagram:
     disable: true
   twitter:

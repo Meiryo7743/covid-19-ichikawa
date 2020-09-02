@@ -22,6 +22,14 @@ title: "当サイトについて"
 
 当サイトでは，一部コンテンツに JavaScript を使用しております。JavaScript が無効な場合，ページが正常に動作しない場合があります。
 
+## Google アナリティクスについて
+
+当サイトは，サイトの改善や利用状況の分析をするために [Google アナリティクス](https://marketingplatform.google.com/about/analytics/terms/jp/)を利用しています。
+
+Google アナリティクスでは，Cookie 等を用いてデータ（アクセス状況，トラフィック，閲覧環境，IP アドレスなど）を収集しますが，個人を特定するものではありません。データは，[Google 社のプライバシーポリシー](https://policies.google.com/privacy?hl=ja)に基づき管理されます。
+
+Google アナリティクスによる情報収集を望まない場合は，[Google アナリティクス オプトアウト アドオン](https://tools.google.com/dlpage/gaoptout?hl=ja)をご利用ください。
+
 ## リンク
 
 当サイトはリンクフリーです。
