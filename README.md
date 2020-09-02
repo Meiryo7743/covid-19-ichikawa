@@ -11,7 +11,7 @@
 
 ## 概要
 
-[【非公式】市川市新型コロナウイルス感染症対策サイト](https://stopcovid19-ichikawa.netlify.app/)（以下，当サイト）のレポジトリです。[高速な静的サイトジェネレータ Hugo](https://gohugo.io/) を使った軽量な設計となっています。
+「[【非公式】市川市新型コロナウイルス感染症対策サイト](https://stopcovid19-ichikawa.netlify.app/)」（以下，当サイト）のレポジトリです。高速な静的サイトジェネレータ [Hugo](https://gohugo.io/) で作られており，軽量な設計となっています。
 
 - **URL**：[https://stopcovid19-ichikawa.netlify.app](https://stopcovid19-ichikawa.netlify.app/)
 - **ライセンス**：[MIT ライセンス](./LICENSE)
@@ -34,9 +34,9 @@
 
 ## Overview
 
-This is the repository of Ichikawa COVID-19 Information Website. The site is lightweight because it is built by [Hugo](https://gohugo.io/), a fast static site generator written in Go.
+This is the repository of “[[UNOFFICIAL] Ichikawa COVID-19 Information Website](https://stopcovid19-ichikawa.netlify.app/)”. The site is lightweight because it is built by [Hugo](https://gohugo.io/), a fast static site generator written in Go.
 
-- **URL**: [https://stopcovid19-ichikawa.netlify.app](https://stopcovid19-ichikawa.netlify.app/)
+- **URL**: https://stopcovid19-ichikawa.netlify.app
 - **License**: [MIT](./LICENSE)
 
 ## For developers
