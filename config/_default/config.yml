@@ -22,6 +22,14 @@ languages:
       description: 当サイトは，市川市内における新型コロナウイルス感染症（COVID-19）及びそれに関連する情報を提供いたします。当サイトは個人が開設した非公式サイトです。
       images:
         - "/img/ogp_ja.png"
+  # ja-hrkt:
+  #   languageName: やさしい日本語
+  #   title: 【ひこうしき】 いちかわし 新型コロナウイルス かんせんしょう じょうほう サイト
+  #   weight: 11
+  #   params:
+  #     description: 当サイトは，市川市内における新型コロナウイルス感染症（COVID-19）及びそれに関連する情報を提供いたします。当サイトは個人が開設した非公式サイトです。
+  #     images:
+  #       - "/img/ogp_ja.png"
   en:
     languageName: English
     title: "[UNOFFICIAL] Ichikawa COVID-19 Information Website"
