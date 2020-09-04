@@ -3,9 +3,6 @@ header_nav:
   - name: COVID-19 Info
     url: "https://www.city.ichikawa.lg.jp/new01/shingatacoronatokusetupage.html"
     weight: 10
-  - name: Special Cash Payments
-    url: "https://www.city.ichikawa.lg.jp/pla13/1111000003.html"
-    weight: 20
   - name: Municipal schools and kindergartens
     url: "https://www.city.ichikawa.lg.jp/edu06/1111000082.html"
     weight: 30

@@ -3,9 +3,6 @@ header_nav:
   - name: 新型コロナウイルス情報
     url: "https://www.city.ichikawa.lg.jp/new01/shingatacoronatokusetupage.html"
     weight: 10
-  - name: 特別定額給付金の給付
-    url: "https://www.city.ichikawa.lg.jp/pla13/1111000003.html"
-    weight: 20
   - name: 市立学校・幼稚園
     url: "https://www.city.ichikawa.lg.jp/edu06/1111000082.html"
     weight: 30
