@@ -40,8 +40,7 @@ a {
 // Header
 .header {
     background: var(--bgcolor-header);
-    border-block-end: var(--border);
-    border-color: var(--border-color-header);
+    box-shadow: var(--box-shadow);
 }
 
 // .main{}
@@ -145,7 +144,7 @@ a {
     @extend %padding_1rem;
     background: var(--bgcolor-card);
     border-radius: 0.25rem;
-    box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--box-shadow);
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
