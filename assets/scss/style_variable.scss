@@ -40,14 +40,12 @@
         --bgcolor-card: var(--onyx);
         --bgcolor-header: var(--onyx);
         --bgcolor-nav-link: #414a4c;
-        --border-color-header: #414a4c;
     }
     @include color-scheme(light) {
         --bgcolor-body: var(--white-smoke);
         --bgcolor-card: var(--white);
         --bgcolor-header: var(--white);
         --bgcolor-nav-link: var(--platinum);
-        --border-color-header: var(--platinum);
     }
 
     // Icons
@@ -59,6 +57,9 @@
     --icon-lastmod: "\e90a";
     --icon-share: "\e908";
     --icon-translation: "\e90c";
+
+    // shadow
+    --box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 // Common Styles
