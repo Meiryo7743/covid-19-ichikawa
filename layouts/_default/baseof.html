@@ -1,3 +1,8 @@
+{{ $style_reset := resources.Get "scss/reset.scss" | toCSS | minify }}
+{{ $style_screen := resources.Get "scss/style.scss" | toCSS | minify }}
+{{ $js_chart := (resources.Get "js/chart.js").Content   }}
+{{ $js_table := (resources.Get "js/table.js").Content  }}
+
 <!DOCTYPE html>
 <html lang='{{ .Site.Language.Lang }}'>
   <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
@@ -10,9 +15,6 @@
     <title>
       {{ .Title | title }}{{ printf " - " }}{{ .Site.Title | title }}
     </title>
-
-    {{ $style_reset := resources.Get "css/meiryo_reset.css" | resources.Minify }}
-    {{ $style_screen := resources.Get "scss/style.scss" | toCSS | minify }}
 
     {{/* Preloads */}}
     <link
@@ -69,18 +71,7 @@
     {{ with .Params.Cards.Display.Chart }}
       <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
       <script>
-        // Chart.js global settings
-        Chart.defaults.global.defaultFontColor = "#84919e";
-        Chart.defaults.global.defaultFontFamily = "'Roboto','Helvetica',sans-serif";
-        Chart.defaults.global.devicePixelRatio = 3;
-        Chart.defaults.global.responsive = false;
-
-        // Draw chart
-        function drawChart(ID, DATA) {
-          const data = JSON.parse(JSON.stringify(DATA));
-          const ctx = document.getElementById(ID).getContext("2d");
-          const renderChart = new Chart(ctx, data);
-        }
+        {{ $js_chart | safeJS }}
       </script>
     {{ end }}
 
@@ -88,14 +79,7 @@
     {{ with .Params.Cards.Display.Table }}
       <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
       <script>
-        function sortTable(TABLE, TBODY) {
-          const tbody = document.getElementById(TBODY);
-          tbody.className = "list";
-          const options = {
-            valueNames: ["市内", "検査確定日", "発症日"],
-          };
-          const userList = new List(TABLE, options);
-        }
+        {{ $js_table | safeJS }}
       </script>
     {{ end }}
 
