@@ -247,7 +247,7 @@ a {
     &__canvas {
         @include margin-inline(auto);
         display: block;
-        max-inline-size: auto;
+        max-inline-size: none;
     }
 }
 
