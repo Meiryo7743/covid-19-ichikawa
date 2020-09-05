@@ -18,7 +18,7 @@ a {
     &[href^="http://localhost:"],
     &[href^="#"] {
         &::after {
-            content: "";
+            content: none;
         }
     }
 }
@@ -311,7 +311,7 @@ a {
             content: var(--icon-share);
         }
         &::after {
-            content: ""; // disable external link icon
+            content: none; // disable external link icon
         }
     }
 }
