@@ -58,10 +58,10 @@ a {
     font-feature-settings: "palt";
     line-height: 1.25;
     text-align: start;
-    @include min-screen-size(0) {
+    @include screen-size(0) {
         grid-template-columns: repeat(auto-fit, 50%);
     }
-    @include min-screen-size(768) {
+    @include screen-size(768) {
         grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
     }
     &--header {
@@ -99,11 +99,11 @@ a {
 .page {
     padding-block-end: 2rem;
     padding-block-start: 2rem;
-    @include min-screen-size(0) {
+    @include screen-size(0) {
         padding-inline-end: 1rem;
         padding-inline-start: 1rem;
     }
-    @include min-screen-size(768) {
+    @include screen-size(768) {
         padding-inline-end: 2rem;
         padding-inline-start: 2rem;
     }
@@ -128,10 +128,10 @@ a {
             display: grid;
             gap: 2rem;
             // カードの配置
-            @include min-screen-size(0) {
+            @include screen-size(0) {
                 grid-template-columns: 100%;
             }
-            @include min-screen-size(768) {
+            @include screen-size(768) {
                 grid-template-columns: repeat(2, calc((100% - 2rem) / 2));
             }
         }
