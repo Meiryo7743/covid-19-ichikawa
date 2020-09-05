@@ -1,3 +1,6 @@
+{{ $style_reset := resources.Get "scss/reset.scss" | toCSS | minify }}
+{{ $style_screen := resources.Get "scss/style.scss" | toCSS | minify }}
+
 <!DOCTYPE html>
 <html lang='{{ .Site.Language.Lang }}'>
   <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
@@ -10,9 +13,6 @@
     <title>
       {{ .Title | title }}{{ printf " - " }}{{ .Site.Title | title }}
     </title>
-
-    {{ $style_reset := resources.Get "css/meiryo_reset.css" | resources.Minify }}
-    {{ $style_screen := resources.Get "scss/style.scss" | toCSS | minify }}
 
     {{/* Preloads */}}
     <link
