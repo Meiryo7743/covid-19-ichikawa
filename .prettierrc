@@ -1,12 +1,10 @@
-htmlWhitespaceSensitivity: "ignore"
-overrides:
-  - files:
-      - "*.yaml"
-      - "*.yml"
-      - "*.md"
-    options:
-      tabWidth: 2
-  - files:
-      - "*.scss"
-    options:
-      tabWidth: 4
+{
+  "htmlWhitespaceSensitivity": "ignore",
+  "overrides": [
+    {
+      "files": ["*.html", "*.js", "*.json", "*.md", "*.yaml", "*.yml"],
+      "options": { "tabWidth": 2 }
+    },
+    { "files": ["*.scss"], "options": { "tabWidth": 4 } }
+  ]
+}
