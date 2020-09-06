@@ -2,13 +2,23 @@
   "[html]": {
     "editor.formatOnSave": false,
     "editor.tabSize": 2,
-    "files.insertFinalNewline": false
+    "files.insertFinalNewline": false,
+    "files.trimFinalNewlines": true
+  },
+  "[javascript]": {
+    "editor.tabSize": 2
+  },
+  "[json]": {
+    "editor.tabSize": 2
   },
   "[markdowm]": {
     "editor.tabSize": 2
   },
   "[yaml]": {
     "editor.tabSize": 2
+  },
+  "[scss]": {
+    "editor.tabSize": 4
   },
   "prettier.disableLanguages": ["html"]
 }
