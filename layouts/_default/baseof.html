@@ -83,7 +83,10 @@
       </script>
     {{ end }}
 
-    {{ template "_internal/google_analytics_async.html" . }}
+    {{/* Google Analytics */}}
+    {{ if not .Site.IsServer }}
+      {{ template "_internal/google_analytics_async.html" . }}
+    {{ end }}
   </head>
 
   <body class="layout body">
