@@ -115,9 +115,11 @@ section {
 // Text content
 blockquote {
     @extend %display_block;
+    @extend %margin_0;
     @extend %margin-block_1rem;
     @extend %padding_0;
-    @include margin-inline(2rem);
+    @include padding-inline(2rem);
+    border-inline-start: var(--border);
 }
 dl {
     @extend %display_block;
