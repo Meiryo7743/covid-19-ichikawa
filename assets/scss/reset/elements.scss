@@ -115,9 +115,11 @@ section {
 // Text content
 blockquote {
     @extend %display_block;
+    @extend %margin_0;
     @extend %margin-block_1rem;
     @extend %padding_0;
-    @include margin-inline(2rem);
+    @include padding-inline(2rem);
+    border-inline-start: var(--border);
 }
 dl {
     @extend %display_block;
@@ -182,17 +184,6 @@ p {
     @extend %margin-block_1rem;
     @extend %padding_0;
 }
-pre {
-    @extend %display_block;
-    @extend %margin_0;
-    @extend %margin-block_1rem;
-    @extend %padding_0;
-    font-family: var(--monospace);
-    white-space: pre !important;
-    * {
-        font-family: var(--monospace);
-    }
-}
 
 // Inline text semantics
 a {
@@ -205,7 +196,7 @@ a {
         color: var(--color-a);
     }
     &:visited {
-        color: var(--color-a-visited);
+        color: var(--color-a);
     }
     &[href]:hover {
         text-decoration: underline;
