@@ -184,17 +184,6 @@ p {
     @extend %margin-block_1rem;
     @extend %padding_0;
 }
-pre {
-    @extend %display_block;
-    @extend %margin_0;
-    @extend %margin-block_1rem;
-    @extend %padding_0;
-    font-family: var(--monospace);
-    white-space: pre !important;
-    * {
-        font-family: var(--monospace);
-    }
-}
 
 // Inline text semantics
 a {
