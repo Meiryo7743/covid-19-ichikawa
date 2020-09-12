@@ -187,6 +187,15 @@ a {
     ul {
         @extend %plane-list;
     }
+    // table-details-of-patients-without-symptoms
+    #table-details-of-patients-without-symptoms {
+        td,
+        th {
+            &:nth-child(3) {
+                display: none;
+            }
+        }
+    }
 }
 
 // table sort
