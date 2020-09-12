@@ -118,7 +118,7 @@ blockquote {
     @extend %margin_0;
     @extend %margin-block_1rem;
     @extend %padding_0;
-    padding-inline-start: 2rem;
+    @include padding-inline(2rem);
     border-inline-start: var(--border);
 }
 dl {
