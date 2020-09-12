@@ -118,7 +118,7 @@ blockquote {
     @extend %margin_0;
     @extend %margin-block_1rem;
     @extend %padding_0;
-    @include padding-inline(2rem);
+    @include padding-inline(2.5rem);
     border-inline-start: var(--border);
 }
 dl {
@@ -336,7 +336,7 @@ table {
     th {
         @extend %margin_0;
         @include padding-block(0.375rem);
-        @include padding-inline(0.5rem);
+        @include padding-inline(0.75rem);
     }
     tfoot {
         @extend %margin_0;
