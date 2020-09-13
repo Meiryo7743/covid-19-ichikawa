@@ -77,10 +77,10 @@
           <td>
             {{ with .年代 }}
               {{ $i18n := i18n (print "patients_年代_" . ) }}
-              {{ if eq $i18n false }}
+              {{ with $i18n }}
                 {{ . }}
               {{ else }}
-                {{ $i18n }}
+                {{ . }}
               {{ end }}
             {{ end }}
           </td>
@@ -88,10 +88,10 @@
           <td>
             {{ with .性別 }}
               {{ $i18n := i18n (print "patients_性別_" . ) }}
-              {{ if eq $i18n false }}
+              {{ with $i18n }}
                 {{ . }}
               {{ else }}
-                {{ $i18n }}
+                {{ . }}
               {{ end }}
             {{ end }}
           </td>
@@ -99,10 +99,10 @@
           <td>
             {{ with .職業 }}
               {{ $i18n := i18n (print "patients_職業_" . ) }}
-              {{ if eq $i18n false }}
+              {{ with $i18n }}
                 {{ . }}
               {{ else }}
-                {{ $i18n }}
+                {{ . }}
               {{ end }}
             {{ end }}
           </td>
