@@ -111,7 +111,14 @@
             {{ with .推定感染経路 }}
               <ul>
                 {{ range . }}
-                  <li>{{ . }}</li>
+                  <li>
+                    {{ $i18n := i18n (print "patients_推定感染経路_" . ) }}
+                    {{ with $i18n }}
+                      {{ . }}
+                    {{ else }}
+                      {{ . }}
+                    {{ end }}
+                  </li>
                 {{ end }}
               </ul>
             {{ end }}
@@ -121,7 +128,14 @@
             {{ with .行動歴 }}
               <ul>
                 {{ range . }}
-                  <li>{{ . }}</li>
+                  <li>
+                    {{ $i18n := i18n (print "patients_行動歴_" . ) }}
+                    {{ with $i18n }}
+                      {{ . }}
+                    {{ else }}
+                      {{ . }}
+                    {{ end }}
+                  </li>
                 {{ end }}
               </ul>
             {{ end }}
