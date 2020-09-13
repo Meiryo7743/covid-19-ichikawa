@@ -4,9 +4,10 @@ news:
 debug_title:
   other: Debug
 
-# Card
-card_lastmod:
+date_lastmod:
   other: "Last update: "
+
+# Card
 card_source:
   other: View source
 

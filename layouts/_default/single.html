@@ -14,9 +14,8 @@
           <ins datetime='{{ .Format "2006-01-02T15:04:05" }}'>
             <time
               datetime='{{ .Format "2006-01-02T15:04:05" }}'
-              class="date__lastmod"
             >
-              {{ .Format "2006-01-02" }}
+              {{ i18n "date_lastmod" }}{{ .Format "2006-01-02" }}
             </time>
           </ins>
         {{ end }}

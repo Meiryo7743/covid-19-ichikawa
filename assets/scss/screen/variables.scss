@@ -1,50 +1,39 @@
-// CSS Variables
+// CSS variables
 :root {
-    // Colors
-    @include color-scheme(dark) {
-        --bgcolor-body: var(--black);
-        --bgcolor-card: var(--onyx);
-        --bgcolor-header: var(--onyx);
-        --bgcolor-nav-link: #414a4c;
-    }
     @include color-scheme(light) {
         --bgcolor-body: var(--white-smoke);
         --bgcolor-card: var(--white);
         --bgcolor-header: var(--white);
         --bgcolor-nav-link: var(--platinum);
+        --color-a: var(--blue);
+        --color-body: var(--black);
+    }
+    @include color-scheme(dark) {
+        --bgcolor-body: var(--black);
+        --bgcolor-card: var(--onyx);
+        --bgcolor-header: var(--onyx);
+        --bgcolor-nav-link: #414a4c;
+        --color-a: var(--sky-blue);
+        --color-body: var(--light-gray);
     }
 
     // Icons
-    --icon-alert: "\e900";
-    --icon-arrow-down: "\e902";
-    --icon-arrow-up: "\e901";
-    --icon-external-link: "\e904";
-    --icon-share: "\e903";
-    --icon-translation: "\e905";
-    --icon-update: "\e906";
+    --icon-arrow-down: "\e901";
+    --icon-arrow-up: "\e900";
+    --icon-external-link: "\e903";
+    --icon-share: "\e902";
+    --icon-translate: "\e905";
+    --icon-warning: "\e904";
 
-    // shadow
+    // Fonts
+    // Latin fonts
+    --font-monospace: #{$monospace}, var(--font-sans-serif);
+    --font-sans-serif: #{$sans-serif}, sans-serif;
+    // fonts for Japanese
+    &:lang(ja) {
+        --font-sans-serif: #{$sans-serif}, #{$noto-sans}, sans-serif;
+    }
+
+    --border: 2px solid var(--gray);
     --box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-// Common Classes
-%scrollable {
-    max-inline-size: 100%;
-    overflow-x: auto;
-    white-space: nowrap;
-}
-%plane-list {
-    list-style: none;
-    padding-inline-start: 0;
-}
-%icon {
-    @extend %line-height_1;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    font-family: "IconFont", var(--sans-serif) !important;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
-    speak: none;
-    text-transform: none;
 }

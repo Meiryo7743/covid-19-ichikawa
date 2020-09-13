@@ -4,9 +4,10 @@ news:
 debug_title:
   other: デバッグ
 
+date_lastmod:
+  other: "最終更新　"
+
 # Card
-card_lastmod:
-  other: 最終更新：
 card_source:
   other: ソースを見る
 
