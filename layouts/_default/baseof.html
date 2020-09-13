@@ -1,4 +1,3 @@
-{{ $style_reset := resources.Get "scss/reset.scss" | toCSS | minify }}
 {{ $style_screen := resources.Get "scss/style.scss" | toCSS | minify }}
 {{ $js_chart := (resources.Get "js/chart.js").Content   }}
 {{ $js_table := (resources.Get "js/table.js").Content  }}
@@ -17,11 +16,6 @@
     </title>
 
     {{/* Preloads */}}
-    <link
-      rel="preload"
-      as="style"
-      href='{{ $style_reset.Permalink }}'
-    >
     <link
       rel="preload"
       as="style"
@@ -64,7 +58,6 @@
     >
 
     {{/* CSS */}}
-    <link rel="stylesheet" href='{{ $style_reset.Permalink }}'>
     <link rel="stylesheet" href='{{ $style_screen.Permalink }}'>
 
     {{/* Chart.js */}}

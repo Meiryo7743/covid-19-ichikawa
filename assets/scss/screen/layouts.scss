@@ -1,19 +1,10 @@
-// Load icon font
-@font-face {
-    font-family: "IconFont";
-    src: url("data:application/x-font-woff;charset=utf-8;base64,d09GMgABAAAAAAQQAA0AAAAACKAAAAO4AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP0ZGVE0cGh4GYACCXhEICoVkhEELGgABNgIkAyQEIAWDGweBARv6BlFUMIJBvirgyajhDkpIKKgZj8zxaI/mAado6sSDkDIebZyrnW01tIYqQnfZfu78PPjvfw29b+Yv4IkickkJXEgVZMKygIpIAaElEjKumsDoynZ94t699ta9qE2fWnMhBVwW8BTo4uHz9v62iwPLPF/DIMAworHUBbhLoKF1dfQrmbNb/52Pg5cRiQYoq0lJDG3BG3h+TKkG5G+P6vNcky++wN1tGEkjm1kWRoN14gCnxQOLwkiP5+0THU7HONtyalgUvDno2bdEwTc0dBAgwO9M/wf+nNeHnVugBK3AiBQkAAOeP+oGEazbGXCdBtHH6mBhqjQzdBxpxL7QLDCehQEEFPsJ+PhuAjCPQshRwTDIpYyR/hE3/xgGgIzmmzTPbRGc5AAAxKEJlAFACTD+zwgBvaTobwgAlADaQQv4DLQAAAEACIg4ETHOsnsInmVrMrkzu2Kb6LIHSDkzkbPpOlUGvWM95rGj6UtKmgnxOWFu0R1wgOH9/FLoUCcVSSYfPiouB5OHjcdcZcIQS3viXrWcnGtbOl1So3DshHE6ry+ZZxWdtMwVFWXYw8kXIiV5dpZdyUIMjeQKc557Ey6pUkFF/iF7ESwtZ82swOwWt77kC979lrFyZeRg47H0cuQ06InixO6SXLIo9snCEbmG+3OXAY3lbvfsvA4xzWCI5+qtkz00wrq+QvL2/c+POc38H2tbc4i7qRwF6PBwANYo2tzKe2ki9yJEcxoweC6slrCGw37FnkvYQslqL42xdB1PDw88ODW1t7kHz6eSMR4OQw8doFPHBaemhhZB1tOvl4gdz8IjZnP9yWTC4TH9eqA1N19+uX2/JQq+mdhdVxud6ln7hK3Qo7xwXZC3Xo88V5Nl13sizzdmFzMlh9JyQqpYx5mboUafALCEKer2jRZ+DE9FVXg8Pzc/f3IyP59cY2Oz9KNWqbULDf3ox/MgAwAICP/7NN0Fw3+Z0sCjZDPAb58BSBkA4fb3E9Rr2w8BiAsAoAoAGAhY5JVXTjhhkRMESms4AONStXckQRItMgVMYpBwjBMB84JI4agglrgTnev0GZ6XlAypwYShnXCsIAI2CCKtNglitTPr5tZ4YreOhZmFhTnsPi7ADnNgUs/AzlTLGj4v1wp6NFlRntWztjEqVVppmRUYkra5UvS2rkMKt5R26pmfS7Jlq6ebuMWJ0kZBzGvHu/ea8Yp3Y2fxSxM7AOOnKqGEheMRFClWolSZ8njn9LQcupLdfORcQcQnvCtAMFgUZ3kAAAA=")
-        format("woff2");
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-}
-
 // External Link
 a {
     &::after {
         @extend %icon;
         content: var(--icon-external-link);
     }
+
     &[href^="https://stopcovid19-ichikawa.netlify.app"],
     &[href^="http://localhost:"],
     &[href^="#"] {
@@ -35,8 +26,6 @@ a {
     // &__footer {}
 }
 
-// .body {}
-
 // Header
 .header {
     background: var(--bgcolor-header);
@@ -47,13 +36,13 @@ a {
 
 // Footer
 .footer {
-    @extend %padding_1rem;
+    padding: 1rem;
     text-align: center;
 }
 
 // Navigation
 .nav {
-    @extend %line-height_1_25;
+    line-height: 1.25 !important;
     @extend %plane-list;
     display: grid;
     font-feature-settings: "palt";
@@ -68,10 +57,12 @@ a {
         display: flex;
         flex-wrap: wrap;
     }
+
     // &__item{}
+
     &__link {
-        @extend %padding_1rem;
         block-size: 100%;
+        padding: 1rem;
         // テキストを上下中央配置にする
         display: flex;
         align-items: center;
@@ -82,7 +73,7 @@ a {
             color: var(--color-body) !important;
             &::before {
                 @extend %icon;
-                content: var(--icon-translation);
+                content: var(--icon-translate);
             }
         }
         &--logo {
@@ -110,7 +101,6 @@ a {
         inline-size: unquote("min(100%, 42rem)");
     }
 
-    // Page Title
     &__title {
         font-size: var(--xx-large);
         text-align: center;
@@ -118,7 +108,6 @@ a {
         // &--single{}
     }
 
-    // Page Content
     &__content {
         @include margin-block(2rem);
         &--index {
@@ -138,7 +127,7 @@ a {
 
 // Card
 .card {
-    @extend %padding_1rem;
+    padding: 1rem;
     background: var(--bgcolor-card);
     border-radius: 0.25rem;
     box-shadow: var(--box-shadow);
@@ -149,13 +138,16 @@ a {
         background-color: var(--orange);
         color: var(--black);
     }
+
     &__title {
         font-size: var(--x-large);
         text-align: center;
     }
+
     &__content {
         flex-grow: 1;
     }
+
     &__footer {
         @extend %plane-list;
     }
@@ -163,30 +155,28 @@ a {
 
 // data-table
 .data-table {
-    @extend %line-height_1_25;
     @extend %scrollable;
     block-size: 20rem;
     display: flex;
+    line-height: 1.25;
     text-align: center;
+
     &__table {
         border: none;
         inline-size: 100%;
+        tr {
+            border-block-end: var(--border);
+        }
+        th {
+            background: var(--bgcolor-card);
+            position: sticky;
+            top: 0;
+        }
+        ul {
+            @extend %plane-list;
+        }
     }
-    tr {
-        border-block-end: var(--border);
-    }
-    td,
-    th {
-        border: none;
-    }
-    th {
-        background: var(--bgcolor-card);
-        position: sticky;
-        top: 0;
-    }
-    ul {
-        @extend %plane-list;
-    }
+
     // table-details-of-patients-without-symptoms
     #table-details-of-patients-without-symptoms {
         td,
@@ -217,23 +207,23 @@ a {
 // data-list
 .data-list {
     @include margin-inline(auto);
-    @extend %line-height_1_25;
     @extend %plane-list;
-    text-align: end;
+    line-height: 1.25 !important;
     max-inline-size: 20rem;
+    text-align: end;
     &__child {
         @extend %plane-list;
         border-block-start: var(--border);
         border-inline-start: var(--border);
         margin-inline-start: 1.5em;
         padding-block-start: 0.25rem;
-        padding-inline-start: 0.25rem;
     }
     &__item {
         border: var(--border);
         &--child {
             border-inline-end: none;
             margin-block-end: 0.25rem;
+            margin-inline-start: 0.25rem;
             &:last-child {
                 border-block-end: none;
             }
@@ -259,15 +249,15 @@ a {
 
 // notice
 .notice {
-    @extend %padding_1rem;
     align-items: center;
     background-color: var(--light-pink);
     color: var(--black);
     column-gap: 1rem;
     display: flex;
+    padding: 1rem;
     &::before {
         @extend %icon;
-        content: var(--icon-alert);
+        content: var(--icon-warning);
         font-size: var(--xx-large);
     }
     &--important {
@@ -275,7 +265,7 @@ a {
     }
     &--translation {
         &::before {
-            content: var(--icon-translation);
+            content: var(--icon-translate);
         }
     }
 }
@@ -283,12 +273,6 @@ a {
 // Date
 .date {
     text-align: end;
-    &__lastmod {
-        &::before {
-            @extend %icon;
-            content: var(--icon-update);
-        }
-    }
 }
 
 // news

@@ -7,9 +7,8 @@
     <p class="date">
       <time
         datetime='{{ now.Format "2006-01-02T15:04:05" }}'
-        class="date__lastmod"
       >
-        {{ now.Format "2006-01-02" }}
+        {{ i18n "date_lastmod" }}{{ now.Format "2006-01-02" }}
       </time>
     </p>
 
