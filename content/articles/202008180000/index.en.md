@@ -5,7 +5,7 @@ title: "The site has been renewed!"
 
 Thank you for visiting this website.
 
-Today I had renewed this site. Some contents have been changed due to this. [For more details, please refer to the following.](#changes)
+Today I had renewed this site. Some contents have been changed due to this. [For more details, please refer to the following](#changes).
 
 I felt that previous template is too hard to maintain. So I decided to create original design by using Hugo. The new design is lighter and confortable.
 
