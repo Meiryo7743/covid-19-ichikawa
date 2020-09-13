@@ -36,7 +36,8 @@ a {
 
 // Footer
 .footer {
-    padding: 1rem;
+    @extend %padding-block_1rem;
+    @extend %padding-inline_1rem;
     text-align: center;
 }
 
@@ -62,7 +63,8 @@ a {
 
     &__link {
         block-size: 100%;
-        padding: 1rem;
+        @extend %padding-block_1rem;
+        @extend %padding-inline_1rem;
         // テキストを上下中央配置にする
         display: flex;
         align-items: center;
@@ -127,9 +129,10 @@ a {
 
 // Card
 .card {
-    padding: 1rem;
+    @extend %padding-block_1rem;
+    @extend %padding-inline_1rem;
     background: var(--bgcolor-card);
-    border-radius: 0.25rem;
+    border-radius: 0.375rem;
     box-shadow: var(--box-shadow);
     display: flex;
     flex-direction: column;
@@ -254,7 +257,8 @@ a {
     color: var(--black);
     column-gap: 1rem;
     display: flex;
-    padding: 1rem;
+    @extend %padding-block_1rem;
+    @extend %padding-inline_1rem;
     &::before {
         @extend %icon;
         content: var(--icon-warning);

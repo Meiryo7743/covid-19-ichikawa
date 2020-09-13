@@ -25,15 +25,5 @@
     --icon-translate: "\e905";
     --icon-warning: "\e904";
 
-    // Fonts
-    // Latin fonts
-    --font-monospace: #{$monospace}, var(--font-sans-serif);
-    --font-sans-serif: #{$sans-serif}, sans-serif;
-    // fonts for Japanese
-    &:lang(ja) {
-        --font-sans-serif: #{$sans-serif}, #{$noto-sans}, sans-serif;
-    }
-
-    --border: 2px solid var(--gray);
     --box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2);
 }
