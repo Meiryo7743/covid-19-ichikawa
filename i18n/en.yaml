@@ -4,9 +4,10 @@ news:
 debug_title:
   other: Debug
 
+date_lastmod:
+  other: "Lastmod: "
+
 # Card
-card_lastmod:
-  other: "Last update: "
 card_source:
   other: View source
 
@@ -55,6 +56,12 @@ patients_職業_学生:
   other: student
 patients_職業_生徒:
   other: student
+patients_職業_児童:
+  other: pupil
+patients_職業_幼児:
+  other: infant
+patients_職業_会社経営:
+  other: business owner
 patients_職業_自営業:
   other: self-employed
 patients_職業_看護師:
@@ -75,10 +82,38 @@ patients_職業_無職:
   other: unemployed
 patients_職業_歯科医師:
   other: dentist
+patients_職業_医療従事者:
+  other: health professional
+patients_職業_助産師:
+  other: midwife
+patients_職業_介護福祉士:
+  other: certified care worker
+patients_職業_福祉施設職員:
+  other: welfare facility staff
+patients_職業_福祉事業所職員:
+  other: welfare facility staff
 patients_推定感染経路:
   other: Infection source
 patients_行動歴:
   other: Activities
+patients_行動歴_自宅:
+  other: home
+patients_行動歴_別宅:
+  other: second home
+patients_行動歴_県外:
+  other: outside the prefecture
+patients_行動歴_介護施設:
+  other: nursing facility
+patients_行動歴_職場:
+  other: workplace
+patients_行動歴_アルバイト先:
+  other: workplace
+patients_行動歴_学校:
+  other: school
+patients_行動歴_医療機関:
+  other: medical facility
+patients_行動歴_医療関係:
+  other: medical facility
 
 emergency_title:
   other: IMPORTANT NOTICE

@@ -1,0 +1,41 @@
+// color-schem
+@mixin color-scheme($string) {
+    @if $string == light {
+        @content;
+    } @else {
+        @media screen and (prefers-color-scheme: $string) {
+            @content;
+        }
+    }
+}
+
+// screen-size
+@mixin screen-size($value) {
+    @if $value == 0 {
+        @content;
+    } @else {
+        @media screen and (min-width: $value + px) {
+            @content;
+        }
+    }
+}
+
+// margin
+@mixin margin-block($value) {
+    margin-block-end: $value;
+    margin-block-start: $value;
+}
+@mixin margin-inline($value) {
+    margin-inline-end: $value;
+    margin-inline-start: $value;
+}
+
+// padding
+@mixin padding-block($value) {
+    padding-block-end: $value;
+    padding-block-start: $value;
+}
+@mixin padding-inline($value) {
+    padding-inline-end: $value;
+    padding-inline-start: $value;
+}

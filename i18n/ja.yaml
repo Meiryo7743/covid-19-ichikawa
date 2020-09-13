@@ -4,9 +4,10 @@ news:
 debug_title:
   other: デバッグ
 
-# Card
-card_lastmod:
+date_lastmod:
   other: 最終更新：
+
+# Card
 card_source:
   other: ソースを見る
 
@@ -20,61 +21,31 @@ patients_発症日:
 patients_年代:
   other: 年代
 patients_年代_10歳未満:
-  other: 10歳未満
+  other: 10 歳未満
 patients_年代_10代:
-  other: 10代
+  other: 10 代
 patients_年代_20代:
-  other: 20代
+  other: 20 代
 patients_年代_30代:
-  other: 30代
+  other: 30 代
 patients_年代_40代:
-  other: 40代
+  other: 40 代
 patients_年代_50代:
-  other: 50代
+  other: 50 代
 patients_年代_60代:
-  other: 60代
+  other: 60 代
 patients_年代_70代:
-  other: 70代
+  other: 70 代
 patients_年代_80代:
-  other: 80代
+  other: 80 代
 patients_年代_90代:
-  other: 90代
+  other: 90 代
 patients_年代_90代以上:
-  other: 90代超
+  other: 90 代超
 patients_性別:
   other: 性別
-patients_性別_女性:
-  other: 女性
-patients_性別_男性:
-  other: 男性
 patients_職業:
   other: 職業
-patients_職業_教員:
-  other: 教員
-patients_職業_学生:
-  other: 学生
-patients_職業_生徒:
-  other: 生徒
-patients_職業_自営業:
-  other: 自営業
-patients_職業_看護師:
-  other: 看護師
-patients_職業_会社員:
-  other: 会社員
-patients_職業_会社役員:
-  other: 会社役員
-patients_職業_介護士:
-  other: 介護士
-patients_職業_保育士:
-  other: 保育士
-patients_職業_公務員:
-  other: 公務員
-patients_職業_アルバイト:
-  other: アルバイト
-patients_職業_無職:
-  other: 無職
-patients_職業_歯科医師:
-  other: 歯科医師
 patients_推定感染経路:
   other: 感染経路
 patients_行動歴:

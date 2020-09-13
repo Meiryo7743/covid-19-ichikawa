@@ -1,0 +1,30 @@
+@media screen\0 {
+    html {
+        &::before {
+            background: #fff;
+            color: #000;
+            content: "This page does not support Internet Explorer. \A Try to use modern browser such as Firefox, Google Chrome, Microsoft Edge, and Safari.";
+            display: block;
+            font-family: sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            height: 100%;
+            left: 0;
+            line-height: 1.75;
+            padding: 24px;
+            position: fixed;
+            text-align: center;
+            top: 0;
+            white-space: pre-wrap;
+            width: 100%;
+        }
+        &:lang(ja) {
+            &::before {
+                content: "このページは Internet Explorer に対応していません。 \A Firefox，Google Chrome，Microsoft Edge，Safari などのブラウザをご利用ください。";
+            }
+        }
+    }
+    body {
+        overflow: hidden;
+    }
+}

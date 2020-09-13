@@ -77,10 +77,10 @@
           <td>
             {{ with .年代 }}
               {{ $i18n := i18n (print "patients_年代_" . ) }}
-              {{ if eq $i18n false }}
+              {{ with $i18n }}
                 {{ . }}
               {{ else }}
-                {{ $i18n }}
+                {{ . }}
               {{ end }}
             {{ end }}
           </td>
@@ -88,10 +88,10 @@
           <td>
             {{ with .性別 }}
               {{ $i18n := i18n (print "patients_性別_" . ) }}
-              {{ if eq $i18n false }}
+              {{ with $i18n }}
                 {{ . }}
               {{ else }}
-                {{ $i18n }}
+                {{ . }}
               {{ end }}
             {{ end }}
           </td>
@@ -99,10 +99,10 @@
           <td>
             {{ with .職業 }}
               {{ $i18n := i18n (print "patients_職業_" . ) }}
-              {{ if eq $i18n false }}
+              {{ with $i18n }}
                 {{ . }}
               {{ else }}
-                {{ $i18n }}
+                {{ . }}
               {{ end }}
             {{ end }}
           </td>
@@ -111,7 +111,14 @@
             {{ with .推定感染経路 }}
               <ul>
                 {{ range . }}
-                  <li>{{ . }}</li>
+                  <li>
+                    {{ $i18n := i18n (print "patients_推定感染経路_" . ) }}
+                    {{ with $i18n }}
+                      {{ . }}
+                    {{ else }}
+                      {{ . }}
+                    {{ end }}
+                  </li>
                 {{ end }}
               </ul>
             {{ end }}
@@ -121,7 +128,14 @@
             {{ with .行動歴 }}
               <ul>
                 {{ range . }}
-                  <li>{{ . }}</li>
+                  <li>
+                    {{ $i18n := i18n (print "patients_行動歴_" . ) }}
+                    {{ with $i18n }}
+                      {{ . }}
+                    {{ else }}
+                      {{ . }}
+                    {{ end }}
+                  </li>
                 {{ end }}
               </ul>
             {{ end }}
