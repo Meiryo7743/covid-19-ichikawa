@@ -112,22 +112,23 @@ a {
 
     &__content {
         @include margin-block(2rem);
-        &--index {
-            display: grid;
-            gap: 2rem;
-            // カードの配置
-            @include screen-size(0) {
-                grid-template-columns: 100%;
-            }
-            @include screen-size(768) {
-                grid-template-columns: repeat(2, calc((100% - 2rem) / 2));
-            }
-        }
+        // &--index{}
         // &--single{}
     }
 }
 
 // Card
+.card-container {
+    display: grid;
+    gap: 2rem;
+    // カードの配置
+    @include screen-size(0) {
+        grid-template-columns: 100%;
+    }
+    @include screen-size(768) {
+        grid-template-columns: repeat(2, calc((100% - 2rem) / 2));
+    }
+}
 .card {
     @extend %padding-block_1rem;
     @extend %padding-inline_1rem;
@@ -137,9 +138,8 @@ a {
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
-    &--important {
-        background-color: var(--orange);
-        color: var(--black);
+    &--no-gap {
+        gap: 0;
     }
 
     &__title {
@@ -253,7 +253,7 @@ a {
 // notice
 .notice {
     align-items: center;
-    background-color: var(--light-pink);
+    background: var(--yellow);
     color: var(--black);
     column-gap: 1rem;
     display: flex;
@@ -264,10 +264,9 @@ a {
         content: var(--icon-warning);
         font-size: var(--xx-large);
     }
-    &--important {
-        background-color: var(--orange);
-    }
     &--translation {
+        background: var(--light-pink);
+
         &::before {
             content: var(--icon-translate);
         }

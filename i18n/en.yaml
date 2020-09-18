@@ -1,15 +1,23 @@
-news:
-  other: News
-
-debug_title:
+# Card
+card_debug:
   other: Debug
+card_news:
+  other: News
+card_source:
+  other: View source
+card_share:
+  other: Share
 
 date_lastmod:
   other: "Lastmod: "
 
-# Card
-card_source:
-  other: View source
+# Notice
+notice_noscript:
+  other: Contents will not be displayed correctly when JavaScript is disabled.
+notice_translation:
+  other: This page has been translated from Japanese. Note that it may contain mistranslations.
+notice_emergency:
+  other: ""
 
 # Patients
 patients_total:
@@ -114,16 +122,3 @@ patients_行動歴_医療機関:
   other: medical facility
 patients_行動歴_医療関係:
   other: medical facility
-
-emergency_title:
-  other: IMPORTANT NOTICE
-
-# Notice
-notice_noscript:
-  other: Contents will not be displayed correctly when JavaScript is disabled.
-notice_translation:
-  other: This page has been translated from Japanese. Note that it may contain mistranslations.
-
-# Share
-share_btn:
-  other: Share

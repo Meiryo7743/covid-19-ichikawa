@@ -1,7 +1,7 @@
 {{/* Header */}}
-{{/* Noscript */}}
+{{/* Notice: Noscript */}}
 <noscript>
-  <aside class="notice notice--important">
+  <aside class="notice">
     <p>
       <strong>
         {{ i18n "notice_noscript" }}
@@ -10,13 +10,23 @@
   </aside>
 </noscript>
 
-{{/* Translation */}}
-{{ if ne .Site.Language.Lang "ja" }}
+{{/* Notice: Translation */}}
+{{ with .Site.Params.Notice.Translation }}
   <aside class="notice notice--translation">
     <p>
       {{ i18n "notice_translation" }}
     </p>
   </aside>
+{{ end }}
+
+{{/* Notice: Emergency */}}
+{{ with .Site.Params.Notice.Emergency }}
+  <article class="notice">
+    <div>
+      <p>gheogheogho</p>
+      {{ i18n "notice_emergency" | markdownify }}
+    </div>
+  </article>
 {{ end }}
 
 {{/* Header nav */}}

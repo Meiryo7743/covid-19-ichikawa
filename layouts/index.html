@@ -12,28 +12,15 @@
       {{ .Title | title }}
     </h1>
 
-    {{/* index.md 緊急のお知らせ */}}
-    {{ with .Content }}
-      <div class="page__content">
-        <article class="card card--important">
-          <h2 class="card__title">
-            {{ i18n "emergency_title" | title }}
-          </h2>
-
-          {{ . }}
-        </article>
-      </div>
-    {{ end }}
-
-    {{/* 更新情報 */}}
+    {{/*  News */}}
     <div class="page__content">
-      <article class="card">
+      <article class="card card--no-gap">
         <h2 class="card__title">
-          {{ i18n "news" | title }}
+          {{ i18n "card_news" | title }}
         </h2>
 
+
         <ul class="news">
-          {{/* News list */}}
           {{ range (where .Site.RegularPages.ByWeight "Section" "==" "articles") }}
             <li class="news__item">
               <time
@@ -49,8 +36,8 @@
       </article>
     </div>
 
-    <div class="page__content page__content--index">
-      {{/* Cards */}}
+    {{/* Cards */}}
+    <div class="page__content card-container">
       {{ range (where .Site.RegularPages "Section" "==" "cards") }}
         <article class="card">
           {{ partial "body/card.html" . }}
@@ -59,36 +46,30 @@
     </div>
 
 
-    {{/* For debugging */}}
+    {{/* Debug */}}
     {{ if .Site.IsServer }}
-      <div class="page__content card card--important">
+      <article class="card card--no-gap">
         <h2 class="card__title">
-          {{ i18n "debug_title" | title }}
+          {{ i18n "card_debug" | title }}
         </h2>
 
         <ul>
           <li>
-            <a
-              href='{{ "/404.html" | safeURL | absLangURL }}'
-              style="color:var(--black);"
-            >
-              404 (Luxio)
+            <a href='{{ "/404.html" | safeURL | absLangURL }}'>
+              404
             </a>
           </li>
 
           {{/* List of pages */}}
           {{ range .Site.Pages }}
             <li>
-              <a
-                href='{{ .Permalink }}'
-                style="color:var(--black);"
-              >
+              <a href='{{ .Permalink }}'>
                 {{ .Title | title }}
               </a>
             </li>
           {{ end }}
         </ul>
-      </div>
+      </article>
     {{ end }}
   </div>
 {{ end }}
