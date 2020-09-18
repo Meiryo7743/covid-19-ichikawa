@@ -1,15 +1,24 @@
-news:
-  other: 更新情報
-
-debug_title:
+# Card
+card_debug:
   other: デバッグ
+card_news:
+  other: 更新情報
+card_source:
+  other: ソースを見る
+card_share:
+  other: 共有
 
+# Date
 date_lastmod:
   other: 最終更新：
 
-# Card
-card_source:
-  other: ソースを見る
+# Notice
+notice_noscript:
+  other: JavaScript が無効な場合，ページが正常に動作しない場合があります。
+notice_translation:
+  other: ""
+notice_emergency:
+  other: ""
 
 # Patients
 patients_total:
@@ -50,16 +59,3 @@ patients_推定感染経路:
   other: 感染経路
 patients_行動歴:
   other: 行動歴
-
-emergency_title:
-  other: 重要なお知らせ
-
-# Notice
-notice_noscript:
-  other: JavaScript が無効な場合，ページが正常に動作しない場合があります。
-notice_translation:
-  other: This page has been translated from Japanese. Note that it may contain mistranslations.
-
-# Share
-share_btn:
-  other: 共有
