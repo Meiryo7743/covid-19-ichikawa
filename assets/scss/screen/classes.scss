@@ -6,9 +6,6 @@
 %plane-list {
     list-style: none;
     padding-inline-start: 0;
-    &:lang(ja) {
-        padding-inline-start: 0;
-    }
 }
 %icon {
     @extend %line-height_1;
