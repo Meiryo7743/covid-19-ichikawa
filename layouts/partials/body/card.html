@@ -4,18 +4,6 @@
     {{ .Title | title }}
   </h1>
 
-  {{/* Lastmod */}}
-  {{/*
-  <p class="date">
-    <time
-      datetime='{{ .Lastmod.Format "2006-01-02T15:04:05" }}'
-      class="date__lastmod"
-    >
-      {{ .Lastmod.Format "2006-01-02" }}
-    </time>
-  </p>
-  */}}
-
   {{ .Content }}
 </section>
 
@@ -40,7 +28,7 @@
       rel="noopener"
       class="share__btn"
     >
-      {{ i18n "share_btn" }}
+      {{ i18n "card_share" }}
     </a>
   </li>
 </ul>
