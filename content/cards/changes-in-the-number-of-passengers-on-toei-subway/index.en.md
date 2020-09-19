@@ -12,5 +12,5 @@ weight: 50
 
 {{<chart src="toei_subway">}}
 
-- Relative index that is based on the average of passengers passed through the ticket gates of Toei Subway on January 20 to 24, 2020
+- A relative index that is based on the average of passengers passed through the ticket gates of Toei Subway on January 20 to 24, 2020
 - The value is published as preliminary, and might be modified later
