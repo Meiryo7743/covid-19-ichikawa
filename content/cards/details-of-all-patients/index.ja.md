@@ -8,7 +8,7 @@ cards:
     chart: false
     table: true
 date: "2020-05-22T00:00:00+09:00"
-title: "全陽性患者の詳細"
+title: "有症者の詳細"
 ---
 
 {{<table src="details_of_patients">}}
