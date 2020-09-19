@@ -1,103 +1,70 @@
+# 旧デザインからのリダイレクト
+# about
 [[redirects]]
-from = "/*"
-to = "/en/404.html"
-status = 404
-force = false
-conditions = {Language = ["en"]}
+  from = "/about"
+  to = "/ja/about"
+  force = true
+
+ [[redirects]]
+  from = "/about"
+  to = "/en/about"
+  force = true
+  conditions = {Language = ["en"]}
+
+# contacts
+[[redirects]]
+  from = "/contacts"
+  to = "https://forms.gle/rJAhPqckU1Ak7tFQ9"
+  force = true
+
+ [[redirects]]
+  from = "/en/contacts"
+  to = "https://forms.gle/rJAhPqckU1Ak7tFQ9"
+  force = true
+
+# 陽性患者の詳細カード
+[[redirects]]
+  from = "/ja/cards/detail-of-patients"
+  to = "/ja/cards/details-of-all-patients"
+  force = true
 
 [[redirects]]
-from = "/*"
-to = "/ja/404.html"
-status = 404
-force = false
+  from = "/en/cards/detail-of-patients"
+  to = "/en/cards/details-of-all-patients"
+  force = true
+
+# 陽性患者数カード
+[[redirects]]
+  from = "/ja/cards/number-of-patients"
+  to = "/ja/cards/the-number-of-patients"
+  force = true
 
 [[redirects]]
-from = "/about"
-to = "/en/about"
-force = true
-conditions = {Language = ["en"]}
+  from = "/en/cards/number-of-patients"
+  to = "/en/cards/the-number-of-patients"
+  force = true
+
+# 都営線カード
+[[redirects]]
+  from = "/ja/cards/predicted-number-of-toei-subway-passengers"
+  to = "/ja/changes-in-the-number-of-passengers-on-toei-subway"
+  force = true
 
 [[redirects]]
-from = "/about"
-to = "/ja/about"
-force = true
+  from = "/en/cards/predicted-number-of-toei-subway-passengers"
+  to = "/en/changes-in-the-number-of-passengers-on-toei-subway"
+  force = true
 
+# 404
 [[redirects]]
-from = "/contacts"
-to = "/https:/forms.gle/rJAhPqckU1Ak7tFQ9"
-force = true
+  from = "/*"
+  to = "/ja/404.html"
+  status = 404
+  force = false
 
-[[redirects]]
-from = "/en/cards/detail-of-patients"
-to = "/en/cards/details-of-patients-with-symptoms"
-force = true
-
-[[redirects]]
-from = "/en/cards/details-of-all-patients"
-to = "/en/cards/details-of-patients-with-symptoms"
-force = true
-
-[[redirects]]
-from = "/en/cards/details-of-all-patients-without-symptoms"
-to = "/en/cards/details-of-patients-without-symptoms"
-force = true
-
-[[redirects]]
-from = "/en/cards/details-of-latest-30-patients"
-to = "/en/cards/details-of-latest-30-patients-with-symptoms"
-force = true
-
-[[redirects]]
-from = "/en/cards/number-of-patients"
-to = "/en/cards/the-number-of-patients"
-force = true
-
-[[redirects]]
-from = "/en/cards/predicted-number-of-toei-subway-passengers"
-to = "/en/changes-in-the-number-of-passengers-on-toei-subway"
-force = true
-
-[[redirects]]
-from = "/en/cards/the-number-of-patients"
-to = "/en/cards/the-number-of-patients-with-symptoms"
-force = true
-
-[[redirects]]
-from = "/en/contacts"
-to = "/https:/forms.gle/rJAhPqckU1Ak7tFQ9"
-force = true
-
-[[redirects]]
-from = "/ja/cards/detail-of-patients"
-to = "/ja/cards/details-of-patients-with-symptoms"
-force = true
-
-[[redirects]]
-from = "/ja/cards/details-of-all-patients"
-to = "/ja/cards/details-of-patients-with-symptoms"
-force = true
-
-[[redirects]]
-from = "/ja/cards/details-of-all-patients-without-symptoms"
-to = "/ja/cards/details-of-patients-without-symptoms"
-force = true
-
-[[redirects]]
-from = "/ja/cards/details-of-latest-30-patients"
-to = "/ja/cards/details-of-latest-30-patients-with-symptoms"
-force = true
-
-[[redirects]]
-from = "/ja/cards/number-of-patients"
-to = "/ja/cards/the-number-of-patients"
-force = true
-
-[[redirects]]
-from = "/ja/cards/predicted-number-of-toei-subway-passengers"
-to = "/ja/changes-in-the-number-of-passengers-on-toei-subway"
-force = true
-
-[[redirects]]
-from = "/ja/cards/the-number-of-patients"
-to = "/ja/cards/the-number-of-patients-with-symptoms"
-force = true
+ [[redirects]]
+  from = "/*"
+  to = "/en/404.html"
+  status = 404
+  force = false
+  conditions = {Language = ["en"]}
