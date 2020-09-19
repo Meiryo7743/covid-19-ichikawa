@@ -9,7 +9,7 @@ card_share:
   other: Share
 
 date_lastmod:
-  other: "Lastmod: "
+  other: "Last modified: "
 
 # Notice
 notice_noscript:
