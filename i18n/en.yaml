@@ -4,12 +4,12 @@ card_debug:
 card_news:
   other: News
 card_source:
-  other: View source
+  other: View the source
 card_share:
   other: Share
 
 date_lastmod:
-  other: "Lastmod: "
+  other: "Last modified: "
 
 # Notice
 notice_noscript:
