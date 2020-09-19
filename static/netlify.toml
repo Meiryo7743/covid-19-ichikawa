@@ -25,12 +25,32 @@
 # 陽性患者の詳細カード
 [[redirects]]
   from = "/ja/cards/detail-of-patients"
-  to = "/ja/cards/details-of-all-patients"
+  to = "/ja/cards/details-of-patients-with-symptoms"
+  force = true
+
+[[redirects]]
+  from = "/ja/cards/details-of-all-patients"
+  to = "/ja/cards/details-of-patients-with-symptoms"
+  force = true
+
+[[redirects]]
+  from = "/ja/cards/details-of-latest-30-patients"
+  to = "/ja/cards/details-of-latest-30-patients-with-symptoms"
+  force = true
+
+[[redirects]]
+  from = "/en/cards/detail-of-latest-30-patients"
+  to = "/en/cards/details-of-latest-30-patients-with-symptoms"
   force = true
 
 [[redirects]]
   from = "/en/cards/detail-of-patients"
-  to = "/en/cards/details-of-all-patients"
+  to = "/en/cards/details-of-patients-with-symptoms"
+  force = true
+
+[[redirects]]
+  from = "/en/cards/details-of-all-patients"
+  to = "/en/cards/details-of-patients-with-symptoms"
   force = true
 
 # 陽性患者数カード
@@ -40,8 +60,18 @@
   force = true
 
 [[redirects]]
+  from = "/ja/cards/number-of-patients"
+  to = "/ja/cards/the-number-of-patients-with-symptoms"
+  force = true
+
+[[redirects]]
   from = "/en/cards/number-of-patients"
   to = "/en/cards/the-number-of-patients"
+  force = true
+
+[[redirects]]
+  from = "/en/cards/number-of-patients"
+  to = "/en/cards/the-number-of-patients-with-symptoms"
   force = true
 
 # 都営線カード
