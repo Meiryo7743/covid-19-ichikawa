@@ -3,7 +3,7 @@ from = "/*"
 to = "/en/404.html"
 status = 404
 force = false
-conditions = {Language = "en"}
+conditions = {Language = ["en"]}
 
 [[redirects]]
 from = "/*"
@@ -16,7 +16,7 @@ from = "/about"
 to = "/en/about"
 status = 301
 force = false
-conditions = {Language = "en"}
+conditions = {Language = ["en"]}
 
 [[redirects]]
 from = "/about"
