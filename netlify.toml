@@ -29,8 +29,18 @@
   force = true
 
 [[redirects]]
+  from = "/en/cards/detail-of-patients"
+  to = "/en/cards/details-of-patients-with-symptoms"
+  force = true
+
+[[redirects]]
   from = "/ja/cards/details-of-all-patients"
   to = "/ja/cards/details-of-patients-with-symptoms"
+  force = true
+
+[[redirects]]
+  from = "/en/cards/details-of-all-patients"
+  to = "/en/cards/details-of-patients-with-symptoms"
   force = true
 
 [[redirects]]
@@ -39,26 +49,11 @@
   force = true
 
 [[redirects]]
-  from = "/en/cards/detail-of-latest-30-patients"
+  from = "/en/cards/details-of-latest-30-patients"
   to = "/en/cards/details-of-latest-30-patients-with-symptoms"
   force = true
 
-[[redirects]]
-  from = "/en/cards/detail-of-patients"
-  to = "/en/cards/details-of-patients-with-symptoms"
-  force = true
-
-[[redirects]]
-  from = "/en/cards/details-of-all-patients"
-  to = "/en/cards/details-of-patients-with-symptoms"
-  force = true
-
 # 陽性患者数カード
-[[redirects]]
-  from = "/ja/cards/number-of-patients"
-  to = "/ja/cards/the-number-of-patients"
-  force = true
-
 [[redirects]]
   from = "/ja/cards/number-of-patients"
   to = "/ja/cards/the-number-of-patients-with-symptoms"
@@ -66,11 +61,16 @@
 
 [[redirects]]
   from = "/en/cards/number-of-patients"
-  to = "/en/cards/the-number-of-patients"
+  to = "/en/cards/the-number-of-patients-with-symptoms"
   force = true
 
 [[redirects]]
-  from = "/en/cards/number-of-patients"
+  from = "/ja/cards/the-number-of-patients"
+  to = "/ja/cards/the-number-of-patients-with-symptoms"
+  force = true
+
+[[redirects]]
+  from = "/en/cards/the-number-of-patients"
   to = "/en/cards/the-number-of-patients-with-symptoms"
   force = true
 
