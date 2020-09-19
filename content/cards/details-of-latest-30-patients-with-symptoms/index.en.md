@@ -12,5 +12,5 @@ weight: 20
 
 {{<table src="details_of_patients" len="30">}}
 
-- Showing latest **30 cases**. [See all cases](./cards/details-of-all-patients)
+- Showing latest **30 cases**. [See all cases](./cards/details-of-patients-with-symptoms)
 - Activities before case #68 are based on after onset. From case #69, they are based on before 2 days when onset
