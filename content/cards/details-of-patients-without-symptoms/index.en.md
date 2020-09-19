@@ -8,7 +8,7 @@ cards:
     chart: false
     table: false
 date: "2020-08-31T18:27:15+09:00"
-title: "Details of All Patients Without Symptoms"
+title: "Details of Patients Without Symptoms"
 ---
 
-{{<table src="details_of_patients_without_symptoms" len="30">}}
+{{<table src="details_of_patients_without_symptoms">}}
