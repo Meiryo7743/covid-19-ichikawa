@@ -2,9 +2,9 @@
 cards:
   data:
     source: "https://github.com/tokyo-metropolitan-gov/covid19/blob/development/data/metro.json"
-  display:
+  scripts:
     chart: true
-    table: false
+    list: false
 date: "2020-05-22T00:00:00+09:00"
 title: "都営線利用者数の推移"
 weight: 50
