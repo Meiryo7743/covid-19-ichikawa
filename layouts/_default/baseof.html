@@ -1,7 +1,7 @@
 {{ $style_reset := resources.Get "css/reset.css" }}
 {{ $style_screen := resources.Get "scss/style.scss" | toCSS | minify }}
 {{ $js_chart := (resources.Get "js/chart.js").Content   }}
-{{ $js_table := (resources.Get "js/table.js").Content  }}
+{{ $js_list := (resources.Get "js/list.js").Content  }}
 
 <!DOCTYPE html>
 <html lang='{{ .Site.Language.Lang }}'>
@@ -17,14 +17,14 @@
     </title>
 
     {{/* Preloads */}}
-    {{ with .Params.Cards.Display.Chart }}
+    {{ with .Params.Cards.Scripts.Chart }}
       <link
         rel="preload"
         as="script"
         href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
       >
     {{ end }}
-    {{ with .Params.Cards.Display.Table }}
+    {{ with .Params.Cards.Scripts.List }}
       <link
         rel="preload"
         as="script"
@@ -58,7 +58,7 @@
     <link rel="stylesheet" href='{{ $style_screen.Permalink }}'>
 
     {{/* Chart.js */}}
-    {{ with .Params.Cards.Display.Chart }}
+    {{ with .Params.Cards.Scripts.Chart }}
       <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
       <script>
         {{ $js_chart | safeJS }}
@@ -66,10 +66,10 @@
     {{ end }}
 
     {{/* List.js */}}
-    {{ with .Params.Cards.Display.Table }}
+    {{ with .Params.Cards.Scripts.List }}
       <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
       <script>
-        {{ $js_table | safeJS }}
+        {{ $js_list | safeJS }}
       </script>
     {{ end }}
 

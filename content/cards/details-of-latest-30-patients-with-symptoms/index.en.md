@@ -2,9 +2,9 @@
 cards:
   data:
     source: "https://www.city.ichikawa.lg.jp/pub01/hasseijokyo.html#m04"
-  display:
+  scripts:
     chart: false
-    table: true
+    list: true
 date: "2020-05-22T00:00:00+09:00"
 title: "Details of Patients With Symptoms"
 weight: 20

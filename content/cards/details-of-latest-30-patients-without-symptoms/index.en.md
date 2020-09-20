@@ -2,9 +2,9 @@
 cards:
   data:
     source: "https://www.city.ichikawa.lg.jp/pub01/hasseijokyo.html#m05"
-  display:
+  scripts:
     chart: false
-    table: false
+    list: false
 date: "2020-08-31T18:27:15+09:00"
 title: "Details of Patients Without Symptoms"
 weight: 40

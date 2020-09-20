@@ -2,9 +2,9 @@
 cards:
   data:
     source: ""
-  display:
+  scripts:
     chart: false
-    table: false
+    list: false
 date: "{{ .Date }}"
 title: '{{ replace .Name "-" " " | title }}'
 weight: 10
