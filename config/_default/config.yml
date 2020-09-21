@@ -19,7 +19,7 @@ languages:
     title: 【非公式】市川市新型コロナウイルス感染症対策サイト
     weight: 10
     params:
-      description: 当サイトは，市川市内における新型コロナウイルス感染症（COVID-19）及びそれに関連する情報を提供いたします。当サイトは個人が開設した非公式サイトです。
+      description: 当サイトは，市川市内における新型コロナウイルス感染症（COVID-19）及びそれに関連する情報を提供いたします。当サイトは個人が制作した非公式サイトです。
       images:
         - "/img/ogp_ja.png"
       notice:
@@ -30,7 +30,7 @@ languages:
   #   title: 【ひこうしき】 いちかわし 新型コロナウイルス かんせんしょう じょうほう サイト
   #   weight: 11
   #   params:
-  #     description: 当サイトは，市川市内における新型コロナウイルス感染症（COVID-19）及びそれに関連する情報を提供いたします。当サイトは個人が開設した非公式サイトです。
+  #     description: 当サイトは，市川市内における新型コロナウイルス感染症（COVID-19）及びそれに関連する情報を提供いたします。当サイトは個人が制作した非公式サイトです。
   #     images:
   #       - "/img/ogp_ja.png"
   #     notice:
@@ -41,7 +41,7 @@ languages:
     title: "[UNOFFICIAL] Ichikawa COVID-19 Information Website"
     weight: 20
     params:
-      description: This site provides the latest information on COVID-19 in Ichikawa. Note that this is unofficial website.
+      description: This site provides the latest information on COVID-19 in Ichikawa. Note that it is unofficial website developed by individual.
       images:
         - "/img/ogp_en.png"
       notice:
