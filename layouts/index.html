@@ -5,7 +5,10 @@
   >
 
     <p class="date">
-      {{ i18n "date_lastmod" }}<time datetime='{{ now.Format "2006-01-02T15:04:05" }}'>{{ now.Format "2006-01-02" }}</time>
+      {{ i18n "date_lastmod" }}<time
+        datetime='{{ now.Format "2006-01-02T15:04:05" }}'
+        >{{ now.Format "2006-01-02" }}</time
+      >
     </p>
 
     <h1 class="page__title">
@@ -14,7 +17,7 @@
 
     {{/*  News */}}
     <div class="page__content">
-      <article class="card card--no-gap">
+      <article class="card card--index">
         <h2 class="card__title">
           {{ i18n "card_news" | title }}
         </h2>
@@ -28,8 +31,8 @@
               >{{ .Date.Format "2006-01-02" }}</time> - <a
                 href="{{ .Permalink | safeURL | absLangURL }}"
                 class="news__link"
-              >{{ .Title | title }}
-              </a>
+              >{{ .Title | title }}</a
+              >
             </li>
           {{ end }}
         </ul>
