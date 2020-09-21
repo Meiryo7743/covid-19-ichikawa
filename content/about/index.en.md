@@ -1,6 +1,6 @@
 ---
 date: "2020-05-22T00:00:00+09:00"
-title: "About this site"
+title: "About This Site"
 ---
 
 This site provides the latest information on COVID-19 in Ichikawa. Note that it is unofficial website developed by individual.
