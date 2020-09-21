@@ -3,7 +3,7 @@ date: "2020-05-22T00:00:00+09:00"
 title: "当サイトについて"
 ---
 
-当サイトは，市川市内における新型コロナウイルス感染症（COVID-19）及びそれに関連する情報を提供いたします。当サイトは個人が開設した非公式サイトです。
+当サイトは，市川市内における新型コロナウイルス感染症（COVID-19）及びそれに関連する情報を提供いたします。当サイトは個人が制作した非公式サイトです。
 
 - 管理者：[Meiryo7743](https://meiryo7743.github.io/ja/)
 
@@ -26,7 +26,7 @@ title: "当サイトについて"
 
 当サイトは，サイトの改善や利用状況の分析をするために [Google アナリティクス](https://marketingplatform.google.com/about/analytics/terms/jp/)を利用しています。
 
-Google アナリティクスでは，Cookie 等を用いてデータ（アクセス状況，トラフィック，閲覧環境，IP アドレスなど）を収集しますが，個人を特定するものではありません。データは，[Google 社のプライバシーポリシー](https://policies.google.com/privacy?hl=ja)に基づき管理されます。
+Google アナリティクスでは，Cookie 等を用いてデータ（アクセス状況，トラフィック，閲覧環境など）を収集しますが，個人を特定するものではありません。データは，[Google 社のプライバシーポリシー](https://policies.google.com/privacy?hl=ja)に基づき管理されます。
 
 Google アナリティクスによる情報収集を望まない場合は，[Google アナリティクス オプトアウト アドオン](https://tools.google.com/dlpage/gaoptout?hl=ja)をご利用ください。
 
@@ -36,8 +36,7 @@ Google アナリティクスによる情報収集を望まない場合は，[Goo
 
 ## データの出典
 
-- 当サイトに掲載されているデータは，[市川市公式サイト](https://www.city.ichikawa.lg.jp/)から取得しています
-- 都営地下鉄のデータは，[東京都のレポジトリ](https://github.com/tokyo-metropolitan-gov/covid19)から取得しています
+当サイトに掲載されているデータは，[市川市公式サイト](https://www.city.ichikawa.lg.jp/)から取得しています。ただし，都営地下鉄のデータに関しては，[東京都のレポジトリ](https://github.com/tokyo-metropolitan-gov/covid19)の情報を基にしています。
 
 ## ソースコード
 
