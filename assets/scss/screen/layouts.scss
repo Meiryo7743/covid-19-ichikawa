@@ -1,5 +1,8 @@
 // External Link
 a {
+    &:visited {
+        color: var(--color-a);
+    }
     &::after {
         @extend %icon;
         content: var(--icon-external-link);
