@@ -3,7 +3,7 @@ date: "2020-09-20T21:44:06+09:00"
 title: "Kounodai Elementary School Will Be Temporarily Closed"
 ---
 
-According to the announcement by Ichikawa City, the 49th asymptomatic case is a student at Kounodai Elementary School. In addition, it was also made public that another student has been infeceted. Please note that **Kounodai Elementary School will be temporarily closed from September 23 to 25** for cleaning up and so on.
+According to the announcement by Ichikawa City, the 49th asymptomatic case is a student at Kounodai Elementary School. In addition, it was also made public that another student has been infected. Please note that **Kounodai Elementary School will be temporarily closed from September 23 to 25** for cleaning up and so on.
 
 As a side note, [the original press](https://www.city.ichikawa.lg.jp/pub01/hasseijokyo.html) is below:
 
