@@ -3,7 +3,7 @@ date: "2020-09-26T21:29:12+09:00"
 title: "Closure Period of Kounodai Elementary School Extended, and Daiichi Junior High School Will Be Closed Temporarily"
 ---
 
-Today, Ichikawa City made public that students at Kounodai Elementary School got infected, and a student at Daiichi Junior High School also did. As a result, **Kounodai Elementary School is extending its temporary closing time by a week and will be closed until Friday, October 2**. **Daiichi Junior High School will close the grades with infected students until the end of this month, Wednesday, September 30**. The city also announced that PCR testing is going to be carried out on the students at these schools.
+Today, Ichikawa City made public that [students at Kounodai Elementary School got infected, and a student at Daiichi Junior High School also did](https://www.city.ichikawa.lg.jp/pub01/hasseijokyo.html). As a result, **Kounodai Elementary School is extending its temporary closing time by a week and will be closed until Friday, October 2**. **Daiichi Junior High School will close the grades with infected students until the end of this month, Wednesday, September 30**. The city also announced that PCR testing is going to be carried out on the students at these schools.
 
 The original text is as follows:
 
