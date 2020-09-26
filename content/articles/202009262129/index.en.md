@@ -13,4 +13,4 @@ The original text is as follows:
 
 This time, since these schools are located in close to each other by accident, some may wonder that the two have something to do with the outbreaks. According to the information released by the City and Chiba Prefecture, however, **the route of the infection is presumed to be from their each families, which means that the two cases are completely different**.
 
-I sometimes posts an article like this in case of telling more information which cannot describe in the graphs, tables, or charts. You are able to access such articles from ["News" section in the page of "Updates on COVID-19 in Ichikawa"](https://stopcovid19-ichikawa.netlify.app/en/#updates-on-covid-19-in-ichikawa), and I hope you would pay attention to them as well.
+I sometimes posts an article like this in case of telling more information which cannot describe in the graphs, tables, or charts. You are able to access such articles from [“News” section in the page of “Updates on COVID-19 in Ichikawa”](https://stopcovid19-ichikawa.netlify.app/en/#updates-on-covid-19-in-ichikawa), and I hope you would pay attention to them as well.
