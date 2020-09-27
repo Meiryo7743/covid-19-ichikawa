@@ -100,7 +100,11 @@ a {
     @include screen-size(768) {
         @include padding-inline(2rem);
     }
-    // &--index{}
+    &--index {
+        .page__content {
+            @include margin-block(2rem);
+        }
+    }
     &--single {
         @include margin-inline(auto);
         inline-size: unquote("min(100%, 42rem)");
@@ -114,7 +118,7 @@ a {
     }
 
     &__content {
-        @include margin-block(2rem);
+        @extend %margin-block_1rem;
         // &--index{}
         // &--single{}
     }

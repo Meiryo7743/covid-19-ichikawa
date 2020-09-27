@@ -22,7 +22,6 @@
           {{ i18n "card_news" | title }}
         </h2>
 
-
         <ul class="news">
           {{ range (where .Site.RegularPages.ByWeight "Section" "==" "articles") }}
             <li class="news__item">
@@ -47,7 +46,6 @@
         </article>
       {{ end }}
     </div>
-
 
     {{/* Debug */}}
     {{ if .Site.IsServer }}
