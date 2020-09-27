@@ -11,7 +11,7 @@ As a side note, [the original press](https://www.city.ichikawa.lg.jp/pub01/hasse
 >
 > 複数世帯から同時期に陽性者が判明し、業者による消毒や濃厚接触者の確認等を行うため、23 日（水）より 25 日（金）まで当該校を全校臨時休業といたします。
 
-In Kashiwa City, there is a school which has been closed temporarily due to a outbreak of COVID-19 infection. I hope Kohnodai Elementary School does not have to go through this kind of situation ...
+In Kashiwa City, there is a school which has been closed temporarily due to a outbreak of COVID-19 infection. I hope Kounodai Elementary School does not have to go through this kind of situation ...
 
 Unfortunately, the possibility of COVID-19 infection can not be always zero even if you take any measures or prepare for. However, it is important for us to prevent the disease. Washing your hands and gargling, drinking water frequently, etc. may be obvious, but we should be more aware of this.
 
