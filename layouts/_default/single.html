@@ -1,4 +1,4 @@
-{{/* _dalault */}}
+{{/* _default */}}
 {{ define "main" }}
   <article class="page page--single">
     <header class="page__content">
@@ -21,9 +21,20 @@
       <h1 class="page__title">
         {{ .Title | title }}
       </h1>
+
+      <p class="share">
+        <a
+          href='{{ print "https://www.addtoany.com/share#url=" .Permalink }}'
+          target="_blank"
+          rel="noopener"
+          class="share__btn"
+        >
+          {{ i18n "card_share" }}
+        </a>
+      </p>
     </header>
 
-    <section class="page__content page__content--single">
+    <section class="page__content">
       {{ .Content }}
     </section>
   </article>
