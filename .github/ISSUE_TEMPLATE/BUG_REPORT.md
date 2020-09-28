@@ -1,30 +1,30 @@
 ---
-name: "バグ報告 / Bug Report"
-about: "サイトに不具合がある場合や更新すべきことはこちら"
+name: "不具合報告 / Report the Problems"
+about: "サイトのバグ・至急更新すべき事柄の報告はこちら / Report the bugs or what has to be updated ASAP"
 labels: bug
 ---
 
-## 問題事項 / The Problem
+<!--
+  できるだけ簡潔に記述してください。
+  Write as simply as you can.
+-->
 
-<!-- できるだけ簡潔に -->
-<!-- as concise as possible -->
+## 詳細 / Details
 
-- 
+## 期待される動作 / Expected behavior
 
-## スクリーンショット / Screenshot
+## 再現方法 / Steps to reproduce
 
-## 期待される挙動 / Expected behavior
+1.
 
-<!-- できるだけ簡潔に -->
-<!-- as concise as possible -->
+## スクリーンショット / Screenshots
 
-- 
-
-## 再現方法 / Steps to Reproduce
-
-1. 
+---
 
 ## 動作環境 / Environment
 
-- Linux / macOS / Windows / Android / iOS / iPadOS
-- Chrome / Edge / Firefox / Safari
+### オペレーティングシステム / OS
+
+-
+
+### ブラウザ / Browser
