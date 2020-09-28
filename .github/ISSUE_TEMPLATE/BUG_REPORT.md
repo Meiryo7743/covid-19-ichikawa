@@ -1,6 +1,6 @@
 ---
 name: "不具合報告 / Report the Problems"
-about: "サイトのバグ・至急更新すべき事柄の報告はこちら / Report the bugs or what has to be updated ASAP."
+about: "サイトのバグ・至急更新すべき事柄の報告はこちら / Report the bugs or what has to be updated ASAP"
 labels: bug
 ---
 
