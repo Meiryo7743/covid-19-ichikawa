@@ -1,20 +1,19 @@
-<!-- issue 番号がない PR は受け付けません。 -->
-<!-- I would not accept PRs without the issue ID. -->
+<!--
+  issue 番号なき PR は受け付けません。
+  PRs without the issue ID would never be accepted.
+
+  できるだけ簡潔に記述してください。
+  Write as simply as you can.
+-->
 
 ## 解決する issue / Resolved Issues
 
-- Close #0
+- Close #
 
 ## 関連する issue / Related Issues
 
-- #0
+- \#
 
-## 変更内容 / Details of Changes
-
-<!--変更を端的に箇条書きで -->
-<!-- List down your changes concisely -->
+## 詳細 / Details
 
 ## スクリーンショット / Screenshots
-
-<!-- スタイルなどの変更の場合はスクリーンショットがあるとレビューしやすいです -->
-<!-- Changes in styles would be easier to review with screenshots! -->

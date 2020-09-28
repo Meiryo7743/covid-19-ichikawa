@@ -1,26 +1,28 @@
 ---
-name: "改善提案 / Improvement Suggestions"
-about: "サイトをより良くするための提案はこちら"
+name: "サイトの改善に関する提案 / Suggestions for Improvement"
+about: "当サイトをより良くするための提案はこちら / Suggestions on how to make the site better"
 labels: improvement
 ---
 
-## 改善詳細 / Details of Improvement
+<!--
+  できるだけ簡潔に記述してください。
+  Write as simply as you can.
+-->
 
-<!-- できるだけ簡潔に -->
-<!-- as concise as possible -->
+## 詳細 / Details
 
-- 
+## 期待される動作 / Expected behavior
 
-## スクリーンショット / Screenshot
+## スクリーンショット / Screenshots
 
-## 期待される挙動 / Expected behavior
-
-<!-- できるだけ簡潔に -->
-<!-- as concise as possible -->
-
-- 
+---
 
 ## 動作環境 / Environment
 
-- Linux / macOS / Windows / Android / iOS / iPadOS
-- Chrome / Edge / Firefox / Safari
+### オペレーティングシステム / OS
+
+-
+
+### ブラウザ / Browser
+
+-
