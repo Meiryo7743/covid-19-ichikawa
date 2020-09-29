@@ -13,4 +13,4 @@ title: "Details of Patients With Symptoms"
 
 {{<table src="details_of_patients_with_symptoms">}}
 
-- Activities before case #68 are based on after onset. From case #69, they are based on before 2 days when onset
+- The activities before the 68th case in the city are based on after the onset of symptoms. From the 69th case in the city onwards, they are based on from 2 days before the onset.

@@ -11,41 +11,43 @@
     id='{{ $table_id }}'
   >
     <thead>
-      {{ range first 1 $data_src }}
-        <tr>
-          <th class="sort" data-sort="市内">
-            #
-          </th>
+      <tr>
+        <th class="sort" data-sort="市内">
+          {{ i18n "patients_市内" }}
+        </th>
 
-          <th class="sort" data-sort="検査確定日">
-            {{ i18n "patients_検査確定日" }}
-          </th>
+        <th class="sort" data-sort="県内">
+          {{ i18n "patients_県内" }}
+        </th>
 
-          <th class="sort" data-sort="発症日">
-              {{ i18n "patients_発症日" }}
-          </th>
+        <th class="sort" data-sort="検査確定日">
+          {{ i18n "patients_検査確定日" }}
+        </th>
 
-          <th>
-            {{ i18n "patients_年代" }}
-          </th>
+        <th class="sort" data-sort="発症日">
+            {{ i18n "patients_発症日" }}
+        </th>
 
-          <th>
-            {{ i18n "patients_性別" }}
-          </th>
+        <th>
+          {{ i18n "patients_年代" }}
+        </th>
 
-          <th>
-            {{ i18n "patients_職業" }}
-          </th>
+        <th>
+          {{ i18n "patients_性別" }}
+        </th>
 
-          <th>
-            {{ i18n "patients_推定感染経路" }}
-          </th>
+        <th>
+          {{ i18n "patients_職業" }}
+        </th>
 
-          <th>
-            {{ i18n "patients_行動歴" }}
-          </th>
-        </tr>
-      {{ end }}
+        <th>
+          {{ i18n "patients_推定感染経路" }}
+        </th>
+
+        <th>
+          {{ i18n "patients_行動歴" }}
+        </th>
+      </tr>
     </thead>
 
     <tbody id='{{ $tbody_id }}'>
@@ -54,6 +56,12 @@
         <tr>
           <td class="市内">
             {{ with .市内 }}
+              {{ . }}
+            {{ end }}
+          </td>
+
+          <td class="県内">
+            {{ with .県内 }}
               {{ . }}
             {{ end }}
           </td>

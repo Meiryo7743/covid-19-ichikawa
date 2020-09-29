@@ -23,6 +23,10 @@ notice_emergency:
 # Patients
 patients_total:
   other: 計
+patients_市内:
+  other: 市内
+patients_県内:
+  other: 県内
 patients_検査確定日:
   other: 検査確定日
 patients_発症日:
