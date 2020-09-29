@@ -22,10 +22,14 @@ notice_emergency:
 # Patients
 patients_total:
   other: Total
+patients_市内:
+  other: City
+patients_県内:
+  other: Pref.
 patients_検査確定日:
-  other: Inspected date
+  other: Inspection Date
 patients_発症日:
-  other: Onset date
+  other: Onset Date
 patients_年代:
   other: Age
 patients_年代_10歳未満:
@@ -101,7 +105,9 @@ patients_職業_福祉施設職員:
 patients_職業_福祉事業所職員:
   other: welfare facility staff
 patients_推定感染経路:
-  other: Infection source
+  other: Infection Source
+patients_推定感染経路_県外患者:
+  other: patient outside the prefecture
 patients_行動歴:
   other: Activities
 patients_行動歴_自宅:

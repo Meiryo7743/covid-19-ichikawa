@@ -13,7 +13,11 @@
     <thead>
       <tr>
         <th class="sort" data-sort="市内">
-          #
+          {{ i18n "patients_市内" }}
+        </th>
+
+        <th class="sort" data-sort="県内">
+          {{ i18n "patients_県内" }}
         </th>
 
         <th class="sort" data-sort="検査確定日">
@@ -52,6 +56,12 @@
         <tr>
           <td class="市内">
             {{ with .市内 }}
+              {{ . }}
+            {{ end }}
+          </td>
+
+          <td class="県内">
+            {{ with .県内 }}
               {{ . }}
             {{ end }}
           </td>
