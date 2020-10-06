@@ -104,6 +104,8 @@ patients_職業_福祉施設職員:
   other: welfare facility staff
 patients_職業_福祉事業所職員:
   other: welfare facility staff
+patients_職業_選手:
+  other: athlete
 patients_推定感染経路:
   other: Infection Source
 patients_推定感染経路_県外患者:
