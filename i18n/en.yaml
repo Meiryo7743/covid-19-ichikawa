@@ -94,10 +94,14 @@ patients_職業_無職:
   other: unemployed
 patients_職業_歯科医師:
   other: dentist
+patients_職業_歯科衛生士:
+  other: dental hygienist
 patients_職業_医療従事者:
   other: health professional
 patients_職業_助産師:
   other: midwife
+patients_職業_薬剤師:
+  other: pharmacist
 patients_職業_介護福祉士:
   other: certified care worker
 patients_職業_福祉施設職員:
