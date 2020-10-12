@@ -23,7 +23,7 @@
         </h2>
 
         <ul class="news">
-          {{ range (where .Site.RegularPages.ByWeight "Section" "==" "articles") }}
+          {{ range first 5 (where .Site.RegularPages.ByWeight "Section" "==" "articles") }}
             <li class="news__item">
               <time
                 datetime='{{ .Date.Format "2006-01-02T15:04:05" }}'
