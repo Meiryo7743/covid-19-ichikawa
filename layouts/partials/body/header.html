@@ -75,15 +75,17 @@
 
     {{ range .Site.Menus.header_nav }}
       <li class="nav__item">
-        {{ $url := replaceRE "^(#|/|https?://localhost:\\d+).+" "" .URL }}
+        {{ $url := urls.Parse (.URL | safeURL | absLangURL) }}
+        {{ $cur := urls.Parse $.Permalink }}
 
         <a
           href='{{ .URL | safeURL | absLangURL }}'
-          {{ if ne $url "" }}
+          class="nav__link"
+
+          {{ if ne $url.Host $cur.Host }}
             target="_blank"
             rel="noopener"
           {{ end }}
-          class="nav__link"
         >
           {{ .Name | title }}
         </a>
