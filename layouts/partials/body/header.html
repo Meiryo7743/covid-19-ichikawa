@@ -23,7 +23,6 @@
 {{ with .Site.Params.Notice.Emergency }}
   <article class="notice">
     <div>
-      <p>gheogheogho</p>
       {{ i18n "notice_emergency" | markdownify }}
     </div>
   </article>
@@ -76,9 +75,17 @@
 
     {{ range .Site.Menus.header_nav }}
       <li class="nav__item">
+        {{ $url := urls.Parse (.URL | safeURL | absLangURL) }}
+        {{ $cur := urls.Parse $.Permalink }}
+
         <a
           href='{{ .URL | safeURL | absLangURL }}'
           class="nav__link"
+
+          {{ if ne $url.Host $cur.Host }}
+            target="_blank"
+            rel="noopener"
+          {{ end }}
         >
           {{ .Name | title }}
         </a>

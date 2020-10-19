@@ -1,18 +1,12 @@
-// External Link
 a {
     &:visited {
         color: var(--color-a);
     }
-    &::after {
-        @extend %icon;
-        content: var(--icon-external-link);
-    }
-
-    &[href^="https://stopcovid19-ichikawa.netlify.app"],
-    &[href^="http://localhost:"],
-    &[href^="#"] {
+    // External Link
+    &[target="_blank"] {
         &::after {
-            content: none;
+            @extend %icon;
+            content: var(--icon-external-link);
         }
     }
 }
@@ -301,7 +295,7 @@ a {
             content: var(--icon-share);
         }
         &::after {
-            content: none; // disable external link icon
+            content: none !important; // Hide external link icon
         }
     }
 }

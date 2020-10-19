@@ -1,1 +1,5 @@
-<a href='{{ .Destination | safeURL | absLangURL }}'>{{ .Text }}</a>
+<a
+  href='{{ .Destination | safeURL | absLangURL }}'
+  target="_blank"
+  rel="noopener"
+>{{ .Text }}</a>
