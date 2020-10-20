@@ -22,13 +22,23 @@ These browsers are recommended to view this site:
 
 Some contents use JavaScript. If JavaScript is disabled, the page will not be displayed correctly.
 
-## Using Google Analytics
+## Privacy
 
-This site uses [Google Analytics](https://marketingplatform.google.com/about/analytics/terms/us/) in order to improve user experience and analyze website traffic.
+### Google Analytics
 
-Google Analytics collects some data such as access situation, traffic, your environment, and so on, which do not identify as you. They are managed under the [Google privacy policy](https://policies.google.com/privacy?hl=en).
+This site uses [Google Analytics](https://marketingplatform.google.com/about/analytics/terms/us/) to improve user experience and analyze the usage.
 
-You can install [Google Analytics Opt-out Browser Add-on](https://tools.google.com/dlpage/gaoptout?hl=en) if you really do not want to be analyzed your information.
+Google Analytics uses cookies and other technologies to collect data such as the page you are viewing, browser environment, and so on, but this does not identify as you. They are managed under [Google’s privacy policy](https://policies.google.com/privacy?hl=en).
+
+You can install [Google Analytics Opt-out Browser Add-on](https://tools.google.com/dlpage/gaoptout?hl=en) if you really do not want Google Analytics to collect your information.
+
+## Disclaimers
+
+Any information posted on this site might be modified or deleted without notice.
+
+This site does not guarantee accuracy or reliability of information on it, and take no responsibility for that.
+
+This site would never take responsibility for user's damages caused by using.
 
 ## Linking
 
@@ -41,11 +51,3 @@ The data posted on this site is got from [Ichikawa City official website](https:
 ## Source codes
 
 The source code of this site is MIT licensed code. You can use it for free. For more details, see [GitHub repository](https://github.com/Meiryo7743/COVID-19-Ichikawa/).
-
-## Disclaimers
-
-Any information posted on this site might be modified or deleted without notice.
-
-This site does not guarantee accuracy or reliability of information on it, and take no responsibility for that.
-
-This site would never take responsibility for user's damages caused by using.
