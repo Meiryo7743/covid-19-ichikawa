@@ -3,24 +3,24 @@ header_nav:
   - name: COVID-19 Info
     url: "https://www.city.ichikawa.lg.jp/new01/shingatacoronatokusetupage.html"
     weight: 10
-  - name: Municipal schools and kindergartens
+  - name: Municipal Schools and Kindergartens
     url: "https://www.city.ichikawa.lg.jp/edu06/1111000082.html"
     weight: 30
-  - name: Reopening the facilities
+  - name: Reopening the Facilities
     url: "https://www.city.ichikawa.lg.jp/pla04/infoheisa.html"
     weight: 40
   - name: Message from the Mayor
     url: "https://www.city.ichikawa.lg.jp/new01/covid19_comment.html"
     weight: 50
-  - name: City official website
-    url: "https://www.city.ichikawa.lg.jp/"
+  - name: City Official Website
+    url: "https://www.city.ichikawa.lg.jp"
     weight: 60
   - name: About
     url: "/about/"
     weight: 70
-  - name: Contact me
-    url: "https://forms.gle/rJAhPqckU1Ak7tFQ9"
+  - name: Contact Me
+    url: "https://forms.gle/rJAhPqckU1Ak7tFQ9/"
     weight: 80
   - name: GitHub
-    url: "https://github.com/Meiryo7743/COVID-19-Ichikawa"
+    url: "https://github.com/Meiryo7743/COVID-19-Ichikawa/"
     weight: 90
