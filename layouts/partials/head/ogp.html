@@ -1,0 +1,24 @@
+<meta
+    property="og:description"
+    content='{{ .Site.Params.Description }}'
+>
+<meta
+    property="og:image"
+    content='{{ .Site.Params.Image | absURL }}'
+>
+<meta
+    property="og:site_name"
+    content='{{ .Site.Title }}'
+>
+<meta
+    property="og:title"
+    content='{{ .Title | title }}{{ print " - " }}{{ .Site.Title }}'
+>
+<meta
+    property="og:type"
+    content='{{ if .IsPage }}article{{ else }}website{{ end }}'
+>
+<meta
+    property="og:url"
+    content='{{ .Permalink }}'
+>

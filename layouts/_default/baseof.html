@@ -6,6 +6,9 @@
 <!DOCTYPE html>
 <html lang='{{ .Site.Language.Lang }}'>
   <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    {{/* Google Analytics */}}
+    {{ partial "head/analytics.html" . }}
+
     <meta charset="utf-8">
     <meta name="description" content='{{ .Site.Params.Description }}'>
     <meta name="format-detection" content="telephone=no,address=no,email=no">
@@ -13,7 +16,7 @@
 
     {{/* Page title */}}
     <title>
-      {{ .Title | title }}{{ printf " - " }}{{ .Site.Title | title }}
+      {{ .Title | title }}{{ print " - " }}{{ .Site.Title }}
     </title>
 
     {{/* Preloads */}}
@@ -33,7 +36,7 @@
     {{ end }}
 
     {{/* OGP */}}
-    {{ template "_internal/opengraph.html" . }}
+    {{ partial "head/ogp.html" . }}
 
     {{/* Favicons */}}
     <link
@@ -71,11 +74,6 @@
       <script>
         {{ $js_list | safeJS }}
       </script>
-    {{ end }}
-
-    {{/* Google Analytics */}}
-    {{ if not .Site.IsServer }}
-      {{ template "_internal/google_analytics_async.html" . }}
     {{ end }}
   </head>
 
