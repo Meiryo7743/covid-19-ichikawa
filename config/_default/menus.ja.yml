@@ -13,14 +13,14 @@ header_nav:
     url: "https://www.city.ichikawa.lg.jp/new01/covid19_comment.html"
     weight: 50
   - name: 市公式サイト
-    url: "https://www.city.ichikawa.lg.jp/"
+    url: "https://www.city.ichikawa.lg.jp"
     weight: 60
   - name: 当サイトについて
     url: "/about/"
     weight: 70
   - name: お問い合わせ
-    url: "https://forms.gle/rJAhPqckU1Ak7tFQ9"
+    url: "https://forms.gle/rJAhPqckU1Ak7tFQ9/"
     weight: 80
   - name: GitHub
-    url: "https://github.com/Meiryo7743/COVID-19-Ichikawa"
+    url: "https://github.com/Meiryo7743/COVID-19-Ichikawa/"
     weight: 90

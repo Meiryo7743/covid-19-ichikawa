@@ -17,4 +17,4 @@ title: "グラフでみる陽性患者数の推移"
 
 グラフを眺めて見ると，どうやら 4 月と 7 月以降にかけて新規感染者数が増加していることがわかります。2020 年 8 月 20 日現在，[日本は第二波の真っ只中である](https://www3.nhk.or.jp/news/html/20200819/k10012573361000.html?utm_int=nsearch_contents_search-items_001)というニュースが報じられていますが，このことはグラフを見ても明らかです。とりわけ，8 月に入ってからは，わずか 3 週間の間だけで約 100 件も増加しています。
 
-以上のことから，感染者が増加傾向にあることがわかりました。この状況がいつまで続くのか，計り知ることができないように思えます。マスクの着用，COCOA（[Android 版](https://play.google.com/store/apps/details?id=jp.go.mhlw.covid19radar)／[iPhone 版](https://apps.apple.com/jp/app/id1516764458)）をインストールしておく……など，自分自身で可能なことは何かを改めて確認する必要があるのではないでしょうか。
+以上のことから，感染者が増加傾向にあることがわかりました。この状況がいつまで続くのか，計り知ることができないように思えます。マスクの着用，COCOA（[Android 版](https://play.google.com/store/apps/details?id=jp.go.mhlw.covid19radar)／[iPhone 版](https://apps.apple.com/jp/app/id1516764458/)）をインストールしておく……など，自分自身で可能なことは何かを改めて確認する必要があるのではないでしょうか。

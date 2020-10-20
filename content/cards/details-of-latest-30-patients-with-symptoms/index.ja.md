@@ -12,5 +12,5 @@ weight: 20
 
 {{<table src="details_of_patients_with_symptoms" len="30">}}
 
-- **最新 30 件**の内容を表示している。**[全件を見る場合は，こちらから](./cards/details-of-patients-with-symptoms)**
+- **最新 30 件**の内容を表示している。**[全件を見る場合は，こちらから](./cards/details-of-patients-with-symptoms/)**
 - 行動歴について，市内 68 例目以前は発症後，市内 69 例目以降は発症 2 日前からのものである
