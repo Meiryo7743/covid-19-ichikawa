@@ -1,6 +1,6 @@
 ---
 date: "2020-08-20T22:53:35+09:00"
-title: "How has the number of positive patients changed?"
+title: "How Has the Number of Positive Patients Changed?"
 ---
 
 As a matter of fact, I have abolished a graph that shows the number of positive patients. Specifically, it likes below image.

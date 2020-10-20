@@ -1,6 +1,6 @@
 ---
 date: "2020-09-07T22:03:50+09:00"
-title: "Apology for having spread incorrect information"
+title: "Apology for Having Spread Incorrect Information"
 ---
 
 Today (September 7th, 2020), I checked Ichikawa City official website, then I realized an apology for incorrect detail of patient. Because of this, I fixed the data on this site.
