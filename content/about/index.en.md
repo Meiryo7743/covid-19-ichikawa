@@ -5,7 +5,7 @@ title: "About This Site"
 
 This site provides the latest information on COVID-19 in Ichikawa. Note that it is unofficial website developed by individual.
 
-- Site owner: [Meiryo7743](https://meiryo7743.github.io/en/)
+- **Site owner**: [Meiryo7743](https://meiryo7743.github.io/en/)
 
 ## Requirements
 
@@ -36,11 +36,11 @@ No permission is required to link this website.
 
 ## Data sources
 
-The data posted on this site is got from [Ichikawa City official website](https://www.city.ichikawa.lg.jp/), but about Toei Subway is based on the [Tokyo Gov. repository](https://github.com/tokyo-metropolitan-gov/covid19).
+The data posted on this site is got from [Ichikawa City official website](https://www.city.ichikawa.lg.jp), but about Toei Subway is based on the [Tokyo Gov. repository](https://github.com/tokyo-metropolitan-gov/covid19/).
 
 ## Source codes
 
-The source code of this site is MIT licensed code. You can use it for free. For more details, see [GitHub repository](https://github.com/Meiryo7743/COVID-19-Ichikawa).
+The source code of this site is MIT licensed code. You can use it for free. For more details, see [GitHub repository](https://github.com/Meiryo7743/COVID-19-Ichikawa/).
 
 ## Disclaimers
 
