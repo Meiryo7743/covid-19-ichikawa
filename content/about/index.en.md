@@ -5,7 +5,7 @@ title: "About This Site"
 
 This site provides the latest information on COVID-19 in Ichikawa. Note that it is unofficial website developed by individual.
 
-- **Site owner**: [Meiryo7743](https://meiryo7743.github.io/en/)
+- **Site owner**: [Meiryo7743](https://meiryo7743.net/en/)
 
 ## Requirements
 
