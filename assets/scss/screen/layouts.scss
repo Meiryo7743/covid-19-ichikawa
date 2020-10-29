@@ -147,11 +147,10 @@ a {
 // data-table
 .data-table {
     @extend %scrollable;
-    block-size: 20rem;
+    block-size: 25rem;
     display: flex;
     line-height: 1.25;
     text-align: center;
-
     &__table {
         border: none;
         inline-size: 100%;
@@ -223,6 +222,7 @@ a {
     @extend %scrollable;
     &__canvas {
         @include margin-inline(auto);
+        block-size: 25rem;
         display: block;
         max-inline-size: none;
     }
@@ -244,7 +244,6 @@ a {
     }
     &--translation {
         background: var(--light-pink);
-
         &::before {
             content: var(--icon-translate);
         }
