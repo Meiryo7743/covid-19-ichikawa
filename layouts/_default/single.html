@@ -1,40 +1,49 @@
 {{/* _default */}}
 {{ define "main" }}
-  <article class="page page--single">
-    <header class="page__content">
-      <p class="date">
-        {{/* Publish date */}}
-        <time datetime='{{ .PublishDate.Format "2006-01-02T15:04:05" }}'>
-          {{ .PublishDate.Format "2006-01-02" }}
-        </time>
+  <article class="page single">
+    <header class="single__header">
+      {{ with .Date }}
+        <ul class="date">
+          {{/* Publish Date */}}
+          <li>
+            <time datetime='{{ .Format "2006-01-02T15:04:05" }}'>
+              {{- .Format "2006-01-02" -}}
+            </time>
+          </li>
 
-        {{/* Lastmod */}}
-        {{ with .Lastmod }}
-          <br>
-          <ins datetime='{{ .Format "2006-01-02T15:04:05" }}'>
-            {{ i18n "date_lastmod" }}<time datetime='{{ .Format "2006-01-02T15:04:05" }}'>{{ .Format "2006-01-02" }}</time>
-          </ins>
-        {{ end }}
-      </p>
+          {{/* Lastmod */}}
+          {{ with $.Lastmod }}
+            <li>
+              <ins datetime='{{ .Format "2006-01-02T15:04:05" }}'>
+                {{- i18n "date_lastmod" -}}
+                <time
+                  datetime='{{ .Format "2006-01-02T15:04:05" }}'
+                  class="date__lastmod"
+                >
+                  {{- .Format "2006-01-02" -}}
+                </time>
+              </ins>
+            </li>
+          {{ end }}
+        </ul>
+      {{ end }}
 
       {{/* Article title */}}
       <h1 class="page__title">
         {{ .Title | title }}
       </h1>
 
-      <p class="share">
+      <div class="share">
         <a
-          href='{{ print "https://www.addtoany.com/share#url=" .Permalink }}'
+          href='{{ print "https://www.addtoany.com/share#url=" .Permalink | safeURL }}'
           target="_blank"
           rel="noopener"
           class="share__btn"
-        >
-          {{ i18n "card_share" }}
-        </a>
-      </p>
+        >{{ i18n "card_share" }}</a>
+      </div>
     </header>
 
-    <section class="page__content">
+    <section class="single__content">
       {{ .Content }}
     </section>
   </article>

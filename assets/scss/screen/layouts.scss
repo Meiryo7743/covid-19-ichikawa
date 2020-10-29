@@ -84,18 +84,21 @@ a {
     @include screen-size(768) {
         @include padding-inline(2rem);
     }
-    &--single {
-        @include margin-inline(auto);
-        inline-size: unquote("min(100%, 42rem)");
-    }
     &__title {
         font-size: var(--xx-large);
         text-align: center;
-        // &--single{}
     }
     &__content {
         @extend %margin-block_1rem;
-        // &--single{}
+    }
+}
+
+// Layout: Single
+.single {
+    @include margin-inline(auto);
+    inline-size: unquote("min(100%, 42rem)");
+    & > [class*="single__"] {
+        @extend %margin-block_1rem;
     }
 }
 
@@ -258,6 +261,7 @@ a {
 // Date
 .date {
     @extend %margin-block_1rem;
+    @extend %plane-list;
     text-align: end;
 }
 
@@ -270,6 +274,7 @@ a {
 
 // Share btn
 .share {
+    @extend %margin-block_1rem;
     text-align: end;
     &__btn {
         color: var(--color-body) !important;

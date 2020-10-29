@@ -1,11 +1,9 @@
 {{ define "main" }}
-  <div class="page page--single">
-    <section class="page__content">
-      <h1 class="page__title">
-        {{ .Title | title}}
-      </h1>
+  <article class="page single">
+    <h1 class="page__title">
+      {{ .Title | title }}
+    </h1>
 
-      {{ i18n "luxio_message" | markdownify }}
-    </section>
-  </div>
+    {{ i18n "404_message" | markdownify }}
+  </article>
 {{ end }}
