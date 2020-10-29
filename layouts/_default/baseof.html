@@ -77,16 +77,16 @@
     {{ end }}
   </head>
 
-  <body class="layout body">
-    <header class="layout__header header">
+  <body class="layout">
+    <header class="layout__header">
       {{ partial "body/header.html" . }}
     </header>
 
-    <main class="layout__main main">
+    <main class="layout__main">
       {{ block "main" . }}{{ end }}
     </main>
 
-    <footer class="layout__footer footer">
+    <footer class="layout__footer">
       {{ partial "body/footer.html" . }}
     </footer>
   </body>
