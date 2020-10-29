@@ -125,8 +125,9 @@ a {
     box-shadow: var(--box-shadow);
     display: flex;
     flex-direction: column;
-    &--home {
-        display: block;
+    row-gap: 1rem;
+    & > [class*="card__"] {
+        @extend %margin-block_0;
     }
     &__title {
         font-size: var(--x-large);
@@ -136,7 +137,9 @@ a {
         flex-grow: 1;
     }
     &__footer {
-        @extend %plane-list;
+        ul {
+            @extend %plane-list;
+        }
     }
 }
 
@@ -273,8 +276,10 @@ a {
 
 // Share btn
 .share {
-    @extend %margin-block_1rem;
     text-align: end;
+    &--single {
+        @extend %margin-block_1rem;
+    }
     &__btn {
         color: var(--color-body) !important;
         &::before {

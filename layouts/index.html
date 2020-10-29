@@ -18,12 +18,12 @@
 
     {{/*  News */}}
     <div class="card-container card-container--home">
-      <article class="card card--home">
+      <article class="card">
         <h2 class="card__title">
           {{ i18n "card_news" | title }}
         </h2>
 
-        <ul class="news">
+        <ul class="card__content news">
           {{ range first 5 (where .Site.RegularPages.ByWeight "Section" "==" "articles") }}
             <li class="news__item">
               <time datetime='{{ .Date.Format "2006-01-02T15:04:05" }}'>
@@ -54,12 +54,12 @@
     {{/* Debug */}}
     {{ if .Site.IsServer }}
       <div class="card-container card-container--home">
-        <article class="card card--home">
+        <article class="card">
           <h2 class="card__title">
             {{ i18n "card_debug" | title }}
           </h2>
 
-          <ul>
+          <ul class="card__content">
             <li>
               <a href='{{ "/404.html" | safeURL | absLangURL }}'>
                 404
