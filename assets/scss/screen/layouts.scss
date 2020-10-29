@@ -84,10 +84,12 @@ a {
     @include screen-size(768) {
         @include padding-inline(2rem);
     }
-    &__title {
-        font-size: var(--xx-large);
-        text-align: center;
-    }
+}
+
+// Page Title
+.title {
+    font-size: var(--xx-large);
+    text-align: center;
 }
 
 // Layout: Single
