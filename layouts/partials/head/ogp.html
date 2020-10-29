@@ -1,6 +1,6 @@
 <meta
     property="og:description"
-    content='{{ .Site.Params.Description }}'
+    content='{{ if eq .Kind "404" }}{{ .Title | title }}{{ else }}{{ .Site.Params.Description }}{{ end }}'
 >
 <meta
     property="og:image"

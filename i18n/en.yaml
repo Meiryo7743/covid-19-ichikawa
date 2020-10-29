@@ -134,3 +134,14 @@ patients_行動歴_医療機関:
   other: medical facility
 patients_行動歴_医療関係:
   other: medical facility
+
+# 404
+404_message:
+  other: |
+    The page you are looking for could not be found. Perhaps, it has been deleted or the URL is incorrect.
+
+    You might be able to find it from the search field below:
+search_input:
+  other: Search by Google
+search_btn:
+  other: Search

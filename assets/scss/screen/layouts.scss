@@ -69,6 +69,7 @@ a {
             color: var(--color-body) !important;
             font-weight: bold;
             img {
+                block-size: 2rem;
                 inline-size: 2rem;
             }
         }
@@ -146,11 +147,10 @@ a {
 // data-table
 .data-table {
     @extend %scrollable;
-    block-size: 20rem;
+    block-size: 25rem;
     display: flex;
     line-height: 1.25;
     text-align: center;
-
     &__table {
         border: none;
         inline-size: 100%;
@@ -164,16 +164,6 @@ a {
         }
         ul {
             @extend %plane-list;
-        }
-    }
-
-    // table-details-of-patients-without-symptoms
-    #table-details-of-patients-without-symptoms {
-        td,
-        th {
-            &:nth-child(4) {
-                display: none;
-            }
         }
     }
 }
@@ -232,6 +222,7 @@ a {
     @extend %scrollable;
     &__canvas {
         @include margin-inline(auto);
+        block-size: 25rem;
         display: block;
         max-inline-size: none;
     }
@@ -253,7 +244,6 @@ a {
     }
     &--translation {
         background: var(--light-pink);
-
         &::before {
             content: var(--icon-translate);
         }
@@ -288,6 +278,27 @@ a {
         }
         &::after {
             content: none !important; // Hide external link icon
+        }
+    }
+}
+
+// Search in 404.html
+.search {
+    @extend %margin-block_1rem;
+    display: flex;
+    border: var(--border);
+    & > * {
+        block-size: 3rem;
+        border: none;
+    }
+    &__input {
+        inline-size: 100%;
+    }
+    &__btn {
+        &::before {
+            @extend %icon;
+            content: var(--icon-search);
+            font-size: var(--xx-large);
         }
     }
 }

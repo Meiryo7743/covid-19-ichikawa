@@ -8,7 +8,7 @@
 <div class="data-table">
   <table
     class="data-table__table"
-    id='{{ $table_id }}'
+    id='{{ $table_id | safeHTMLAttr }}'
   >
     <thead>
       <tr>
@@ -24,9 +24,11 @@
           {{ i18n "patients_検査確定日" }}
         </th>
 
-        <th class="sort" data-sort="発症日">
-            {{ i18n "patients_発症日" }}
-        </th>
+        {{ if ne ($.Get "src") "details_of_patients_without_symptoms" }}
+          <th class="sort" data-sort="発症日">
+              {{ i18n "patients_発症日" }}
+          </th>
+        {{ end }}
 
         <th>
           {{ i18n "patients_年代" }}
@@ -50,7 +52,7 @@
       </tr>
     </thead>
 
-    <tbody id='{{ $tbody_id }}'>
+    <tbody id='{{ $tbody_id | safeHTMLAttr }}'>
       {{/* 表データの出力 */}}
       {{ range first $data_len $data_src }}
         <tr>
@@ -69,18 +71,20 @@
           <td class="検査確定日">
             {{ with .検査確定日 }}
               <time datetime='{{ . }}'>
-                {{ replaceRE "^\\d+-(\\d+-\\d+)$" "$1" . }}
+                {{- replaceRE "^\\d+-(\\d+-\\d+)$" "$1" . -}}
               </time>
             {{ end }}
           </td>
 
-          <td class="発症日">
-            {{ with .発症日 }}
-              <time datetime='{{ . }}'>
-                {{ replaceRE "^\\d+-(\\d+-\\d+)$" "$1" . }}
-              </time>
-            {{ end }}
-          </td>
+          {{ if ne ($.Get "src") "details_of_patients_without_symptoms" }}
+            <td class="発症日">
+              {{ with .発症日 }}
+                <time datetime='{{ . }}'>
+                  {{- replaceRE "^\\d+-(\\d+-\\d+)$" "$1" . -}}
+                </time>
+              {{ end }}
+            </td>
+          {{ end }}
 
           <td>
             {{ with .年代 }}
@@ -156,5 +160,5 @@
 
 {{/* List.js sort table */}}
 <script>
-  sortTable("{{ $table_id }}", "{{ $tbody_id }}");
+  sortTable('{{ $table_id | safeJS }}', '{{ $tbody_id | safeJS }}');
 </script>
