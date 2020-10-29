@@ -88,9 +88,6 @@ a {
         font-size: var(--xx-large);
         text-align: center;
     }
-    &__content {
-        @extend %margin-block_1rem;
-    }
 }
 
 // Layout: Single
