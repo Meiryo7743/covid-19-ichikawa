@@ -4,8 +4,12 @@
     id="updates-on-covid-19-in-ichikawa"
   >
     <div class="date">
-      {{- i18n "date_lastmod" -}}
-      <time datetime='{{ now.Format "2006-01-02T15:04:05" }}'>{{ now.Format "2006-01-02" }}</time>
+      <ins datetime='{{ now.Format "2006-01-02T15:04:05" }}'>
+        {{- i18n "date_lastmod" -}}
+        <time datetime='{{ now.Format "2006-01-02T15:04:05" }}'>
+          {{- now.Format "2006-01-02" -}}
+        </time>
+      </ins>
     </div>
 
     <h1 class="page__title">
@@ -22,12 +26,16 @@
         <ul class="news">
           {{ range first 5 (where .Site.RegularPages.ByWeight "Section" "==" "articles") }}
             <li class="news__item">
-              <time
-                datetime='{{ .Date.Format "2006-01-02T15:04:05" }}'
-              >{{ .Date.Format "2006-01-02" }}</time> - <a
+              <time datetime='{{ .Date.Format "2006-01-02T15:04:05" }}'>
+                {{- .Date.Format "2006-01-02" -}}
+              </time>
+              {{- print " - " -}}
+              <a
                 href="{{ .Permalink | safeURL | absLangURL }}"
                 class="news__link"
-              >{{ .Title | title }}</a>
+              >
+                {{ .Title | title }}
+              </a>
             </li>
           {{ end }}
         </ul>
