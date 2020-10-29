@@ -16,26 +16,18 @@ a {
     display: flex;
     flex-direction: column;
     min-block-size: 100vh;
-    // &__header {}
+    &__header {
+        background: var(--bgcolor-header);
+        box-shadow: var(--box-shadow);
+    }
     &__main {
         flex-grow: 1;
     }
-    // &__footer {}
-}
-
-// Header
-.header {
-    background: var(--bgcolor-header);
-    box-shadow: var(--box-shadow);
-}
-
-// .main{}
-
-// Footer
-.footer {
-    @extend %padding-block_1rem;
-    @extend %padding-inline_1rem;
-    text-align: center;
+    &__footer {
+        @extend %padding-block_1rem;
+        @extend %padding-inline_1rem;
+        text-align: center;
+    }
 }
 
 // Navigation
