@@ -15,6 +15,7 @@ disableKinds:
 
 languages:
   ja:
+    languageCode: ja
     languageName: 日本語
     title: 【非公式】市川市新型コロナウイルス感染症対策サイト
     weight: 10
@@ -25,7 +26,8 @@ languages:
         emergency: false
         translation: false
   # ja-hrkt:
-  #   languageName: やさしい日本語
+  #   languageCode: ja
+  #   languageName: やさしいにほんご
   #   title: 【ひこうしき】 いちかわし 新型コロナウイルス かんせんしょう じょうほう サイト
   #   weight: 11
   #   params:
@@ -35,6 +37,7 @@ languages:
   #       emergency: false
   #       translation: true
   en:
+    languageCode: en
     languageName: English
     title: "[UNOFFICIAL] Ichikawa COVID-19 Information Website"
     weight: 20
