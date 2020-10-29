@@ -10,7 +10,7 @@
     {{ partial "head/analytics.html" . }}
 
     <meta charset="utf-8">
-    <meta name="description" content='{{ .Site.Params.Description }}'>
+    <meta name="description" content='{{ if eq .Kind "404" }}{{ .Title | title }}{{ else }}{{ .Site.Params.Description }}{{ end }}'>
     <meta name="format-detection" content="telephone=no,address=no,email=no">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 

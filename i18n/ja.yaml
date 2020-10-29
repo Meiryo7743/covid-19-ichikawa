@@ -63,3 +63,14 @@ patients_推定感染経路:
   other: 感染経路
 patients_行動歴:
   other: 行動歴
+
+# 404
+404_message:
+  other: |
+    お探しのページは見つかりませんでした。当該ページは削除されたか，又は誤った URL を参照している可能性があります。
+
+    以下の検索欄から目的のページを探し出せるかもしれません。
+search_input:
+  other: サイト内検索（Google）
+search_btn:
+  other: 検索

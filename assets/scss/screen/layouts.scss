@@ -281,3 +281,24 @@ a {
         }
     }
 }
+
+// Search in 404.html
+.search {
+    @extend %margin-block_1rem;
+    display: flex;
+    border: var(--border);
+    & > * {
+        block-size: 3rem;
+        border: none;
+    }
+    &__input {
+        inline-size: 100%;
+    }
+    &__btn {
+        &::before {
+            @extend %icon;
+            content: var(--icon-search);
+            font-size: var(--xx-large);
+        }
+    }
+}
