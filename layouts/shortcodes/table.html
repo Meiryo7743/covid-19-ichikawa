@@ -8,7 +8,7 @@
 <div class="data-table">
   <table
     class="data-table__table"
-    id='{{ $table_id }}'
+    id='{{ $table_id | safeHTMLAttr }}'
   >
     <thead>
       <tr>
@@ -52,7 +52,7 @@
       </tr>
     </thead>
 
-    <tbody id='{{ $tbody_id }}'>
+    <tbody id='{{ $tbody_id | safeHTMLAttr }}'>
       {{/* 表データの出力 */}}
       {{ range first $data_len $data_src }}
         <tr>
@@ -160,6 +160,5 @@
 
 {{/* List.js sort table */}}
 <script>
-  sortTable("{{ $table_id }}", "{{ $tbody_id }}");
-  console.log("{{ .Get `src` | safeJS }}");
+  sortTable('{{ $table_id | safeJS }}', '{{ $tbody_id | safeJS }}');
 </script>
