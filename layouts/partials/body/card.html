@@ -1,34 +1,36 @@
 {{/* Card */}}
-<section class="card__content">
-  <h2 class="card__title">
-    {{ .Title | title }}
-  </h2>
+<h2 class="card__title">
+  {{ .Title | title }}
+</h2>
 
+<section class="card__content">
   {{ .Content }}
 </section>
+<nav class="card__footer">
+  <ul>
+    {{/* Source Link */}}
+    {{ with .Params.Cards.Data.Source }}
+      <li>
+        <a
+          href='{{ . | safeURL | absLangURL }}'
+          target="_blank"
+          rel="noopener"
+        >
+          {{ i18n "card_source" }}
+        </a>
+      </li>
+    {{ end }}
 
-<ul class="card__footer">
-  {{ with .Params.Cards.Data.Source }}
-    <li>
+    {{/* Share Button */}}
+    <li class="share">
       <a
-        href='{{ . | safeURL | absLangURL }}'
+        href='{{ print "https://www.addtoany.com/share#url=" .Permalink | safeURL }}'
         target="_blank"
         rel="noopener"
+        class="share__btn"
       >
-        {{ i18n "card_source" }}
+        {{ i18n "card_share" }}
       </a>
     </li>
-  {{ end }}
-
-  {{/* AddToAny */}}
-  <li class="share">
-    <a
-      href='{{ print "https://www.addtoany.com/share#url=" .Permalink }}'
-      target="_blank"
-      rel="noopener"
-      class="share__btn"
-    >
-      {{ i18n "card_share" }}
-    </a>
-  </li>
-</ul>
+  </ul>
+</nav>

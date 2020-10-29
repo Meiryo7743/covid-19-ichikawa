@@ -16,35 +16,24 @@ a {
     display: flex;
     flex-direction: column;
     min-block-size: 100vh;
-    // &__header {}
+    &__header {
+        background: var(--bgcolor-header);
+        box-shadow: var(--box-shadow);
+    }
     &__main {
         flex-grow: 1;
     }
-    // &__footer {}
-}
-
-// Header
-.header {
-    background: var(--bgcolor-header);
-    box-shadow: var(--box-shadow);
-}
-
-// .main{}
-
-// Footer
-.footer {
-    @extend %padding-block_1rem;
-    @extend %padding-inline_1rem;
-    text-align: center;
+    &__footer {
+        @extend %padding-block_1rem;
+        @extend %padding-inline_1rem;
+        text-align: center;
+    }
 }
 
 // Navigation
 .nav {
-    line-height: 1.25 !important;
     @extend %plane-list;
     display: grid;
-    font-feature-settings: "palt";
-    text-align: start;
     @include screen-size(0) {
         grid-template-columns: repeat(auto-fit, 50%);
     }
@@ -55,16 +44,17 @@ a {
         display: flex;
         flex-wrap: wrap;
     }
-
-    // &__item{}
-
+    &__item {
+        line-height: 1.25 !important;
+        font-feature-settings: "palt";
+        text-align: start;
+    }
     &__link {
-        block-size: 100%;
         @extend %padding-block_1rem;
         @extend %padding-inline_1rem;
-        // テキストを上下中央配置にする
-        display: flex;
         align-items: center;
+        block-size: 100%;
+        display: flex;
         &:hover {
             background: var(--bgcolor-nav-link);
         }
@@ -94,32 +84,26 @@ a {
     @include screen-size(768) {
         @include padding-inline(2rem);
     }
-    &--index {
-        .page__content {
-            @include margin-block(2rem);
-        }
-    }
-    &--single {
-        @include margin-inline(auto);
-        inline-size: unquote("min(100%, 42rem)");
-    }
+}
 
-    &__title {
-        font-size: var(--xx-large);
-        text-align: center;
-        // &--index{}
-        // &--single{}
-    }
+// Page Title
+.title {
+    font-size: var(--xx-large);
+    text-align: center;
+}
 
-    &__content {
+// Layout: Single
+.single {
+    @include margin-inline(auto);
+    inline-size: unquote("min(100%, 42rem)");
+    & > [class*="single__"] {
         @extend %margin-block_1rem;
-        // &--index{}
-        // &--single{}
     }
 }
 
 // Card
 .card-container {
+    @include margin-block(2rem);
     display: grid;
     gap: 2rem;
     // カードの配置
@@ -128,6 +112,9 @@ a {
     }
     @include screen-size(768) {
         grid-template-columns: repeat(2, calc((100% - 2rem) / 2));
+    }
+    &--home {
+        display: block;
     }
 }
 .card {
@@ -138,21 +125,21 @@ a {
     box-shadow: var(--box-shadow);
     display: flex;
     flex-direction: column;
-    &--index {
-        display: block;
+    row-gap: 1rem;
+    & > [class*="card__"] {
+        @extend %margin-block_0;
     }
-
     &__title {
         font-size: var(--x-large);
         text-align: center;
     }
-
     &__content {
         flex-grow: 1;
     }
-
     &__footer {
-        @extend %plane-list;
+        ul {
+            @extend %plane-list;
+        }
     }
 }
 
@@ -275,6 +262,8 @@ a {
 
 // Date
 .date {
+    @extend %margin-block_1rem;
+    @extend %plane-list;
     text-align: end;
 }
 
@@ -288,6 +277,9 @@ a {
 // Share btn
 .share {
     text-align: end;
+    &--single {
+        @extend %margin-block_1rem;
+    }
     &__btn {
         color: var(--color-body) !important;
         &::before {
