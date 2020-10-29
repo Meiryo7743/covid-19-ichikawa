@@ -28,21 +28,19 @@
   </article>
 {{ end }}
 
-{{/* Header nav */}}
-<nav class="header__nav">
+<nav>
   <ul class="nav nav--header">
     {{/* Logo */}}
     <li class="nav__item">
       <a
         href='{{ .Site.Home.Permalink }}'
         class="nav__link nav__link--logo"
-      >
-        <img
+      ><img
           src='{{ "/img/logo.svg" | safeURL | absURL }}'
           alt='{{ .Site.Title }}'
           loading="lazy"
-        >{{ .Site.Title | title }}
-      </a>
+        >{{ .Site.Title | title }}</a
+      >
     </li>
 
     {{/* Languages */}}
@@ -53,24 +51,20 @@
             href="{{ .Permalink }}"
             class="nav__link nav__link--lang"
             lang="{{ .Language.Lang }}"
-          >
-            {{ .Language.LanguageName }}
-          </a>
+          >{{ .Language.LanguageName }}</a>
         </li>
       {{ end }}
     {{ end }}
   </ul>
 
-  {{/* Contents */}}
+  {{/* Menu */}}
   <ul class="nav">
     {{/* Home */}}
     <li class="nav__item">
       <a
         href='{{ .Site.Home.Permalink }}#updates-on-covid-19-in-ichikawa'
         class="nav__link"
-      >
-        {{ .Site.Home.Title | title }}
-      </a>
+      >{{ .Site.Home.Title | title }}</a>
     </li>
 
     {{ range .Site.Menus.header_nav }}
@@ -86,9 +80,7 @@
             target="_blank"
             rel="noopener"
           {{ end }}
-        >
-          {{ .Name | title }}
-        </a>
+        >{{ .Name | title }}</a>
       </li>
     {{ end }}
   </ul>

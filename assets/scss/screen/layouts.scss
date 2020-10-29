@@ -32,11 +32,8 @@ a {
 
 // Navigation
 .nav {
-    line-height: 1.25 !important;
     @extend %plane-list;
     display: grid;
-    font-feature-settings: "palt";
-    text-align: start;
     @include screen-size(0) {
         grid-template-columns: repeat(auto-fit, 50%);
     }
@@ -47,16 +44,17 @@ a {
         display: flex;
         flex-wrap: wrap;
     }
-
-    // &__item{}
-
+    &__item {
+        line-height: 1.25 !important;
+        font-feature-settings: "palt";
+        text-align: start;
+    }
     &__link {
-        block-size: 100%;
         @extend %padding-block_1rem;
         @extend %padding-inline_1rem;
-        // テキストを上下中央配置にする
-        display: flex;
         align-items: center;
+        block-size: 100%;
+        display: flex;
         &:hover {
             background: var(--bgcolor-nav-link);
         }
