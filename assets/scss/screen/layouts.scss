@@ -166,16 +166,6 @@ a {
             @extend %plane-list;
         }
     }
-
-    // table-details-of-patients-without-symptoms
-    #table-details-of-patients-without-symptoms {
-        td,
-        th {
-            &:nth-child(4) {
-                display: none;
-            }
-        }
-    }
 }
 
 // table sort

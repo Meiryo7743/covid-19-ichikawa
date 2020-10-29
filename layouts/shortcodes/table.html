@@ -24,9 +24,11 @@
           {{ i18n "patients_検査確定日" }}
         </th>
 
-        <th class="sort" data-sort="発症日">
-            {{ i18n "patients_発症日" }}
-        </th>
+        {{ if ne ($.Get "src") "details_of_patients_without_symptoms" }}
+          <th class="sort" data-sort="発症日">
+              {{ i18n "patients_発症日" }}
+          </th>
+        {{ end }}
 
         <th>
           {{ i18n "patients_年代" }}
@@ -69,18 +71,20 @@
           <td class="検査確定日">
             {{ with .検査確定日 }}
               <time datetime='{{ . }}'>
-                {{ replaceRE "^\\d+-(\\d+-\\d+)$" "$1" . }}
+                {{- replaceRE "^\\d+-(\\d+-\\d+)$" "$1" . -}}
               </time>
             {{ end }}
           </td>
 
-          <td class="発症日">
-            {{ with .発症日 }}
-              <time datetime='{{ . }}'>
-                {{ replaceRE "^\\d+-(\\d+-\\d+)$" "$1" . }}
-              </time>
-            {{ end }}
-          </td>
+          {{ if ne ($.Get "src") "details_of_patients_without_symptoms" }}
+            <td class="発症日">
+              {{ with .発症日 }}
+                <time datetime='{{ . }}'>
+                  {{- replaceRE "^\\d+-(\\d+-\\d+)$" "$1" . -}}
+                </time>
+              {{ end }}
+            </td>
+          {{ end }}
 
           <td>
             {{ with .年代 }}
@@ -157,4 +161,5 @@
 {{/* List.js sort table */}}
 <script>
   sortTable("{{ $table_id }}", "{{ $tbody_id }}");
+  console.log("{{ .Get `src` | safeJS }}");
 </script>
