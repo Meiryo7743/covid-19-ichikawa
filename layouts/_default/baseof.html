@@ -4,7 +4,7 @@
 {{ $js_list := (resources.Get "js/list.js").Content  }}
 
 <!DOCTYPE html>
-<html lang='{{ .Site.LanguageCode }}'>
+<html lang='{{ .Site.LanguageCode }}' data-lang='{{ .Site.Language.Lang }}'>
   <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
     {{/* Google Analytics */}}
     {{ partial "head/analytics.html" . }}
