@@ -9,26 +9,20 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Setup timezone
-        uses: zcong1993/setup-timezone@master
-        with:
-          timezone: Asia/Tokyo
-
       - uses: actions/checkout@v2
         with:
           submodules: true # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
-
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: 0.75.1 # 最新版の不具合に伴う暫定的な対処
+          hugo-version: 0.75.1
           # hugo-version: latest
           extended: true
-
       - name: Build
         run: hugo --minify -e production
 
+      # Deploy
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:

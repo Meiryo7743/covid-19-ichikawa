@@ -1,0 +1,40 @@
+name: Fetch Data of COVID-19 in Ichikawa
+
+on:
+  schedule:
+    - cron: "0 11 * * *" # at 20:00 JST every day
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      # Switch to development branch
+      - uses: actions/checkout@v2
+        with:
+          ref: development
+
+      # Run Python scripts
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pyyaml
+      - name: Run scripts
+        run: |
+          python data_updater.py
+
+      # Commit files
+      - name: Commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -m "Add changes" -a
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: development
