@@ -4,36 +4,43 @@ import re
 import urllib.request
 import yaml
 
+# Data dir
+DIR = './data/'
+
+# Check existence of data dir
+if not (os.path.isdir(DIR)):
+    os.mkdir(DIR)
+
 # List of the data files
 FILES = [
     {
-        "name": "details_of_patients_with_symptoms",
-        "id": "2PACX-1vSVUIR-4xTBX2x-5-4lf9dbjuvGsRUL45GxDJ_RUIG1aUNC9XB9QFNlusKNgvUu4LJuR3rvu5JBQd4c",
-        "gid": "0"
+        'name': 'details_of_patients_with_symptoms',
+        'id': '2PACX-1vSVUIR-4xTBX2x-5-4lf9dbjuvGsRUL45GxDJ_RUIG1aUNC9XB9QFNlusKNgvUu4LJuR3rvu5JBQd4c',
+        'gid': '0'
     },
     {
-        "name": "the_number_of_patients_with_symptoms",
-        "id": "2PACX-1vSVUIR-4xTBX2x-5-4lf9dbjuvGsRUL45GxDJ_RUIG1aUNC9XB9QFNlusKNgvUu4LJuR3rvu5JBQd4c",
-        "gid": "1334047042"
+        'name': 'the_number_of_patients_with_symptoms',
+        'id': '2PACX-1vSVUIR-4xTBX2x-5-4lf9dbjuvGsRUL45GxDJ_RUIG1aUNC9XB9QFNlusKNgvUu4LJuR3rvu5JBQd4c',
+        'gid': '1334047042'
     },
     {
-        "name": "details_of_patients_without_symptoms",
-        "id": "2PACX-1vRhCk-rWHxbPh2CWEvtJsVWi52WzdusohxNmIOgPSlr6y3mq1aEfm3HWcB0yV7tp9OI4UULAnMJV7XF",
-        "gid": "0"
+        'name': 'details_of_patients_without_symptoms',
+        'id': '2PACX-1vRhCk-rWHxbPh2CWEvtJsVWi52WzdusohxNmIOgPSlr6y3mq1aEfm3HWcB0yV7tp9OI4UULAnMJV7XF',
+        'gid': '0'
     },
     {
-        "name": "the_number_of_patients_without_symptoms",
-        "id": "2PACX-1vRhCk-rWHxbPh2CWEvtJsVWi52WzdusohxNmIOgPSlr6y3mq1aEfm3HWcB0yV7tp9OI4UULAnMJV7XF",
-        "gid": "1334047042"
+        'name': 'the_number_of_patients_without_symptoms',
+        'id': '2PACX-1vRhCk-rWHxbPh2CWEvtJsVWi52WzdusohxNmIOgPSlr6y3mq1aEfm3HWcB0yV7tp9OI4UULAnMJV7XF',
+        'gid': '1334047042'
     }
 ]
 
 for i in FILES:
-    URL = "https://docs.google.com/spreadsheets/d/e/" + \
-        i["id"] + "/pub?single=true&output=tsv&gid=" + i["gid"]
-    DST = "./data/" + i["name"]
-    FILE_TSV = DST + ".tsv"
-    FILE_YAML = DST + ".yml"
+    URL = 'https://docs.google.com/spreadsheets/d/e/' + \
+        i['id'] + '/pub?single=true&output=tsv&gid=' + i['gid']
+    DST = DIR + i['name']
+    FILE_TSV = DST + '.tsv'
+    FILE_YAML = DST + '.yaml'
 
     # Download the data files
     urllib.request.urlretrieve(URL, FILE_TSV)
