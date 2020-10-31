@@ -3,7 +3,7 @@
 ![Netlify Status](https://api.netlify.com/api/v1/badges/b30d38da-34ef-424d-ac99-15754c78a693/deploy-status)
 
 - [日本語](#非公式市川市新型コロナウイルス感染症情報サイト)
-- [English](#unofficial-ichikawa-covid-19-information-website)
+- [English](#unofficial-ichikawa-covid-19-information-site)
 
 ---
 
@@ -30,13 +30,13 @@
 
 ---
 
-# [UNOFFICIAL] Ichikawa COVID-19 Information Website
+# [UNOFFICIAL] Ichikawa COVID-19 Information Site
 
-![[UNOFFICIAL] Ichikawa COVID-19 Information Website](./static/img/ogp.en.png)
+![[UNOFFICIAL] Ichikawa COVID-19 Information Site](./static/img/ogp.en.png)
 
 ## Overview
 
-This is the repository of “**[[UNOFFICIAL] Ichikawa COVID-19 Information Website](https://stopcovid19-ichikawa.netlify.app/en/)**”. The site is lightweight because it is built by [Hugo](https://gohugo.io/), a fast static site generator written in Go.
+This is the repository of “**[[UNOFFICIAL] Ichikawa COVID-19 Information Site](https://stopcovid19-ichikawa.netlify.app/en/)**”. The site is lightweight because it is built by [Hugo](https://gohugo.io/), a fast static site generator written in Go.
 
 - **URL**: [https://stopcovid19-ichikawa.netlify.app](https://stopcovid19-ichikawa.netlify.app/en/)
 - **License**: [MIT](./LICENSE)
