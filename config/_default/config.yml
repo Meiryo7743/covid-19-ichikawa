@@ -17,11 +17,11 @@ languages:
   ja:
     languageCode: ja
     languageName: 日本語
-    title: 【非公式】市川市新型コロナウイルス感染症対策サイト
+    title: 【非公式】市川市新型コロナウイルス感染症情報サイト
     weight: 10
     params:
       description: 当サイトは，市川市内における新型コロナウイルス感染症（COVID-19）及びそれに関連する情報を提供いたします。当サイトは個人が制作した非公式サイトです。
-      image: "/img/ogp_ja.png"
+      image: "/img/ogp.ja.png"
       notice:
         emergency: false
         translation: false
@@ -32,18 +32,18 @@ languages:
   #   weight: 11
   #   params:
   #     description: 当サイトは，市川市内における新型コロナウイルス感染症（COVID-19）及びそれに関連する情報を提供いたします。当サイトは個人が制作した非公式サイトです。
-  #     image: "/img/ogp_ja.png"
+  #     image: "/img/ogp.ja.png"
   #     notice:
   #       emergency: false
   #       translation: true
   en:
     languageCode: en
     languageName: English
-    title: "[UNOFFICIAL] Ichikawa COVID-19 Information Website"
+    title: "[UNOFFICIAL] Ichikawa COVID-19 Information Site"
     weight: 20
     params:
       description: This site provides the latest information on COVID-19 in Ichikawa. Note that it is unofficial website developed by individual.
-      image: "/img/ogp_en.png"
+      image: "/img/ogp.en.png"
       notice:
         emergency: false
         translation: true
