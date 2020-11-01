@@ -67,7 +67,7 @@
       >{{ .Site.Home.Title | title }}</a>
     </li>
 
-    {{ range .Site.Menus.header_nav }}
+    {{ range .Site.Menus.header }}
       <li class="nav__item">
         {{ $url := urls.Parse (.URL | safeURL | absLangURL) }}
         {{ $cur := urls.Parse $.Permalink }}

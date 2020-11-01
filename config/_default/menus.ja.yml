@@ -1,8 +1,10 @@
-# Japanese
-header_nav:
-  - name: 新型コロナウイルス情報
-    url: "https://www.city.ichikawa.lg.jp/new01/shingatacoronatokusetupage.html"
+header:
+  - name: 新型コロナとは？
+    url: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000164708_00001.html"
     weight: 10
+  - name: 新型コロナ情報
+    url: "https://www.city.ichikawa.lg.jp/new01/shingatacoronatokusetupage.html"
+    weight: 20
   - name: 市立学校・幼稚園
     url: "https://www.city.ichikawa.lg.jp/edu06/1111000082.html"
     weight: 30
