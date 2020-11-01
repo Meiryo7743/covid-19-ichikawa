@@ -2,7 +2,7 @@ name: Fetch Data of COVID-19 in Ichikawa
 
 on:
   schedule:
-    - cron: "0 11 * * *" # at 20:00 JST every day
+    - cron: "30 10 * * *" # At 19:30 JST every day
 
 jobs:
   update:
@@ -32,7 +32,7 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add .
-          git commit -m "Add changes" -a
+          git commit -m "Update data files" -a
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
