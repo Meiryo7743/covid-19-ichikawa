@@ -11,4 +11,4 @@ date: "2020-08-31T18:27:15+09:00"
 title: "Details of Patients Without Symptoms"
 ---
 
-{{<table src="details_of_patients_without_symptoms">}}
+{{< table src="details_of_patients_without_symptoms" >}}

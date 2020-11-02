@@ -10,4 +10,4 @@ title: "無症状患者数"
 weight: 30
 ---
 
-{{<list src="the_number_of_patients_without_symptoms">}}
+{{< list src="the_number_of_patients_without_symptoms" >}}
