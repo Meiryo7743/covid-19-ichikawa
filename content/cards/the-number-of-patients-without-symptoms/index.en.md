@@ -10,4 +10,4 @@ title: "The Number of Patients Without Symptoms"
 weight: 30
 ---
 
-{{<list src="the_number_of_patients_without_symptoms">}}
+{{< list src="the_number_of_patients_without_symptoms" >}}
