@@ -7,7 +7,7 @@
       {{ $time := time (now.Format "2006-01-02T15:04:05-0700") }}
       <ins datetime='{{ $time }}'>
         {{- i18n "date_lastmod" -}}
-        <time>
+        <time datetime='{{ $time }}'>
           {{- dateFormat "2006-01-02 15:04 MST" $time -}}
         </time>
       </ins>
