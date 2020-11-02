@@ -23,6 +23,8 @@ notice_emergency:
 # Patients
 patients_total:
   other: 計
+patients_number:
+  other: "{{ .Count }} 人"
 patients_市内:
   other: 市内
 patients_県内:
@@ -33,6 +35,16 @@ patients_発症日:
   other: 発症日
 patients_年代:
   other: 年代
+patients_性別:
+  other: 性別
+patients_職業:
+  other: 職業
+patients_推定感染経路:
+  other: 感染経路
+patients_行動歴:
+  other: 行動歴
+
+# Age
 patients_年代_10歳未満:
   other: 10 歳未満
 patients_年代_10代:
@@ -55,14 +67,6 @@ patients_年代_90代:
   other: 90 代
 patients_年代_90代以上:
   other: 90 代超
-patients_性別:
-  other: 性別
-patients_職業:
-  other: 職業
-patients_推定感染経路:
-  other: 感染経路
-patients_行動歴:
-  other: 行動歴
 
 # 404
 404_message:
