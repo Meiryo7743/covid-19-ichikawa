@@ -4,11 +4,10 @@
     id="updates-on-covid-19-in-ichikawa"
   >
     <div class="date">
-      {{ $time := time (now.Format "2006-01-02T15:04:05-0700") }}
-      <ins datetime='{{ $time }}'>
+      <ins datetime='{{ dateFormat "2006-01-02T15:04:05-0700" (now) }}'>
         {{- i18n "date_lastmod" -}}
-        <time datetime='{{ $time }}'>
-          {{- dateFormat "2006-01-02 15:04 MST" $time -}}
+        <time datetime='{{ dateFormat "2006-01-02T15:04:05-0700" (now) }}'>
+          {{- dateFormat "2006-01-02 15:04 MST" (now) -}}
         </time>
       </ins>
     </div>
