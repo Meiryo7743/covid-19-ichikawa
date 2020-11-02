@@ -23,8 +23,8 @@ notice_emergency:
 patients_total:
   other: Total
 patients_number:
-  one: "1 person"
-  other: "{{ .Count }} persons"
+  one: "{{ .Count }} case"
+  other: "{{ .Count }} cases"
 patients_市内:
   other: City
 patients_県内:
