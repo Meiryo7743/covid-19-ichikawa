@@ -60,6 +60,7 @@ minify:
 
 params:
   author: Meiryo7743
+  copyrightYear: 2020
 
 privacy:
   disqus:

@@ -1,7 +1,7 @@
 <p class="copyright">
   <small>
-    {{- print "&copy; 2020" | safeHTML -}}
-    {{- if gt now.Year 2020 }}
+    {{- print "&copy; " .Site.Params.CopyrightYear | safeHTML -}}
+    {{- if gt now.Year .Site.Params.CopyrightYear }}
       {{- print " - " now.Year -}}
     {{ end -}}
     {{- print " " .Site.Params.Author -}}
