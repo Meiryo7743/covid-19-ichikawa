@@ -1,5 +1,4 @@
 baseURL: "https://stopcovid19-ichikawa.netlify.app/"
-copyright: "&copy; 2020 Meiryo7743"
 defaultContentLanguage: ja
 defaultContentLanguageInSubdir: true
 enableGitInfo: true
@@ -58,6 +57,9 @@ minify:
   tdewolff:
     html:
       keepEndTags: false
+
+params:
+  author: Meiryo7743
 
 privacy:
   disqus:
