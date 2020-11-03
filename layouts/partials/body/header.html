@@ -4,7 +4,7 @@
   <aside class="notice">
     <p>
       <strong>
-        {{ i18n "notice_noscript" }}
+        {{- i18n "notice_noscript" -}}
       </strong>
     </p>
   </aside>
@@ -14,7 +14,7 @@
 {{ with .Site.Params.Notice.Translation }}
   <aside class="notice notice--translation">
     <p>
-      {{ i18n "notice_translation" }}
+      {{- i18n "notice_translation" -}}
     </p>
   </aside>
 {{ end }}
@@ -23,7 +23,7 @@
 {{ with .Site.Params.Notice.Emergency }}
   <article class="notice">
     <div>
-      {{ i18n "notice_emergency" | markdownify }}
+      {{- i18n "notice_emergency" | markdownify -}}
     </div>
   </article>
 {{ end }}
@@ -38,9 +38,12 @@
       ><img
           src='{{ "/img/logo.svg" | safeURL | absURL }}'
           alt='{{ .Site.Title }}'
+          width="32"
+          height="32"
           loading="lazy"
-        >{{ .Site.Title | title }}</a
-      >
+        >
+        {{- .Site.Title | title -}}
+      </a>
     </li>
 
     {{/* Languages */}}
@@ -51,22 +54,26 @@
             href="{{ .Permalink }}"
             class="nav__link nav__link--lang"
             lang="{{ .Language.Lang }}"
-          >{{ .Language.LanguageName }}</a>
+          >
+            {{- .Language.LanguageName -}}
+          </a>
         </li>
       {{ end }}
     {{ end }}
   </ul>
 
-  {{/* Menu */}}
   <ul class="nav">
     {{/* Home */}}
     <li class="nav__item">
       <a
         href='{{ .Site.Home.Permalink }}#updates-on-covid-19-in-ichikawa'
         class="nav__link"
-      >{{ .Site.Home.Title | title }}</a>
+      >
+        {{- .Site.Home.Title | title -}}
+      </a>
     </li>
 
+    {{/* Menu */}}
     {{ range .Site.Menus.header }}
       <li class="nav__item">
         {{ $url := urls.Parse (.URL | safeURL | absLangURL) }}
@@ -80,7 +87,9 @@
             target="_blank"
             rel="noopener"
           {{ end }}
-        >{{ .Name | title }}</a>
+        >
+          {{- .Name | title -}}
+        </a>
       </li>
     {{ end }}
   </ul>
