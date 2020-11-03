@@ -3,7 +3,9 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - master # Set a branch to deploy
+      - master
+  schedule:
+    - cron: "0 15 31 12 *" # YYYY-01-01 00:00 JST (automatically update copyright year)
 
 jobs:
   deploy:
@@ -19,7 +21,6 @@ jobs:
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 0.75.1
-          # hugo-version: latest
           extended: true
       - name: Build
         run: TZ=Asia/Tokyo hugo --minify -e production

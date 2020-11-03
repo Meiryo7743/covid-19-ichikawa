@@ -1,5 +1,9 @@
 <p class="copyright">
   <small>
-    {{ .Site.Copyright | safeHTML }}
+    {{- print "&copy; " .Site.Params.CopyrightYear | safeHTML -}}
+    {{- if gt now.Year .Site.Params.CopyrightYear }}
+      {{- print "-" now.Year -}}
+    {{ end -}}
+    {{- print " " .Site.Params.Author -}}
   </small>
 </p>
