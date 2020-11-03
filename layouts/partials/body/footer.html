@@ -2,7 +2,7 @@
   <small>
     {{- print "&copy; " .Site.Params.CopyrightYear | safeHTML -}}
     {{- if gt now.Year .Site.Params.CopyrightYear }}
-      {{- print " - " now.Year -}}
+      {{- print "-" now.Year -}}
     {{ end -}}
     {{- print " " .Site.Params.Author -}}
   </small>
