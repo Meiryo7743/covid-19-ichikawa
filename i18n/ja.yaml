@@ -40,7 +40,7 @@ patients_性別:
 patients_職業:
   other: 職業
 patients_推定感染経路:
-  other: 感染経路
+  other: 推定感染経路
 patients_行動歴:
   other: 行動歴
 
