@@ -1,4 +1,4 @@
-![Build and Deploy](https://github.com/Meiryo7743/COVID-19-Ichikawa/workflows/Build%20and%20Deploy/badge.svg)
+![Build and Deploy](https://github.com/Meiryo7743/covid-19-ichikawa/workflows/Build%20and%20Deploy/badge.svg)
 ![Fetch Data of COVID-19 in Ichikawa](https://github.com/Meiryo7743/covid-19-ichikawa/workflows/Fetch%20Data%20of%20COVID-19%20in%20Ichikawa/badge.svg)
 ![Netlify Status](https://api.netlify.com/api/v1/badges/b30d38da-34ef-424d-ac99-15754c78a693/deploy-status)
 
@@ -20,7 +20,7 @@
 
 ## 開発者向けの情報
 
-開発・翻訳をお手伝いできる方は，[開発者向け情報](https://github.com/Meiryo7743/COVID-19-Ichikawa/wiki/%E9%96%8B%E7%99%BA%E8%80%85%E5%90%91%E3%81%91%E6%83%85%E5%A0%B1)をご覧ください。
+開発・翻訳をお手伝いできる方は，[開発者向け情報](https://github.com/Meiryo7743/covid-19-ichikawa/wiki/%E9%96%8B%E7%99%BA%E8%80%85%E5%90%91%E3%81%91%E6%83%85%E5%A0%B1)をご覧ください。
 
 ## その他
 
@@ -43,4 +43,4 @@ This is the repository of “**[[UNOFFICIAL] Ichikawa COVID-19 Information Site]
 
 ## For developers
 
-Would you like to help with this project? See [this page for developers](https://github.com/Meiryo7743/COVID-19-Ichikawa/wiki/%E9%96%8B%E7%99%BA%E8%80%85%E5%90%91%E3%81%91%E6%83%85%E5%A0%B1). At present, the information is available Japanese only; thus you have to read them through a translator. The English version will be released from now on.
+Would you like to help with this project? See [this page for developers](https://github.com/Meiryo7743/covid-19-ichikawa/wiki/%E9%96%8B%E7%99%BA%E8%80%85%E5%90%91%E3%81%91%E6%83%85%E5%A0%B1). At present, the information is available Japanese only; thus you have to read them through a translator. The English version will be released from now on.
