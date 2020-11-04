@@ -51,4 +51,4 @@ The data posted on this site is got from [Ichikawa City official website](https:
 
 ## Source codes
 
-The source code of this site is MIT licensed code. You can use it for free. For more details, see [GitHub repository](https://github.com/Meiryo7743/COVID-19-Ichikawa/).
+The source code of this site is MIT licensed code. You can use it for free. For more details, see [GitHub repository](https://github.com/Meiryo7743/covid-19-ichikawa/).
