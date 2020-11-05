@@ -4,6 +4,10 @@ on:
   push:
     branches:
       - development # Support wildcard matching
+  workflow_run:
+    workflows: ["Fetch Data of COVID-19 in Ichikawa"]
+    types:
+      - completed
 
 jobs:
   pull-request:
@@ -17,7 +21,7 @@ jobs:
           destination_branch: master # If blank, default: master
 
           pr_title: "Update master" # Title of pull request
-          pr_body: "Update master, and build website" # Full markdown support, requires pr_title to be set
+          pr_body: "Update master, then build the website." # Full markdown support, requires pr_title to be set
           # pr_template: ".github/PULL_REQUEST_TEMPLATE.md"   # Path to pull request template, requires pr_title to be set, excludes pr_body
           # pr_reviewer: "wei,worker"                         # Comma-separated list (no spaces)
           # pr_assignee: "wei,worker"                         # Comma-separated list (no spaces)
