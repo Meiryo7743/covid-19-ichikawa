@@ -58,6 +58,20 @@
     {{/* CSS */}}
     <link rel="stylesheet" href='{{ $style_reset.Permalink }}'>
     <link rel="stylesheet" href='{{ $style_screen.Permalink }}'>
+  </head>
+
+  <body class="layout">
+    <header class="layout__header">
+      {{ partial "body/header.html" . }}
+    </header>
+
+    <main class="layout__main">
+      {{ block "main" . }}{{ end }}
+    </main>
+
+    <footer class="layout__footer">
+      {{ partial "body/footer.html" . }}
+    </footer>
 
     {{/* Script Files */}}
     {{/* Chart.js */}}
@@ -75,19 +89,5 @@
         {{ $js_list | safeJS }}
       </script>
     {{ end }}
-  </head>
-
-  <body class="layout">
-    <header class="layout__header">
-      {{ partial "body/header.html" . }}
-    </header>
-
-    <main class="layout__main">
-      {{ block "main" . }}{{ end }}
-    </main>
-
-    <footer class="layout__footer">
-      {{ partial "body/footer.html" . }}
-    </footer>
   </body>
 </html>
