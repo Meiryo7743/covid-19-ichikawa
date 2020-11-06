@@ -12,7 +12,7 @@
 >
 <meta
     property="og:title"
-    content='{{ .Title | title }}{{ print " - " }}{{ .Site.Title }}'
+    content='{{ print (.Title | title) " - " .Site.Title }}'
 >
 <meta
     property="og:type"
