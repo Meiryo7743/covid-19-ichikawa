@@ -3,7 +3,6 @@
 {{ $data_len := .Get "len" | default (len $data_src) }}
 
 {{ $table_id := print "table-" (replace (.Get "src") "_" "-") }}
-{{ $tbody_id := print "tbody-" (replace (.Get "src") "_" "-") }}
 
 <div class="data-table">
   <table
@@ -52,7 +51,7 @@
       </tr>
     </thead>
 
-    <tbody id='{{ $tbody_id | safeHTMLAttr }}'>
+    <tbody class="list">
       {{/* 表データの出力 */}}
       {{ range first $data_len $data_src }}
         <tr>
@@ -158,7 +157,9 @@
   </table>
 </div>
 
-{{/* List.js sort table */}}
+{{/* Sort the Table by List.js */}}
 <script>
-  sortTable('{{ $table_id | safeJS }}', '{{ $tbody_id | safeJS }}');
+  window.addEventListener("load", function () {
+    sortTable('{{ $table_id | safeJS }}');
+  });
 </script>

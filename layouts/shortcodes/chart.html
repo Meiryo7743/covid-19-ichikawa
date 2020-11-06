@@ -1,6 +1,6 @@
 {{ $data_src := print "data/" (.Get "src") ".json" }}
-{{ $data_id := print "json_" (.Get "src") | safeJS }}
-{{ $chart_id := print "chart-" (replace (.Get "src") "_" "-") | safeJS }}
+{{ $data_id := print "json_" (.Get "src") }}
+{{ $chart_id := print "chart-" (replace (.Get "src") "_" "-") }}
 
 <div class="data-chart">
   <canvas
@@ -12,8 +12,10 @@
 </div>
 
 <script>
-  // readFile で強引に JSON を読み込ませる
-  const {{ $data_id }} = {{ readFile $data_src | safeJS }};
+  window.addEventListener("load", function () {
+    // readFile で強引に JSON を読み込ませる
+    const {{ $data_id | safeJS }} = {{ readFile $data_src | safeJS }};
 
-  drawChart('{{ $chart_id }}', {{ $data_id }});
+    drawChart('{{ $chart_id | safeJS }}', {{ $data_id | safeJS }});
+  });
 </script>
