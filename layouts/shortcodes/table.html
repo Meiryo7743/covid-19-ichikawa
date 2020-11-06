@@ -158,7 +158,9 @@
   </table>
 </div>
 
-{{/* List.js sort table */}}
+{{/* Sort the Table by List.js */}}
 <script>
-  sortTable('{{ $table_id | safeJS }}', '{{ $tbody_id | safeJS }}');
+  window.addEventListener("load", function () {
+    sortTable('{{ $table_id | safeJS }}', '{{ $tbody_id | safeJS }}');
+  });
 </script>
