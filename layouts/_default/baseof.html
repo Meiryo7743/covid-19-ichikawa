@@ -1,7 +1,10 @@
 {{ $style_reset := resources.Get "css/reset.css" }}
 {{ $style_screen := resources.Get "scss/style.scss" | toCSS | minify }}
+
 {{ $js_chart := (resources.Get "js/chart.js").Content   }}
 {{ $js_list := (resources.Get "js/list.js").Content  }}
+{{ $js_lib_chart := "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js" }}
+{{ $js_lib_list := "https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js" }}
 
 <!DOCTYPE html>
 <html lang='{{ .Site.LanguageCode }}' data-lang='{{ .Site.Language.Lang }}'>
@@ -19,19 +22,19 @@
       {{- .Title | title -}}{{- print " - " -}}{{- .Site.Title -}}
     </title>
 
-    {{/* Preload */}}
+    {{/* Preload Script Files */}}
     {{ with .Params.Cards.Scripts.Chart }}
       <link
         rel="preload"
         as="script"
-        href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+        href='{{ $js_lib_chart | safeURL }}'
       >
     {{ end }}
     {{ with .Params.Cards.Scripts.List }}
       <link
         rel="preload"
         as="script"
-        href="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"
+        href='{{ $js_lib_list | safeURL }}'
       >
     {{ end }}
 
@@ -56,9 +59,10 @@
     <link rel="stylesheet" href='{{ $style_reset.Permalink }}'>
     <link rel="stylesheet" href='{{ $style_screen.Permalink }}'>
 
+    {{/* Script Files */}}
     {{/* Chart.js */}}
     {{ with .Params.Cards.Scripts.Chart }}
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+      <script src='{{ $js_lib_chart | safeURL }}'></script>
       <script>
         {{ $js_chart | safeJS }}
       </script>
@@ -66,7 +70,7 @@
 
     {{/* List.js */}}
     {{ with .Params.Cards.Scripts.List }}
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+      <script src='{{ $js_lib_list | safeURL }}'></script>
       <script>
         {{ $js_list | safeJS }}
       </script>
