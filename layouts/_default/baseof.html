@@ -22,22 +22,6 @@
       {{- .Title | title -}}{{- print " - " -}}{{- .Site.Title -}}
     </title>
 
-    {{/* Preload Script Files */}}
-    {{ with .Params.Cards.Scripts.Chart }}
-      <link
-        rel="preload"
-        as="script"
-        href='{{ $js_lib_chart | safeURL }}'
-      >
-    {{ end }}
-    {{ with .Params.Cards.Scripts.List }}
-      <link
-        rel="preload"
-        as="script"
-        href='{{ $js_lib_list | safeURL }}'
-      >
-    {{ end }}
-
     {{/* OGP */}}
     {{ partial "head/ogp.html" . }}
 
