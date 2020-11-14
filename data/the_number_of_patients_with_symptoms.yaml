@@ -1,12 +1,12 @@
-- eighties: 26
-  fifties: 63
-  forties: 85
+- eighties: 30
+  fifties: 65
+  forties: 87
   nineties: 2
-  over_nineties: 10
-  seventies: 21
-  sixties: 38
+  over_nineties: 13
+  seventies: 23
+  sixties: 39
   teens: 31
   thirties: 70
-  total: 481
-  twenties: 126
+  total: 497
+  twenties: 128
   under_teens: 9
