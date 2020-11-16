@@ -1,4 +1,4 @@
-name: Fetch Data of COVID-19 in Ichikawa
+name: Fetch Data
 
 on:
   schedule:
@@ -22,9 +22,10 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install pyyaml
+          pip install python-dateutil
       - name: Run scripts
         run: |
-          python data_updater.py
+          python data_updater.py ; python data_updater_toei_subway.py
 
       # Commit files
       - name: Commit files
@@ -32,7 +33,7 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add .
-          git commit -m "Update data files" -a
+          git commit -m "Update data files" -a || echo "Nothing to update"
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
