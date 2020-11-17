@@ -1,5 +1,5 @@
 ![Build and Deploy](https://github.com/Meiryo7743/covid-19-ichikawa/workflows/Build%20and%20Deploy/badge.svg)
-![Fetch Data of COVID-19 in Ichikawa](https://github.com/Meiryo7743/covid-19-ichikawa/workflows/Fetch%20Data%20of%20COVID-19%20in%20Ichikawa/badge.svg)
+![Fetch Data of COVID-19 in Ichikawa](https://github.com/Meiryo7743/covid-19-ichikawa/workflows/Fetch%20Data/badge.svg)
 ![Netlify Status](https://api.netlify.com/api/v1/badges/b30d38da-34ef-424d-ac99-15754c78a693/deploy-status)
 
 - [日本語](#非公式市川市新型コロナウイルス感染症情報サイト)

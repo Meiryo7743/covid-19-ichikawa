@@ -5,7 +5,7 @@ on:
     branches:
       - development # Support wildcard matching
   workflow_run:
-    workflows: ["Fetch Data of COVID-19 in Ichikawa"]
+    workflows: ["Fetch Data"]
     types:
       - completed
 
