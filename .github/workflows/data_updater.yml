@@ -25,7 +25,8 @@ jobs:
           pip install python-dateutil
       - name: Run scripts
         run: |
-          python data_updater.py ; python data_updater_toei_subway.py
+          python data_updater_toei_subway.py
+        # python data_updater.py ; python data_updater_toei_subway.py
 
       # Commit files
       - name: Commit files
