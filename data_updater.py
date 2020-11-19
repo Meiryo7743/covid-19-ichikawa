@@ -12,7 +12,7 @@ if not (os.path.isdir(DIR)):
     os.mkdir(DIR)
 
 # List of the data files
-FILES = [
+SHEETS = [
     {
         'name': 'details_of_patients_with_symptoms',
         'id': '2PACX-1vSVUIR-4xTBX2x-5-4lf9dbjuvGsRUL45GxDJ_RUIG1aUNC9XB9QFNlusKNgvUu4LJuR3rvu5JBQd4c',
@@ -35,36 +35,36 @@ FILES = [
     }
 ]
 
-for i in FILES:
-    URL = 'https://docs.google.com/spreadsheets/d/e/' + \
+for i in SHEETS:
+    url = 'https://docs.google.com/spreadsheets/d/e/' + \
         i['id'] + '/pub?single=true&output=tsv&gid=' + i['gid']
-    DST = DIR + i['name']
-    FILE_TSV = DST + '.tsv'
-    FILE_YAML = DST + '.yaml'
+    dst = DIR + i['name']
+    file_tsv = dst + '.tsv'
+    file_yaml = dst + '.yaml'
 
     # Download the data files
-    urllib.request.urlretrieve(URL, FILE_TSV)
+    urllib.request.urlretrieve(url, file_tsv)
 
     # Set data
     data = []
 
     # Load TSV
-    with open(FILE_TSV, encoding='utf-8') as f:
+    with open(file_tsv, encoding='utf-8') as f:
         for row in csv.DictReader(f, delimiter='\t'):
             data.append(row)
 
     # Convert TSV to YAML
-    with open(FILE_YAML, 'w') as f:
+    with open(file_yaml, 'w', encoding='utf-8') as f:
         yaml.dump(data, f, encoding='utf-8', allow_unicode=True)
 
     # Get the content of YAML
-    with open(FILE_YAML, encoding='utf-8') as f:
+    with open(file_yaml, encoding='utf-8') as f:
         content = f.read()
 
     # Replace some strings in order to be correct YAML format
-    with open(FILE_YAML, 'w') as f:
+    with open(file_yaml, 'w', encoding='utf-8') as f:
         content = re.sub(r"'(\[.+\]|\d+|)'", r'\1', content)
         f.write(content)
 
     # Delete TSV files
-    os.remove(FILE_TSV)
+    os.remove(file_tsv)
