@@ -25,7 +25,9 @@ jobs:
           pip install bs4
           pip install html5lib
           pip install lxml
+          pip install pandas
           pip install python-dateutil
+          pip install requests
           pip install ruamel.yaml
       - name: Run scripts
         run: |
