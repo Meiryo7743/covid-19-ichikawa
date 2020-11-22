@@ -6,7 +6,7 @@ cards:
     chart: true
     list: false
 date: "2020-05-22T00:00:00+09:00"
-title: "Changes in the Number of Passengers on Toei Subway"
+title: "Changes in the Rates of Toei Subway Passengers"
 weight: 50
 ---
 
