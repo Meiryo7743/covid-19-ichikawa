@@ -3,7 +3,7 @@
 echo "Select the page type:"
 select type in Articles Cards
 do
-    if [ "$type" = "Article" ]; then
+    if [ "$type" = "Articles" ]; then
         DATE=`TZ=Asia/Tokyo date +"%Y%m%d%H%M"`
         DST="articles/$DATE"
         break
