@@ -2,9 +2,6 @@
 cards:
   data:
     source: "https://github.com/tokyo-metropolitan-gov/covid19/blob/development/data/metro.json"
-  scripts:
-    chart: true
-    list: false
 date: "2020-05-22T00:00:00+09:00"
 title: "Changes in the Rates of Toei Subway Passengers"
 weight: 50

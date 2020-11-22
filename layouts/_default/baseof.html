@@ -62,7 +62,7 @@
 
     {{/* Script Files */}}
     {{/* Chart.js */}}
-    {{ with .Params.Cards.Scripts.Chart }}
+    {{ if or (.HasShortcode "chart") (.IsHome) }}
       <script src='{{ $js_lib_chart | safeURL }}'></script>
       <script>
         {{ $js_chart | safeJS }}
@@ -70,7 +70,7 @@
     {{ end }}
 
     {{/* List.js */}}
-    {{ with .Params.Cards.Scripts.List }}
+    {{ if or (.HasShortcode "table") (.IsHome) }}
       <script src='{{ $js_lib_list | safeURL }}'></script>
       <script>
         {{ $js_list | safeJS }}
