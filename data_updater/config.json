@@ -71,8 +71,8 @@
       "dst": "./data/",
       "data": [
         {
-          "raw": "raw_toei_subway.json",
-          "data_passengers": "toei_subway.json"
+          "raw": "raw_changes_in_the_rates_of_toei_subway_passengers.json",
+          "data_passengers": "changes_in_the_rates_of_toei_subway_passengers.json"
         }
       ]
     }
