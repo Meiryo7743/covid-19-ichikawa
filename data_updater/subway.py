@@ -1,74 +1,65 @@
 from dateutil.relativedelta import relativedelta
 import datetime
 import json
-import os
 import re
-import urllib.request
 
-DIR = './data/'
-SRC = DIR + 'metro.json'
-DST = DIR + 'toei_subway.json'
+with open('./data_updater/config.json', 'r', encoding='utf-8') as f:
+    config = json.load(f)['subway'][0]
 
-# Check existence of data dir
-if not (os.path.isdir(DIR)):
-    os.mkdir(DIR)
+dst = config['dst']
+data = config['data'][0]
 
-# Download
-URL = 'https://raw.githubusercontent.com/tokyo-metropolitan-gov/covid19/development/data/metro.json'
-urllib.request.urlretrieve(URL, SRC)
+with open(dst + data['raw']) as f:
+    data_json = json.load(f)['datasets']
 
-# Convert
-with open(SRC) as f:
-    data = json.load(f)['datasets']
+labels = []
+time_0630_0730 = []
+time_0730_0930 = []
+time_0930_1030 = []
 
-label = []
-time_0 = []
-time_1 = []
-time_2 = []
-
-for key in data:
+for i in data_json:
     # Fix Date Format
     # MM/DD~DD -> 0MM/0DD~0DD
-    date_fix = re.sub(
+    date = re.sub(
         r'^(\d+)/(\d+)~(\d+)$',
         r'0\1/0\2~0\3',
-        key['label']
+        i['label']
     )
     # -> MM/DD~DD
-    date_fix = re.sub(
+    date = re.sub(
         r'0(\d\d)',
         r'\1',
-        date_fix
+        date
     )
     # -> MM-DD~DD
-    date_fix = re.sub(
+    date = re.sub(
         r'/',
         r'-',
-        date_fix
+        date
     )
     # -> MM-DD~MM-DD
-    date_fix = re.sub(
+    date = re.sub(
         r'^(\d\d-)(\d\d~)(\d\d)$',
         r'\1\2\1\3',
-        date_fix
+        date
     )
     # -> YYYY-MM-DD~YYYY-MM-DD
-    date_fix = re.sub(
+    date = re.sub(
         r'^(.+)~(.+)$',
         r'2020-\1~2020-\2',
-        date_fix
+        date
     )
 
     # Fix Month (Left > Right -> Left < Right)
     date_left = re.sub(
         r'^(.+)~.+$',
         r'\1',
-        date_fix
+        date
     )
     date_right = re.sub(
         r'^.+~(.+)$',
         r'\1',
-        date_fix
+        date
     )
     date_left = datetime.datetime.strptime(date_left, '%Y-%m-%d')
     date_right = datetime.datetime.strptime(date_right, '%Y-%m-%d')
@@ -78,34 +69,35 @@ for key in data:
 
     date_left = date_left.strftime('%m-%d')
     date_right = date_right.strftime('%m-%d')
+
     date = date_left + "~" + date_right
 
-    label.append(date)
-    time_0.append(key['data'][0])
-    time_1.append(key['data'][1])
-    time_2.append(key['data'][2])
+    labels.append(date)
+    time_0630_0730.append(i['data'][0])
+    time_0730_0930.append(i['data'][1])
+    time_0930_1030.append(i['data'][2])
 
 dict = {
     'type': 'bar',
     'data': {
-        'labels': label,
-        'datasets': [
-            {
-                'label': '6:30~7:30',
-                'data': time_0,
-                'backgroundColor': '#c2d94c'
-            },
-            {
-                'label': '7:30~9:30',
-                'data': time_1,
-                'backgroundColor': '#03af7a'
-            },
-            {
-                'label': '9:30~10:30',
-                'data': time_2,
-                'backgroundColor': '#84dcb0'
-            }
-        ]
+            'labels': labels,
+            'datasets': [
+                {
+                    'label': '6:30~7:30',
+                    'data': time_0630_0730,
+                    'backgroundColor': '#c2d94c'
+                },
+                {
+                    'label': '7:30~9:30',
+                    'data': time_0730_0930,
+                    'backgroundColor': '#03af7a'
+                },
+                {
+                    'label': '9:30~10:30',
+                    'data': time_0930_1030,
+                    'backgroundColor': '#84dcb0'
+                }
+            ]
     },
     'options': {
         'scales': {
@@ -116,9 +108,5 @@ dict = {
     }
 }
 
-# Export
-with open(DST, 'w') as f:
+with open(dst + data['data_passengers'], 'w', newline='\n') as f:
     json.dump(dict, f, indent=2)
-
-# Delete the Source File
-os.remove(SRC)
