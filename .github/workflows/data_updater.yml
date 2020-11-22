@@ -11,10 +11,9 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      # Switch to development branch
       - uses: actions/checkout@v2
         # with:
-        #   ref: development
+        #   ref: development # Switch to development branch
 
       - name: Set up Python 3.8
         uses: actions/setup-python@v2
@@ -30,11 +29,8 @@ jobs:
           pip install ruamel.yaml
       - name: Run scripts
         run: |
-          python ./data_updater/fetch_patients.py;
-          python ./data_updater/patients_details.py;
-          python ./data_updater/patients_count.py;
-          python ./data_updater/fetch_subway.py;
-          python ./data_updater/subway_passengers.py
+          python ./data_updater/fetch_patients.py && python ./data_updater/patients_details.py && python ./data_updater/patients_count.py;
+          python ./data_updater/fetch_subway.py && python ./data_updater/subway_passengers.py
 
       - name: Commit files
         run: |
