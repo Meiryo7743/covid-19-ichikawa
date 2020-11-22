@@ -1,19 +1,16 @@
-name: Fetch Data (Test)
+name: Fetch Data
 
 on:
-  # schedule:
-  #   - cron: "30 10 * * *" # At 19:30 JST every day
-  push:
-    branches:
-      - "fix-issue#163"
+  schedule:
+    - cron: "30 10 * * *" # At 19:30 JST every day
 
 jobs:
   update:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        # with:
-        #   ref: development # Switch to development branch
+        with:
+          ref: development # Switch to development branch
 
       - name: Set up Python 3.8
         uses: actions/setup-python@v2
@@ -33,7 +30,7 @@ jobs:
         run: |
           python ./data_updater/fetch_patients.py && python ./data_updater/patients_details.py && python ./data_updater/patients_count.py;
           python ./data_updater/fetch_subway.py && python ./data_updater/subway_passengers.py;
-          rm ./data/raw_*.*
+          rm ./data/raw_*.*  || echo "Nothing to remove"
 
       - name: Commit files
         run: |
@@ -45,5 +42,4 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}
-          # branch: development
+          branch: development
