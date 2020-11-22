@@ -2,9 +2,6 @@
 cards:
   data:
     source: "https://www.city.ichikawa.lg.jp/pub01/hasseijokyo.html#m04"
-  scripts:
-    chart: false
-    list: false
 date: "2020-05-22T00:00:00+09:00"
 title: "有症者数"
 weight: 10
