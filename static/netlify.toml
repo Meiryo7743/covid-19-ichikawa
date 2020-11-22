@@ -52,11 +52,11 @@ force = true
 from = "/ja/*"
 to = "/ja/404.html"
 force = false
-status = "404"
+status = 404
 
 [[redirects]]
 from = "/en/*"
 to = "/en/404.html"
 force = false
-status = "404"
+status = 404
 

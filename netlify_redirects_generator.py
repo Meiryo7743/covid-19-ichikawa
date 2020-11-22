@@ -54,7 +54,7 @@ for i in REDIRECTS:
         dict['force'] = i.get('force')
 
         if not i.get('status') == None:
-            dict['status'] = i.get('status')
+            dict['status'] = int(i.get('status'))
 
         data['redirects'].append(dict)
 
