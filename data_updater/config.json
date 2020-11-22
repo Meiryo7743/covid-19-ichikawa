@@ -1,0 +1,80 @@
+{
+  "patients": [
+    {
+      "src": "https://www.city.ichikawa.lg.jp/pub01/hasseijokyo.html",
+      "dst": "./data/",
+      "data": [
+        {
+          "table_index": 0,
+          "raw": "raw_patients_with_symptoms.tsv",
+          "data_details": "details_of_patients_with_symptoms.yaml",
+          "data_count": "the_number_of_patients_with_symptoms.yaml"
+        },
+        {
+          "table_index": 1,
+          "raw": "raw_patients_without_symptoms.tsv",
+          "data_details": "details_of_patients_without_symptoms.yaml",
+          "data_count": "the_number_of_patients_without_symptoms.yaml"
+        }
+      ],
+      "age": [
+        {
+          "find": "10歳未満",
+          "replace": "under_teens"
+        },
+        {
+          "find": "10代",
+          "replace": "teens"
+        },
+        {
+          "find": "20代",
+          "replace": "twenties"
+        },
+        {
+          "find": "30代",
+          "replace": "thirties"
+        },
+        {
+          "find": "40代",
+          "replace": "forties"
+        },
+        {
+          "find": "50代",
+          "replace": "fifties"
+        },
+        {
+          "find": "60代",
+          "replace": "sixties"
+        },
+        {
+          "find": "70代",
+          "replace": "seventies"
+        },
+        {
+          "find": "80代",
+          "replace": "eighties"
+        },
+        {
+          "find": "90代",
+          "replace": "nineties"
+        },
+        {
+          "find": "90代以上",
+          "replace": "over_nineties"
+        }
+      ]
+    }
+  ],
+  "subway": [
+    {
+      "src": "https://raw.githubusercontent.com/tokyo-metropolitan-gov/covid19/development/data/metro.json",
+      "dst": "./data/",
+      "data": [
+        {
+          "raw": "raw_changes_in_the_rates_of_toei_subway_passengers.json",
+          "data_passengers": "changes_in_the_rates_of_toei_subway_passengers.json"
+        }
+      ]
+    }
+  ]
+}
