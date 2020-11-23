@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 a {
     &:visited {
         color: var(--color-a);
@@ -69,8 +72,8 @@ a {
             color: var(--color-body) !important;
             font-weight: bold;
             img {
-                block-size: 2rem;
-                inline-size: 2rem;
+                block-size: var(--xx-large);
+                inline-size: var(--xx-large);
             }
         }
     }
@@ -239,6 +242,7 @@ a {
     @extend %padding-inline_1rem;
     &::before {
         @extend %icon;
+        @extend %line-height_1;
         content: var(--icon-warning);
         font-size: var(--xx-large);
     }
@@ -255,6 +259,12 @@ a {
     @extend %margin-block_1rem;
     @extend %plane-list;
     text-align: end;
+    &__lastmod {
+        &::before {
+            @extend %icon;
+            content: var(--icon-lastmod);
+        }
+    }
 }
 
 // news
@@ -297,6 +307,7 @@ a {
     &__btn {
         &::before {
             @extend %icon;
+            @extend %line-height_1;
             content: var(--icon-search);
             font-size: var(--xx-large);
         }

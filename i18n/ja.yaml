@@ -8,9 +8,10 @@ card_source:
 card_share:
   other: 共有
 
-# Date
+date_publish:
+  other: 公開日
 date_lastmod:
-  other: 最終更新：
+  other: 最終更新
 
 # Notice
 notice_noscript:

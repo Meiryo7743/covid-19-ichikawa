@@ -8,8 +8,10 @@ card_source:
 card_share:
   other: Share
 
+date_publish:
+  other: Publish date
 date_lastmod:
-  other: "Last modified: "
+  other: Last updated
 
 # Notice
 notice_noscript:

@@ -8,7 +8,6 @@
     padding-inline-start: 0;
 }
 %icon {
-    @extend %line-height_1;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     font-family: var(--font-icon), var(--font-sans-serif) !important;
