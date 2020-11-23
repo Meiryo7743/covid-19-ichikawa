@@ -6,7 +6,7 @@ a {
     &[target="_blank"] {
         &::after {
             @extend %icon;
-            content: var(--icon-external-link);
+            content: var(--icon-open-in-new);
         }
     }
 }
@@ -69,8 +69,8 @@ a {
             color: var(--color-body) !important;
             font-weight: bold;
             img {
-                block-size: 2rem;
-                inline-size: 2rem;
+                block-size: var(--xx-large);
+                inline-size: var(--xx-large);
             }
         }
     }
@@ -144,6 +144,16 @@ a {
     }
 }
 
+.scroll-message {
+    margin-block-start: 0.5rem;
+    margin-block-end: 1rem;
+    text-align: center;
+    &::before {
+        @extend %icon;
+        content: var(--icon-swipe);
+    }
+}
+
 // data-table
 .data-table {
     @extend %scrollable;
@@ -151,11 +161,15 @@ a {
     display: flex;
     line-height: 1.25;
     text-align: center;
+    border-block-end: var(--border);
+    border-block-start: var(--border);
     &__table {
         border: none;
         inline-size: 100%;
         tr {
-            border-block-end: var(--border);
+            &:not(:last-child) {
+                border-block-end: var(--border);
+            }
         }
         th {
             background: var(--bgcolor-card);
@@ -239,6 +253,7 @@ a {
     @extend %padding-inline_1rem;
     &::before {
         @extend %icon;
+        @extend %line-height_1;
         content: var(--icon-warning);
         font-size: var(--xx-large);
     }
@@ -255,6 +270,12 @@ a {
     @extend %margin-block_1rem;
     @extend %plane-list;
     text-align: end;
+    &__lastmod {
+        &::before {
+            @extend %icon;
+            content: var(--icon-lastmod);
+        }
+    }
 }
 
 // news
@@ -297,6 +318,7 @@ a {
     &__btn {
         &::before {
             @extend %icon;
+            @extend %line-height_1;
             content: var(--icon-search);
             font-size: var(--xx-large);
         }
