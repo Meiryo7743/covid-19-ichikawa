@@ -6,7 +6,7 @@ a {
     &[target="_blank"] {
         &::after {
             @extend %icon;
-            content: var(--icon-external-link);
+            content: var(--icon-open-in-new);
         }
     }
 }
