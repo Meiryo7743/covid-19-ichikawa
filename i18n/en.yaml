@@ -8,6 +8,9 @@ card_source:
 card_share:
   other: Share
 
+scroll_message:
+  other: Scroll to see off-screen contents.
+
 date_publish:
   other: Publish date
 date_lastmod:

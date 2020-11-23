@@ -8,6 +8,9 @@ card_source:
 card_share:
   other: 共有
 
+scroll_message:
+  other: スクロールすると，見切れている部分をご覧になれます。
+
 date_publish:
   other: 公開日
 date_lastmod:

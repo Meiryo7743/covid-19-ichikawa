@@ -147,6 +147,16 @@ a {
     }
 }
 
+.scroll-message {
+    margin-block-start: 0.5rem;
+    margin-block-end: 1rem;
+    text-align: center;
+    &::before {
+        @extend %icon;
+        content: var(--icon-swipe);
+    }
+}
+
 // data-table
 .data-table {
     @extend %scrollable;
