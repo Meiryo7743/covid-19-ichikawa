@@ -11,7 +11,7 @@
     @extend %line-height_1;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    font-family: "icon", var(--font-sans-serif) !important;
+    font-family: var(--font-icon), var(--font-sans-serif) !important;
     font-style: normal;
     font-variant: normal;
     font-weight: normal;
