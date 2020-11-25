@@ -9,4 +9,5 @@ weight: 40
 
 {{< table src="details_of_patients_without_symptoms" len="30" >}}
 
-- Showing **latest 30 cases**. **[See all cases](./cards/details-of-patients-without-symptoms/)**
+- Showing **the latest 30 cases**.
+- **[See all cases.](./cards/details-of-patients-without-symptoms/)**

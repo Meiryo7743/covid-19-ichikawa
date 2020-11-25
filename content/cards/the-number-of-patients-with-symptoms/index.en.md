@@ -9,4 +9,4 @@ weight: 10
 
 {{< list src="the_number_of_patients_with_symptoms" >}}
 
-- Including the returnees on charter flights or the cruise ship passengers
+- Including the returnees on charter flights or the cruise ship passengers.

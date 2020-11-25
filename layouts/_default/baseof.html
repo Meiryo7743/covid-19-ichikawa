@@ -1,4 +1,4 @@
-{{ $style_reset := resources.Get "css/reset.css" }}
+{{ $style_reset := resources.Get "css/reset.min.css" }}
 {{ $style_screen := resources.Get "scss/style.scss" | toCSS | minify }}
 
 {{ $js_chart := (resources.Get "js/chart.js").Content   }}

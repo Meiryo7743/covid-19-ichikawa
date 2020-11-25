@@ -31,9 +31,9 @@ patients_number:
   one: "{{ .Count }} case"
   other: "{{ .Count }} cases"
 patients_市内:
-  other: City
+  other: Ichikawa
 patients_県内:
-  other: Prefecture
+  other: Chiba
 patients_検査確定日:
   other: Inspection Date
 patients_発症日:

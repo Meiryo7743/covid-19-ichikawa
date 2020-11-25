@@ -9,4 +9,5 @@ weight: 20
 
 {{< table src="details_of_patients_with_symptoms" len="30" >}}
 
-- **最新 30 件**の内容を表示している。**[全件を見る場合は，こちらから](./cards/details-of-patients-with-symptoms/)**
+- **最新 30 件分**の内容を表示している。
+- **[全有症者の詳細は，こちらから。](./cards/details-of-patients-with-symptoms/)**
