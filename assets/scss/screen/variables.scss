@@ -10,8 +10,8 @@
     }
     @include color-scheme(dark) {
         --bgcolor-body: var(--black);
-        --bgcolor-card: var(--onyx);
-        --bgcolor-header: var(--onyx);
+        --bgcolor-card: var(--jet);
+        --bgcolor-header: var(--jet);
         --bgcolor-nav-link: #414a4c;
         --color-a: var(--sky-blue);
         --color-body: var(--light-gray);
