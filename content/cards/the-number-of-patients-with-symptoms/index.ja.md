@@ -9,4 +9,4 @@ weight: 10
 
 {{< list src="the_number_of_patients_with_symptoms" >}}
 
-- チャーター機帰国者・クルーズ船乗客等を含む
+- チャーター機帰国者・クルーズ船乗客等を含む。
