@@ -12,10 +12,7 @@ data = config['data'][0]
 with open(dst + data['raw']) as f:
     data_json = json.load(f)['datasets']
 
-labels = []
-time_0630_0730 = []
-time_0730_0930 = []
-time_0930_1030 = []
+list = []
 
 for i in data_json:
     # Fix Date Format
@@ -70,41 +67,76 @@ for i in data_json:
     date_left = date_left.strftime('%m-%d')
     date_right = date_right.strftime('%m-%d')
 
-    date = date_left + "~" + date_right
+    date = date_left + '~' + date_right
 
-    labels.append(date)
-    time_0630_0730.append(i['data'][0])
-    time_0730_0930.append(i['data'][1])
-    time_0930_1030.append(i['data'][2])
+    list.append([date, i['data'][0], i['data'][1], i['data'][2]])
 
 dict = {
-    'type': 'bar',
     'data': {
-            'labels': labels,
-            'datasets': [
-                {
-                    'label': '6:30~7:30',
-                    'data': time_0630_0730,
-                    'backgroundColor': '#c2d94c'
-                },
-                {
-                    'label': '7:30~9:30',
-                    'data': time_0730_0930,
-                    'backgroundColor': '#03af7a'
-                },
-                {
-                    'label': '9:30~10:30',
-                    'data': time_0930_1030,
-                    'backgroundColor': '#84dcb0'
-                }
-            ]
+        'headers': [
+            {'type': 'string', 'name': 'Durations'},
+            {'type': 'number', 'name': '6:30~7:30'},
+            {'type': 'number', 'name': '7:30~9:30'},
+            {'type': 'number', 'name': '9:30~10:30'}
+        ],
+        'rows': list,
     },
     'options': {
-        'scales': {
-            'yAxes': [
-                {'ticks': {'suggestedMax': 10, 'suggestedMin': 0, 'stepSize': 10}}
-            ]
-        }
+        'backgroundColor': {
+            'fill': 'none'
+        },
+        'chartArea': {
+            'bottom': 14 * 6,
+            'left': 14 * 4,
+            'right': 14 * 4,
+            'top': 14 * 2
+        },
+        'color': '#84919e',
+        'fontName': 'sans-serif',
+        'fontSize': 14,
+        'hAxes': [
+            {
+                'slantedText': True,
+                'slantedTextAngle': 45,
+                'textStyle': {'color': '#84919e'}
+            }
+        ],
+        'legend': {
+            'alignment': 'end',
+            'position': 'top',
+            'textStyle': {'color': '#84919e'}
+        },
+        'series': {
+            '0': {
+                'targetAxisIndex': 0
+            },
+            '1': {
+                'targetAxisIndex': 1
+            }
+        },
+        'vAxes': [
+            {
+                'baseline': 0,
+                'baselineColor': '#84919e',
+                'format': "#'%'",
+                'gridlines': {'color': '#84919e'},
+                'maxValue': 20,
+                'minorGridlines': {'color': 'none'},
+                'minValue': -100,
+                'textStyle': {'color': '#84919e'}
+            },
+            {
+                'baseline': 0,
+                'baselineColor': '#84919e',
+                'format': "#'%'",
+                'gridlines': {'color': '#84919e'},
+                'maxValue': 20,
+                'minorGridlines': {'color': 'none'},
+                'minValue': -100,
+                'textStyle': {'color': '#84919e'}
+            }
+        ],
+        'width': len(list) * 3 * 14
     }
 }
 
