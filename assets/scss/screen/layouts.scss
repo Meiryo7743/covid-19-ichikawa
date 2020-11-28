@@ -184,6 +184,9 @@ a {
 
 // table sort
 .sort {
+    &:hover {
+        cursor: pointer;
+    }
     &.asc {
         &::after {
             @extend %icon;
