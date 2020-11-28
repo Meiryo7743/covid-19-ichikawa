@@ -1,25 +1,29 @@
 {{ $data_src := print "data/" (.Get "src") ".json" }}
 {{ $data_id := print "json_" (.Get "src") }}
-{{ $chart_id := print "chart-" (replace (.Get "src") "_" "-") }}
+{{ $canvas_id := print "chart-" (replace (.Get "src") "_" "-")}}
 
 <div class="data-chart">
-  <canvas
+  <div
     aria-label='{{ .Page.Title | title }}'
-    role="img"
     class="data-chart__canvas"
-    id='{{ $chart_id | safeHTMLAttr }}'
-  ></canvas>
+    id='{{ $canvas_id | safeHTMLAttr }}'
+  ></div>
 </div>
 
 <div class="scroll-message">
   {{- i18n "scroll_message" -}}
 </div>
 
-<script>
-  window.addEventListener("load", function () {
-    // readFile で強引に JSON を読み込ませる
-    const {{ $data_id | safeJS }} = {{ readFile $data_src | safeJS }};
-
-    drawChart('{{ $chart_id | safeJS }}', {{ $data_id | safeJS }});
-  });
-</script>
+{{/* print を使った煩雑なコードなのは VS Code のエラー防止のため */}}
+{{/*
+    window.addEventListener("load", function () {
+      const $data_id = (readFile $data_src | safeJS);
+      drawColumnChart('$canvas_id', $data_id);
+    });
+ */}}
+{{ print "<" "script" ">" | safeHTML }}
+{{ print "window.addEventListener('load', function () {" | safeHTML }}
+{{ print "const " $data_id " = " (readFile $data_src | safeJS) ";" | safeHTML }}
+{{ print "drawColumnChart('" $canvas_id "'," $data_id ");" | safeHTML }}
+{{ print "});" | safeHTML }}
+{{ print "<" "/script" ">" | safeHTML }}
