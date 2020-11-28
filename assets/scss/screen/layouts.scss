@@ -237,8 +237,7 @@ a {
     &__canvas {
         @include margin-inline(auto);
         block-size: 25rem;
-        display: block;
-        max-inline-size: none;
+        inline-size: max-content; // Google Charts で，グラフが狭幅（水平スクロールバーが表示されない位）の時にセンタリンク可能にする
     }
 }
 
