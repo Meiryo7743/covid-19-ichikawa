@@ -26,6 +26,22 @@ def format_number(value, format_config):
         return int(result)
 
 
+def format_date(value, format_config):
+    result = format_value(value, format_config)
+    if not result == None:
+        result = datetime.datetime.strptime(
+            result,
+            '%Y-%m-%d'
+        )
+        return result.strftime('%Y-%m-%d')
+
+
+def format_list(value, format_config):
+    result = format_value(value, format_config)
+    if not result == None:
+        return result.split(',')
+
+
 with open('./data_updater/config.json', 'r', encoding='utf-8') as f:
     config = json.load(f)['patients']
 
@@ -51,109 +67,52 @@ for i in data:
         )
 
         # 検査確定日
-        key_inspection_date = re.sub(
-            r'^不明|調査中|\s+|None$',
-            r'',
-            str(j.get('検査確定日'))
+        key_inspection_date = format_date(
+            j.get('検査確定日'),
+            config['formats']['values']['inspection_date']
         )
-        key_inspection_date = re.sub(
-            r'(\d+)月(\d+)日',
-            r'2020-\1-\2',
-            key_inspection_date
-        )
-        if key_inspection_date == '':
-            key_inspection_date = None
-        else:
-            key_inspection_date = datetime.datetime.strptime(
-                key_inspection_date,
-                '%Y-%m-%d'
-            )
-            key_inspection_date = key_inspection_date.strftime('%Y-%m-%d')
 
-            # 発症日
-        key_onset_date = re.sub(
-            r'^不明|調査中|\s+|None$',
-            r'',
-            str(j.get('発症日'))
+        # 発症日
+        key_onset_date = format_date(
+            j.get('発症日'),
+            config['formats']['values']['onset_date']
         )
-        key_onset_date = re.sub(
-            r'(\d+)月(\d+)日',
-            r'2020-\1-\2',
-            key_onset_date
-        )
-        if key_onset_date == '':
-            key_onset_date = None
-        else:
-            key_onset_date = datetime.datetime.strptime(
-                key_onset_date,
-                '%Y-%m-%d'
-            )
-            key_onset_date = key_onset_date.strftime('%Y-%m-%d')
 
         # 年代
-        key_age = re.sub(
-            r'^不明|調査中|\s+|None$',
-            r'',
-            str(j.get('年代'))
+        key_age = format_value(
+            j.get('年代'),
+            config['formats']['values']['age']
         )
-        if key_age == '':
-            key_age = None
 
         # 性別
-        key_sex = str(j.get('性別'))
+        key_sex = format_value(
+            j.get('性別'),
+            config['formats']['values']['sex']
+        )
 
         # 職業
-        key_occupation = re.sub(
-            r'^不明|調査中|\s+|None$',
-            r'',
-            str(j.get('職業'))
+        key_occupation = format_value(
+            j.get('職業'),
+            config['formats']['values']['occupation']
         )
-        if key_occupation == '':
-            key_occupation = None
 
         # 推定感染経路
-        key_infection_sources = re.sub(
-            r'^不明|調査中|\s+|None$',
-            r'',
-            str(j.get('推定感染経路'))
+        key_infection_sources = format_list(
+            j.get('推定感染経路'),
+            config['formats']['values']['infection_sources']
         )
-        key_infection_sources = re.sub(
-            r'(.)接触',
-            r'\1',
-            key_infection_sources
-        )
-        key_infection_sources = re.sub(
-            r'、',
-            r',',
-            key_infection_sources
-        )
-        if key_infection_sources == '':
-            key_infection_sources = None
-        else:
-            key_infection_sources = key_infection_sources.split(',')
 
         # 行動歴
         if '行動歴＊' in j:
-            key_activities = re.sub(
-                r'^不明|調査中|\s+|None$',
-                r'',
-                str(j.get('行動歴＊'))
+            key_activities = format_list(
+                j.get('行動歴＊'),
+                config['formats']['values']['activities']
             )
         elif '行動歴' in j:
-            key_activities = re.sub(
-                r'^不明|調査中|\s+|None$',
-                r'',
-                str(j.get('行動歴'))
+            key_activities = format_list(
+                j.get('行動歴'),
+                config['formats']['values']['activities']
             )
-        key_activities = re.sub(
-            r'、',
-            r',',
-            key_activities
-        )
-        if key_activities == '':
-            key_activities = None
-        else:
-            key_activities = key_activities.split(',')
 
         dict = {
             '市内': key_ichikawa,
