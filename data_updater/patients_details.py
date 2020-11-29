@@ -54,76 +54,67 @@ for i in data:
     raw = pd.read_table(dst + i['raw'], header=0)
     data_json = json.loads(raw.to_json(orient='records'))
     for j in data_json:
-        # 市内
-        key_ichikawa = format_number(
+        value_ichikawa = format_number(
             j.get('市内'),
             config['formats']['values']['ichikawa']
         )
 
-        # 県内
-        key_chiba = format_number(
+        value_chiba = format_number(
             j.get('県内'),
             config['formats']['values']['chiba']
         )
 
-        # 検査確定日
-        key_inspection_date = format_date(
+        value_inspection_date = format_date(
             j.get('検査確定日'),
             config['formats']['values']['inspection_date']
         )
 
-        # 発症日
-        key_onset_date = format_date(
+        value_onset_date = format_date(
             j.get('発症日'),
             config['formats']['values']['onset_date']
         )
 
-        # 年代
-        key_age = format_value(
+        value_age = format_value(
             j.get('年代'),
             config['formats']['values']['age']
         )
 
-        # 性別
-        key_sex = format_value(
+        value_sex = format_value(
             j.get('性別'),
             config['formats']['values']['sex']
         )
 
-        # 職業
-        key_occupation = format_value(
+        value_occupation = format_value(
             j.get('職業'),
             config['formats']['values']['occupation']
         )
 
-        # 推定感染経路
-        key_infection_sources = format_list(
+        value_infection_sources = format_list(
             j.get('推定感染経路'),
             config['formats']['values']['infection_sources']
         )
 
-        # 行動歴
         if '行動歴＊' in j:
-            key_activities = format_list(
+            value_activities = format_list(
                 j.get('行動歴＊'),
                 config['formats']['values']['activities']
             )
         elif '行動歴' in j:
-            key_activities = format_list(
+            value_activities = format_list(
                 j.get('行動歴'),
                 config['formats']['values']['activities']
             )
 
         dict = {
-            '市内': key_ichikawa,
-            '県内': key_chiba,
-            '検査確定日': key_inspection_date,
-            '発症日': key_onset_date,
-            '年代': key_age,
-            '性別': key_sex,
-            '職業': key_occupation,
-            '推定感染経路': key_infection_sources,
-            '行動歴': key_activities
+            '市内': value_ichikawa,
+            '県内': value_chiba,
+            '検査確定日': value_inspection_date,
+            '発症日': value_onset_date,
+            '年代': value_age,
+            '性別': value_sex,
+            '職業': value_occupation,
+            '推定感染経路': value_infection_sources,
+            '行動歴': value_activities
         }
         data_dict.append(dict)
 
