@@ -8,11 +8,11 @@ import ruamel.yaml as yaml
 
 
 def format_value(value, format):
-    for i in format:
-        result = re.sub(
-            i['find'],
-            i['replace'],
-            str(value) if format.index(i) == 0 else result
+    for i, key in enumerate(format):
+        pattern = re.compile(key['find'])
+        result = pattern.sub(
+            key['replace'],
+            str(value) if i == 0 else result
         )
     if result == '':
         return None
