@@ -7,7 +7,21 @@ import re
 import ruamel.yaml as yaml
 
 with open('./data_updater/config.json', 'r', encoding='utf-8') as f:
-    config = json.load(f)['patients'][0]
+    config = json.load(f)['patients']
+
+
+def format_number(value, format_config):
+    for i in format_config:
+        result = re.sub(
+            i['find'],
+            i['replace'],
+            str(value) if format_config.index(i) == 0 else result
+        )
+    if result == '':
+        return None
+    else:
+        return int(result)
+
 
 dst = config['dst']
 
@@ -19,31 +33,16 @@ for i in data:
     data_json = json.loads(raw.to_json(orient='records'))
     for j in data_json:
         # 市内
-        key_ichikawa = re.sub(
-            r'\D+',
-            r'',
-            str(j.get('市内'))
+        key_ichikawa = format_number(
+            j.get('市内'),
+            config['formats']['values']['ichikawa']
         )
-        if key_ichikawa == '':
-            key_ichikawa = None
-        else:
-            key_ichikawa = int(key_ichikawa)
 
         # 県内
-        key_chiba = re.sub(
-            r'^\D.+$',
-            r'',
-            str(j.get('県内'))
+        key_chiba = format_number(
+            j.get('県内'),
+            config['formats']['values']['chiba']
         )
-        key_chiba = re.sub(
-            r'^(\d+)\D+$',
-            r'\1',
-            key_chiba
-        )
-        if key_chiba == '':
-            key_chiba = None
-        else:
-            key_chiba = int(key_chiba)
 
         # 検査確定日
         key_inspection_date = re.sub(
@@ -64,8 +63,9 @@ for i in data:
                 '%Y-%m-%d'
             )
             key_inspection_date = key_inspection_date.strftime('%Y-%m-%d')
+            # if data_json.index(j) > 0:
 
-        # 発症日
+            # 発症日
         key_onset_date = re.sub(
             r'^不明|調査中|\s+|None$',
             r'',
