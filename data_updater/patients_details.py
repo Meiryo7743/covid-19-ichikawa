@@ -47,11 +47,11 @@ with open('./data_updater/config.json', 'r', encoding='utf-8') as f:
 
 dst = config['dst']
 
-data = config['data']
-for i in data:
-    data_dict = []
-
+for i in config['data']:
     raw = pd.read_table(dst + i['raw'], header=0)
+
+    data_list = []
+
     data_json = json.loads(raw.to_json(orient='records'))
     for j in data_json:
         value_ichikawa = format_number(
@@ -105,7 +105,7 @@ for i in data:
                 config['formats']['values']['activities']
             )
 
-        dict = {
+        data_dict = {
             '市内': value_ichikawa,
             '県内': value_chiba,
             '検査確定日': value_inspection_date,
@@ -116,7 +116,8 @@ for i in data:
             '推定感染経路': value_infection_sources,
             '行動歴': value_activities
         }
-        data_dict.append(dict)
+
+        data_list.append(data_dict)
 
     with open(dst + i['data_details'], 'w', encoding='utf-8', newline='\n') as f:
-        yaml.dump(data_dict, f, indent=2, allow_unicode=True)
+        yaml.dump(data_list, f, indent=2, allow_unicode=True)
