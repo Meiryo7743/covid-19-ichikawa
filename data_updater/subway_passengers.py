@@ -3,8 +3,22 @@ import datetime
 import json
 import re
 
+
+def format_value(value, format):
+    for i, key in enumerate(format):
+        pattern = re.compile(key['find'])
+        result = pattern.sub(
+            key['replace'],
+            str(value) if i == 0 else result
+        )
+    if result == '':
+        return None
+    else:
+        return result
+
+
 with open('./data_updater/config.json', 'r', encoding='utf-8') as f:
-    config = json.load(f)['subway'][0]
+    config = json.load(f)['subway']
 
 dst = config['dst']
 data = config['data'][0]
@@ -12,62 +26,32 @@ data = config['data'][0]
 with open(dst + data['raw']) as f:
     data_json = json.load(f)['datasets']
 
+format = config['formats']['values']
+
 list = []
 
 for i in data_json:
-    # Fix Date Format
-    # MM/DD~DD -> 0MM/0DD~0DD
-    date = re.sub(
-        r'^(\d+)/(\d+)~(\d+)$',
-        r'0\1/0\2~0\3',
-        i['label']
-    )
-    # -> MM/DD~DD
-    date = re.sub(
-        r'0(\d\d)',
-        r'\1',
-        date
-    )
-    # -> MM-DD~DD
-    date = re.sub(
-        r'/',
-        r'-',
-        date
-    )
-    # -> MM-DD~MM-DD
-    date = re.sub(
-        r'^(\d\d-)(\d\d~)(\d\d)$',
-        r'\1\2\1\3',
-        date
-    )
-    # -> YYYY-MM-DD~YYYY-MM-DD
-    date = re.sub(
-        r'^(.+)~(.+)$',
-        r'2020-\1~2020-\2',
-        date
+    date = format_value(
+        i['label'],
+        format['label']
     )
 
-    # Fix Month (Left > Right -> Left < Right)
-    date_left = re.sub(
-        r'^(.+)~.+$',
-        r'\1',
-        date
+    date_former = datetime.datetime.strptime(
+        date.split('~')[0],
+        '%Y-%m-%d'
     )
-    date_right = re.sub(
-        r'^.+~(.+)$',
-        r'\1',
-        date
+    date_latter = datetime.datetime.strptime(
+        date.split('~')[1],
+        '%Y-%m-%d'
     )
-    date_left = datetime.datetime.strptime(date_left, '%Y-%m-%d')
-    date_right = datetime.datetime.strptime(date_right, '%Y-%m-%d')
 
-    if date_left > date_right:
-        date_right = date_right + relativedelta(months=1)
+    if date_former > date_latter:
+        date_latter = date_latter + relativedelta(months=1)
 
-    date_left = date_left.strftime('%m-%d')
-    date_right = date_right.strftime('%m-%d')
+    date_former = date_former.strftime('%m-%d')
+    date_latter = date_latter.strftime('%m-%d')
 
-    date = date_left + '~' + date_right
+    date = date_former + '~' + date_latter
 
     list.append([date, i['data'][0], i['data'][1], i['data'][2]])
 
@@ -140,5 +124,5 @@ dict = {
     }
 }
 
-with open(dst + data['data_passengers'], 'w', newline='\n') as f:
+with open(dst + data['data_passengers'], 'w', encoding='utf-8', newline='\n') as f:
     json.dump(dict, f, indent=2)
