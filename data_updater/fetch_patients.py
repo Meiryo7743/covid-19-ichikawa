@@ -6,7 +6,7 @@ import requests
 import sys
 
 with open('./data_updater/config.json', 'r', encoding='utf-8') as f:
-    config = json.load(f)['patients'][0]
+    config = json.load(f)['patients']
 
 dst = config['dst']
 
@@ -19,8 +19,7 @@ if res.status_code == 200:
 else:
     sys.exit()
 
-data = config['data']
-for i in data:
+for i in config['data']:
     dfs[i['table_index']].to_csv(
         dst + i['raw'],
         sep='\t',
