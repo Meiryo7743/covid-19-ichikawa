@@ -7,8 +7,7 @@ with open('./data_updater/config.json', 'r', encoding='utf-8') as f:
 
 dst = config['dst']
 
-data = config['data']
-for i in data:
+for i in config['data']:
     with open(dst + i['data_details'], 'r', encoding='utf-8') as f:
         raw = yaml.safe_load(f)
 
@@ -16,16 +15,15 @@ for i in data:
     dict = {}
 
     # Count patients by age
-    key = config['formats']['keys']['age']
-    for j in key:
-        age_bool = (age == j['find'])
-        dict[j['replace']] = int(age_bool.sum())
+    for j in config['formats']['keys']['age']:
+        count_by_age = (age == j['find'])
+        dict[j['replace']] = int(count_by_age.sum())
 
     # Count total patients
     dict['total'] = int(age.value_counts().sum())
 
     # Convert the data to list type so that Hugo can process them
-    data_count = [dict]
+    data = [dict]
 
     with open(dst + i['data_count'], 'w', encoding='utf-8', newline='\n') as f:
-        yaml.dump(data_count, f, indent=2, allow_unicode=True)
+        yaml.dump(data, f, indent=2, allow_unicode=True)
