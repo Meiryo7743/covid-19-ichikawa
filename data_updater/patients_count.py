@@ -3,7 +3,7 @@ import pandas as pd
 import ruamel.yaml as yaml
 
 with open('./data_updater/config.json', 'r', encoding='utf-8') as f:
-    config = json.load(f)['patients'][0]
+    config = json.load(f)['patients']
 
 dst = config['dst']
 
@@ -16,7 +16,7 @@ for i in data:
     dict = {}
 
     # Count patients by age
-    key = config['age']
+    key = config['formats']['keys']['age']
     for j in key:
         age_bool = (age == j['find'])
         dict[j['replace']] = int(age_bool.sum())
