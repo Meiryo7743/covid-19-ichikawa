@@ -6,11 +6,8 @@ import pandas as pd
 import re
 import ruamel.yaml as yaml
 
-with open('./data_updater/config.json', 'r', encoding='utf-8') as f:
-    config = json.load(f)['patients']
 
-
-def format_number(value, format_config):
+def format_value(value, format_config):
     for i in format_config:
         result = re.sub(
             i['find'],
@@ -20,8 +17,17 @@ def format_number(value, format_config):
     if result == '':
         return None
     else:
+        return result
+
+
+def format_number(value, format_config):
+    result = format_value(value, format_config)
+    if not result == None:
         return int(result)
 
+
+with open('./data_updater/config.json', 'r', encoding='utf-8') as f:
+    config = json.load(f)['patients']
 
 dst = config['dst']
 
@@ -63,7 +69,6 @@ for i in data:
                 '%Y-%m-%d'
             )
             key_inspection_date = key_inspection_date.strftime('%Y-%m-%d')
-            # if data_json.index(j) > 0:
 
             # 発症日
         key_onset_date = re.sub(
