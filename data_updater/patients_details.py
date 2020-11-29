@@ -7,12 +7,12 @@ import re
 import ruamel.yaml as yaml
 
 
-def format_value(value, format_config):
-    for i in format_config:
+def format_value(value, format):
+    for i in format:
         result = re.sub(
             i['find'],
             i['replace'],
-            str(value) if format_config.index(i) == 0 else result
+            str(value) if format.index(i) == 0 else result
         )
     if result == '':
         return None
@@ -20,14 +20,14 @@ def format_value(value, format_config):
         return result
 
 
-def format_number(value, format_config):
-    result = format_value(value, format_config)
+def format_number(value, format):
+    result = format_value(value, format)
     if not result == None:
         return int(result)
 
 
-def format_date(value, format_config):
-    result = format_value(value, format_config)
+def format_date(value, format):
+    result = format_value(value, format)
     if not result == None:
         result = datetime.datetime.strptime(
             result,
@@ -36,8 +36,8 @@ def format_date(value, format_config):
         return result.strftime('%Y-%m-%d')
 
 
-def format_list(value, format_config):
-    result = format_value(value, format_config)
+def format_list(value, format):
+    result = format_value(value, format)
     if not result == None:
         return result.split(',')
 
@@ -46,6 +46,7 @@ with open('./data_updater/config.json', 'r', encoding='utf-8') as f:
     config = json.load(f)['patients']
 
 dst = config['dst']
+format = config['formats']['values']
 
 for i in config['data']:
     raw = pd.read_table(dst + i['raw'], header=0)
@@ -56,53 +57,53 @@ for i in config['data']:
     for j in data_json:
         value_ichikawa = format_number(
             j.get('市内'),
-            config['formats']['values']['ichikawa']
+            format['ichikawa']
         )
 
         value_chiba = format_number(
             j.get('県内'),
-            config['formats']['values']['chiba']
+            format['chiba']
         )
 
         value_inspection_date = format_date(
             j.get('検査確定日'),
-            config['formats']['values']['inspection_date']
+            format['inspection_date']
         )
 
         value_onset_date = format_date(
             j.get('発症日'),
-            config['formats']['values']['onset_date']
+            format['onset_date']
         )
 
         value_age = format_value(
             j.get('年代'),
-            config['formats']['values']['age']
+            format['age']
         )
 
         value_sex = format_value(
             j.get('性別'),
-            config['formats']['values']['sex']
+            format['sex']
         )
 
         value_occupation = format_value(
             j.get('職業'),
-            config['formats']['values']['occupation']
+            format['occupation']
         )
 
         value_infection_sources = format_list(
             j.get('推定感染経路'),
-            config['formats']['values']['infection_sources']
+            format['infection_sources']
         )
 
         if '行動歴＊' in j:
             value_activities = format_list(
                 j.get('行動歴＊'),
-                config['formats']['values']['activities']
+                format['activities']
             )
         elif '行動歴' in j:
             value_activities = format_list(
                 j.get('行動歴'),
-                config['formats']['values']['activities']
+                format['activities']
             )
 
         data_dict = {
