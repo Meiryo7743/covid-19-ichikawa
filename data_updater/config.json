@@ -67,23 +67,35 @@
       "values": {
         "ichikawa": [
           {
+            "find": "\\s+",
+            "replace": ""
+          },
+          {
             "find": "\\D+",
             "replace": ""
           }
         ],
         "chiba": [
           {
-            "find": "^\\D.+$",
+            "find": "\\s+",
             "replace": ""
           },
           {
-            "find": "^(\\d+)\\D+$",
+            "find": "^\\D+\\d+\\D+",
+            "replace": ""
+          },
+          {
+            "find": "^(\\d+)\\D+",
             "replace": "\\1"
           }
         ],
         "inspection_date": [
           {
-            "find": "^不明|調査中|\\s+|None$",
+            "find": "\\s+",
+            "replace": ""
+          },
+          {
+            "find": "^不明|調査中|None$",
             "replace": ""
           },
           {
@@ -93,7 +105,11 @@
         ],
         "onset_date": [
           {
-            "find": "^不明|調査中|\\s+|None$",
+            "find": "\\s+",
+            "replace": ""
+          },
+          {
+            "find": "^不明|調査中|None$",
             "replace": ""
           },
           {
@@ -103,43 +119,75 @@
         ],
         "age": [
           {
-            "find": "^不明|調査中|\\s+|None$",
+            "find": "\\s+",
+            "replace": ""
+          },
+          {
+            "find": "^不明|調査中|None$",
             "replace": ""
           }
         ],
         "sex": [
           {
-            "find": "^不明|調査中|\\s+|None$",
+            "find": "\\s+",
+            "replace": ""
+          },
+          {
+            "find": "^不明|調査中|None$",
             "replace": ""
           }
         ],
         "occupation": [
           {
-            "find": "^不明|調査中|\\s+|None$",
+            "find": "\\s+",
+            "replace": ""
+          },
+          {
+            "find": "^不明|調査中|None$",
             "replace": ""
           }
         ],
         "infection_sources": [
           {
-            "find": "^不明|調査中|\\s+|None$",
+            "find": "\\s{2}接触",
+            "replace": "接触"
+          },
+          {
+            "find": "\\s{2}",
+            "replace": "、"
+          },
+          {
+            "find": "\\s+",
             "replace": ""
           },
           {
-            "find": "(.)接触",
-            "replace": "\\1"
+            "find": "^不明|調査中|None$",
+            "replace": ""
           },
           {
-            "find": "、",
+            "find": "、+",
             "replace": ","
+          },
+          {
+            "find": "接触(,|$)",
+            "replace": "\\1"
           }
         ],
         "activities": [
           {
-            "find": "^不明|調査中|\\s+|None$",
+            "find": "\\s{2}",
+            "replace": "、"
+          },
+          {
+            "find": "\\s+",
             "replace": ""
           },
           {
-            "find": "、",
+            "find": "^不明|調査中|None$",
+            "replace": ""
+          },
+          {
+            "find": "、+",
             "replace": ","
           }
         ]
