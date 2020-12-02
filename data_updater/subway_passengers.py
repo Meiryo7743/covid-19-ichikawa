@@ -1,20 +1,16 @@
-from dateutil.relativedelta import relativedelta
 import datetime
 import json
-import re
 
 
-def format_value(value, format):
-    for i, key in enumerate(format):
-        pattern = re.compile(key['find'])
-        result = pattern.sub(
-            key['replace'],
-            str(value) if i == 0 else result
-        )
-    if result == '':
+def format_date(value):
+    if value == '':
         return None
     else:
-        return result
+        result = datetime.datetime.strptime(
+            value,
+            '%Y-%m-%d'
+        )
+        return result.strftime('%m-%d')
 
 
 with open('./data_updater/config.json', 'r', encoding='utf-8') as f:
@@ -26,30 +22,11 @@ data = config['data'][0]
 with open(dst + data['raw']) as f:
     data_json = json.load(f)['datasets']
 
-format = config['formats']['values']
-
 list = []
 
 for i in data_json:
-    date = format_value(
-        i['label'],
-        format['label']
-    )
-
-    date_former = datetime.datetime.strptime(
-        date.split('~')[0],
-        '%Y-%m-%d'
-    )
-    date_latter = datetime.datetime.strptime(
-        date.split('~')[1],
-        '%Y-%m-%d'
-    )
-
-    if date_former > date_latter:
-        date_latter = date_latter + relativedelta(months=1)
-
-    date_former = date_former.strftime('%m-%d')
-    date_latter = date_latter.strftime('%m-%d')
+    date_former = format_date(i['period']['begin'])
+    date_latter = format_date(i['period']['end'])
 
     date = date_former + '~' + date_latter
 
