@@ -1,6 +1,6 @@
 ---
 date: "2020-12-05T01:42:53+09:00"
-title: "Modified the Data of Patients with Symptoms"
+title: "Correction on the Infected People With Symptoms"
 ---
 
 On December 4, 2020, Chiba Prefecture withdrew the announcement of the 615th case of coronavirus patients with symptoms in Ichikawa City (the 5836th in Chiba Prefecture).
