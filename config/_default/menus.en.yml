@@ -20,8 +20,8 @@ header:
   - name: About
     url: "/about/"
     weight: 70
-  - name: Contact Me
-    url: "https://forms.gle/rJAhPqckU1Ak7tFQ9/"
+  - name: Contact Form
+    url: "https://forms.gle/A1a849XahuB9w7CH6"
     weight: 80
   - name: GitHub
     url: "https://github.com/Meiryo7743/covid-19-ichikawa/"
