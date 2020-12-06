@@ -1,7 +1,9 @@
 ---
-name: "不具合報告 / Report the Problems"
-about: "サイトのバグ・至急更新すべき事柄の報告はこちら / Report the bugs or what has to be updated ASAP"
+name: "不具合報告 / Report a Problem"
+about: "サイトのバグ・至急更新すべき事柄の報告はこちらから / Report a bug or what has to be updated ASAP"
+title: ""
 labels: bug
+assignees: ""
 ---
 
 <!--
@@ -13,7 +15,7 @@ labels: bug
 
 ## 期待される動作 / Expected behavior
 
-## 再現方法 / Steps to reproduce
+## 再現手順 / Steps to reproduce
 
 1.
 
@@ -21,10 +23,4 @@ labels: bug
 
 ---
 
-## 動作環境 / Environment
-
-### オペレーティングシステム / OS
-
--
-
-### ブラウザ / Browser
+## 動作環境 / Your environment

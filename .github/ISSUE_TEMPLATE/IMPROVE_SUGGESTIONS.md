@@ -1,7 +1,9 @@
 ---
-name: "サイトの改善に関する提案 / Suggestions for Improvement"
-about: "当サイトをより良くするための提案はこちら / Suggestions on how to make the site better"
+name: "サイトの改善に関する提案 / Improvement Suggestions"
+about: "サイトをより良くするための提案はこちらから / Suggestions on how to make the website better"
+title: ""
 labels: improvement
+assignees: ""
 ---
 
 <!--
@@ -17,12 +19,4 @@ labels: improvement
 
 ---
 
-## 動作環境 / Environment
-
-### オペレーティングシステム / OS
-
--
-
-### ブラウザ / Browser
-
--
+## 動作環境 / Your environment
