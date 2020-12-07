@@ -2,16 +2,16 @@ header:
   - name: What’s COVID-19?
     url: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000164708_00079.html"
     weight: 10
+  - name: How to Treat a Fever
+    url: "https://www.pref.chiba.lg.jp/kenfuku/hatsunetsu.html"
+    weight: 20
   - name: COVID-19 Info
     url: "https://www.city.ichikawa.lg.jp/cul05/1111000002.html"
-    weight: 20
-  - name: Municipal Schools and Kindergartens
-    url: "https://www.city.ichikawa.lg.jp/edu06/1111000082.html"
     weight: 30
   - name: Reopening the Facilities
     url: "https://www.city.ichikawa.lg.jp/pla04/infoheisa.html"
     weight: 40
-  - name: Message from the Mayor
+  - name: Mayor Comments
     url: "https://www.city.ichikawa.lg.jp/new01/covid19_comment.html"
     weight: 50
   - name: City Official Website
