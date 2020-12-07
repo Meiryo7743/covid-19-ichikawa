@@ -6,7 +6,7 @@ title: "About This Site"
 This site provides the latest information on COVID-19 in Ichikawa. Note that it is unofficial website developed by individual.
 
 - **Site owner**: [Meiryo7743](https://meiryo7743.net/en/)
-- **Contact**: [Google Forms](https://forms.gle/rJAhPqckU1Ak7tFQ9/)
+- **Contact form**: [Google Forms](https://forms.gle/A1a849XahuB9w7CH6)
 
 ## Requirements
 
@@ -52,3 +52,7 @@ The data posted on this site is got from [Ichikawa City official website](https:
 ## Source codes
 
 The source code of this site is MIT licensed code. You can use it for free. For more details, see [GitHub repository](https://github.com/Meiryo7743/covid-19-ichikawa/).
+
+## Translations
+
+The English website has been translated from Japanese by contributors. If you find a typo/mistranslation, please feel free to report it on [the contact form](https://forms.gle/A1a849XahuB9w7CH6) or [the GitHub repository](https://github.com/Meiryo7743/covid-19-ichikawa/issues).
