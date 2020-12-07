@@ -2,16 +2,16 @@ header:
   - name: 新型コロナとは？
     url: "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000164708_00001.html"
     weight: 10
+  - name: 熱がある時は
+    url: "https://www.pref.chiba.lg.jp/kenfuku/hatsunetsu.html"
+    weight: 20
   - name: 新型コロナ情報
     url: "https://www.city.ichikawa.lg.jp/new01/shingatacoronatokusetupage.html"
-    weight: 20
-  - name: 市立学校・幼稚園
-    url: "https://www.city.ichikawa.lg.jp/edu06/1111000082.html"
     weight: 30
   - name: 施設等の再開
     url: "https://www.city.ichikawa.lg.jp/pla04/infoheisa.html"
     weight: 40
-  - name: 市長からのメッセージ
+  - name: 市長のコメント
     url: "https://www.city.ichikawa.lg.jp/new01/covid19_comment.html"
     weight: 50
   - name: 市公式サイト
