@@ -24,7 +24,7 @@
     {{/* Share Button */}}
     <li class="share">
       <a
-        href='{{ print "https://www.addtoany.com/share#url=" .Permalink | safeURL }}'
+        href='{{ print "https://www.addtoany.com/share#" (querify  "url" .Permalink ) | safeURL }}'
         target="_blank"
         rel="noopener"
         class="share__btn"
