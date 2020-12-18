@@ -6,13 +6,13 @@
     display: grid;
     gap: 2rem;
 
-    // @include global.screen-size(0) {
-    @include screen-size(0) {
+    // @include global.min-screen-size(0) {
+    @include min-screen-size(0) {
         grid-template-columns: 100%;
     }
 
-    // @include global.screen-size(768) {
-    @include screen-size(768) {
+    // @include global.min-screen-size(768px) {
+    @include min-screen-size(768px) {
         grid-template-columns: repeat(2, calc((100% - 2rem) / 2));
     }
 
