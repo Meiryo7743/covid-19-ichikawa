@@ -1,19 +1,19 @@
-{{ define "main" }}
+{{- define "main" -}}
     <article class="page single">
         <header class="single__header">
-            {{ partial "body/date.html" . }}
+            {{- partial "body/date.html" . -}}
 
             <h1 class="title">
-                {{ .Title | title }}
+                {{- .Title | title -}}
             </h1>
 
             <div class="share share--single">
-                {{ partial "body/share-button.html" . }}
+                {{- partial "body/share-button.html" . -}}
             </div>
         </header>
 
         <section class="single__content">
-            {{ .Content }}
+            {{- .Content -}}
         </section>
     </article>
-{{ end }}
+{{- end -}}

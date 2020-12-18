@@ -1,24 +1,24 @@
 <meta
     property="og:description"
-    content='{{ if eq .Kind "404" }}{{ .Title | title }}{{ else }}{{ .Site.Params.Description }}{{ end }}'
+    content='{{- if eq .Kind "404" -}}{{- .Title | title -}}{{- else -}}{{- .Site.Params.Description -}}{{- end -}}'
 >
 <meta
     property="og:image"
-    content='{{ .Site.Params.Ogp | absURL }}'
+    content='{{- .Site.Params.Ogp | absURL -}}'
 >
 <meta
     property="og:site_name"
-    content='{{ .Site.Title }}'
+    content='{{- .Site.Title -}}'
 >
 <meta
     property="og:title"
-    content='{{ print (.Title | title) " - " .Site.Title }}'
+    content='{{- print (.Title | title) " - " .Site.Title -}}'
 >
 <meta
     property="og:type"
-    content='{{ if .IsPage }}article{{ else }}website{{ end }}'
+    content='{{- if .IsPage -}}article{{- else -}}website{{- end -}}'
 >
 <meta
     property="og:url"
-    content='{{ .Permalink }}'
+    content='{{- .Permalink -}}'
 >

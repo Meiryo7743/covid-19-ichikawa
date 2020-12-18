@@ -4,33 +4,33 @@
         <li class="nav__item">
             <a
                 class="nav__link nav__link--logo"
-                href='{{ .Site.Home.Permalink }}'
+                href='{{- .Site.Home.Permalink -}}'
             >
                 <img
-                    alt='{{ .Site.Title }}'
+                    alt='{{- .Site.Title -}}'
                     height="32"
                     loading="lazy"
-                    src='{{ "/img/logo.svg" | safeURL | absURL }}'
+                    src='{{- "/img/logo.svg" | safeURL | absURL -}}'
                     width="32"
                 >
-                {{ .Site.Title | title }}
+                {{- .Site.Title | title -}}
             </a>
         </li>
 
         {{/* Languages */}}
-        {{ if .IsTranslated }}
-            {{ range .Translations }}
+        {{- if .IsTranslated -}}
+            {{- range .Translations -}}
                 <li class="nav__item">
                     <a
                         class="nav__link nav__link--lang"
-                        href="{{ .Permalink }}"
-                        lang="{{ .Site.LanguageCode }}"
+                        href="{{- .Permalink -}}"
+                        lang="{{- .Site.LanguageCode -}}"
                     >
-                        {{ .Language.LanguageName }}
+                        {{- .Language.LanguageName -}}
                     </a>
                 </li>
-            {{ end }}
-        {{ end }}
+            {{- end -}}
+        {{- end -}}
     </ul>
 
     <ul class="nav">
@@ -38,30 +38,30 @@
         <li class="nav__item">
             <a
                 class="nav__link"
-                href='{{ print .Site.Home.Permalink "#updates-on-covid-19-in-ichikawa" }}'
+                href='{{- print .Site.Home.Permalink "#updates-on-covid-19-in-ichikawa" -}}'
             >
-                {{ .Site.Home.Title | title }}
+                {{- .Site.Home.Title | title -}}
             </a>
         </li>
 
-        {{ range .Site.Menus.header }}
+        {{- range .Site.Menus.header -}}
             <li class="nav__item">
-                {{ $dst := .URL | safeURL | absLangURL }}
-                {{ $url := urls.Parse $dst }}
-                {{ $curl := urls.Parse ("/" | safeURL | absURL ) }}
+                {{- $dst := .URL | safeURL | absLangURL -}}
+                {{- $url := urls.Parse $dst -}}
+                {{- $curl := urls.Parse ("/" | safeURL | absURL ) -}}
 
                 <a
                     class="nav__link"
-                    href='{{ $dst }}'
+                    href='{{- $dst -}}'
 
-                    {{ if ne $url.Host $curl.Host }}
+                    {{- if ne $url.Host $curl.Host -}}
                         rel="noopener"
                         target="_blank"
-                    {{ end }}
+                    {{- end -}}
                 >
-                    {{ .Name | title }}
+                    {{- .Name | title -}}
                 </a>
             </li>
-        {{ end }}
+        {{- end -}}
     </ul>
 </nav>

@@ -1,12 +1,12 @@
-{{ $author := .Site.Author.name }}
-{{ $copyrightYear := .Site.Params.copyrightYear }}
+{{- $author := .Site.Author.name -}}
+{{- $copyrightYear := .Site.Params.copyrightYear -}}
 
 <p class="copyright">
     <small>
-        {{ if gt now.Year $copyrightYear }}
-            {{ print "&copy; " $copyrightYear "-" now.Year " " $author | safeHTML }}
-        {{ else }}
-            {{ print "&copy; " $copyrightYear " " $author | safeHTML }}
-        {{ end }}
+        {{- if gt now.Year $copyrightYear -}}
+            {{- print "&copy; " $copyrightYear "-" now.Year " " $author | safeHTML -}}
+        {{- else -}}
+            {{- print "&copy; " $copyrightYear " " $author | safeHTML -}}
+        {{- end -}}
     </small>
 </p>

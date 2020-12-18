@@ -1,11 +1,11 @@
-{{ define "main" }}
+{{- define "main" -}}
     <article class="page single">
         <h1 class="title">
-            {{ .Title | title }}
+            {{- .Title | title -}}
         </h1>
 
-        {{ i18n "404-content" | markdownify }}
+        {{- i18n "404-content" | markdownify -}}
 
-        {{ partial "body/search.html" . }}
+        {{- partial "body/search.html" . -}}
     </article>
-{{ end }}
+{{- end -}}

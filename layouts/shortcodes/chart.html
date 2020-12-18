@@ -1,17 +1,17 @@
-{{ $src := print "data/" (.Get "src") ".json" }}
-{{ $dataId := print "json_" (.Get "src") }}
-{{ $canvasId := print "chart-" (replace (.Get "src") "_" "-")}}
+{{- $src := print "data/" (.Get "src") ".json" -}}
+{{- $dataId := print "json_" (.Get "src") -}}
+{{- $canvasId := print "chart-" (replace (.Get "src") "_" "-")}}
 
 <div class="data-chart">
     <div
-        aria-label='{{ .Page.Title | title }}'
+        aria-label='{{- .Page.Title | title -}}'
         class="data-chart__canvas"
-        id='{{ $canvasId | safeHTMLAttr }}'
+        id='{{- $canvasId | safeHTMLAttr -}}'
     ></div>
 </div>
 
 <div class="scroll-message">
-    {{ i18n "scroll-message" }}
+    {{- i18n "scroll-message" -}}
 </div>
 
 {{/* print を使った煩雑なコードなのは VS Code のエラー防止のため */}}
@@ -21,9 +21,9 @@
         drawColumnChart('$canvasId', $dataId);
     });
  */}}
-{{ print "<" "script" ">" | safeHTML }}
-{{ print "window.addEventListener('load', function () {" | safeHTML }}
-{{ print "const " $dataId " = " (readFile $src | safeJS) ";" | safeHTML }}
-{{ print "drawColumnChart('" $canvasId "'," $dataId ");" | safeHTML }}
-{{ print "});" | safeHTML }}
-{{ print "</" "script" ">" | safeHTML }}
+{{- print "<" "script" ">" | safeHTML -}}
+{{- print "window.addEventListener('load', function () {" | safeHTML -}}
+{{- print "const " $dataId " = " (readFile $src | safeJS) ";" | safeHTML -}}
+{{- print "drawColumnChart('" $canvasId "'," $dataId ");" | safeHTML -}}
+{{- print "});" | safeHTML -}}
+{{- print "</" "script" ">" | safeHTML -}}

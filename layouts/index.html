@@ -1,55 +1,55 @@
-{{ define "main" }}
+{{- define "main" -}}
     <div
         class="page"
         id="updates-on-covid-19-in-ichikawa"
     >
         <div class="date">
-            <ins datetime='{{ dateFormat "2006-01-02T15:04:05-0700" (now) }}'>
+            <ins datetime='{{- dateFormat "2006-01-02T15:04:05-0700" (now) -}}'>
                 <time
-                    aria-label='{{ i18n "date-lastmod" }}'
+                    aria-label='{{- i18n "date-lastmod" -}}'
                     class="date__lastmod"
-                    datetime='{{ dateFormat "2006-01-02T15:04:05-0700" (now) }}'
+                    datetime='{{- dateFormat "2006-01-02T15:04:05-0700" (now) -}}'
                 >
-                    {{ dateFormat "2006-01-02 15:04 MST" (now) }}
+                    {{- dateFormat "2006-01-02 15:04 MST" (now) -}}
                 </time>
             </ins>
         </div>
 
         <h1 class="title">
-            {{ .Title | title }}
+            {{- .Title | title -}}
         </h1>
 
         <div class="card-container card-container--home">
             <article class="card">
                 <h2 class="card__title">
-                    {{ i18n "card-news" | title }}
+                    {{- i18n "card-news" | title -}}
                 </h2>
 
                 <ul class="card__content news">
-                    {{ range first 5 (where .Site.RegularPages.ByWeight "Section" "==" "articles") }}
+                    {{- range first 5 (where .Site.RegularPages.ByWeight "Section" "==" "articles") -}}
                         <li class="news__item">
-                            <time datetime='{{ dateFormat "2006-01-02T15:04:05" .Date }}'>
-                                {{ dateFormat "2006-01-02" .Date }}
+                            <time datetime='{{- dateFormat "2006-01-02T15:04:05" .Date -}}'>
+                                {{- dateFormat "2006-01-02" .Date -}}
                             </time>
-                            {{ print " - " }}
+                            {{- print " - " -}}
                             <a
-                                href="{{ .Permalink | safeURL | absLangURL }}"
+                                href="{{- .Permalink | safeURL | absLangURL -}}"
                                 class="news__link"
                             >
-                                {{ .Title | title }}
+                                {{- .Title | title -}}
                             </a>
                         </li>
-                    {{ end }}
+                    {{- end -}}
                 </ul>
             </article>
         </div>
 
         <div class="card-container">
-            {{ range (where .Site.RegularPages "Section" "==" "cards") }}
+            {{- range (where .Site.RegularPages "Section" "==" "cards") -}}
                 <article class="card">
-                    {{ partial "body/card.html" . }}
+                    {{- partial "body/card.html" . -}}
                 </article>
-            {{ end }}
+            {{- end -}}
         </div>
     </div>
-{{ end }}
+{{- end -}}

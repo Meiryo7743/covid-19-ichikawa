@@ -1,13 +1,13 @@
-{{ $styleReset := resources.Get "css/reset.min.css" }}
-{{ $styleScreen := resources.Get "scss/screen.scss" | toCSS | minify }}
+{{- $styleReset := resources.Get "css/reset.min.css" -}}
+{{- $styleScreen := resources.Get "scss/screen.scss" | toCSS | minify -}}
 
 <link
-    href='{{ $styleReset.Permalink }}'
+    href='{{- $styleReset.Permalink -}}'
     media="screen"
     rel="stylesheet"
 >
 <link
-    href='{{ $styleScreen.Permalink }}'
+    href='{{- $styleScreen.Permalink -}}'
     media="screen"
     rel="stylesheet"
 >

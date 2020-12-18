@@ -1,8 +1,8 @@
 <a
     class="share__button"
-    href='{{ print "https://www.addtoany.com/share#" (querify "url" .Permalink ) | safeURL }}'
+    href='{{- print "https://www.addtoany.com/share#" (querify "url" .Permalink ) | safeURL -}}'
     rel="noopener"
     target="_blank"
 >
-    {{ i18n "share-button" }}
+    {{- i18n "share-button" -}}
 </a>

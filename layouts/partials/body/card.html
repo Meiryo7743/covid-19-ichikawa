@@ -1,27 +1,27 @@
 <h2 class="card__title">
-    {{ .Title | title }}
+    {{- .Title | title -}}
 </h2>
 
 <section class="card__content">
-    {{ .Content }}
+    {{- .Content -}}
 </section>
 
 <nav class="card__footer">
     <ul>
-        {{ with .Params.Cards.Data.Source }}
+        {{- with .Params.Cards.Data.Source -}}
             <li>
                 <a
-                    href='{{ . | safeURL | absLangURL }}'
+                    href='{{- . | safeURL | absLangURL -}}'
                     rel="noopener"
                     target="_blank"
                 >
-                    {{ i18n "source" }}
+                    {{- i18n "source" -}}
                 </a>
             </li>
-        {{ end }}
+        {{- end -}}
 
         <li class="share">
-            {{ partial "body/share-button.html" . }}
+            {{- partial "body/share-button.html" . -}}
         </li>
     </ul>
 </nav>

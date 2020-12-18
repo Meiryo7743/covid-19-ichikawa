@@ -1,14 +1,14 @@
-{{ range .Site.Params.favicon }}
+{{- range .Site.Params.favicon -}}
     <link
-        href='{{ .href | absURL | safeURL }}'
-        rel='{{ .rel | safeHTMLAttr }}'
+        href='{{- .href | absURL | safeURL -}}'
+        rel='{{- .rel | safeHTMLAttr -}}'
 
-        {{ with .sizes }}
-            sizes='{{ . | safeHTMLAttr }}'
-        {{ end }}
+        {{- with .sizes -}}
+            sizes='{{- . | safeHTMLAttr -}}'
+        {{- end -}}
 
-        {{ with .type }}
-            type='{{ . | safeHTMLAttr }}'
-        {{ end }}
+        {{- with .type -}}
+            type='{{- . | safeHTMLAttr -}}'
+        {{- end -}}
     >
-{{ end }}
+{{- end -}}

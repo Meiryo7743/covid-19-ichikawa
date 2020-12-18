@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html
-    data-lang='{{ .Site.Language.Lang }}'
-    lang='{{ .Site.LanguageCode }}'
+    data-lang='{{- .Site.Language.Lang -}}'
+    lang='{{- .Site.LanguageCode -}}'
 >
     <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
-        {{ partial "head.html" . }}
+        {{- partial "head.html" . -}}
     </head>
     <body class="layout">
         <header class="layout__header">
-            {{ partial "body/header.html" . }}
+            {{- partial "body/header.html" . -}}
         </header>
 
         <main class="layout__main">
-            {{ block "main" . }}{{ end }}
+            {{- block "main" . -}}{{- end -}}
         </main>
 
         <footer class="layout__footer">
-            {{ partial "body/footer.html" . }}
+            {{- partial "body/footer.html" . -}}
         </footer>
 
-        {{ partial "body/scripts.html" . }}
+        {{- partial "body/scripts.html" . -}}
     </body>
 </html>
