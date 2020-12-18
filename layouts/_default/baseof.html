@@ -1,25 +1,24 @@
 <!DOCTYPE html>
 <html
-  data-lang='{{ .Site.Language.Lang }}'
-  lang='{{ .Site.LanguageCode }}'
+    data-lang='{{ .Site.Language.Lang }}'
+    lang='{{ .Site.LanguageCode }}'
 >
-  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
-    {{ partial "head.html" . }}
-  </head>
+    <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+        {{ partial "head.html" . }}
+    </head>
+    <body class="layout">
+        <header class="layout__header">
+            {{ partial "body/header.html" . }}
+        </header>
 
-  <body class="layout">
-    <header class="layout__header">
-      {{ partial "body/header.html" . }}
-    </header>
+        <main class="layout__main">
+            {{ block "main" . }}{{ end }}
+        </main>
 
-    <main class="layout__main">
-      {{ block "main" . }}{{ end }}
-    </main>
+        <footer class="layout__footer">
+            {{ partial "body/footer.html" . }}
+        </footer>
 
-    <footer class="layout__footer">
-      {{ partial "body/footer.html" . }}
-    </footer>
-
-    {{ partial "body/scripts.html" . }}
-  </body>
+        {{ partial "body/scripts.html" . }}
+    </body>
 </html>
