@@ -8,9 +8,9 @@
           <li>
             <time
               datetime='{{ .Format "2006-01-02T15:04:05-0700" }}'
-              aria-label='{{- i18n "date_publish" -}}'
+              aria-label='{{ i18n "date_publish" }}'
             >
-              {{- .Format "2006-01-02" -}}
+              {{ .Format "2006-01-02" }}
             </time>
           </li>
 
@@ -20,10 +20,10 @@
               <ins datetime='{{ .Format "2006-01-02T15:04:05-0700" }}'>
                 <time
                   datetime='{{ .Format "2006-01-02T15:04:05-0700" }}'
-                  aria-label='{{- i18n "date_lastmod" -}}'
+                  aria-label='{{ i18n "date_lastmod" }}'
                   class="date__lastmod"
                 >
-                  {{- .Format "2006-01-02" -}}
+                  {{ .Format "2006-01-02" }}
                 </time>
               </ins>
             </li>

@@ -69,14 +69,14 @@
 
           <td class="検査確定日">
             {{ with .検査確定日 }}
-              {{- dateFormat "2006-01-02" . -}}
+              {{ dateFormat "2006-01-02" . }}
             {{ end }}
           </td>
 
           {{ if ne ($.Get "src") "details_of_patients_without_symptoms" }}
             <td class="発症日">
               {{ with .発症日 }}
-                {{- dateFormat "2006-01-02" . -}}
+                {{ dateFormat "2006-01-02" . }}
               {{ end }}
             </td>
           {{ end }}
@@ -154,7 +154,7 @@
 </div>
 
 <div class="scroll-message">
-  {{- i18n "scroll_message" -}}
+  {{ i18n "scroll_message" }}
 </div>
 
 {{/* Sort the Table by List.js */}}

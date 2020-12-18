@@ -4,7 +4,7 @@
   <aside class="notice">
     <p>
       <strong>
-        {{- i18n "notice_noscript" -}}
+        {{ i18n "notice_noscript" }}
       </strong>
     </p>
   </aside>
@@ -14,7 +14,7 @@
 {{ with .Site.Params.Notice.Translation }}
   <aside class="notice notice--translation">
     <p>
-      {{- i18n "notice_translation" -}}
+      {{ i18n "notice_translation" }}
     </p>
   </aside>
 {{ end }}
@@ -23,7 +23,7 @@
 {{ with .Site.Params.Notice.Emergency }}
   <article class="notice">
     <div>
-      {{- i18n "notice_emergency" | markdownify -}}
+      {{ i18n "notice_emergency" | markdownify }}
     </div>
   </article>
 {{ end }}
@@ -42,7 +42,7 @@
           height="32"
           loading="lazy"
         >
-        {{- .Site.Title | title -}}
+        {{ .Site.Title | title }}
       </a>
     </li>
 
@@ -55,7 +55,7 @@
             class="nav__link nav__link--lang"
             lang="{{ .Language.Lang }}"
           >
-            {{- .Language.LanguageName -}}
+            {{ .Language.LanguageName }}
           </a>
         </li>
       {{ end }}
@@ -69,7 +69,7 @@
         href='{{ .Site.Home.Permalink }}#updates-on-covid-19-in-ichikawa'
         class="nav__link"
       >
-        {{- .Site.Home.Title | title -}}
+        {{ .Site.Home.Title | title }}
       </a>
     </li>
 
@@ -88,7 +88,7 @@
             rel="noopener"
           {{ end }}
         >
-          {{- .Name | title -}}
+          {{ .Name | title }}
         </a>
       </li>
     {{ end }}

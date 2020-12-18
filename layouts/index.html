@@ -7,10 +7,10 @@
       <ins datetime='{{ dateFormat "2006-01-02T15:04:05-0700" (now) }}'>
         <time
           datetime='{{ dateFormat "2006-01-02T15:04:05-0700" (now) }}'
-          aria-label='{{- i18n "date_lastmod" -}}'
+          aria-label='{{ i18n "date_lastmod" }}'
           class="date__lastmod"
         >
-          {{- dateFormat "2006-01-02 15:04 MST" (now) -}}
+          {{ dateFormat "2006-01-02 15:04 MST" (now) }}
         </time>
       </ins>
     </div>
@@ -30,9 +30,9 @@
           {{ range first 5 (where .Site.RegularPages.ByWeight "Section" "==" "articles") }}
             <li class="news__item">
               <time datetime='{{ .Date.Format "2006-01-02T15:04:05" }}'>
-                {{- .Date.Format "2006-01-02" -}}
+                {{ .Date.Format "2006-01-02" }}
               </time>
-              {{- print " - " -}}
+              {{ print " - " }}
               <a
                 href="{{ .Permalink | safeURL | absLangURL }}"
                 class="news__link"
