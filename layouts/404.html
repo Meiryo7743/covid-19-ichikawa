@@ -1,38 +1,11 @@
 {{ define "main" }}
-  <article class="page single">
-    <h1 class="title">
-      {{ .Title | title }}
-    </h1>
+    <article class="page single">
+        <h1 class="title">
+            {{ .Title | title }}
+        </h1>
 
-    {{ i18n "404_message" | markdownify }}
+        {{ i18n "404_message" | markdownify }}
 
-    {{/* Search on this site by Google */}}
-    <form
-      action="https://www.google.com/search"
-      method="GET"
-      target="_blank"
-      rel="noopener"
-      class="search"
-    >
-      <input
-        type="search"
-        name="q"
-        autocomplete="off"
-        autocapitalize="off"
-        autocorrect="off"
-        spellcheck="false"
-        placeholder='{{ i18n "search_input" }}'
-        aria-label='{{ i18n "search_input" }}'
-        class="search__input"
-      ><input
-        type="hidden"
-        name="q"
-        value='{{ print "site:" .Site.Home.Permalink | safeHTMLAttr }}'
-      ><button
-        type="submit"
-        aria-label='{{ i18n "search_btn" }}'
-        class="search__btn"
-      ></button>
-    </form>
-  </article>
+        {{ partial "body/search.html" . }}
+    </article>
 {{ end }}

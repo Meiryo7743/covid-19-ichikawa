@@ -1,0 +1,29 @@
+<form
+    action="https://www.google.com/search"
+    class="search"
+    method="GET"
+    rel="noopener"
+    target="_blank"
+>
+    <input
+        aria-label="Google Search"
+        autocapitalize="off"
+        autocomplete="off"
+        autocorrect="off"
+        class="search__input"
+        name="q"
+        placeholder="Google Search"
+        spellcheck="false"
+        type="search"
+    >
+    <input
+        name="q"
+        type="hidden"
+        value='{{- print "site:" .Site.BaseURL | safeHTMLAttr -}}'
+    >
+    <button
+        aria-label="Search"
+        class="search__button"
+        type="submit"
+    ></button>
+</form>
