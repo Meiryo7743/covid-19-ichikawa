@@ -1,16 +1,16 @@
 <meta charset="utf-8">
 <meta
-    content='{{- .Site.Author.name -}}'
+    content='{{ .Site.Author.name }}'
     name="author"
 >
 <meta
     name="description"
 
-    {{- if eq .Kind "404" -}}
-        content='{{- .Title | title -}}'
-    {{- else -}}
-        content='{{- .Site.Params.description -}}'
-    {{- end -}}
+    {{ if eq .Kind "404" }}
+        content='{{ .Title | title }}'
+    {{ else }}
+        content='{{ .Site.Params.description }}'
+    {{ end }}
 >
 <meta
     content="telephone=no,address=no,email=no"
