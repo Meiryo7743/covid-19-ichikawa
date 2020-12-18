@@ -19,7 +19,7 @@
     <input
         name="q"
         type="hidden"
-        value='{{- print "site:" .Site.BaseURL | safeHTMLAttr -}}'
+        value='{{ print "site:" .Site.BaseURL | safeHTMLAttr }}'
     >
     <button
         aria-label="Search"
