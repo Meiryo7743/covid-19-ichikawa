@@ -1,54 +1,19 @@
-{{/* _default */}}
 {{ define "main" }}
-  <article class="page single">
-    <header class="single__header">
-      {{ with .Date }}
-        <ul class="date">
-          {{/* Publish Date */}}
-          <li>
-            <time
-              datetime='{{ .Format "2006-01-02T15:04:05-0700" }}'
-              aria-label='{{ i18n "date_publish" }}'
-            >
-              {{ .Format "2006-01-02" }}
-            </time>
-          </li>
+    <article class="page single">
+        <header class="single__header">
+            {{ partial "body/date.html" . }}
 
-          {{/* Lastmod */}}
-          {{ with $.Lastmod }}
-            <li>
-              <ins datetime='{{ .Format "2006-01-02T15:04:05-0700" }}'>
-                <time
-                  datetime='{{ .Format "2006-01-02T15:04:05-0700" }}'
-                  aria-label='{{ i18n "date_lastmod" }}'
-                  class="date__lastmod"
-                >
-                  {{ .Format "2006-01-02" }}
-                </time>
-              </ins>
-            </li>
-          {{ end }}
-        </ul>
-      {{ end }}
+            <h1 class="title">
+                {{ .Title | title }}
+            </h1>
 
-      {{/* Article title */}}
-      <h1 class="title">
-        {{ .Title | title }}
-      </h1>
+            <div class="share share--single">
+                {{ partial "body/share-button.html" . }}
+            </div>
+        </header>
 
-      {{/* Share Button */}}
-      <div class="share share--single">
-        <a
-          href='{{ print "https://www.addtoany.com/share#" (querify  "url" .Permalink ) | safeURL }}'
-          target="_blank"
-          rel="noopener"
-          class="share__btn"
-        >{{ i18n "card_share" }}</a>
-      </div>
-    </header>
-
-    <section class="single__content">
-      {{ .Content }}
-    </section>
-  </article>
+        <section class="single__content">
+            {{ .Content }}
+        </section>
+    </article>
 {{ end }}
