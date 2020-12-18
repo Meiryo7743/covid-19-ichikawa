@@ -6,18 +6,18 @@
 :root {
     // @include global.color-scheme("light") {
     @include color-scheme("light") {
-        --bgcolor-body: var(--white-smoke);
-        --bgcolor-card: var(--white);
-        --bgcolor-header: var(--white);
-        --bgcolor-nav-link: var(--platinum);
+        --bgcolor-body: #efefef;
+        --bgcolor-card: #ffffff;
+        --bgcolor-header: #ffffff;
+        --bgcolor-nav-link: #efefef;
         --color-a: var(--blue);
     }
     // @include global.color-scheme("dark") {
     @include color-scheme("dark") {
-        --bgcolor-body: var(--black);
-        --bgcolor-card: var(--jet);
-        --bgcolor-header: var(--jet);
-        --bgcolor-nav-link: #484848;
+        --bgcolor-body: #1f1f1f;
+        --bgcolor-card: #2f2f2f;
+        --bgcolor-header: #2f2f2f;
+        --bgcolor-nav-link: #1f1f1f;
         --color-a: var(--sky-blue);
     }
     --box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2);
