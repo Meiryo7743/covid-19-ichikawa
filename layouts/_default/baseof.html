@@ -1,50 +1,10 @@
-{{ $style_reset := resources.Get "css/reset.min.css" }}
-{{ $style_screen := resources.Get "scss/style.scss" | toCSS | minify }}
-
-{{ $js_chart := (resources.Get "js/chart.js").Content   }}
-{{ $js_list := (resources.Get "js/list.js").Content  }}
-{{ $js_lib_chart := "https://www.gstatic.com/charts/loader.js" }}
-{{ $js_lib_list := "https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js" }}
-
 <!DOCTYPE html>
 <html
-  lang='{{ .Site.LanguageCode }}'
   data-lang='{{ .Site.Language.Lang }}'
+  lang='{{ .Site.LanguageCode }}'
 >
   <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
-    {{/* Google Analytics */}}
-    {{ partial "head/analytics.html" . }}
-
-    <meta charset="utf-8">
-    <meta name="description" content='{{ if eq .Kind "404" }}{{ .Title | title }}{{ else }}{{ .Site.Params.Description }}{{ end }}'>
-    <meta name="format-detection" content="telephone=no,address=no,email=no">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    {{/* Page Title */}}
-    <title>
-      {{ print (.Title | title) " - " .Site.Title }}
-    </title>
-
-    {{/* OGP */}}
-    {{ partial "head/ogp.html" . }}
-
-    {{/* Favicon */}}
-    {{ range .Site.Params.Favicon }}
-      <link
-        rel='{{ .rel | safeHTMLAttr }}'
-        {{ with .type }}
-          type='{{ . | safeHTMLAttr }}'
-        {{ end }}
-        {{ with .sizes }}
-          sizes='{{ . | safeHTMLAttr }}'
-        {{ end }}
-        href='{{ .href | absURL | safeURL }}'
-      >
-    {{ end }}
-
-    {{/* CSS */}}
-    <link rel="stylesheet" href='{{ $style_reset.Permalink }}'>
-    <link rel="stylesheet" href='{{ $style_screen.Permalink }}'>
+    {{ partial "head.html" . }}
   </head>
 
   <body class="layout">
@@ -60,21 +20,6 @@
       {{ partial "body/footer.html" . }}
     </footer>
 
-    {{/* Script Files */}}
-    {{/* Google Charts */}}
-    {{ if or (.HasShortcode "chart") (.IsHome) }}
-      <script src='{{ $js_lib_chart | safeURL }}'></script>
-      <script>
-        {{ $js_chart | safeJS }}
-      </script>
-    {{ end }}
-
-    {{/* List.js */}}
-    {{ if or (.HasShortcode "table") (.IsHome) }}
-      <script src='{{ $js_lib_list | safeURL }}'></script>
-      <script>
-        {{ $js_list | safeJS }}
-      </script>
-    {{ end }}
+    {{ partial "body/scripts.html" . }}
   </body>
 </html>
