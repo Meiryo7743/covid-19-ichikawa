@@ -1,0 +1,8 @@
+.single {
+    @include margin-inline(auto);
+    inline-size: unquote("min(100%, 42rem)");
+
+    & > [class*="single__"] {
+        @extend %margin-block_1rem;
+    }
+}
