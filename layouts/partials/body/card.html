@@ -1,36 +1,27 @@
-{{/* Card */}}
 <h2 class="card__title">
-  {{ .Title | title }}
+    {{ .Title | title }}
 </h2>
 
 <section class="card__content">
-  {{ .Content }}
+    {{ .Content }}
 </section>
-<nav class="card__footer">
-  <ul>
-    {{/* Source Link */}}
-    {{ with .Params.Cards.Data.Source }}
-      <li>
-        <a
-          href='{{ . | safeURL | absLangURL }}'
-          target="_blank"
-          rel="noopener"
-        >
-          {{ i18n "card_source" }}
-        </a>
-      </li>
-    {{ end }}
 
-    {{/* Share Button */}}
-    <li class="share">
-      <a
-        href='{{ print "https://www.addtoany.com/share#" (querify  "url" .Permalink ) | safeURL }}'
-        target="_blank"
-        rel="noopener"
-        class="share__btn"
-      >
-        {{ i18n "card_share" }}
-      </a>
-    </li>
-  </ul>
+<nav class="card__footer">
+    <ul>
+        {{ with .Params.Cards.Data.Source }}
+            <li>
+                <a
+                    href='{{ . | safeURL | absLangURL }}'
+                    rel="noopener"
+                    target="_blank"
+                >
+                    {{ i18n "card_source" }}
+                </a>
+            </li>
+        {{ end }}
+
+        <li class="share">
+            {{ partial "body/share-button.html" . }}
+        </li>
+    </ul>
 </nav>
