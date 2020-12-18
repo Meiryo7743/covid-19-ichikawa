@@ -1,23 +1,29 @@
+404-message:
+  other: |
+    The page you are looking for could not be found. Perhaps, it has been deleted or the URL is incorrect.
+
+    You might be able to find it from the search field below:
+
 card-debug:
   other: Debug
 
 card-news:
   other: News
 
-card-source:
-  other: View the source
-
 card-share:
   other: Share
 
-scroll-message:
-  other: Scroll to see off-screen contents.
+card-source:
+  other: View the source
+
+date-lastmod:
+  other: Last updated
 
 date-publish:
   other: Publish date
 
-date-lastmod:
-  other: Last updated
+notice-emergency:
+  other: ""
 
 notice-noscript:
   other: Contents will not be displayed correctly when JavaScript is disabled.
@@ -25,49 +31,21 @@ notice-noscript:
 notice-translation:
   other: This page has been translated from Japanese by contributors.
 
-notice-emergency:
-  other: ""
+patients-number:
+  one: "{{ .Count }} case"
+  other: "{{ .Count }} cases"
 
 patients-total:
   other: Total
 
-patients-number:
-  one: "{{ .Count }} case"
-
-  other: "{{ .Count }} cases"
-
 patients-市内:
   other: Ichikawa
 
-patients-県内:
-  other: Chiba
-
-patients-検査確定日:
-  other: Inspection Date
-
-patients-発症日:
-  other: Onset Date
-
-patients-年代:
-  other: Age
-
-patients-性別:
-  other: Sex
-
-patients-職業:
-  other: Occupation
-
-patients-推定感染経路:
-  other: Presumed Infection Sources
-
-patients-行動歴:
-  other: Activities
+patients-年代-10代:
+  other: 10s
 
 patients-年代-10歳未満:
   other: "<10s"
-
-patients-年代-10代:
-  other: 10s
 
 patients-年代-20代:
   other: 20s
@@ -96,35 +74,41 @@ patients-年代-90代:
 patients-年代-90代以上:
   other: ">90s"
 
+patients-年代:
+  other: Age
+
 patients-性別-女性:
   other: female
 
 patients-性別-男性:
   other: male
 
-patients-職業-教員:
-  other: teacher
+patients-性別:
+  other: Sex
 
-patients-職業-学生:
-  other: student
+patients-推定感染経路-県外患者:
+  other: patient outside the prefecture
 
-patients-職業-生徒:
-  other: student
+patients-推定感染経路:
+  other: Presumed Infection Sources
 
-patients-職業-児童:
-  other: pupil
+patients-検査確定日:
+  other: Inspection Date
 
-patients-職業-幼児:
-  other: infant
+patients-発症日:
+  other: Onset Date
 
-patients-職業-会社経営:
-  other: business owner
+patients-県内:
+  other: Chiba
 
-patients-職業-自営業:
-  other: self-employed
+patients-職業-アルバイト:
+  other: part-time job
 
-patients-職業-看護師:
-  other: nurse
+patients-職業-介護士:
+  other: caregiver
+
+patients-職業-介護福祉士:
+  other: certified care worker
 
 patients-職業-会社員:
   other: employee
@@ -132,20 +116,32 @@ patients-職業-会社員:
 patients-職業-会社役員:
   other: executive
 
-patients-職業-介護士:
-  other: caregiver
+patients-職業-会社経営:
+  other: business owner
 
 patients-職業-保育士:
   other: childcare worker
 
+patients-職業-児童:
+  other: pupil
+
 patients-職業-公務員:
   other: public servant
 
-patients-職業-アルバイト:
-  other: part-time job
+patients-職業-助産師:
+  other: midwife
 
-patients-職業-無職:
-  other: unemployed
+patients-職業-医療従事者:
+  other: health professional
+
+patients-職業-学生:
+  other: student
+
+patients-職業-幼児:
+  other: infant
+
+patients-職業-教員:
+  other: teacher
 
 patients-職業-歯科医師:
   other: dentist
@@ -153,29 +149,32 @@ patients-職業-歯科医師:
 patients-職業-歯科衛生士:
   other: dental hygienist
 
-patients-職業-医療従事者:
-  other: health professional
+patients-職業-無職:
+  other: unemployed
 
-patients-職業-助産師:
-  other: midwife
+patients-職業-生徒:
+  other: student
 
-patients-職業-薬剤師:
-  other: pharmacist
-
-patients-職業-介護福祉士:
-  other: certified care worker
-
-patients-職業-福祉施設職員:
-  other: welfare facility staff
+patients-職業-看護師:
+  other: nurse
 
 patients-職業-福祉事業所職員:
   other: welfare facility staff
 
+patients-職業-福祉施設職員:
+  other: welfare facility staff
+
+patients-職業-自営業:
+  other: self-employed
+
+patients-職業-薬剤師:
+  other: pharmacist
+
 patients-職業-選手:
   other: athlete
 
-patients-推定感染経路-県外患者:
-  other: patient outside the prefecture
+patients-職業:
+  other: Occupation
 
 patients-行動歴-アルバイト先:
   other: workplace
@@ -210,14 +209,14 @@ patients-行動歴-自宅:
 patients-行動歴-自宅（介護施設）:
   other: home
 
-404-message:
-  other: |
-    The page you are looking for could not be found. Perhaps, it has been deleted or the URL is incorrect.
+patients-行動歴:
+  other: Activities
 
-    You might be able to find it from the search field below:
-
-search-input:
-  other: Search by Google
+scroll-message:
+  other: Scroll to see off-screen contents.
 
 search-btn:
   other: Search
+
+search-input:
+  other: Search by Google

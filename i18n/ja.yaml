@@ -1,23 +1,29 @@
+404-message:
+  other: |
+    お探しのページは見つかりませんでした。当該ページは削除されたか，又は誤った URL を参照している可能性があります。
+
+    以下の検索欄から目的のページを探し出せるかもしれません。
+
 card-debug:
   other: デバッグ
 
 card-news:
   other: 更新情報
 
-card-source:
-  other: ソースを見る
-
 card-share:
   other: 共有
 
-scroll-message:
-  other: スクロールすると，見切れている部分をご覧になれます。
+card-source:
+  other: ソースを見る
+
+date-lastmod:
+  other: 最終更新
 
 date-publish:
   other: 公開日
 
-date-lastmod:
-  other: 最終更新
+notice-emergency:
+  other: ""
 
 notice-noscript:
   other: JavaScript が無効な場合，ページが正常に表示されない場合があります。
@@ -25,47 +31,20 @@ notice-noscript:
 notice-translation:
   other: ""
 
-notice-emergency:
-  other: ""
+patients-number:
+  other: "{{ .Count }} 人"
 
 patients-total:
   other: 計
 
-patients-number:
-  other: "{{ .Count }} 人"
-
 patients-市内:
   other: 市内
 
-patients-県内:
-  other: 県内
-
-patients-検査確定日:
-  other: 検査確定日
-
-patients-発症日:
-  other: 発症日
-
-patients-年代:
-  other: 年代
-
-patients-性別:
-  other: 性別
-
-patients-職業:
-  other: 職業
-
-patients-推定感染経路:
-  other: 推定感染経路
-
-patients-行動歴:
-  other: 行動歴
+patients-年代-10代:
+  other: 10 代
 
 patients-年代-10歳未満:
   other: 10 歳未満
-
-patients-年代-10代:
-  other: 10 代
 
 patients-年代-20代:
   other: 20 代
@@ -94,14 +73,35 @@ patients-年代-90代:
 patients-年代-90代以上:
   other: 90 代超
 
-404-message:
-  other: |
-    お探しのページは見つかりませんでした。当該ページは削除されたか，又は誤った URL を参照している可能性があります。
+patients-年代:
+  other: 年代
 
-    以下の検索欄から目的のページを探し出せるかもしれません。
+patients-性別:
+  other: 性別
 
-search-input:
-  other: サイト内検索（Google）
+patients-推定感染経路:
+  other: 推定感染経路
+
+patients-検査確定日:
+  other: 検査確定日
+
+patients-発症日:
+  other: 発症日
+
+patients-県内:
+  other: 県内
+
+patients-職業:
+  other: 職業
+
+patients-行動歴:
+  other: 行動歴
+
+scroll-message:
+  other: スクロールすると，見切れている部分をご覧になれます。
 
 search-btn:
   other: 検索
+
+search-input:
+  other: サイト内検索（Google）
