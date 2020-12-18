@@ -1,169 +1,223 @@
-# Card
-card_debug:
+card-debug:
   other: Debug
-card_news:
+
+card-news:
   other: News
-card_source:
+
+card-source:
   other: View the source
-card_share:
+
+card-share:
   other: Share
 
-scroll_message:
+scroll-message:
   other: Scroll to see off-screen contents.
 
-date_publish:
+date-publish:
   other: Publish date
-date_lastmod:
+
+date-lastmod:
   other: Last updated
 
-# Notice
-notice_noscript:
+notice-noscript:
   other: Contents will not be displayed correctly when JavaScript is disabled.
-notice_translation:
+
+notice-translation:
   other: This page has been translated from Japanese by contributors.
-notice_emergency:
+
+notice-emergency:
   other: ""
 
-# Patients
-patients_total:
+patients-total:
   other: Total
-patients_number:
+
+patients-number:
   one: "{{ .Count }} case"
+
   other: "{{ .Count }} cases"
-patients_市内:
+
+patients-市内:
   other: Ichikawa
-patients_県内:
+
+patients-県内:
   other: Chiba
-patients_検査確定日:
+
+patients-検査確定日:
   other: Inspection Date
-patients_発症日:
+
+patients-発症日:
   other: Onset Date
-patients_年代:
+
+patients-年代:
   other: Age
-patients_性別:
+
+patients-性別:
   other: Sex
-patients_職業:
+
+patients-職業:
   other: Occupation
-patients_推定感染経路:
+
+patients-推定感染経路:
   other: Presumed Infection Sources
-patients_行動歴:
+
+patients-行動歴:
   other: Activities
 
-# Age
-patients_年代_10歳未満:
+patients-年代-10歳未満:
   other: "<10s"
-patients_年代_10代:
+
+patients-年代-10代:
   other: 10s
-patients_年代_20代:
+
+patients-年代-20代:
   other: 20s
-patients_年代_30代:
+
+patients-年代-30代:
   other: 30s
-patients_年代_40代:
+
+patients-年代-40代:
   other: 40s
-patients_年代_50代:
+
+patients-年代-50代:
   other: 50s
-patients_年代_60代:
+
+patients-年代-60代:
   other: 60s
-patients_年代_70代:
+
+patients-年代-70代:
   other: 70s
-patients_年代_80代:
+
+patients-年代-80代:
   other: 80s
-patients_年代_90代:
+
+patients-年代-90代:
   other: 90s
-patients_年代_90代以上:
+
+patients-年代-90代以上:
   other: ">90s"
 
-# Sex
-patients_性別_女性:
+patients-性別-女性:
   other: female
-patients_性別_男性:
+
+patients-性別-男性:
   other: male
 
-# Occupation
-patients_職業_教員:
+patients-職業-教員:
   other: teacher
-patients_職業_学生:
+
+patients-職業-学生:
   other: student
-patients_職業_生徒:
+
+patients-職業-生徒:
   other: student
-patients_職業_児童:
+
+patients-職業-児童:
   other: pupil
-patients_職業_幼児:
+
+patients-職業-幼児:
   other: infant
-patients_職業_会社経営:
+
+patients-職業-会社経営:
   other: business owner
-patients_職業_自営業:
+
+patients-職業-自営業:
   other: self-employed
-patients_職業_看護師:
+
+patients-職業-看護師:
   other: nurse
-patients_職業_会社員:
+
+patients-職業-会社員:
   other: employee
-patients_職業_会社役員:
+
+patients-職業-会社役員:
   other: executive
-patients_職業_介護士:
+
+patients-職業-介護士:
   other: caregiver
-patients_職業_保育士:
+
+patients-職業-保育士:
   other: childcare worker
-patients_職業_公務員:
+
+patients-職業-公務員:
   other: public servant
-patients_職業_アルバイト:
+
+patients-職業-アルバイト:
   other: part-time job
-patients_職業_無職:
+
+patients-職業-無職:
   other: unemployed
-patients_職業_歯科医師:
+
+patients-職業-歯科医師:
   other: dentist
-patients_職業_歯科衛生士:
+
+patients-職業-歯科衛生士:
   other: dental hygienist
-patients_職業_医療従事者:
+
+patients-職業-医療従事者:
   other: health professional
-patients_職業_助産師:
+
+patients-職業-助産師:
   other: midwife
-patients_職業_薬剤師:
+
+patients-職業-薬剤師:
   other: pharmacist
-patients_職業_介護福祉士:
+
+patients-職業-介護福祉士:
   other: certified care worker
-patients_職業_福祉施設職員:
+
+patients-職業-福祉施設職員:
   other: welfare facility staff
-patients_職業_福祉事業所職員:
+
+patients-職業-福祉事業所職員:
   other: welfare facility staff
-patients_職業_選手:
+
+patients-職業-選手:
   other: athlete
 
-# Presumed Infection Sources
-patients_推定感染経路_県外患者:
+patients-推定感染経路-県外患者:
   other: patient outside the prefecture
 
-# Activities
-patients_行動歴_アルバイト先:
+patients-行動歴-アルバイト先:
   other: workplace
-patients_行動歴_介護施設:
+
+patients-行動歴-介護施設:
   other: nursing facility
-patients_行動歴_元職場:
+
+patients-行動歴-元職場:
   other: former workplace
-patients_行動歴_別宅:
+
+patients-行動歴-別宅:
   other: second home
-patients_行動歴_医療機関:
+
+patients-行動歴-医療機関:
   other: medical facility
-patients_行動歴_医療関係:
+
+patients-行動歴-医療関係:
   other: medical facility
-patients_行動歴_学校:
+
+patients-行動歴-学校:
   other: school
-patients_行動歴_県外:
+
+patients-行動歴-県外:
   other: outside the prefecture
-patients_行動歴_職場:
+
+patients-行動歴-職場:
   other: workplace
-patients_行動歴_自宅:
-  other: home
-patients_行動歴_自宅（介護施設）:
+
+patients-行動歴-自宅:
   other: home
 
-# 404
-404_message:
+patients-行動歴-自宅（介護施設）:
+  other: home
+
+404-message:
   other: |
     The page you are looking for could not be found. Perhaps, it has been deleted or the URL is incorrect.
 
     You might be able to find it from the search field below:
-search_input:
+
+search-input:
   other: Search by Google
-search_btn:
+
+search-btn:
   other: Search

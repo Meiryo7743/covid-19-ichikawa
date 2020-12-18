@@ -1,84 +1,107 @@
-# Card
-card_debug:
+card-debug:
   other: デバッグ
-card_news:
+
+card-news:
   other: 更新情報
-card_source:
+
+card-source:
   other: ソースを見る
-card_share:
+
+card-share:
   other: 共有
 
-scroll_message:
+scroll-message:
   other: スクロールすると，見切れている部分をご覧になれます。
 
-date_publish:
+date-publish:
   other: 公開日
-date_lastmod:
+
+date-lastmod:
   other: 最終更新
 
-# Notice
-notice_noscript:
+notice-noscript:
   other: JavaScript が無効な場合，ページが正常に表示されない場合があります。
-notice_translation:
-  other: ""
-notice_emergency:
+
+notice-translation:
   other: ""
 
-# Patients
-patients_total:
+notice-emergency:
+  other: ""
+
+patients-total:
   other: 計
-patients_number:
+
+patients-number:
   other: "{{ .Count }} 人"
-patients_市内:
+
+patients-市内:
   other: 市内
-patients_県内:
+
+patients-県内:
   other: 県内
-patients_検査確定日:
+
+patients-検査確定日:
   other: 検査確定日
-patients_発症日:
+
+patients-発症日:
   other: 発症日
-patients_年代:
+
+patients-年代:
   other: 年代
-patients_性別:
+
+patients-性別:
   other: 性別
-patients_職業:
+
+patients-職業:
   other: 職業
-patients_推定感染経路:
+
+patients-推定感染経路:
   other: 推定感染経路
-patients_行動歴:
+
+patients-行動歴:
   other: 行動歴
 
-# Age
-patients_年代_10歳未満:
+patients-年代-10歳未満:
   other: 10 歳未満
-patients_年代_10代:
+
+patients-年代-10代:
   other: 10 代
-patients_年代_20代:
+
+patients-年代-20代:
   other: 20 代
-patients_年代_30代:
+
+patients-年代-30代:
   other: 30 代
-patients_年代_40代:
+
+patients-年代-40代:
   other: 40 代
-patients_年代_50代:
+
+patients-年代-50代:
   other: 50 代
-patients_年代_60代:
+
+patients-年代-60代:
   other: 60 代
-patients_年代_70代:
+
+patients-年代-70代:
   other: 70 代
-patients_年代_80代:
+
+patients-年代-80代:
   other: 80 代
-patients_年代_90代:
+
+patients-年代-90代:
   other: 90 代
-patients_年代_90代以上:
+
+patients-年代-90代以上:
   other: 90 代超
 
-# 404
-404_message:
+404-message:
   other: |
     お探しのページは見つかりませんでした。当該ページは削除されたか，又は誤った URL を参照している可能性があります。
 
     以下の検索欄から目的のページを探し出せるかもしれません。
-search_input:
+
+search-input:
   other: サイト内検索（Google）
-search_btn:
+
+search-btn:
   other: 検索
