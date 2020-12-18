@@ -6,10 +6,12 @@
     display: grid;
     gap: 2rem;
 
+    // @include global.screen-size(0) {
     @include screen-size(0) {
         grid-template-columns: 100%;
     }
 
+    // @include global.screen-size(768) {
     @include screen-size(768) {
         grid-template-columns: repeat(2, calc((100% - 2rem) / 2));
     }
@@ -29,7 +31,6 @@
     row-gap: 1rem;
 
     & > [class*="card__"] {
-        @extend %margin-block_0;
         // @include global.set-margin("block", 0);
         @include set-margin("block", 0);
     }
