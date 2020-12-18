@@ -18,6 +18,19 @@
     }
 }
 
+.date {
+    @extend %margin-block_1rem;
+    @extend %plane-list;
+    text-align: end;
+
+    &__lastmod {
+        &::before {
+            @extend %icon;
+            content: var(--icon-lastmod);
+        }
+    }
+}
+
 .notice {
     align-items: center;
     background: var(--yellow);
