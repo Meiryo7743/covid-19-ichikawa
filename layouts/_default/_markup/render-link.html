@@ -1,7 +1,14 @@
+{{- $dst := .Destination | safeURL | absLangURL -}}
+{{- $url := urls.Parse $dst -}}
+{{- $curl := urls.Parse ("/" | safeURL | absURL ) -}}
+
 <a
-  href='{{ .Destination | safeURL | absLangURL }}'
-  target="_blank"
-  rel="noopener"
+    href='{{- $dst -}}'
+
+    {{- if ne $url.Host $curl.Host -}}
+        rel="noopener"
+        target="_blank"
+    {{- end -}}
 >
-  {{ .Text }}
+    {{- .Text -}}
 </a>
