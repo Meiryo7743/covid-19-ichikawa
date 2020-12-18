@@ -18,6 +18,16 @@
     }
 }
 
+.page {
+    @include padding-block(2rem);
+    @include screen-size(0) {
+        @include padding-inline(1rem);
+    }
+    @include screen-size(768) {
+        @include padding-inline(2rem);
+    }
+}
+
 .date {
     @extend %margin-block_1rem;
     @extend %plane-list;
@@ -27,30 +37,6 @@
         &::before {
             @extend %icon;
             content: var(--icon-lastmod);
-        }
-    }
-}
-
-.notice {
-    align-items: center;
-    background: var(--yellow);
-    color: var(--black);
-    column-gap: 1rem;
-    display: flex;
-    padding: 1rem;
-
-    &::before {
-        @extend %icon;
-        @extend %line-height_1;
-        content: var(--icon-warning);
-        font-size: var(--xx-large);
-    }
-
-    &--translation {
-        background: var(--light-pink);
-
-        &::before {
-            content: var(--icon-translate);
         }
     }
 }
