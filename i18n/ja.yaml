@@ -1,20 +1,11 @@
-404-message:
+404-content:
   other: |
     お探しのページは見つかりませんでした。当該ページは削除されたか，又は誤った URL を参照している可能性があります。
 
     以下の検索欄から目的のページを探し出せるかもしれません。
 
-card-debug:
-  other: デバッグ
-
 card-news:
   other: 更新情報
-
-card-share:
-  other: 共有
-
-card-source:
-  other: ソースを見る
 
 date-lastmod:
   other: 最終更新
@@ -22,14 +13,15 @@ date-lastmod:
 date-publish:
   other: 公開日
 
-notice-emergency:
-  other: ""
+notices-emergency:
+  other: |
 
-notice-noscript:
-  other: JavaScript が無効な場合，ページが正常に表示されない場合があります。
+notices-noscript:
+  other: |
+    JavaScript が無効な場合，ページが正常に表示されない場合があります。
 
-notice-translation:
-  other: ""
+notices-translation:
+  other: |
 
 patients-number:
   other: "{{ .Count }} 人"
@@ -100,8 +92,14 @@ patients-行動歴:
 scroll-message:
   other: スクロールすると，見切れている部分をご覧になれます。
 
-search-btn:
+search-button:
   other: 検索
 
 search-input:
-  other: サイト内検索（Google）
+  other: Google 検索
+
+share-button:
+  other: 共有
+
+source:
+  other: ソースを見る

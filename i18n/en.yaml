@@ -1,20 +1,11 @@
-404-message:
+404-content:
   other: |
     The page you are looking for could not be found. Perhaps, it has been deleted or the URL is incorrect.
 
     You might be able to find it from the search field below:
 
-card-debug:
-  other: Debug
-
 card-news:
   other: News
-
-card-share:
-  other: Share
-
-card-source:
-  other: View the source
 
 date-lastmod:
   other: Last updated
@@ -22,14 +13,16 @@ date-lastmod:
 date-publish:
   other: Publish date
 
-notice-emergency:
-  other: ""
+notices-emergency:
+  other: |
 
-notice-noscript:
-  other: Contents will not be displayed correctly when JavaScript is disabled.
+notices-noscript:
+  other: |
+    Contents will not be displayed correctly when JavaScript is disabled.
 
-notice-translation:
-  other: This page has been translated from Japanese by contributors.
+notices-translation:
+  other: |
+    This page has been translated from Japanese by contributors.
 
 patients-number:
   one: "{{ .Count }} case"
@@ -215,8 +208,14 @@ patients-行動歴:
 scroll-message:
   other: Scroll to see off-screen contents.
 
-search-btn:
+search-button:
   other: Search
 
 search-input:
-  other: Search by Google
+  other: Google Search
+
+share-button:
+  other: Share
+
+source:
+  other: View the source
