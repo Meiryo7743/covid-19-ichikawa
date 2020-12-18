@@ -1,0 +1,47 @@
+.card-container {
+    @include margin-block(2rem);
+    display: grid;
+    gap: 2rem;
+
+    @include screen-size(0) {
+        grid-template-columns: 100%;
+    }
+
+    @include screen-size(768) {
+        grid-template-columns: repeat(2, calc((100% - 2rem) / 2));
+    }
+
+    &--home {
+        display: block;
+    }
+}
+
+.card {
+    @extend %padding-block_1rem;
+    @extend %padding-inline_1rem;
+    background: var(--bgcolor-card);
+    border-radius: 0.375rem;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+
+    & > [class*="card__"] {
+        @extend %margin-block_0;
+    }
+
+    &__title {
+        font-size: var(--x-large);
+        text-align: center;
+    }
+
+    &__content {
+        flex-grow: 1;
+    }
+
+    &__footer {
+        ul {
+            @extend %plane-list;
+        }
+    }
+}
