@@ -75,3 +75,24 @@
         }
     }
 }
+
+.share {
+    text-align: end;
+
+    &--single {
+        @extend %margin-block_1rem;
+    }
+
+    &__btn {
+        color: var(--color-body) !important;
+
+        &::before {
+            @extend %icon;
+            content: var(--icon-share);
+        }
+
+        &::after {
+            content: none !important; // Hide external link icon
+        }
+    }
+}
