@@ -1,10 +1,14 @@
 .nav {
-    @extend %plane-list;
+    // @include global.element-type-plane-list;
+    @include element-type-plane-list;
     display: grid;
 
+    // @include global.screen-size(0) {
     @include screen-size(0) {
         grid-template-columns: repeat(auto-fit, 50%);
     }
+
+    // @include global.screen-size(768) {
     @include screen-size(768) {
         grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
     }
@@ -21,11 +25,10 @@
     }
 
     &__link {
-        @extend %padding-block_1rem;
-        @extend %padding-inline_1rem;
         align-items: center;
         block-size: 100%;
         display: flex;
+        padding: 1rem;
 
         &:hover {
             background: var(--bgcolor-nav-link);
@@ -34,7 +37,8 @@
         &--lang {
             color: var(--color-body) !important;
             &::before {
-                @extend %icon;
+                // @include global.element-type-icon;
+                @include element-type-icon;
                 content: var(--icon-translate);
             }
         }
@@ -42,6 +46,7 @@
         &--logo {
             color: var(--color-body) !important;
             font-weight: bold;
+
             img {
                 block-size: var(--xx-large);
                 inline-size: var(--xx-large);
@@ -59,10 +64,11 @@
     padding: 1rem;
 
     &::before {
-        @extend %icon;
-        @extend %line-height_1;
+        // @include global.element-type-icon;
+        @include element-type-icon;
         content: var(--icon-warning);
         font-size: var(--xx-large);
+        line-height: 1;
     }
 
     &--translation {
@@ -104,14 +110,16 @@
     text-align: end;
 
     &--single {
-        @extend %margin-block_1rem;
+        // @include global.set-margin("block", 1rem);
+        @include set-margin("block", 1rem);
     }
 
     &__btn {
         color: var(--color-body) !important;
 
         &::before {
-            @extend %icon;
+            // @include global.element-type-icon;
+            @include element-type-icon;
             content: var(--icon-share);
         }
 
