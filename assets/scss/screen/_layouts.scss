@@ -19,23 +19,34 @@
 }
 
 .page {
-    @include padding-block(2rem);
+    // @include global.set-padding("block", 2rem);
+    @include set-padding("block", 2rem);
+
+    // @include global.screen-size(0) {
     @include screen-size(0) {
-        @include padding-inline(1rem);
+        // @include global.set-padding("inline", 1rem);
+        @include set-padding("inline", 1rem);
     }
+
+    // @include global.screen-size(768) {
     @include screen-size(768) {
-        @include padding-inline(2rem);
+        // @include global.set-padding("inline", 2rem);
+        @include set-padding("inline", 2rem);
     }
 }
 
 .date {
-    @extend %margin-block_1rem;
-    @extend %plane-list;
+    // @include global.element-type-plane-list;
+    // @include global.set-margin("block", 1rem);
+    @include element-type-plane-list;
+    @include set-margin("block", 1rem);
+
     text-align: end;
 
     &__lastmod {
         &::before {
-            @extend %icon;
+            // @include global.element-type-icon;
+            @include element-type-icon;
             content: var(--icon-lastmod);
         }
     }

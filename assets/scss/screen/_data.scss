@@ -21,7 +21,8 @@
     max-inline-size: 20rem;
 
     &__child {
-        @extend %plane-list;
+        // @include global.element-type-plane-list;
+        @include element-type-plane-list;
         border-block-start: var(--border);
         border-inline-start: var(--border);
         margin-inline-start: 1.5em;
@@ -80,7 +81,8 @@
         }
 
         ul {
-            @extend %plane-list;
+            // @include global.element-type-plane-list;
+            @include element-type-plane-list;
         }
     }
 }
