@@ -1,85 +1,55 @@
 {{ define "main" }}
-  <div
-    class="page"
-    id="updates-on-covid-19-in-ichikawa"
-  >
-    <div class="date">
-      <ins datetime='{{ dateFormat "2006-01-02T15:04:05-0700" (now) }}'>
-        <time
-          datetime='{{ dateFormat "2006-01-02T15:04:05-0700" (now) }}'
-          aria-label='{{ i18n "date_lastmod" }}'
-          class="date__lastmod"
-        >
-          {{ dateFormat "2006-01-02 15:04 MST" (now) }}
-        </time>
-      </ins>
-    </div>
+    <div
+        class="page"
+        id="updates-on-covid-19-in-ichikawa"
+    >
+        <div class="date">
+            <ins datetime='{{ dateFormat "2006-01-02T15:04:05-0700" now }}'>
+                <time
+                    aria-label='{{ i18n "date_lastmod" }}'
+                    class="date__lastmod"
+                    datetime='{{ dateFormat "2006-01-02T15:04:05-0700" now }}'
+                >
+                    {{ dateFormat "2006-01-02 15:04 MST" now }}
+                </time>
+            </ins>
+        </div>
 
-    <h1 class="title">
-      {{ .Title | title }}
-    </h1>
+        <h1 class="title">
+            {{ .Title | title }}
+        </h1>
 
-    {{/*  News */}}
-    <div class="card-container card-container--home">
-      <article class="card">
-        <h2 class="card__title">
-          {{ i18n "card_news" | title }}
-        </h2>
+        <div class="card-container card-container--home">
+            <article class="card">
+                <h2 class="card__title">
+                    {{ i18n "card_news" | title }}
+                </h2>
 
-        <ul class="card__content news">
-          {{ range first 5 (where .Site.RegularPages.ByWeight "Section" "==" "articles") }}
-            <li class="news__item">
-              <time datetime='{{ .Date.Format "2006-01-02T15:04:05" }}'>
-                {{ .Date.Format "2006-01-02" }}
-              </time>
-              {{ print " - " }}
-              <a
-                href="{{ .Permalink | safeURL | absLangURL }}"
-                class="news__link"
-              >
-                {{ .Title | title }}
-              </a>
-            </li>
-          {{ end }}
-        </ul>
-      </article>
-    </div>
+                <ul class="card__content news">
+                    {{ range first 5 (where .Site.RegularPages.ByWeight "Section" "==" "articles") }}
+                        <li class="news__item">
+                            <time datetime='{{ .Date.Format "2006-01-02T15:04:05" }}'>
+                                {{ .Date.Format "2006-01-02" }}
+                            </time>
+                            {{ print " - " }}
+                            <a
+                                href="{{ .Permalink | safeURL | absLangURL }}"
+                                class="news__link"
+                            >
+                                {{ .Title | title }}
+                            </a>
+                        </li>
+                    {{ end }}
+                </ul>
+            </article>
+        </div>
 
-    {{/* Cards */}}
-    <div class="card-container">
-      {{ range (where .Site.RegularPages "Section" "==" "cards") }}
-        <article class="card">
-          {{ partial "body/card.html" . }}
-        </article>
-      {{ end }}
-    </div>
-
-    {{/* Debug */}}
-    {{ if .Site.IsServer }}
-      <div class="card-container card-container--home">
-        <article class="card">
-          <h2 class="card__title">
-            {{ i18n "card_debug" | title }}
-          </h2>
-
-          <ul class="card__content">
-            <li>
-              <a href='{{ "/404.html" | safeURL | absLangURL }}'>
-                404
-              </a>
-            </li>
-
-            {{/* List of Pages */}}
-            {{ range .Site.Pages }}
-              <li>
-                <a href='{{ .Permalink }}'>
-                  {{ .Title | title }}
-                </a>
-              </li>
+        <div class="card-container">
+            {{ range (where .Site.RegularPages "Section" "==" "cards") }}
+                <article class="card">
+                    {{ partial "body/card.html" . }}
+                </article>
             {{ end }}
-          </ul>
-        </article>
-      </div>
-    {{ end }}
-  </div>
+        </div>
+    </div>
 {{ end }}
