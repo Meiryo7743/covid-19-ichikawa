@@ -29,11 +29,14 @@ def format_number(value, format):
 def format_date(value, format):
     result = format_value(value, format)
     if not result == None:
-        result = datetime.datetime.strptime(
-            result,
-            '%Y-%m-%d'
-        )
-        return result.strftime('%Y-%m-%d')
+        if result == '不明':
+            return result
+        else:
+            result = datetime.datetime.strptime(
+                result,
+                '%Y-%m-%d'
+            )
+            return result.strftime('%Y-%m-%d')
 
 
 def format_list(value, format):
