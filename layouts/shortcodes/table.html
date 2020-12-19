@@ -67,14 +67,22 @@
 
                     <td class="検査確定日">
                         {{- with .検査確定日 -}}
-                            {{- dateFormat "2006-01-02" . -}}
+                            {{- if eq . "不明" -}}
+                                {{- i18n "patients-検査確定日-不明" -}}
+                            {{- else -}}
+                                {{- dateFormat "2006-01-02" . -}}
+                            {{- end -}}
                         {{- end -}}
                     </td>
 
                     {{- if ne ($.Get "src") "details-of-patients-without-symptoms" -}}
                         <td class="発症日">
                             {{- with .発症日 -}}
-                                {{- dateFormat "2006-01-02" . -}}
+                                {{- if eq . "不明" -}}
+                                    {{- i18n "patients-発症日-不明" -}}
+                                {{- else -}}
+                                    {{- dateFormat "2006-01-02" . -}}
+                                {{- end -}}
                             {{- end -}}
                         </td>
                     {{- end -}}

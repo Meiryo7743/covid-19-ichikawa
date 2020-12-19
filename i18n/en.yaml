@@ -79,14 +79,23 @@ patients-性別-男性:
 patients-性別:
   other: Sex
 
+patients-推定感染経路-不明:
+  other: unknown
+
 patients-推定感染経路-県外患者:
   other: patient outside the prefecture
 
 patients-推定感染経路:
   other: Presumed Infection Sources
 
+patients-検査確定日-不明:
+  other: unknown
+
 patients-検査確定日:
   other: Inspection Date
+
+patients-発症日-不明:
+  other: unknown
 
 patients-発症日:
   other: Onset Date
