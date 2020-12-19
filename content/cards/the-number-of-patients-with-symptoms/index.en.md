@@ -5,6 +5,6 @@ title: "The Number of Patients With Symptoms"
 weight: 10
 ---
 
-{{< list src="the_number_of_patients_with_symptoms" >}}
+{{< list src="the-number-of-patients-with-symptoms" >}}
 
 - Including the returnees on charter flights or the cruise ship passengers.

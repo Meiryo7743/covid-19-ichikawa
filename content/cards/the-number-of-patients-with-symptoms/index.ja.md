@@ -5,6 +5,6 @@ title: "有症者数"
 weight: 10
 ---
 
-{{< list src="the_number_of_patients_with_symptoms" >}}
+{{< list src="the-number-of-patients-with-symptoms" >}}
 
 - チャーター機帰国者・クルーズ船乗客等を含む。

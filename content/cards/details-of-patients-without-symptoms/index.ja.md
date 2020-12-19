@@ -6,4 +6,4 @@ source: "https://www.city.ichikawa.lg.jp/pub01/hasseijokyo.html#m05"
 title: "無症状患者の詳細"
 ---
 
-{{< table src="details_of_patients_without_symptoms" >}}
+{{< table src="details-of-patients-without-symptoms" >}}
