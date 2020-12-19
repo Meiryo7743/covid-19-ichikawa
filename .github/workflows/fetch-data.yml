@@ -31,9 +31,9 @@ jobs:
 
       - name: Run scripts
         run: |
-          python ./data_updater/fetch_patients.py && python ./data_updater/patients_details.py && python ./data_updater/patients_count.py;
-          python ./data_updater/fetch_subway.py && python ./data_updater/subway_passengers.py;
-          rm ./data/raw_*.*  || echo "Nothing to remove"
+          python ./data-updater/fetch-patients.py && python ./data-updater/patients-details.py && python ./data-updater/patients-count.py;
+          python ./data-updater/fetch-subway.py && python ./data-updater/subway-passengers.py;
+          rm ./data/raw-*.*  || echo "Nothing to remove"
 
       - name: Commit files
         run: |
