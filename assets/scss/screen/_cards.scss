@@ -5,16 +5,10 @@
     @include set-margin("block", 2rem);
     display: grid;
     gap: 2rem;
-
-    // @include global.min-screen-size(0) {
-    @include min-screen-size(0) {
-        grid-template-columns: 100%;
-    }
-
-    // @include global.min-screen-size(768px) {
-    @include min-screen-size(768px) {
-        grid-template-columns: repeat(2, calc((100% - 2rem) / 2));
-    }
+    grid-template-columns: repeat(
+        auto-fill,
+        minmax(unquote("max(384px - 3rem, 50% - 1rem)"), 1fr)
+    );
 
     &--home {
         display: block;
