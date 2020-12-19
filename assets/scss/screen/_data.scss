@@ -7,7 +7,7 @@
     &__canvas {
         // @include global.set-margin("inline", auto);
         @include set-margin("inline", auto);
-        block-size: 25rem;
+        block-size: var(--block-size-data);
         inline-size: max-content; // Google Charts で，グラフが狭幅（水平スクロールバーが表示されない位）の時にセンタリンク可能にする
     }
 }
@@ -57,7 +57,7 @@
 .data-table {
     // @include global.element-type-scroll-x;
     @include element-type-scroll-x;
-    block-size: 25rem;
+    block-size: var(--block-size-data);
     display: flex;
     line-height: 1.25;
     text-align: center;
