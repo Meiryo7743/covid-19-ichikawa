@@ -4,14 +4,14 @@
 
     以下の検索欄から目的のページを探し出せるかもしれません。
 
-card-news:
-  other: 更新情報
-
 date-lastmod:
   other: 最終更新
 
 date-publish:
   other: 公開日
+
+news:
+  other: 更新情報
 
 notices-emergency:
   other: |

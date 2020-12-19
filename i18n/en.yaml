@@ -2,16 +2,16 @@
   other: |
     The page you are looking for could not be found. Perhaps, it has been deleted or the URL is incorrect.
 
-    You might be able to find it from the search field below:
-
-card-news:
-  other: News
+    You could be able to find it from the search field below:
 
 date-lastmod:
   other: Last updated
 
 date-publish:
   other: Publish date
+
+news:
+  other: News
 
 notices-emergency:
   other: |
