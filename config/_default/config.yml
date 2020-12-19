@@ -25,7 +25,7 @@ languages:
       ogp: "/img/ogp.ja.png"
       notice:
         emergency: false
-        translation: false
+        translate: false
     title: 【非公式】市川市新型コロナウイルス感染症情報サイト
     weight: 10
   # ja-hrkt:
@@ -36,7 +36,7 @@ languages:
   #     ogp: "/img/ogp.ja.png"
   #     notice:
   #       emergency: false
-  #       translation: true
+  #       translate: true
   #   title: 【ひこうしき】 いちかわし 新型コロナウイルス かんせんしょう じょうほう サイト
   #   weight: 11
   en:
@@ -47,7 +47,7 @@ languages:
       ogp: "/img/ogp.en.png"
       notice:
         emergency: false
-        translation: true
+        translate: true
     title: "[UNOFFICIAL] Ichikawa COVID-19 Information Site"
     weight: 20
 

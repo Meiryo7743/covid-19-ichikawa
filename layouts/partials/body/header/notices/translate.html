@@ -1,5 +1,5 @@
-{{- with .Site.Params.Notice.Translation -}}
-    <aside class="notice notice--translation">
+{{- with .Site.Params.Notice.translate -}}
+    <aside class="notice notice--translate">
         <div class="notice__content">
             {{- i18n "notice-translate" | markdownify -}}
         </div>
