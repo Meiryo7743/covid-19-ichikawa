@@ -13,14 +13,14 @@ date-publish:
 news:
   other: News
 
-notices-emergency:
+notice-emergency:
   other: |
 
-notices-noscript:
+notice-noscript:
   other: |
     Contents will not be displayed correctly when JavaScript is disabled.
 
-notices-translate:
+notice-translate:
   other: |
     This page has been translated from Japanese by contributors.
 

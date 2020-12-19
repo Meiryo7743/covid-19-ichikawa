@@ -13,14 +13,14 @@ date-publish:
 news:
   other: 更新情報
 
-notices-emergency:
+notice-emergency:
   other: |
 
-notices-noscript:
+notice-noscript:
   other: |
     JavaScript が無効な場合，ページが正常に表示されない場合があります。
 
-notices-translate:
+notice-translate:
   other: |
 
 patients-number:
