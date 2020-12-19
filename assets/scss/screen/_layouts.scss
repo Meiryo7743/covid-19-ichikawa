@@ -21,20 +21,7 @@
 }
 
 .page {
-    // @include global.set-padding("block", 2rem);
-    @include set-padding("block", 2rem);
-
-    // @include global.min-screen-size(0) {
-    @include min-screen-size(0) {
-        // @include global.set-padding("inline", 1rem);
-        @include set-padding("inline", 1rem);
-    }
-
-    // @include global.min-screen-size(768px) {
-    @include min-screen-size(768px) {
-        // @include global.set-padding("inline", 2rem);
-        @include set-padding("inline", 2rem);
-    }
+    padding: 2rem;
 }
 
 .date {
