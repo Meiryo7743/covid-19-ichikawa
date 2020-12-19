@@ -32,16 +32,6 @@
     }
 }
 
-@mixin min-screen-size($value) {
-    @if $value == 0 {
-        @content;
-    } @else {
-        @media screen and (min-width: $value) {
-            @content;
-        }
-    }
-}
-
 @mixin set-margin($string, $value) {
     @if $string == "block" {
         margin-block-end: $value;
