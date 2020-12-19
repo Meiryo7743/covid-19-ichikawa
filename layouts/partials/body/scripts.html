@@ -6,15 +6,15 @@
 {{/* Google Charts */}}
 {{- if or (.HasShortcode "chart") (.IsHome) -}}
     <script src='{{- $libGoogleCharts | safeURL -}}'></script>
-    <script>
-        {{- $jsGoogleCharts | safeJS -}}
-    </script>
+    {{- print "<" "script" ">" | safeHTML -}}
+    {{- $jsGoogleCharts | safeHTML -}}
+    {{- print "</" "script" ">" | safeHTML -}}
 {{- end -}}
 
 {{/* List.js */}}
 {{- if or (.HasShortcode "table") (.IsHome) -}}
     <script src='{{- $libList | safeURL -}}'></script>
-    <script>
-        {{- $jsList | safeJS -}}
-    </script>
+    {{- print "<" "script" ">" | safeHTML -}}
+    {{- $jsList | safeHTML -}}
+    {{- print "</" "script" ">" | safeHTML -}}
 {{- end -}}
