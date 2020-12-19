@@ -1,5 +1,5 @@
 {{- $src := print "data/" (.Get "src") ".json" -}}
-{{- $dataId := print "json_" (.Get "src") -}}
+{{- $json := print "json_" (replace (.Get "src") "-" "_") -}}
 {{- $canvasId := print "chart-" (.Get "src") -}}
 
 <div class="data-chart">
@@ -16,14 +16,14 @@
 
 {{/* print を使った煩雑なコードなのは VS Code のエラー防止のため */}}
 {{/*
-    window.addEventListener("load", function () {
-        const $dataId = (readFile $src | safeJS);
-        drawColumnChart('$canvasId', $dataId);
+    window.addEventListener('load', function () {
+        const $json = (readFile $src | safeJS);
+        drawColumnChart('$canvasId', $json);
     });
  */}}
 {{- print "<" "script" ">" | safeHTML -}}
 {{- print "window.addEventListener('load', function () {" | safeHTML -}}
-{{- print "const " $dataId " = " (readFile $src | safeJS) ";" | safeHTML -}}
-{{- print "drawColumnChart('" $canvasId "'," $dataId ");" | safeHTML -}}
+{{- print "const " $json " = " (readFile $src | safeJS) ";" | safeHTML -}}
+{{- print "drawColumnChart('" $canvasId "', " $json ");" | safeHTML -}}
 {{- print "});" | safeHTML -}}
 {{- print "</" "script" ">" | safeHTML -}}
