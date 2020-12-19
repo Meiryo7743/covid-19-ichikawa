@@ -4,16 +4,10 @@
     // @include global.element-type-plane-list;
     @include element-type-plane-list;
     display: grid;
-
-    // @include global.min-screen-size(0) {
-    @include min-screen-size(0) {
-        grid-template-columns: repeat(auto-fit, 50%);
-    }
-
-    // @include global.min-screen-size(768px) {
-    @include min-screen-size(768px) {
-        grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
-    }
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(unquote("min(50%, 256px)"), 1fr)
+    );
 
     &--header {
         display: flex;
