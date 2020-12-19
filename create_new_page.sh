@@ -4,7 +4,7 @@ echo "Select the page type:"
 select type in Articles Cards
 do
     if [ "$type" = "Articles" ]; then
-        DATE=`TZ=Asia/Tokyo date +"%Y%m%d%H%M"`
+        DATE=$(TZ=UTC-9 date +"%Y%m%d%H%M%S")
         DST="articles/$DATE"
         break
     elif [ "$type" = "Cards" ]; then
