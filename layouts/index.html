@@ -42,7 +42,7 @@
         </div>
 
         <div class="card-container">
-            {{- range (where .Site.RegularPages "Section" "==" "cards") -}}
+            {{- range (where .Site.RegularPages.ByWeight "Section" "==" "cards") -}}
                 <article class="card">
                     {{- partial "body/card.html" . -}}
                 </article>
