@@ -7,7 +7,7 @@
     gap: 2rem;
     grid-template-columns: repeat(
         auto-fill,
-        minmax(unquote("max(384px - 3rem, 50% - 1rem)"), 1fr)
+        minmax(clamp(calc(50% - 1rem), calc(384px - 3rem), 100%), 1fr)
     );
 
     &--home {
