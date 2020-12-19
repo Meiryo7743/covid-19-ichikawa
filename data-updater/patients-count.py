@@ -2,7 +2,7 @@ import json
 import pandas as pd
 import ruamel.yaml as yaml
 
-with open('./data_updater/config.json', 'r', encoding='utf-8') as f:
+with open('./data-updater/config.json', 'r', encoding='utf-8') as f:
     config = json.load(f)['patients']
 
 dst = config['dst']
