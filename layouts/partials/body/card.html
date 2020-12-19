@@ -8,7 +8,7 @@
 
 <nav class="card__footer">
     <ul>
-        {{- with .Params.Cards.Data.Source -}}
+        {{- with .Page.Params.source -}}
             <li>
                 <a
                     href='{{- . | safeURL | absLangURL -}}'

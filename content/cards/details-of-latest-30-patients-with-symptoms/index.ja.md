@@ -1,8 +1,6 @@
 ---
-cards:
-  data:
-    source: "https://www.city.ichikawa.lg.jp/pub01/hasseijokyo.html#m04"
 date: "2020-05-22T00:00:00+09:00"
+source: "https://www.city.ichikawa.lg.jp/pub01/hasseijokyo.html#m04"
 title: "有症者の詳細"
 weight: 20
 ---
