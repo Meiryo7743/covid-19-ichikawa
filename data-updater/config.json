@@ -8,7 +8,7 @@
         "table_index": 0
       },
       {
-        "data_count": "the-number-of_patients-without-symptoms.yaml",
+        "data_count": "the-number-of-patients-without-symptoms.yaml",
         "data_details": "details-of-patients-without-symptoms.yaml",
         "raw": "raw-patients-without-symptoms.tsv",
         "table_index": 1
@@ -199,7 +199,7 @@
     "data": [
       {
         "data_passengers": "changes-in-the-rates-of-toei-subway-passengers.json",
-        "raw": "raw_changes-in-the-rates-of-toei-subway-passengers.json"
+        "raw": "raw-changes-in-the-rates-of-toei-subway-passengers.json"
       }
     ],
     "dst": "./data/",
