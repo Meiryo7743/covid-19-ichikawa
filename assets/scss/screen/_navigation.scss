@@ -5,7 +5,7 @@
     @include element-type-plane-list;
     display: grid;
     grid-template-columns: repeat(
-        auto-fit,
+        auto-fill,
         minmax(unquote("min(50%, 256px)"), 1fr)
     );
 
