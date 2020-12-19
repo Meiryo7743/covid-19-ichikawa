@@ -1,6 +1,6 @@
 {{- $src := index .Site.Data (.Get "src") -}}
 {{- $dataLength := .Get "len" | default (len $src) -}}
-{{- $tableId := print "table-" (replace (.Get "src") "_" "-") -}}
+{{- $tableId := print "table-" (.Get "src") -}}
 
 <div class="data-table">
     <table

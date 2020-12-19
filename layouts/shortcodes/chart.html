@@ -1,6 +1,6 @@
 {{- $src := print "data/" (.Get "src") ".json" -}}
 {{- $dataId := print "json_" (.Get "src") -}}
-{{- $canvasId := print "chart-" (replace (.Get "src") "_" "-")}}
+{{- $canvasId := print "chart-" (.Get "src") -}}
 
 <div class="data-chart">
     <div
