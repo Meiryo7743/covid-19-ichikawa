@@ -9,7 +9,7 @@
         --bgcolor-body: #efefef;
         --bgcolor-card: #ffffff;
         --bgcolor-header: #ffffff;
-        --bgcolor-nav-link: #efefef;
+        --bgcolor-nav-link-hover: #efefef;
         --color-a: var(--blue);
     }
     // @include global.color-scheme("dark") {
@@ -17,7 +17,7 @@
         --bgcolor-body: #1f1f1f;
         --bgcolor-card: #2f2f2f;
         --bgcolor-header: #2f2f2f;
-        --bgcolor-nav-link: #1f1f1f;
+        --bgcolor-nav-link-hover: #3f3f3f;
         --color-a: var(--sky-blue);
     }
     --border: solid 1px var(--color-body);
