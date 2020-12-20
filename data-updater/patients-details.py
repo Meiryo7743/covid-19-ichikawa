@@ -60,17 +60,17 @@ for i in config['data']:
     data_json = json.loads(raw.to_json(orient='records'))
     for j in data_json:
         value_ichikawa = format_number(
-            j.get('市内'),
+            j['市内'],
             format['ichikawa']
         )
 
         value_chiba = format_number(
-            j.get('県内'),
+            j['県内'],
             format['chiba']
         )
 
         value_inspection_date = format_date(
-            j.get('検査確定日'),
+            j['検査確定日'],
             format['inspection_date']
         )
 
@@ -80,33 +80,33 @@ for i in config['data']:
         )
 
         value_age = format_value(
-            j.get('年代'),
+            j['年代'],
             format['age']
         )
 
         value_sex = format_value(
-            j.get('性別'),
+            j['性別'],
             format['sex']
         )
 
         value_occupation = format_value(
-            j.get('職業'),
+            j['職業'],
             format['occupation']
         )
 
         value_infection_sources = format_list(
-            j.get('推定感染経路'),
+            j['推定感染経路'],
             format['infection_sources']
         )
 
         if '行動歴＊' in j:
             value_activities = format_list(
-                j.get('行動歴＊'),
+                j['行動歴＊'],
                 format['activities']
             )
         elif '行動歴' in j:
             value_activities = format_list(
-                j.get('行動歴'),
+                j['行動歴'],
                 format['activities']
             )
 
