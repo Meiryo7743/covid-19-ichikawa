@@ -1,0 +1,11 @@
+[[fetch]]
+key = [ "年代", "性別", "推定感染経路", "職業", "行動歴",]
+path = "./data/details-of-patients-with-symptoms.yaml"
+
+[[fetch]]
+key = [ "年代", "性別", "推定感染経路", "職業", "行動歴",]
+path = "./data/details-of-patients-without-symptoms.yaml"
+
+[i18n]
+path = "./i18n-generator/i18n.toml"
+language = [ "en", "ja",]
