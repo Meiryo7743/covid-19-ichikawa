@@ -1,67 +1,49 @@
-import json
-import os
 import ruamel.yaml as yaml
+import toml
 import collections
 
 
-def get_default_keys(d: dict, language: str):
-    return {
-        i: dict(d[i][language].items())
-        for i in d
-    }
-
-
-def get_flatten_list(l: list):
+def flatten_list(l: list):
     for el in l:
         if isinstance(el, collections.abc.Iterable) and not isinstance(el, (str, bytes)):
-            yield from get_flatten_list(el)
+            yield from flatten_list(el)
         else:
             yield el
 
 
-def get_unique_list(l: list):
-    return list(set(list(get_flatten_list(l))))
+def unique_list(l: list):
+    return list(set(list(flatten_list(l))))
 
 
 def load_file(src: str):
-    extension = os.path.splitext(src)[1]
-
     with open(src, 'r', encoding='utf-8') as f:
-        if extension == '.json':
-            result = json.load(f)
-        elif extension == '.yaml':
-            result = yaml.safe_load(f)
-
+        result = yaml.safe_load(f)
     return result
 
 
-config: dict = load_file('./i18n-generator/config.yaml')
+with open('./i18n-generator/config.toml', 'r', encoding='utf-8') as f:
+    config: dict = toml.load(f)
 
-if not (os.path.isdir(config['i18n_dir'])):
-    os.mkdir(config['i18n_dir'])
+with open(config['i18n']['path'], 'r', encoding='utf-8') as f:
+    translations: dict = toml.load(f)
 
-raw: list = [
+i18n_keys: list = [
     j[key]
     for i in config['fetch']
     for j in load_file(i['path'])
-    for key in i['keys']
+    for key in i['key']
     if j[key] is not None
 ]
 
-data_dict: dict = {
-    'patients-' + i: {
-        'other': i
+for i in unique_list(i18n_keys):
+    i18n_values: dict = {
+        j: {
+            'other': i
+        }
+        for j in config['i18n']['language']
     }
-    for i in get_unique_list(raw)
-}
 
-translations: dict = load_file(config['default']['path'])
+    translations.setdefault('patients-' + i, i18n_values)
 
-for i in config['language']:
-    get_language: dict = get_default_keys(translations, i)
-
-    for key in data_dict:
-        get_language.setdefault(key, data_dict[key])
-
-    with open('./i18n/' + i + '.yaml', 'w', encoding='utf-8', newline='\n') as f:
-        yaml.dump(get_language, f, allow_unicode=True)
+with open(config['i18n']['path'], 'w', encoding='utf-8', newline='\n') as f:
+    toml.dump(translations, f)
