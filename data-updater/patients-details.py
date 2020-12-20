@@ -53,7 +53,7 @@ dst = config['dst']
 format = config['formats']['values']
 
 for i in config['data']:
-    raw = pd.read_table(dst + i['raw'], header=0)
+    raw = pd.read_csv(dst + i['raw'], header=0)
 
     data_list = []
 
@@ -125,4 +125,4 @@ for i in config['data']:
         data_list.append(data_dict)
 
     with open(dst + i['data_details'], 'w', encoding='utf-8', newline='\n') as f:
-        yaml.dump(data_list, f, indent=2, allow_unicode=True)
+        yaml.dump(data_list, f, allow_unicode=True)
