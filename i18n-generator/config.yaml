@@ -1,0 +1,25 @@
+destination: ./i18n-generator/result.yaml
+
+default:
+  path: ./i18n-generator/default.yaml
+
+language:
+  - en
+  - ja
+
+fetch:
+  - keys:
+      - 年代
+      - 性別
+      - 推定感染経路
+      - 職業
+      - 行動歴
+    path: ./data/details-of-patients-with-symptoms.yaml
+
+  - keys:
+      - 年代
+      - 性別
+      - 推定感染経路
+      - 職業
+      - 行動歴
+    path: ./data/details-of-patients-without-symptoms.yaml
