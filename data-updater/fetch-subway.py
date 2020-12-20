@@ -5,7 +5,7 @@ import sys
 import toml
 
 with open('./data-updater/config.toml', 'r', encoding='utf-8') as f:
-    config = toml.load(f)['subway']
+    config: dict = toml.load(f)['subway']
 
 dst = config['dst']
 
