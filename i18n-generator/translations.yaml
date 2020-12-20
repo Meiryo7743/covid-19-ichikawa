@@ -74,67 +74,67 @@ patients-市内:
   ja:
     other: 市内
 
-patients-年代-10代:
+patients-10代:
   en:
     other: 10s
   ja:
     other: 10代
 
-patients-年代-10歳未満:
+patients-10歳未満:
   en:
-    other: "<10s"
+    other: <10s
   ja:
     other: 10歳未満
 
-patients-年代-20代:
+patients-20代:
   en:
     other: 20s
   ja:
     other: 20代
 
-patients-年代-30代:
+patients-30代:
   en:
     other: 30s
   ja:
     other: 30代
 
-patients-年代-40代:
+patients-40代:
   en:
     other: 40s
   ja:
     other: 40代
 
-patients-年代-50代:
+patients-50代:
   en:
     other: 50s
   ja:
     other: 50代
 
-patients-年代-60代:
+patients-60代:
   en:
     other: 60s
   ja:
     other: 60代
 
-patients-年代-70代:
+patients-70代:
   en:
     other: 70s
   ja:
     other: 70代
 
-patients-年代-80代:
+patients-80代:
   en:
     other: 80s
   ja:
     other: 80代
 
-patients-年代-90代:
+patients-90代:
   en:
     other: 90s
   ja:
     other: 90代
 
-patients-年代-90代以上:
+patients-90代以上:
   en:
     other: ">90s"
   ja:
@@ -146,13 +146,13 @@ patients-年代:
   ja:
     other: 年代
 
-patients-性別-女性:
+patients-女性:
   en:
     other: female
   ja:
     other: 女性
 
-patients-性別-男性:
+patients-男性:
   en:
     other: male
   ja:
