@@ -5,13 +5,13 @@ src = "https://www.city.ichikawa.lg.jp/pub01/hasseijokyo.html"
 [[patients.data]]
 data_count = "the-number-of-patients-with-symptoms.yaml"
 data_details = "details-of-patients-with-symptoms.yaml"
-raw = "raw-patients-with-symptoms.tsv"
+raw = "raw-patients-with-symptoms.csv"
 table_index = 0
 
 [[patients.data]]
 data_count = "the-number-of-patients-without-symptoms.yaml"
 data_details = "details-of-patients-without-symptoms.yaml"
-raw = "raw-patients-without-symptoms.tsv"
+raw = "raw-patients-without-symptoms.csv"
 table_index = 1
 
 [[patients.formats.keys.age]]
