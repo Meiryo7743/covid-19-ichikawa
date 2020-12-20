@@ -63,5 +63,5 @@ for i in config['language']:
     for key in data_dict:
         get_language.setdefault(key, data_dict[key])
 
-    with open('./i18n-generator/' + i + '.yaml', 'w', encoding='utf-8', newline='\n') as f:
-        yaml.dump(get_language, f, indent=2, allow_unicode=True)
+    with open('./i18n/' + i + '.yaml', 'w', encoding='utf-8', newline='\n') as f:
+        yaml.dump(get_language, f, allow_unicode=True)

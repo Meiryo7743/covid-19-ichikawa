@@ -30,9 +30,9 @@ news:
 
 notice-emergency:
   en:
-    other: null
+    other: ""
   ja:
-    other: null
+    other: ""
 
 notice-noscript:
   en:
@@ -47,7 +47,7 @@ notice-translate:
     other: |
       This page has been translated from Japanese by contributors.
   ja:
-    other: null
+    other: ""
 
 patients-number:
   en:
