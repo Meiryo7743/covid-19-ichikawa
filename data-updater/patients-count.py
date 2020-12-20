@@ -4,7 +4,7 @@ import ruamel.yaml as yaml
 import toml
 
 with open('./data-updater/config.toml', 'r', encoding='utf-8') as f:
-    config = json.toml(f)['patients']
+    config = toml.load(f)['patients']
 
 dst = config['dst']
 
