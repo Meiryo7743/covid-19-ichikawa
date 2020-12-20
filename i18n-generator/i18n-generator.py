@@ -4,47 +4,46 @@ import ruamel.yaml as yaml
 import collections
 
 
-def flatten(l: list):
+def get_default_keys(d: dict, language: str):
+    return {
+        i: dict(d[i][language].items())
+        for i in d
+    }
+
+
+def get_flatten_list(l: list):
     for el in l:
         if isinstance(el, collections.abc.Iterable) and not isinstance(el, (str, bytes)):
-            yield from flatten(el)
+            yield from get_flatten_list(el)
         else:
             yield el
 
 
 def get_unique_list(l: list):
-    return list(set(list(flatten(l))))
+    return list(set(list(get_flatten_list(l))))
 
 
-def get_data(src: str):
+def load_file(src: str):
     extension = os.path.splitext(src)[1]
 
-    if extension == '.json':
-        with open(src, 'r', encoding='utf-8') as f:
+    with open(src, 'r', encoding='utf-8') as f:
+        if extension == '.json':
             result = json.load(f)
-    elif extension == '.yaml':
-        with open(src, 'r', encoding='utf-8') as f:
+        elif extension == '.yaml':
             result = yaml.safe_load(f)
-    else:
-        print('Error: unexpected file.')
 
     return result
 
 
-def get_default_keys(value: dict, language: str):
-    return {
-        i: dict(value[i][language].items())
-        for i in value
-    }
+config: dict = load_file('./i18n-generator/config.yaml')
 
-
-with open('./i18n-generator/config.yaml', 'r', encoding='utf-8') as f:
-    config = yaml.safe_load(f)
+if not (os.path.isdir(config['i18n_dir'])):
+    os.mkdir(config['i18n_dir'])
 
 raw: list = [
     j[key]
     for i in config['fetch']
-    for j in get_data(i['path'])
+    for j in load_file(i['path'])
     for key in i['keys']
     if j[key] is not None
 ]
@@ -56,11 +55,10 @@ data_dict: dict = {
     for i in get_unique_list(raw)
 }
 
-with open(config['default']['path'], 'r', encoding='utf-8') as f:
-    content: dict = yaml.safe_load(f)
+translations: dict = load_file(config['default']['path'])
 
 for i in config['language']:
-    get_language: dict = get_default_keys(content, i)
+    get_language: dict = get_default_keys(translations, i)
 
     for key in data_dict:
         get_language.setdefault(key, data_dict[key])
