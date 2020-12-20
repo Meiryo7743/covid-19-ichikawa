@@ -1,0 +1,450 @@
+[404-content.en]
+other = "The page you are looking for could not be found. Perhaps, it has been deleted or the URL is incorrect.\n\nYou could be able to find it from the search field below:\n"
+
+[404-content.ja]
+other = "お探しのページは見つかりませんでした。当該ページは削除されたか，又は誤った URL を参照している可能性があります。\n\n以下の検索欄から目的のページを探し出せるかもしれません。\n"
+
+[date-lastmod.en]
+other = "Last updated"
+
+[date-lastmod.ja]
+other = "最終更新"
+
+[date-publish.en]
+other = "Publish date"
+
+[date-publish.ja]
+other = "公開日"
+
+[news.en]
+other = "News"
+
+[news.ja]
+other = "更新情報"
+
+[notice-emergency.en]
+other = ""
+
+[notice-emergency.ja]
+other = ""
+
+[notice-noscript.en]
+other = "Contents will not be displayed correctly when JavaScript is disabled.\n"
+
+[notice-noscript.ja]
+other = "JavaScript が無効な場合，ページが正常に表示されない場合があります。\n"
+
+[notice-translate.en]
+other = "This page has been translated from Japanese by contributors.\n"
+
+[notice-translate.ja]
+other = ""
+
+[patients-number.en]
+one = "{{- .Count -}} case"
+other = "{{- .Count -}} cases"
+
+[patients-number.ja]
+other = "{{- .Count -}} 人"
+
+[patients-total.en]
+other = "Total"
+
+[patients-total.ja]
+other = "計"
+
+["patients-アルバイト".en]
+other = "part-time job"
+
+["patients-アルバイト".ja]
+other = "アルバイト"
+
+["patients-アルバイト先".en]
+other = "workplace"
+
+["patients-アルバイト先".ja]
+other = "アルバイト先"
+
+["patients-介護士".en]
+other = "caregiver"
+
+["patients-介護士".ja]
+other = "介護士"
+
+["patients-介護施設".en]
+other = "nursing facility"
+
+["patients-介護施設".ja]
+other = "介護施設"
+
+["patients-介護福祉士".en]
+other = "certified care worker"
+
+["patients-介護福祉士".ja]
+other = "介護福祉士"
+
+["patients-会社員".en]
+other = "employee"
+
+["patients-会社員".ja]
+other = "会社員"
+
+["patients-会社役員".en]
+other = "executive"
+
+["patients-会社役員".ja]
+other = "会社役員"
+
+["patients-会社経営".en]
+other = "business owner"
+
+["patients-会社経営".ja]
+other = "会社経営"
+
+["patients-保育士".en]
+other = "childcare worker"
+
+["patients-保育士".ja]
+other = "保育士"
+
+["patients-元職場".en]
+other = "former workplace"
+
+["patients-元職場".ja]
+other = "元職場"
+
+["patients-児童".en]
+other = "pupil"
+
+["patients-児童".ja]
+other = "児童"
+
+["patients-公務員".en]
+other = "public servant"
+
+["patients-公務員".ja]
+other = "公務員"
+
+["patients-別宅".en]
+other = "second home"
+
+["patients-別宅".ja]
+other = "別宅"
+
+["patients-助産師".en]
+other = "midwife"
+
+["patients-助産師".ja]
+other = "助産師"
+
+["patients-医療従事者".en]
+other = "health professional"
+
+["patients-医療従事者".ja]
+other = "医療従事者"
+
+["patients-医療機関".en]
+other = "medical facility"
+
+["patients-医療機関".ja]
+other = "医療機関"
+
+["patients-医療関係".en]
+other = "medical facility"
+
+["patients-医療関係".ja]
+other = "医療関係"
+
+["patients-女性".en]
+other = "female"
+
+["patients-女性".ja]
+other = "女性"
+
+["patients-学校".en]
+other = "school"
+
+["patients-学校".ja]
+other = "学校"
+
+["patients-学生".en]
+other = "student"
+
+["patients-学生".ja]
+other = "学生"
+
+["patients-市内".en]
+other = "Ichikawa"
+
+["patients-市内".ja]
+other = "市内"
+
+["patients-年代".en]
+other = "Age"
+
+["patients-年代".ja]
+other = "年代"
+
+["patients-年代-10代".en]
+other = "10s"
+
+["patients-年代-10代".ja]
+other = "10 代"
+
+["patients-年代-10歳未満".en]
+other = "<10s"
+
+["patients-年代-10歳未満".ja]
+other = "10 歳未満"
+
+["patients-年代-20代".en]
+other = "20s"
+
+["patients-年代-20代".ja]
+other = "20 代"
+
+["patients-年代-30代".en]
+other = "30s"
+
+["patients-年代-30代".ja]
+other = "30 代"
+
+["patients-年代-40代".en]
+other = "40s"
+
+["patients-年代-40代".ja]
+other = "40 代"
+
+["patients-年代-50代".en]
+other = "50s"
+
+["patients-年代-50代".ja]
+other = "50 代"
+
+["patients-年代-60代".en]
+other = "60s"
+
+["patients-年代-60代".ja]
+other = "60 代"
+
+["patients-年代-70代".en]
+other = "70s"
+
+["patients-年代-70代".ja]
+other = "70 代"
+
+["patients-年代-80代".en]
+other = "80s"
+
+["patients-年代-80代".ja]
+other = "80 代"
+
+["patients-年代-90代".en]
+other = "90s"
+
+["patients-年代-90代".ja]
+other = "90 代"
+
+["patients-年代-90代以上".en]
+other = ">90s"
+
+["patients-年代-90代以上".ja]
+other = "90 代超"
+
+["patients-幼児".en]
+other = "infant"
+
+["patients-幼児".ja]
+other = "幼児"
+
+["patients-性別".en]
+other = "Sex"
+
+["patients-性別".ja]
+other = "性別"
+
+["patients-推定感染経路".en]
+other = "Presumed Infection Sources"
+
+["patients-推定感染経路".ja]
+other = "推定感染経路"
+
+["patients-推定感染経路-不明".en]
+other = "unknown"
+
+["patients-推定感染経路-不明".ja]
+other = "不明"
+
+["patients-教員".en]
+other = "teacher"
+
+["patients-教員".ja]
+other = "教員"
+
+["patients-検査確定日".en]
+other = "Inspection Date"
+
+["patients-検査確定日".ja]
+other = "検査確定日"
+
+["patients-検査確定日-不明".en]
+other = "unknown"
+
+["patients-検査確定日-不明".ja]
+other = "不明"
+
+["patients-歯科医師".en]
+other = "dentist"
+
+["patients-歯科医師".ja]
+other = "歯科医師"
+
+["patients-歯科衛生士".en]
+other = "dental hygienist"
+
+["patients-歯科衛生士".ja]
+other = "歯科衛生士"
+
+["patients-無職".en]
+other = "unemployed"
+
+["patients-無職".ja]
+other = "無職"
+
+["patients-生徒".en]
+other = "student"
+
+["patients-生徒".ja]
+other = "生徒"
+
+["patients-男性".en]
+other = "male"
+
+["patients-男性".ja]
+other = "男性"
+
+["patients-発症日".en]
+other = "Onset Date"
+
+["patients-発症日".ja]
+other = "発症日"
+
+["patients-発症日-不明".en]
+other = "unknown"
+
+["patients-発症日-不明".ja]
+other = "不明"
+
+["patients-看護師".en]
+other = "nurse"
+
+["patients-看護師".ja]
+other = "看護師"
+
+["patients-県内".en]
+other = "Chiba"
+
+["patients-県内".ja]
+other = "県内"
+
+["patients-県外".en]
+other = "outside the prefecture"
+
+["patients-県外".ja]
+other = "県外"
+
+["patients-県外患者".en]
+other = "patient outside the prefecture"
+
+["patients-県外患者".ja]
+other = "県外患者"
+
+["patients-福祉事業所職員".en]
+other = "welfare facility staff"
+
+["patients-福祉事業所職員".ja]
+other = "福祉事業所職員"
+
+["patients-福祉施設職員".en]
+other = "welfare facility staff"
+
+["patients-福祉施設職員".ja]
+other = "福祉施設職員"
+
+["patients-職場".en]
+other = "workplace"
+
+["patients-職場".ja]
+other = "職場"
+
+["patients-職業".en]
+other = "Occupation"
+
+["patients-職業".ja]
+other = "職業"
+
+["patients-自営業".en]
+other = "self-employed"
+
+["patients-自営業".ja]
+other = "自営業"
+
+["patients-自宅".en]
+other = "home"
+
+["patients-自宅".ja]
+other = "自宅"
+
+["patients-自宅（介護施設）".en]
+other = "home"
+
+["patients-自宅（介護施設）".ja]
+other = "自宅（介護施設）"
+
+["patients-薬剤師".en]
+other = "pharmacist"
+
+["patients-薬剤師".ja]
+other = "薬剤師"
+
+["patients-行動歴".en]
+other = "Activities"
+
+["patients-行動歴".ja]
+other = "行動歴"
+
+["patients-選手".en]
+other = "athlete"
+
+["patients-選手".ja]
+other = "選手"
+
+[scroll-message.en]
+other = "Scroll to see off-screen contents."
+
+[scroll-message.ja]
+other = "スクロールすると，見切れている部分をご覧になれます。"
+
+[search-button.en]
+other = "Search"
+
+[search-button.ja]
+other = "検索"
+
+[search-input.en]
+other = "Google Search"
+
+[search-input.ja]
+other = "Google 検索"
+
+[share-button.en]
+other = "Share"
+
+[share-button.ja]
+other = "共有"
+
+[source.en]
+other = "View the source"
+
+[source.ja]
+other = "ソースを見る"
