@@ -4,9 +4,10 @@ import os
 import pandas as pd
 import requests
 import sys
+import toml
 
-with open('./data-updater/config.json', 'r', encoding='utf-8') as f:
-    config = json.load(f)['patients']
+with open('./data-updater/config.toml', 'r', encoding='utf-8') as f:
+    config = toml.load(f)['patients']
 
 dst = config['dst']
 

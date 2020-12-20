@@ -1,9 +1,10 @@
 import json
 import pandas as pd
 import ruamel.yaml as yaml
+import toml
 
-with open('./data-updater/config.json', 'r', encoding='utf-8') as f:
-    config = json.load(f)['patients']
+with open('./data-updater/config.toml', 'r', encoding='utf-8') as f:
+    config = json.toml(f)['patients']
 
 dst = config['dst']
 

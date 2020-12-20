@@ -1,0 +1,175 @@
+[patients]
+dst = "./data/"
+src = "https://www.city.ichikawa.lg.jp/pub01/hasseijokyo.html"
+
+[[patients.data]]
+data_count = "the-number-of-patients-with-symptoms.yaml"
+data_details = "details-of-patients-with-symptoms.yaml"
+raw = "raw-patients-with-symptoms.tsv"
+table_index = 0
+
+[[patients.data]]
+data_count = "the-number-of-patients-without-symptoms.yaml"
+data_details = "details-of-patients-without-symptoms.yaml"
+raw = "raw-patients-without-symptoms.tsv"
+table_index = 1
+
+[[patients.formats.keys.age]]
+find = "10歳未満"
+replace = "under_teens"
+
+[[patients.formats.keys.age]]
+find = "10代"
+replace = "teens"
+
+[[patients.formats.keys.age]]
+find = "20代"
+replace = "twenties"
+
+[[patients.formats.keys.age]]
+find = "30代"
+replace = "thirties"
+
+[[patients.formats.keys.age]]
+find = "40代"
+replace = "forties"
+
+[[patients.formats.keys.age]]
+find = "50代"
+replace = "fifties"
+
+[[patients.formats.keys.age]]
+find = "60代"
+replace = "sixties"
+
+[[patients.formats.keys.age]]
+find = "70代"
+replace = "seventies"
+
+[[patients.formats.keys.age]]
+find = "80代"
+replace = "eighties"
+
+[[patients.formats.keys.age]]
+find = "90代"
+replace = "nineties"
+
+[[patients.formats.keys.age]]
+find = "90代以上"
+replace = "over_nineties"
+
+[[patients.formats.values.ichikawa]]
+find = "\\s+"
+replace = ""
+
+[[patients.formats.values.ichikawa]]
+find = "\\D+"
+replace = ""
+
+[[patients.formats.values.chiba]]
+find = "\\s+"
+replace = ""
+
+[[patients.formats.values.chiba]]
+find = "^\\D+\\d+\\D+"
+replace = ""
+
+[[patients.formats.values.chiba]]
+find = "^(\\d+)\\D+"
+replace = "\\1"
+
+[[patients.formats.values.inspection_date]]
+find = "\\s+"
+replace = ""
+
+[[patients.formats.values.inspection_date]]
+find = "^調査中|None$"
+replace = ""
+
+[[patients.formats.values.inspection_date]]
+find = "(\\d+)月(\\d+)日"
+replace = "2020-\\1-\\2"
+
+[[patients.formats.values.onset_date]]
+find = "\\s+"
+replace = ""
+
+[[patients.formats.values.onset_date]]
+find = "^調査中|None$"
+replace = ""
+
+[[patients.formats.values.onset_date]]
+find = "(\\d+)月(\\d+)日"
+replace = "2020-\\1-\\2"
+
+[[patients.formats.values.age]]
+find = "\\s+"
+replace = ""
+
+[[patients.formats.values.age]]
+find = "^調査中|None$"
+replace = ""
+
+[[patients.formats.values.sex]]
+find = "\\s+"
+replace = ""
+
+[[patients.formats.values.sex]]
+find = "^調査中|None$"
+replace = ""
+
+[[patients.formats.values.occupation]]
+find = "\\s+"
+replace = ""
+
+[[patients.formats.values.occupation]]
+find = "^調査中|None$"
+replace = ""
+
+[[patients.formats.values.infection_sources]]
+find = "\\s{2}接触"
+replace = "接触"
+
+[[patients.formats.values.infection_sources]]
+find = "\\s{2}"
+replace = "、"
+
+[[patients.formats.values.infection_sources]]
+find = "\\s+"
+replace = ""
+
+[[patients.formats.values.infection_sources]]
+find = "^調査中|None$"
+replace = ""
+
+[[patients.formats.values.infection_sources]]
+find = "、+"
+replace = ","
+
+[[patients.formats.values.infection_sources]]
+find = "接触(,|$)"
+replace = "\\1"
+
+[[patients.formats.values.activities]]
+find = "\\s{2}"
+replace = "、"
+
+[[patients.formats.values.activities]]
+find = "\\s+"
+replace = ""
+
+[[patients.formats.values.activities]]
+find = "^調査中|None$"
+replace = ""
+
+[[patients.formats.values.activities]]
+find = "、+"
+replace = ","
+
+[subway]
+dst = "./data/"
+src = "https://raw.githubusercontent.com/tokyo-metropolitan-gov/covid19/development/data/metro.json"
+
+[[subway.data]]
+data_passengers = "changes-in-the-rates-of-toei-subway-passengers.json"
+raw = "raw-changes-in-the-rates-of-toei-subway-passengers.json"

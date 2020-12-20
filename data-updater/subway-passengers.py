@@ -1,5 +1,6 @@
 import datetime
 import json
+import toml
 
 
 def format_date(value):
@@ -13,8 +14,8 @@ def format_date(value):
         return result.strftime('%m-%d')
 
 
-with open('./data-updater/config.json', 'r', encoding='utf-8') as f:
-    config = json.load(f)['subway']
+with open('./data-updater/config.toml', 'r', encoding='utf-8') as f:
+    config = toml.load(f)['subway']
 
 dst = config['dst']
 data = config['data'][0]

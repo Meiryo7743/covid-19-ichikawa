@@ -3,9 +3,10 @@ import os
 import urllib.request
 import requests
 import sys
+import toml
 
-with open('./data-updater/config.json', 'r', encoding='utf-8') as f:
-    config = json.load(f)['subway']
+with open('./data-updater/config.toml', 'r', encoding='utf-8') as f:
+    config = toml.load(f)['subway']
 
 dst = config['dst']
 

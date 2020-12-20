@@ -5,6 +5,7 @@ import json
 import pandas as pd
 import re
 import ruamel.yaml as yaml
+import toml
 
 
 def format_value(value, format):
@@ -45,8 +46,8 @@ def format_list(value, format):
         return result.split(',')
 
 
-with open('./data-updater/config.json', 'r', encoding='utf-8') as f:
-    config = json.load(f)['patients']
+with open('./data-updater/config.toml', 'r', encoding='utf-8') as f:
+    config = json.toml(f)['patients']
 
 dst = config['dst']
 format = config['formats']['values']
