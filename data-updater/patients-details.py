@@ -55,7 +55,7 @@ format = config['formats']['values']
 for i in config['data']:
     raw = pd.read_csv(dst + i['raw'], header=0)
 
-    data_list = []
+    data_list: list = []
 
     data_json = json.loads(raw.to_json(orient='records'))
     for j in data_json:
