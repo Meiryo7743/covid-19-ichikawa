@@ -13,8 +13,5 @@ for i in config['i18n']['language']:
         for j in translations
     }
 
-    # with open(config['i18n']['path'] + i + '.yaml', 'w', encoding='utf-8', newline='\n') as f:
-    #     yaml.dump(i18n, f, indent=2, allow_unicode=True)
-
-    with open('./i18n/' + i + '.toml', 'w', encoding='utf-8', newline='\n') as f:
-        toml.dump(i18n, f)
+    with open('./i18n/' + i + '.yaml', 'w', encoding='utf-8', newline='\n') as f:
+        yaml.dump(i18n, f, indent=2, allow_unicode=True)
