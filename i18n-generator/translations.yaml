@@ -1,0 +1,231 @@
+404-content:
+  en:
+    other: |
+      The page you are looking for could not be found. Perhaps, it has been deleted or the URL is incorrect.
+
+      You could be able to find it from the search field below:
+  ja:
+    other: |
+      お探しのページは見つかりませんでした。当該ページは削除されたか，又は誤った URL を参照している可能性があります。
+
+      以下の検索欄から目的のページを探し出せるかもしれません。
+
+date-lastmod:
+  en:
+    other: Last updated
+  ja:
+    other: 最終更新
+
+date-publish:
+  en:
+    other: Publish date
+  ja:
+    other: 公開日
+
+news:
+  en:
+    other: News
+  ja:
+    other: 更新情報
+
+notice-emergency:
+  en:
+    other: null
+  ja:
+    other: null
+
+notice-noscript:
+  en:
+    other: |
+      Contents will not be displayed correctly when JavaScript is disabled.
+  ja:
+    other: |
+      JavaScript が無効な場合，ページが正常に表示されない場合があります。
+
+notice-translate:
+  en:
+    other: |
+      This page has been translated from Japanese by contributors.
+  ja:
+    other: null
+
+patients-number:
+  en:
+    one: "{{ .Count }} case"
+    other: "{{ .Count }} cases"
+  ja:
+    other: "{{ .Count }} 人"
+
+patients-total:
+  en:
+    other: Total
+  ja:
+    other: 計
+
+patients-不明:
+  en:
+    other: unknown
+  ja:
+    other: 不明
+
+patients-市内:
+  en:
+    other: Ichikawa
+  ja:
+    other: 市内
+
+patients-年代-10代:
+  en:
+    other: 10s
+  ja:
+    other: 10代
+
+patients-年代-10歳未満:
+  en:
+    other: "<10s"
+  ja:
+    other: 10歳未満
+
+patients-年代-20代:
+  en:
+    other: 20s
+  ja:
+    other: 20代
+
+patients-年代-30代:
+  en:
+    other: 30s
+  ja:
+    other: 30代
+
+patients-年代-40代:
+  en:
+    other: 40s
+  ja:
+    other: 40代
+
+patients-年代-50代:
+  en:
+    other: 50s
+  ja:
+    other: 50代
+
+patients-年代-60代:
+  en:
+    other: 60s
+  ja:
+    other: 60代
+
+patients-年代-70代:
+  en:
+    other: 70s
+  ja:
+    other: 70代
+
+patients-年代-80代:
+  en:
+    other: 80s
+  ja:
+    other: 80代
+
+patients-年代-90代:
+  en:
+    other: 90s
+  ja:
+    other: 90代
+
+patients-年代-90代以上:
+  en:
+    other: ">90s"
+  ja:
+    other: 90代超
+
+patients-年代:
+  en:
+    other: Age
+  ja:
+    other: 年代
+
+patients-性別-女性:
+  en:
+    other: female
+  ja:
+    other: 女性
+
+patients-性別-男性:
+  en:
+    other: male
+  ja:
+    other: 男性
+
+patients-性別:
+  en:
+    other: Sex
+  ja:
+    other: 性別
+
+patients-推定感染経路:
+  en:
+    other: Presumed Infection Sources
+  ja:
+    other: 推定感染経路
+
+patients-検査確定日:
+  en:
+    other: Inspection Date
+  ja:
+    other: 検査確定日
+
+patients-発症日:
+  en:
+    other: Onset Date
+  ja:
+    other: 発症日
+
+patients-県内:
+  en:
+    other: Chiba
+  ja:
+    other: 県内
+
+patients-職業:
+  en:
+    other: Occupation
+  ja:
+    other: 職業
+
+patients-行動歴:
+  en:
+    other: Activities
+  ja:
+    other: 行動歴
+
+scroll-message:
+  en:
+    other: Scroll to see off-screen contents.
+  ja:
+    other: スクロールすると，見切れている部分をご覧になれます。
+
+search-button:
+  en:
+    other: Search
+  ja:
+    other: 検索
+
+search-input:
+  en:
+    other: Google Search
+  ja:
+    other: Google 検索
+
+share-button:
+  en:
+    other: Share
+  ja:
+    other: 共有
+
+source:
+  en:
+    other: View the source
+  ja:
+    other: ソースを見る
