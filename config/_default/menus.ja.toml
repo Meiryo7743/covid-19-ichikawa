@@ -1,0 +1,44 @@
+[[header]]
+name = "新型コロナとは？"
+url = "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000164708_00001.html"
+weight = 10
+
+[[header]]
+name = "熱がある時は"
+url = "https://www.pref.chiba.lg.jp/kenfuku/hatsunetsu.html"
+weight = 20
+
+[[header]]
+name = "新型コロナ情報"
+url = "https://www.city.ichikawa.lg.jp/new01/shingatacoronatokusetupage.html"
+weight = 30
+
+[[header]]
+name = "施設等の再開"
+url = "https://www.city.ichikawa.lg.jp/pla04/infoheisa.html"
+weight = 40
+
+[[header]]
+name = "市長のコメント"
+url = "https://www.city.ichikawa.lg.jp/new01/covid19_comment.html"
+weight = 50
+
+[[header]]
+name = "市公式サイト"
+url = "https://www.city.ichikawa.lg.jp"
+weight = 60
+
+[[header]]
+name = "当サイトについて"
+url = "/about/"
+weight = 70
+
+[[header]]
+name = "お問い合わせ"
+url = "https://forms.gle/A1a849XahuB9w7CH6"
+weight = 80
+
+[[header]]
+name = "GitHub"
+url = "https://github.com/Meiryo7743/covid-19-ichikawa/"
+weight = 90
