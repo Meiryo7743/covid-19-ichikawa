@@ -89,7 +89,7 @@
 .search {
     // @include global.set-margin("block", 1rem);
     @include set-margin("block", 1rem);
-    border: var(--border);
+    border: solid 1px var(--color-body);
     display: flex;
 
     & > * {

@@ -23,14 +23,14 @@
     &__child {
         // @include global.element-type-plane-list;
         @include element-type-plane-list;
-        border-block-start: var(--border);
-        border-inline-start: var(--border);
+        border-block-start: solid 1px var(--color-body);
+        border-inline-start: solid 1px var(--color-body);
         margin-inline-start: 1.5em;
         padding-block-start: 0.25rem;
     }
 
     &__item {
-        border: var(--border);
+        border: solid 1px var(--color-body);
 
         &--child {
             border-inline-end: none;
@@ -61,8 +61,8 @@
     display: flex;
     line-height: 1.25;
     text-align: center;
-    border-block-end: var(--border);
-    border-block-start: var(--border);
+    border-block-end: solid 1px var(--color-body);
+    border-block-start: solid 1px var(--color-body);
 
     &__table {
         border: none;
@@ -70,7 +70,7 @@
 
         tr {
             &:not(:last-child) {
-                border-block-end: var(--border);
+                border-block-end: solid 1px var(--color-body);
             }
         }
 

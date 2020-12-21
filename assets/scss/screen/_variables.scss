@@ -6,23 +6,20 @@
 :root {
     // @include global.color-scheme("light") {
     @include color-scheme("light") {
-        --bgcolor-body: #efefef;
-        --bgcolor-card: #ffffff;
-        --bgcolor-header: #ffffff;
-        --bgcolor-nav-link-hover: #efefef;
-        --color-a: var(--blue);
+        --bgcolor-body: #eee;
+        --bgcolor-card: #fff;
+        --bgcolor-header: #fff;
+        --bgcolor-nav-link-hover: #eee;
     }
     // @include global.color-scheme("dark") {
     @include color-scheme("dark") {
-        --bgcolor-body: #1f1f1f;
-        --bgcolor-card: #2f2f2f;
-        --bgcolor-header: #2f2f2f;
-        --bgcolor-nav-link-hover: #3f3f3f;
-        --color-a: var(--sky-blue);
+        --bgcolor-body: #111;
+        --bgcolor-card: #222;
+        --bgcolor-header: #222;
+        --bgcolor-nav-link-hover: #333;
     }
     --bgcolor-notice: var(--yellow);
     --block-size-data: 25rem;
-    --border: solid 1px var(--color-body);
     --box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2);
-    --color-notice: #2f2f2f;
+    --color-notice: #222;
 }
