@@ -1,4 +1,3 @@
-import ruamel.yaml as yaml
 import toml
 
 with open('./i18n-generator/config.toml', 'r', encoding='utf-8') as f:
@@ -9,9 +8,12 @@ with open(config['i18n']['path'], 'r', encoding='utf-8') as f:
 
 for i in config['i18n']['language']:
     i18n: dict = {
-        j: translations[j][i]
+        j: {
+            'one': translations[j].get('one').get(i) if translations[j].get('one') is not None else None,
+            'other': translations[j]['other'][i],
+        }
         for j in translations
     }
 
-    with open('./i18n/' + i + '.yaml', 'w', encoding='utf-8', newline='\n') as f:
-        yaml.dump(i18n, f, indent=2, allow_unicode=True)
+    with open('./i18n/' + i + '.toml', 'w', encoding='utf-8', newline='\n') as f:
+        toml.dump(i18n, f)
