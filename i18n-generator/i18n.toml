@@ -1620,3 +1620,39 @@ ja = "5527"
 ["patients-県内3124".other]
 en = "県内3124"
 ja = "県内3124"
+
+["patients-不明".other]
+en = "unknown"
+ja = "不明"
+
+["patients-県内7164".other]
+en = "県内7164"
+ja = "県内7164"
+
+["patients-県内6869".other]
+en = "県内6869"
+ja = "県内6869"
+
+["patients-高校生".other]
+en = "高校生"
+ja = "高校生"
+
+["patients-県内7078".other]
+en = "県内7078"
+ja = "県内7078"
+
+["patients-県内無症状1451".other]
+en = "県内無症状1451"
+ja = "県内無症状1451"
+
+["patients-市内医療関係".other]
+en = "市内医療関係"
+ja = "市内医療関係"
+
+["patients-県内7070".other]
+en = "県内7070"
+ja = "県内7070"
+
+["patients-県内無症状1450".other]
+en = "県内無症状1450"
+ja = "県内無症状1450"
