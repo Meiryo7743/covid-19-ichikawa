@@ -46,5 +46,7 @@ for i in unique_list(i18n_keys):
 
     translations.setdefault('patients-' + i, i18n_values)
 
+translations_sorted: dict = dict(sorted(translations.items()))
+
 with open(config['i18n']['path'], 'w', encoding='utf-8', newline='\n') as f:
-    toml.dump(translations, f)
+    toml.dump(translations_sorted, f)
