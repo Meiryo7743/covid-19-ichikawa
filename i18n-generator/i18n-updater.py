@@ -1,6 +1,7 @@
 import ruamel.yaml as yaml
 import toml
 import collections
+import sys
 
 
 def flatten_list(l: list):
@@ -37,10 +38,10 @@ i18n_keys: list = [
 
 for i in unique_list(i18n_keys):
     i18n_values: dict = {
-        j: {
-            'other': i
+        'other': {
+            j: i
+            for j in config['i18n']['language']
         }
-        for j in config['i18n']['language']
     }
 
     translations.setdefault('patients-' + i, i18n_values)
