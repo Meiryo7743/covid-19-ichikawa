@@ -58,15 +58,19 @@
     // @include global.element-type-scroll-x;
     @include element-type-scroll-x;
     block-size: var(--block-size-data);
+    border-block-end: solid 1px var(--color-body);
+    border-block-start: solid 1px var(--color-body);
     display: flex;
     line-height: 1.25;
     text-align: center;
-    border-block-end: solid 1px var(--color-body);
-    border-block-start: solid 1px var(--color-body);
 
     &__table {
         border: none;
         inline-size: 100%;
+
+        thead {
+            border-block-end: solid 1px var(--color-body);
+        }
 
         tr {
             &:not(:last-child) {
