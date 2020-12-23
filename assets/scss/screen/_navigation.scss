@@ -28,6 +28,7 @@
 
         &:hover {
             background: var(--bgcolor-nav-link-hover);
+            transition: background ease 0.375s;
         }
 
         &--lang {
