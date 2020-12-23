@@ -121,7 +121,7 @@
         @include set-margin("block", 1rem);
     }
 
-    &__btn {
+    &__button {
         color: var(--color-body) !important;
 
         &::before {
