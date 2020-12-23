@@ -1,0 +1,33 @@
+dst = "./static/netlify.toml"
+language = ["en", "ja"]
+
+[[redirect]]
+force = true
+from = "/contacts"
+to = "https://forms.gle/rJAhPqckU1Ak7tFQ9"
+
+[[redirect]]
+force = true
+from = "/cards/details-of-all-patients"
+to = "/cards/details-of-patients-with-symptoms"
+
+[[redirect]]
+force = true
+from = "/cards/details-of-latest-30-patients"
+to = "/cards/details-of-latest-30-patients-with-symptoms"
+
+[[redirect]]
+force = true
+from = "/cards/the-number-of-patients"
+to = "/cards/the-number-of-patients-with-symptoms"
+
+[[redirect]]
+force = true
+from = "/cards/changes-in-the-number-of-passengers-on-toei-subway"
+to = "/cards/changes-in-the-rates-of-toei-subway-passengers"
+
+[[redirect]]
+force = false
+from = "/*"
+status = 404
+to = "/404.html"
