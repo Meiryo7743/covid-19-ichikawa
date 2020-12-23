@@ -22,7 +22,7 @@ def load_file(src: str):
     return result
 
 
-with open('./i18n-generator/config.toml', 'r', encoding='utf-8') as f:
+with open('./data-updater/i18n/config.toml', 'r', encoding='utf-8') as f:
     config: dict = toml.load(f)
 
 with open(config['i18n']['path'], 'r', encoding='utf-8') as f:
