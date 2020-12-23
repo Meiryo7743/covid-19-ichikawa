@@ -1,29 +1,36 @@
-import pandas as pd
 import ruamel.yaml as yaml
 import toml
 
+
+def count(data: list, condition: str, age: str):
+    return sum([i[condition] == age for i in data])
+
+
 with open('./data-updater/patients/config.toml', 'r', encoding='utf-8') as f:
-    config: dict = toml.load(f)
+    load_config: dict = toml.load(f)
 
-dst = config['dst']
+    config: dict = load_config['get-sum']
 
-for i in config['data']:
-    with open(dst + i['data_details'], 'r', encoding='utf-8') as f:
+for i in config:
+    with open(i['src'], 'r', encoding='utf-8') as f:
         raw = yaml.safe_load(f)
 
-    age = pd.DataFrame(raw)['年代']
-    dict = {}
+        total: list = [
+            {
+                'total':  len(raw),
+                '年代_10歳未満': count(raw, '年代', '10歳未満'),
+                '年代_10代': count(raw, '年代', '10代'),
+                '年代_20代': count(raw, '年代', '20代'),
+                '年代_30代': count(raw, '年代', '30代'),
+                '年代_40代': count(raw, '年代', '40代'),
+                '年代_50代': count(raw, '年代', '50代'),
+                '年代_60代': count(raw, '年代', '60代'),
+                '年代_70代': count(raw, '年代', '70代'),
+                '年代_80代': count(raw, '年代', '80代'),
+                '年代_90代': count(raw, '年代', '90代'),
+                '年代_90代以上': count(raw, '年代', '90代以上'),
+            }
+        ]
 
-    # Count patients by age
-    for j in config['formats']['keys']['age']:
-        count_by_age = (age == j['find'])
-        dict[j['replace']] = int(count_by_age.sum())
-
-    # Count total patients
-    dict['total'] = int(age.value_counts().sum())
-
-    # Convert the data to list type so that Hugo can process them
-    data = [dict]
-
-    with open(dst + i['data_count'], 'w', encoding='utf-8', newline='\n') as f:
-        yaml.dump(data, f, indent=2, allow_unicode=True)
+    with open(i['dst'], 'w', encoding='utf-8', newline='\n') as f:
+        yaml.dump(total, f, allow_unicode=True)
