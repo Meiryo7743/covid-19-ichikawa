@@ -1,7 +1,6 @@
 import datetime
 import json
 import toml
-import sys
 
 
 def format_date(date: str):
