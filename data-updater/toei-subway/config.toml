@@ -1,7 +1,7 @@
-[subway]
-dst = "./data/"
+[fetch]
+dst = "./data/raw-changes-in-the-rates-of-toei-subway-passengers.json"
 src = "https://raw.githubusercontent.com/tokyo-metropolitan-gov/covid19/development/data/metro.json"
 
-[[subway.data]]
-data_passengers = "changes-in-the-rates-of-toei-subway-passengers.json"
-raw = "raw-changes-in-the-rates-of-toei-subway-passengers.json"
+[get-passengers]
+dst = "./data/changes-in-the-rates-of-toei-subway-passengers.json"
+src = "./data/raw-changes-in-the-rates-of-toei-subway-passengers.json"
