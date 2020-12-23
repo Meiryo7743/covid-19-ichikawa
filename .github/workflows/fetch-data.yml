@@ -28,19 +28,23 @@ jobs:
           pip install python-dateutil
           pip install requests
           pip install ruamel.yaml
+          pip install toml
 
       - name: Run scripts
         run: |
-          python ./data-updater/fetch-patients.py && python ./data-updater/patients-details.py && python ./data-updater/patients-count.py;
-          python ./data-updater/fetch-subway.py && python ./data-updater/subway-passengers.py;
-          rm ./data/raw-*.*  || echo "Nothing to remove"
+          python ./data-updater/patients/fetch.py && python ./data-updater/patients/get-details.py && python ./data-updater/patients/get-total.py;
+          python ./data-updater/toei-subway/fetch.py && python data-updater\toei-subway\get-google-charts-data.py;
+
+      - name: Remove temp files
+        run: |
+          rm ./data/raw-*.*  || echo "Nothing to remove."
 
       - name: Commit files
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add .
-          git commit -m "Update data files" -a || echo "Nothing to update"
+          git commit -m "Update data files" -a || echo "Nothing to update."
 
       - name: Push changes
         uses: ad-m/github-push-action@master
