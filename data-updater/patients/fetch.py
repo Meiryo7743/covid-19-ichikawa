@@ -5,8 +5,8 @@ import requests
 import sys
 import toml
 
-with open('./data-updater/config.toml', 'r', encoding='utf-8') as f:
-    config: dict = toml.load(f)['patients']
+with open('./data-updater/patients/config.toml', 'r', encoding='utf-8') as f:
+    config: dict = toml.load(f)
 
 dst = config['dst']
 
