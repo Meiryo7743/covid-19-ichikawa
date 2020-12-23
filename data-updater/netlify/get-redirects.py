@@ -2,7 +2,8 @@ import toml
 import sys
 
 with open('./data-updater/netlify/config.toml', 'r', encoding='utf-8', newline='\n') as f:
-    config: dict = toml.load(f)
+    load_config: dict = toml.load(f)
+    config: dict = load_config['get-redirects']
 
 redirects: dict = {
     'redirects': [

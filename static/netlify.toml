@@ -1,16 +1,11 @@
 [[redirects]]
-from = "/ja/contacts"
-to = "https://forms.gle/rJAhPqckU1Ak7tFQ9"
-force = true
-
-[[redirects]]
 from = "/en/contacts"
 to = "https://forms.gle/rJAhPqckU1Ak7tFQ9"
 force = true
 
 [[redirects]]
-from = "/ja/cards/details-of-all-patients"
-to = "/ja/cards/details-of-patients-with-symptoms"
+from = "/ja/contacts"
+to = "https://forms.gle/rJAhPqckU1Ak7tFQ9"
 force = true
 
 [[redirects]]
@@ -19,8 +14,8 @@ to = "/en/cards/details-of-patients-with-symptoms"
 force = true
 
 [[redirects]]
-from = "/ja/cards/details-of-latest-30-patients"
-to = "/ja/cards/details-of-latest-30-patients-with-symptoms"
+from = "/ja/cards/details-of-all-patients"
+to = "/ja/cards/details-of-patients-with-symptoms"
 force = true
 
 [[redirects]]
@@ -29,8 +24,8 @@ to = "/en/cards/details-of-latest-30-patients-with-symptoms"
 force = true
 
 [[redirects]]
-from = "/ja/cards/the-number-of-patients"
-to = "/ja/cards/the-number-of-patients-with-symptoms"
+from = "/ja/cards/details-of-latest-30-patients"
+to = "/ja/cards/details-of-latest-30-patients-with-symptoms"
 force = true
 
 [[redirects]]
@@ -39,8 +34,8 @@ to = "/en/cards/the-number-of-patients-with-symptoms"
 force = true
 
 [[redirects]]
-from = "/ja/cards/changes-in-the-number-of-passengers-on-toei-subway"
-to = "/ja/cards/changes-in-the-rates-of-toei-subway-passengers"
+from = "/ja/cards/the-number-of-patients"
+to = "/ja/cards/the-number-of-patients-with-symptoms"
 force = true
 
 [[redirects]]
@@ -49,14 +44,19 @@ to = "/en/cards/changes-in-the-rates-of-toei-subway-passengers"
 force = true
 
 [[redirects]]
-from = "/ja/*"
-to = "/ja/404.html"
-force = false
-status = 404
+from = "/ja/cards/changes-in-the-number-of-passengers-on-toei-subway"
+to = "/ja/cards/changes-in-the-rates-of-toei-subway-passengers"
+force = true
 
 [[redirects]]
 from = "/en/*"
 to = "/en/404.html"
+force = false
+status = 404
+
+[[redirects]]
+from = "/ja/*"
+to = "/ja/404.html"
 force = false
 status = 404
 
