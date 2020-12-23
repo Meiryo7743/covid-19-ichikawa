@@ -14,8 +14,8 @@ def format_date(value):
         return result.strftime('%m-%d')
 
 
-with open('./data-updater/config.toml', 'r', encoding='utf-8') as f:
-    config: dict = toml.load(f)['subway']
+with open('./data-updater/toei-subway/config.toml', 'r', encoding='utf-8') as f:
+    config: dict = toml.load(f)
 
 dst = config['dst']
 data = config['data'][0]
