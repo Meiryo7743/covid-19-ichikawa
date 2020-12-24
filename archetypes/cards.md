@@ -1,8 +1,6 @@
 ---
-cards:
-  data:
-    source: ""
-date: "{{ .Date }}"
-title: '{{ replace .Name "-" " " | title }}'
+date: "{{- .Date -}}"
+source: ""
+title: '{{- replace .Name "-" " " | title -}}'
 weight: 10
 ---

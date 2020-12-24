@@ -1,0 +1,28 @@
+{{- with .Date -}}
+    <ul class="date">
+        {{- with $.PublishDate -}}
+            <li>
+                <time
+                    aria-label='{{- print (i18n "date-publish") (dateFormat "2006-01-02" .) -}}'
+                    datetime='{{- dateFormat "2006-01-02T15:04:05-0700" . | safeHTMLAttr -}}'
+                >
+                    {{- dateFormat "2006-01-02" . -}}
+                </time>
+            </li>
+        {{- end -}}
+
+        {{- with $.Lastmod -}}
+            <li>
+                <ins datetime='{{- dateFormat "2006-01-02T15:04:05-0700" . | safeHTMLAttr -}}'>
+                    <time
+                        aria-label='{{- print (i18n "date-lastmod") (dateFormat "2006-01-02" .) -}}'
+                        class="date__lastmod"
+                        datetime='{{- dateFormat "2006-01-02T15:04:05-0700" . | safeHTMLAttr -}}'
+                    >
+                        {{- dateFormat "2006-01-02" . -}}
+                    </time>
+                </ins>
+            </li>
+        {{- end -}}
+    </ul>
+{{- end -}}

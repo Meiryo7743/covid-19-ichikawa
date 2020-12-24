@@ -1,0 +1,21 @@
+// @use "./functions";
+
+// SCSS variables
+$ICON: (
+    "arrow-down": \e905,
+    "arrow-up": \e903,
+    "lastmod": \e907,
+    "link-external": \e906,
+    "search": \e90a,
+    "share": \e909,
+    "swipe": \e900,
+    "translate": \e90b,
+    "warning": \e908,
+);
+
+// CSS variables
+:root {
+    // @include functions.get-icon($ICON);
+    @include get-icon($ICON);
+    --font-icon: icon;
+}

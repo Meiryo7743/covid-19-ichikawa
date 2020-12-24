@@ -1,0 +1,134 @@
+[fetch]
+src = "https://www.city.ichikawa.lg.jp/pub01/hasseijokyo.html"
+
+[[fetch.table]]
+dst = "./data/raw-patients-with-symptoms.csv"
+index = 0
+
+[[fetch.table]]
+dst = "./data/raw-patients-without-symptoms.csv"
+index = 1
+
+[[get-details]]
+dst = "./data/details-of-patients-with-symptoms.yaml"
+src = "./data/raw-patients-with-symptoms.csv"
+
+[[get-details]]
+dst = "./data/details-of-patients-without-symptoms.yaml"
+src = "./data/raw-patients-without-symptoms.csv"
+
+[[get-sum]]
+dst = "./data/the-number-of-patients-with-symptoms.yaml"
+src = "./data/details-of-patients-with-symptoms.yaml"
+
+[[get-sum]]
+dst = "./data/the-number-of-patients-without-symptoms.yaml"
+src = "./data/details-of-patients-without-symptoms.yaml"
+
+[[replace-format.value."市内"]]
+find = "\\s+"
+replace = ""
+
+[[replace-format.value."市内"]]
+find = "\\D+"
+replace = ""
+
+[[replace-format.value."県内"]]
+find = "\\s+"
+replace = ""
+
+[[replace-format.value."県内"]]
+find = "^\\D+\\d+\\D+"
+replace = ""
+
+[[replace-format.value."県内"]]
+find = "^(\\d+)\\D+"
+replace = "\\1"
+
+[[replace-format.value."検査確定日"]]
+find = "\\s+"
+replace = ""
+
+[[replace-format.value."検査確定日"]]
+find = "^調査中|None$"
+replace = ""
+
+[[replace-format.value."検査確定日"]]
+find = "(\\d+)月(\\d+)日"
+replace = "2020-\\1-\\2"
+
+[[replace-format.value."発症日"]]
+find = "\\s+"
+replace = ""
+
+[[replace-format.value."発症日"]]
+find = "^調査中|None$"
+replace = ""
+
+[[replace-format.value."発症日"]]
+find = "(\\d+)月(\\d+)日"
+replace = "2020-\\1-\\2"
+
+[[replace-format.value."年代"]]
+find = "\\s+"
+replace = ""
+
+[[replace-format.value."年代"]]
+find = "^調査中|None$"
+replace = ""
+
+[[replace-format.value."性別"]]
+find = "\\s+"
+replace = ""
+
+[[replace-format.value."性別"]]
+find = "^調査中|None$"
+replace = ""
+
+[[replace-format.value."職業"]]
+find = "\\s+"
+replace = ""
+
+[[replace-format.value."職業"]]
+find = "^調査中|None$"
+replace = ""
+
+[[replace-format.value."推定感染経路"]]
+find = "\\s{2}接触"
+replace = "接触"
+
+[[replace-format.value."推定感染経路"]]
+find = "\\s{2}"
+replace = "、"
+
+[[replace-format.value."推定感染経路"]]
+find = "\\s+"
+replace = ""
+
+[[replace-format.value."推定感染経路"]]
+find = "^調査中|None$"
+replace = ""
+
+[[replace-format.value."推定感染経路"]]
+find = "、+"
+replace = ","
+
+[[replace-format.value."推定感染経路"]]
+find = "接触(,|$)"
+replace = "\\1"
+
+[[replace-format.value."行動歴"]]
+find = "\\s{2}"
+replace = "、"
+
+[[replace-format.value."行動歴"]]
+find = "\\s+"
+replace = ""
+
+[[replace-format.value."行動歴"]]
+find = "^調査中|None$"
+replace = ""
+
+[[replace-format.value."行動歴"]]
+find = "、+"
+replace = ","

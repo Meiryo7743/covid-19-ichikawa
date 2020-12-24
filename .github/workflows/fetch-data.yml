@@ -1,0 +1,58 @@
+name: Fetch Data
+
+on:
+  schedule:
+    - cron: "30 10 * * *" # 19:30 JST
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: development # Switch to development branch
+
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install bs4
+          pip install html5lib
+          pip install lxml
+          pip install pandas
+          pip install python-dateutil
+          pip install requests
+          pip install ruamel.yaml
+          pip install toml
+
+      - name: Make directories
+        run: |
+          mkdir -p data i18n
+
+      - name: Run scripts
+        run: |
+          python ./data-updater/patients/fetch.py && python ./data-updater/patients/get-details.py && python ./data-updater/patients/get-total.py;
+          python ./data-updater/toei-subway/fetch.py && python data-updater/toei-subway/get-google-charts-data.py;
+          python ./data-updater/i18n/fetch.py && python data-updater/i18n/get-translations.py;
+
+      - name: Remove temp files
+        run: |
+          rm ./data/raw-*.*  || echo "Nothing to remove."
+
+      - name: Commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -m "Update data files" -a || echo "Nothing to update."
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: development

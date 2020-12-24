@@ -1,0 +1,127 @@
+// @use "../global";
+
+.data-chart {
+    // @include global.element-type-scroll-x;
+    @include element-type-scroll-x;
+
+    &__canvas {
+        // @include global.set-margin("inline", auto);
+        @include set-margin("inline", auto);
+        block-size: var(--block-size-data);
+        inline-size: max-content; // Google Charts で，グラフが狭幅（水平スクロールバーが表示されない位）の時にセンタリンク可能にする
+    }
+}
+
+.data-list {
+    // @include global.element-type-plane-list;
+    // @include global.set-margin("inline", auto);
+    @include element-type-plane-list;
+    @include set-margin("inline", auto);
+    line-height: 1.25 !important;
+    max-inline-size: 20rem;
+
+    &__child {
+        // @include global.element-type-plane-list;
+        @include element-type-plane-list;
+        border-block-start: solid 1px var(--color-body);
+        border-inline-start: solid 1px var(--color-body);
+        margin-inline-start: 1.5em;
+        padding-block-start: 0.25rem;
+    }
+
+    &__item {
+        border: solid 1px var(--color-body);
+
+        &--child {
+            border-inline-end: none;
+            margin-block-end: 0.25rem;
+            margin-inline-start: 0.25rem;
+
+            &:last-child {
+                border-block-end: none;
+            }
+        }
+    }
+
+    div {
+        // @include global.set-padding("block", 0.375rem);
+        // @include global.set-padding("inline", 0.75rem);
+        @include set-padding("block", 0.375rem);
+        @include set-padding("inline", 0.75rem);
+        display: inline-block;
+        inline-size: 50%;
+        text-align: end;
+    }
+}
+
+.data-table {
+    // @include global.element-type-scroll-x;
+    @include element-type-scroll-x;
+    block-size: var(--block-size-data);
+    border-block-end: solid 1px var(--color-body);
+    border-block-start: solid 1px var(--color-body);
+    display: flex;
+    line-height: 1.25;
+    text-align: center;
+
+    &__table {
+        border: none;
+        inline-size: 100%;
+
+        thead {
+            border-block-end: solid 1px var(--color-body);
+        }
+
+        tr {
+            &:not(:last-child) {
+                border-block-end: solid 1px var(--color-body);
+            }
+        }
+
+        th {
+            background: var(--bgcolor-card);
+            position: sticky;
+            top: 0;
+        }
+
+        ul {
+            // @include global.element-type-plane-list;
+            @include element-type-plane-list;
+        }
+    }
+}
+
+.scroll-message {
+    margin-block-start: 0.5rem;
+    margin-block-end: 1rem;
+    text-align: center;
+
+    &::before {
+        // @include global.element-type-icon;
+        @include element-type-icon;
+        content: var(--icon-swipe);
+    }
+}
+
+// Table sort
+.sort {
+    &:hover {
+        cursor: pointer;
+    }
+
+    &.asc {
+        &::after {
+            // @include global.element-type-icon;
+            @include element-type-icon;
+            content: var(--icon-arrow-up);
+        }
+    }
+
+    &.desc {
+        &::after {
+            // @include global.element-type-icon;
+            @include element-type-icon;
+            content: var(--icon-arrow-down);
+        }
+    }
+}

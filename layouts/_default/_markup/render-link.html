@@ -1,7 +1,7 @@
 <a
-  href='{{ .Destination | safeURL | absLangURL }}'
-  target="_blank"
-  rel="noopener"
+    href='{{- .Destination | safeURL | absLangURL -}}'
+    rel="noopener"
+    target="_blank"
 >
-  {{- .Text -}}
+    {{- .Text -}}
 </a>
