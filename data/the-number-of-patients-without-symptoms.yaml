@@ -1,2 +1,2 @@
-- {eighties: 11, fifties: 11, forties: 13, nineties: 0, over_nineties: 1, seventies: 11,
-  sixties: 8, teens: 12, thirties: 18, total: 119, twenties: 23, under_teens: 11}
+- {total: 119, 年代_10代: 12, 年代_10歳未満: 11, 年代_20代: 23, 年代_30代: 18, 年代_40代: 13, 年代_50代: 11,
+  年代_60代: 8, 年代_70代: 11, 年代_80代: 11, 年代_90代: 0, 年代_90代以上: 1}

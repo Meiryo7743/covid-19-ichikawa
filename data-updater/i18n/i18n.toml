@@ -362,6 +362,14 @@ ja = "7176"
 en = "7177"
 ja = "7177"
 
+[patients-8019.other]
+en = "8019"
+ja = "8019"
+
+[patients-8020.other]
+en = "8020"
+ja = "8020"
+
 ["patients-80代".other]
 en = "80s"
 ja = "80代"
@@ -481,6 +489,10 @@ ja = "保育園職員"
 en = "childcare worker"
 ja = "保育士"
 
+["patients-保育補助".other]
+en = "保育補助"
+ja = "保育補助"
+
 ["patients-元職場".other]
 en = "former workplace"
 ja = "元職場"
@@ -572,6 +584,10 @@ ja = "市川特養施設関係"
 ["patients-市川老健施設関係".other]
 en = "市川老健施設関係"
 ja = "市川老健施設関係"
+
+["patients-市川飲食店関係".other]
+en = "市川飲食店関係"
+ja = "市川飲食店関係"
 
 ["patients-年代".other]
 en = "Age"
@@ -668,6 +684,10 @@ ja = "海外渡航者"
 ["patients-無症状1232".other]
 en = "無症状1232"
 ja = "無症状1232"
+
+["patients-無症状1579".other]
+en = "無症状1579"
+ja = "無症状1579"
 
 ["patients-無症状23".other]
 en = "無症状23"
@@ -1425,6 +1445,10 @@ ja = "県内6864"
 en = "県内6869"
 ja = "県内6869"
 
+["patients-県内6872".other]
+en = "県内6872"
+ja = "県内6872"
+
 ["patients-県内7070".other]
 en = "県内7070"
 ja = "県内7070"
@@ -1441,9 +1465,33 @@ ja = "県内7074"
 en = "県内7078"
 ja = "県内7078"
 
+["patients-県内7081".other]
+en = "県内7081"
+ja = "県内7081"
+
+["patients-県内7138".other]
+en = "県内7138"
+ja = "県内7138"
+
 ["patients-県内7164".other]
 en = "県内7164"
 ja = "県内7164"
+
+["patients-県内7165".other]
+en = "県内7165"
+ja = "県内7165"
+
+["patients-県内7251".other]
+en = "県内7251"
+ja = "県内7251"
+
+["patients-県内7273".other]
+en = "県内7273"
+ja = "県内7273"
+
+["patients-県内7279".other]
+en = "県内7279"
+ja = "県内7279"
 
 ["patients-県内732".other]
 en = "県内732"
@@ -1452,6 +1500,22 @@ ja = "県内732"
 ["patients-県内736".other]
 en = "県内736"
 ja = "県内736"
+
+["patients-県内7522".other]
+en = "県内7522"
+ja = "県内7522"
+
+["patients-県内7601".other]
+en = "県内7601"
+ja = "県内7601"
+
+["patients-県内7632".other]
+en = "県内7632"
+ja = "県内7632"
+
+["patients-県内7843".other]
+en = "県内7843"
+ja = "県内7843"
 
 ["patients-県内809".other]
 en = "県内809"
@@ -1512,6 +1576,10 @@ ja = "県内無症状1233"
 ["patients-県内無症状1258".other]
 en = "県内無症状1258"
 ja = "県内無症状1258"
+
+["patients-県内無症状1289".other]
+en = "県内無症状1289"
+ja = "県内無症状1289"
 
 ["patients-県内無症状1450".other]
 en = "県内無症状1450"

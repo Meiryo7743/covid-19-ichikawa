@@ -271,6 +271,12 @@ other = "7176"
 [patients-7177]
 other = "7177"
 
+[patients-8019]
+other = "8019"
+
+[patients-8020]
+other = "8020"
+
 ["patients-80代"]
 other = "80s"
 
@@ -359,6 +365,9 @@ other = "保育園職員"
 ["patients-保育士"]
 other = "childcare worker"
 
+["patients-保育補助"]
+other = "保育補助"
+
 ["patients-元職場"]
 other = "former workplace"
 
@@ -427,6 +436,9 @@ other = "市川特養施設関係"
 
 ["patients-市川老健施設関係"]
 other = "市川老健施設関係"
+
+["patients-市川飲食店関係"]
+other = "市川飲食店関係"
 
 ["patients-年代"]
 other = "Age"
@@ -499,6 +511,9 @@ other = "海外渡航者"
 
 ["patients-無症状1232"]
 other = "無症状1232"
+
+["patients-無症状1579"]
+other = "無症状1579"
 
 ["patients-無症状23"]
 other = "無症状23"
@@ -1067,6 +1082,9 @@ other = "県内6864"
 ["patients-県内6869"]
 other = "県内6869"
 
+["patients-県内6872"]
+other = "県内6872"
+
 ["patients-県内7070"]
 other = "県内7070"
 
@@ -1079,14 +1097,44 @@ other = "県内7074"
 ["patients-県内7078"]
 other = "県内7078"
 
+["patients-県内7081"]
+other = "県内7081"
+
+["patients-県内7138"]
+other = "県内7138"
+
 ["patients-県内7164"]
 other = "県内7164"
+
+["patients-県内7165"]
+other = "県内7165"
+
+["patients-県内7251"]
+other = "県内7251"
+
+["patients-県内7273"]
+other = "県内7273"
+
+["patients-県内7279"]
+other = "県内7279"
 
 ["patients-県内732"]
 other = "県内732"
 
 ["patients-県内736"]
 other = "県内736"
+
+["patients-県内7522"]
+other = "県内7522"
+
+["patients-県内7601"]
+other = "県内7601"
+
+["patients-県内7632"]
+other = "県内7632"
+
+["patients-県内7843"]
+other = "県内7843"
 
 ["patients-県内809"]
 other = "県内809"
@@ -1132,6 +1180,9 @@ other = "県内無症状1233"
 
 ["patients-県内無症状1258"]
 other = "県内無症状1258"
+
+["patients-県内無症状1289"]
+other = "県内無症状1289"
 
 ["patients-県内無症状1450"]
 other = "県内無症状1450"
