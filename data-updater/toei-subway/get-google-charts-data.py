@@ -49,20 +49,20 @@ google_charts_data: dict = {
             'right': 14 * 4,
             'top': 14 * 2
         },
-        'color': '#7d828d',
+        'color': '#999',
         'fontName': 'sans-serif',
         'fontSize': 14,
         'hAxes': [
             {
                 'slantedText': True,
                 'slantedTextAngle': 45,
-                'textStyle': {'color': '#7d828d'}
+                'textStyle': {'color': '#999'}
             }
         ],
         'legend': {
             'alignment': 'end',
             'position': 'top',
-            'textStyle': {'color': '#7d828d'}
+            'textStyle': {'color': '#999'}
         },
         'series': {
             '0': {
@@ -75,23 +75,23 @@ google_charts_data: dict = {
         'vAxes': [
             {
                 'baseline': 0,
-                'baselineColor': '#7d828d',
+                'baselineColor': '#999',
                 'format': "#'%'",
-                'gridlines': {'color': '#7d828d'},
+                'gridlines': {'color': '#999'},
                 'maxValue': 20,
                 'minorGridlines': {'color': 'none'},
                 'minValue': -100,
-                'textStyle': {'color': '#7d828d'}
+                'textStyle': {'color': '#999'}
             },
             {
                 'baseline': 0,
-                'baselineColor': '#7d828d',
+                'baselineColor': '#999',
                 'format': "#'%'",
-                'gridlines': {'color': '#7d828d'},
+                'gridlines': {'color': '#999'},
                 'maxValue': 20,
                 'minorGridlines': {'color': 'none'},
                 'minValue': -100,
-                'textStyle': {'color': '#7d828d'}
+                'textStyle': {'color': '#999'}
             }
         ],
         'width': len(google_charts_rows) * 3 * 14
