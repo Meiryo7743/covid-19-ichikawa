@@ -30,9 +30,9 @@ jobs:
           pip install ruamel.yaml
           pip install toml
 
-      - name: Make a directory
+      - name: Make directories
         run: |
-          mkdir -p data
+          mkdir -p data i18n
 
       - name: Run scripts
         run: |
