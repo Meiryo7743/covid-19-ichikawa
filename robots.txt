@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
-
-User-agent: Megalodon
+Sitemap:https://stopcovid19-ichikawa.netlify.app/sitemap.xmlUser-agent: Megalodon
 Disallow: /
