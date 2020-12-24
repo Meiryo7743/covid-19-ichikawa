@@ -308,8 +308,8 @@ other = "996"
 other = "997"
 
 [patients-number]
-one = "{{- .Count -}} case"
-other = "{{- .Count -}} cases"
+one = "{{ .Count }} case"
+other = "{{ .Count }} cases"
 
 [patients-total]
 other = "Total"

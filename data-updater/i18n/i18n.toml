@@ -411,10 +411,10 @@ en = "997"
 ja = "997"
 
 [patients-number.one]
-en = "{{- .Count -}} case"
+en = "{{ .Count }} case"
 
 [patients-number.other]
-en = "{{- .Count -}} cases"
+en = "{{ .Count }} cases"
 ja = "{{- .Count -}} 人"
 
 [patients-total.other]
