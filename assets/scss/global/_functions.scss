@@ -1,0 +1,57 @@
+@mixin color-scheme($string) {
+    @if $string == "light" {
+        @content;
+    } @else if $string == "dark" {
+        @media screen and (prefers-color-scheme: $string) {
+            @content;
+        }
+    } @else {
+        @warn "引数は，light または dark のみを受け付けます。";
+    }
+}
+
+@mixin get-color($dict) {
+    @each $key, $hex in $dict {
+        --#{$key}: #{$hex};
+    }
+}
+
+@mixin get-icon($dict) {
+    @each $key, $string in $dict {
+        --icon-#{$key}: "#{$string}";
+    }
+}
+
+@mixin get-size($dict, $unit: false) {
+    @each $key, $number in $dict {
+        @if ($unit) {
+            --size-#{$unit}-#{$key}: #{$number + $unit};
+        } @else {
+            --size-number-#{$key}: #{$number};
+        }
+    }
+}
+
+@mixin set-margin($string, $value) {
+    @if $string == "block" {
+        margin-block-end: $value;
+        margin-block-start: $value;
+    } @else if $string == "inline" {
+        margin-inline-end: $value;
+        margin-inline-start: $value;
+    } @else {
+        @warn "第 1 引数に block または inline を指定してください。";
+    }
+}
+
+@mixin set-padding($string, $value) {
+    @if $string == "block" {
+        padding-block-end: $value;
+        padding-block-start: $value;
+    } @else if $string == "inline" {
+        padding-inline-end: $value;
+        padding-inline-start: $value;
+    } @else {
+        @warn "第 1 引数に block または inline を指定してください。";
+    }
+}

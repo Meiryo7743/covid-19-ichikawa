@@ -1,0 +1,48 @@
+// @use "../global";
+
+.card-container {
+    // @include global.set-margin("block", 1.5rem);
+    @include set-margin("block", 1.5rem);
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(clamp(calc(50% - 0.75rem), calc(384px - 2.25rem), 100%), 1fr)
+    );
+
+    &--home {
+        display: block;
+    }
+}
+
+.card {
+    background: var(--bgcolor-card);
+    border-radius: 0.375rem;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    row-gap: 1rem;
+
+    &__title {
+        // @include global.set-margin("block", 0);
+        @include set-margin("block", 0);
+        font-size: var(--size-rem-x-large);
+        text-align: center;
+    }
+
+    &__content {
+        // @include global.set-margin("block", 0);
+        @include set-margin("block", 0);
+    }
+
+    &__footer {
+        margin-block-end: 0;
+        margin-block-start: auto;
+
+        ul {
+            // @include global.element-type-plane-list;
+            @include element-type-plane-list;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+// @use "../../global";
+
+.single {
+    // @include global.set-margin("inline", auto);
+    @include set-margin("inline", auto);
+    inline-size: unquote("min(100%, 43rem)");
+
+    & > [class*="single__"] {
+        // @include global.set-margin("block", 1rem);
+        @include set-margin("block", 1rem);
+    }
+}

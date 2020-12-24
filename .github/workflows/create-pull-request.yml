@@ -1,0 +1,28 @@
+name: Create a Pull Request
+
+on:
+  push:
+    branches:
+      - development
+
+  workflow_run:
+    workflows: ["Fetch Data"]
+    types:
+      - completed
+
+jobs:
+  pull-request:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: pull-request
+        uses: repo-sync/pull-request@v2
+        with:
+          destination_branch: master
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          pr_allow_empty: false
+          pr_body: "The website will not be updated unless you merge this pull request."
+          pr_label: "auto-pr"
+          pr_title: "Update master"

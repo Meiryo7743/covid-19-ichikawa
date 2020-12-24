@@ -1,0 +1,15 @@
+// @use "../../global";
+
+a {
+    &:visited {
+        color: var(--color-a);
+    }
+
+    &[target="_blank"] {
+        &::after {
+            // @include global.element-type-icon;
+            @include element-type-icon;
+            content: var(--icon-link-external);
+        }
+    }
+}

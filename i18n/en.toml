@@ -1,0 +1,1293 @@
+[404-content]
+other = "The page you are looking for could not be found. Perhaps, it has been deleted or the URL is incorrect.\n\nYou could be able to find it from the search field below:\n"
+
+[date-lastmod]
+other = "Last updated"
+
+[date-publish]
+other = "Publish date"
+
+[news]
+other = "News"
+
+[notice-emergency]
+other = ""
+
+[notice-noscript]
+other = "Contents will not be displayed correctly when JavaScript is disabled.\n"
+
+[notice-translate]
+other = "This page has been translated from Japanese by contributors.\n"
+
+["patients-10代"]
+other = "10s"
+
+["patients-10歳未満"]
+other = "<10s"
+
+[patients-1233]
+other = "1233"
+
+[patients-1324]
+other = "1324"
+
+["patients-20代"]
+other = "20s"
+
+[patients-2123]
+other = "2123"
+
+[patients-2124]
+other = "2124"
+
+[patients-2165]
+other = "2165"
+
+[patients-2166]
+other = "2166"
+
+[patients-2167]
+other = "2167"
+
+[patients-2168]
+other = "2168"
+
+[patients-2169]
+other = "2169"
+
+[patients-2197]
+other = "2197"
+
+[patients-2198]
+other = "2198"
+
+[patients-2199]
+other = "2199"
+
+[patients-2200]
+other = "2200"
+
+[patients-2215]
+other = "2215"
+
+[patients-2381]
+other = "2381"
+
+[patients-24]
+other = "24"
+
+[patients-2446]
+other = "2446"
+
+[patients-2447]
+other = "2447"
+
+[patients-2488]
+other = "2488"
+
+[patients-2548]
+other = "2548"
+
+[patients-2731]
+other = "2731"
+
+[patients-2732]
+other = "2732"
+
+[patients-2949]
+other = "2949"
+
+[patients-3049]
+other = "3049"
+
+[patients-3073]
+other = "3073"
+
+[patients-3087]
+other = "3087"
+
+[patients-3088]
+other = "3088"
+
+["patients-30代"]
+other = "30s"
+
+[patients-3105]
+other = "3105"
+
+[patients-3106]
+other = "3106"
+
+[patients-3122]
+other = "3122"
+
+[patients-3123]
+other = "3123"
+
+[patients-3149]
+other = "3149"
+
+[patients-3173]
+other = "3173"
+
+[patients-3174]
+other = "3174"
+
+[patients-3175]
+other = "3175"
+
+[patients-3241]
+other = "3241"
+
+[patients-3242]
+other = "3242"
+
+[patients-3484]
+other = "3484"
+
+[patients-3589]
+other = "3589"
+
+[patients-3590]
+other = "3590"
+
+[patients-3595]
+other = "3595"
+
+[patients-3596]
+other = "3596"
+
+[patients-4090]
+other = "4090"
+
+[patients-4091]
+other = "4091"
+
+["patients-40代"]
+other = "40s"
+
+[patients-449]
+other = "449"
+
+[patients-450]
+other = "450"
+
+[patients-451]
+other = "451"
+
+[patients-4686]
+other = "4686"
+
+[patients-4864]
+other = "4864"
+
+[patients-4865]
+other = "4865"
+
+[patients-4979]
+other = "4979"
+
+["patients-50代"]
+other = "50s"
+
+[patients-5133]
+other = "5133"
+
+[patients-5134]
+other = "5134"
+
+[patients-5135]
+other = "5135"
+
+[patients-5137]
+other = "5137"
+
+[patients-5371]
+other = "5371"
+
+[patients-5405]
+other = "5405"
+
+[patients-5418]
+other = "5418"
+
+[patients-5526]
+other = "5526"
+
+[patients-5527]
+other = "5527"
+
+[patients-585]
+other = "585"
+
+[patients-5894]
+other = "5894"
+
+[patients-5895]
+other = "5895"
+
+["patients-60代"]
+other = "60s"
+
+[patients-6323]
+other = "6323"
+
+[patients-6386]
+other = "6386"
+
+[patients-6389]
+other = "6389"
+
+[patients-6496]
+other = "6496"
+
+[patients-6721]
+other = "6721"
+
+[patients-6722]
+other = "6722"
+
+[patients-6971]
+other = "6971"
+
+[patients-6972]
+other = "6972"
+
+[patients-6973]
+other = "6973"
+
+["patients-70代"]
+other = "70s"
+
+[patients-7168]
+other = "7168"
+
+[patients-7169]
+other = "7169"
+
+[patients-7176]
+other = "7176"
+
+[patients-7177]
+other = "7177"
+
+[patients-8019]
+other = "8019"
+
+[patients-8020]
+other = "8020"
+
+["patients-80代"]
+other = "80s"
+
+[patients-810]
+other = "810"
+
+[patients-811]
+other = "811"
+
+[patients-812]
+other = "812"
+
+["patients-90代"]
+other = "90s"
+
+["patients-90代以上"]
+other = ">90s"
+
+[patients-948]
+other = "948"
+
+[patients-949]
+other = "949"
+
+[patients-996]
+other = "996"
+
+[patients-997]
+other = "997"
+
+[patients-number]
+one = "{{- .Count -}} case"
+other = "{{- .Count -}} cases"
+
+[patients-total]
+other = "Total"
+
+["patients-アルバイト"]
+other = "part-time job"
+
+["patients-アルバイト先"]
+other = "workplace"
+
+["patients-クルーズ船"]
+other = "クルーズ船"
+
+["patients-ジム関係"]
+other = "ジム関係"
+
+["patients-不明"]
+other = "unknown"
+
+["patients-乳児"]
+other = "乳児"
+
+["patients-介護士"]
+other = "caregiver"
+
+["patients-介護施設"]
+other = "nursing facility"
+
+["patients-介護福祉士"]
+other = "certified care worker"
+
+["patients-介護老人保健施設市川ゆうゆう"]
+other = "介護老人保健施設市川ゆうゆう"
+
+["patients-介護職員"]
+other = "介護職員"
+
+["patients-会社員"]
+other = "employee"
+
+["patients-会社役員"]
+other = "executive"
+
+["patients-会社経営"]
+other = "business owner"
+
+["patients-作業療法士"]
+other = "作業療法士"
+
+["patients-保育園職員"]
+other = "保育園職員"
+
+["patients-保育士"]
+other = "childcare worker"
+
+["patients-保育補助"]
+other = "保育補助"
+
+["patients-元職場"]
+other = "former workplace"
+
+["patients-児童"]
+other = "pupil"
+
+["patients-入所者"]
+other = "入所者"
+
+["patients-入院患者"]
+other = "入院患者"
+
+["patients-公務員"]
+other = "public servant"
+
+["patients-別宅"]
+other = "second home"
+
+["patients-利用者"]
+other = "利用者"
+
+["patients-助産師"]
+other = "midwife"
+
+["patients-医師"]
+other = "医師"
+
+["patients-医療事務"]
+other = "医療事務"
+
+["patients-医療従事者"]
+other = "health professional"
+
+["patients-医療機関"]
+other = "medical facility"
+
+["patients-医療関係"]
+other = "medical facility"
+
+["patients-団体職員"]
+other = "団体職員"
+
+["patients-女性"]
+other = "female"
+
+["patients-学校"]
+other = "school"
+
+["patients-学生"]
+other = "student"
+
+["patients-市内"]
+other = "Ichikawa"
+
+["patients-市内医療関係"]
+other = "市内医療関係"
+
+["patients-市内通所介護施設"]
+other = "市内通所介護施設"
+
+["patients-市川事業所関係"]
+other = "市川事業所関係"
+
+["patients-市川特養施設関係"]
+other = "市川特養施設関係"
+
+["patients-市川老健施設関係"]
+other = "市川老健施設関係"
+
+["patients-市川飲食店関係"]
+other = "市川飲食店関係"
+
+["patients-年代"]
+other = "Age"
+
+["patients-幼児"]
+other = "infant"
+
+["patients-幼稚園教諭"]
+other = "幼稚園教諭"
+
+["patients-従業員"]
+other = "従業員"
+
+["patients-性別"]
+other = "Sex"
+
+["patients-患者5329"]
+other = "患者5329"
+
+["patients-患者5378"]
+other = "患者5378"
+
+["patients-我孫子市障害者福祉施設関係"]
+other = "我孫子市障害者福祉施設関係"
+
+["patients-接客業"]
+other = "接客業"
+
+["patients-接触確認アプリ(COCOA)で通知あり"]
+other = "接触確認アプリ(COCOA)で通知あり"
+
+["patients-推定感染経路"]
+other = "Presumed Infection Sources"
+
+["patients-教員"]
+other = "teacher"
+
+["patients-施設"]
+other = "施設"
+
+["patients-施設職員"]
+other = "施設職員"
+
+["patients-松戸老健施設関係"]
+other = "松戸老健施設関係"
+
+["patients-松戸高齢者施設関係"]
+other = "松戸高齢者施設関係"
+
+["patients-柏医療機関関係"]
+other = "柏医療機関関係"
+
+["patients-柏市飲食店関係"]
+other = "柏市飲食店関係"
+
+["patients-検査確定日"]
+other = "Inspection Date"
+
+["patients-歯科医師"]
+other = "dentist"
+
+["patients-歯科衛生士"]
+other = "dental hygienist"
+
+["patients-浦安医療機関関係"]
+other = "浦安医療機関関係"
+
+["patients-海外渡航者"]
+other = "海外渡航者"
+
+["patients-無症状1232"]
+other = "無症状1232"
+
+["patients-無症状1579"]
+other = "無症状1579"
+
+["patients-無症状23"]
+other = "無症状23"
+
+["patients-無症状24"]
+other = "無症状24"
+
+["patients-無症状448"]
+other = "無症状448"
+
+["patients-無症状449"]
+other = "無症状449"
+
+["patients-無症状病原体保有者116"]
+other = "無症状病原体保有者116"
+
+["patients-無職"]
+other = "unemployed"
+
+["patients-特別養護老人ホーム(松戸市)関係"]
+other = "特別養護老人ホーム(松戸市)関係"
+
+["patients-生徒"]
+other = "student"
+
+["patients-男性"]
+other = "male"
+
+["patients-病院職員"]
+other = "病院職員"
+
+["patients-発症日"]
+other = "Onset Date"
+
+["patients-看護助手"]
+other = "看護助手"
+
+["patients-看護師"]
+other = "nurse"
+
+["patients-県内"]
+other = "Chiba"
+
+["patients-県内1012"]
+other = "県内1012"
+
+["patients-県内103"]
+other = "県内103"
+
+["patients-県内1070"]
+other = "県内1070"
+
+["patients-県内1145"]
+other = "県内1145"
+
+["patients-県内1175"]
+other = "県内1175"
+
+["patients-県内1210"]
+other = "県内1210"
+
+["patients-県内1278"]
+other = "県内1278"
+
+["patients-県内1346"]
+other = "県内1346"
+
+["patients-県内1394"]
+other = "県内1394"
+
+["patients-県内1396"]
+other = "県内1396"
+
+["patients-県内1527"]
+other = "県内1527"
+
+["patients-県内1528"]
+other = "県内1528"
+
+["patients-県内1614"]
+other = "県内1614"
+
+["patients-県内169"]
+other = "県内169"
+
+["patients-県内170"]
+other = "県内170"
+
+["patients-県内1891"]
+other = "県内1891"
+
+["patients-県内1892"]
+other = "県内1892"
+
+["patients-県内1900"]
+other = "県内1900"
+
+["patients-県内1999"]
+other = "県内1999"
+
+["patients-県内19家族"]
+other = "県内19家族"
+
+["patients-県内201"]
+other = "県内201"
+
+["patients-県内2036"]
+other = "県内2036"
+
+["patients-県内2040"]
+other = "県内2040"
+
+["patients-県内2095"]
+other = "県内2095"
+
+["patients-県内2096"]
+other = "県内2096"
+
+["patients-県内2097"]
+other = "県内2097"
+
+["patients-県内2122"]
+other = "県内2122"
+
+["patients-県内2125"]
+other = "県内2125"
+
+["patients-県内2177"]
+other = "県内2177"
+
+["patients-県内2215"]
+other = "県内2215"
+
+["patients-県内2301"]
+other = "県内2301"
+
+["patients-県内234家族"]
+other = "県内234家族"
+
+["patients-県内2350"]
+other = "県内2350"
+
+["patients-県内2353"]
+other = "県内2353"
+
+["patients-県内235家族"]
+other = "県内235家族"
+
+["patients-県内2367"]
+other = "県内2367"
+
+["patients-県内237"]
+other = "県内237"
+
+["patients-県内2449"]
+other = "県内2449"
+
+["patients-県内2450"]
+other = "県内2450"
+
+["patients-県内2472"]
+other = "県内2472"
+
+["patients-県内2546"]
+other = "県内2546"
+
+["patients-県内266"]
+other = "県内266"
+
+["patients-県内2699"]
+other = "県内2699"
+
+["patients-県内2700"]
+other = "県内2700"
+
+["patients-県内2733"]
+other = "県内2733"
+
+["patients-県内2781"]
+other = "県内2781"
+
+["patients-県内2807"]
+other = "県内2807"
+
+["patients-県内2808"]
+other = "県内2808"
+
+["patients-県内2881"]
+other = "県内2881"
+
+["patients-県内2891"]
+other = "県内2891"
+
+["patients-県内2922"]
+other = "県内2922"
+
+["patients-県内2948"]
+other = "県内2948"
+
+["patients-県内2949"]
+other = "県内2949"
+
+["patients-県内2950"]
+other = "県内2950"
+
+["patients-県内2978"]
+other = "県内2978"
+
+["patients-県内2979"]
+other = "県内2979"
+
+["patients-県内3011"]
+other = "県内3011"
+
+["patients-県内3012"]
+other = "県内3012"
+
+["patients-県内3013"]
+other = "県内3013"
+
+["patients-県内3016"]
+other = "県内3016"
+
+["patients-県内3048"]
+other = "県内3048"
+
+["patients-県内3068"]
+other = "県内3068"
+
+["patients-県内3074"]
+other = "県内3074"
+
+["patients-県内3086"]
+other = "県内3086"
+
+["patients-県内3087"]
+other = "県内3087"
+
+["patients-県内3088"]
+other = "県内3088"
+
+["patients-県内3124"]
+other = "県内3124"
+
+["patients-県内3176"]
+other = "県内3176"
+
+["patients-県内3218"]
+other = "県内3218"
+
+["patients-県内3272"]
+other = "県内3272"
+
+["patients-県内3351"]
+other = "県内3351"
+
+["patients-県内3399"]
+other = "県内3399"
+
+["patients-県内3400"]
+other = "県内3400"
+
+["patients-県内3459"]
+other = "県内3459"
+
+["patients-県内35"]
+other = "県内35"
+
+["patients-県内3524"]
+other = "県内3524"
+
+["patients-県内3554"]
+other = "県内3554"
+
+["patients-県内3588"]
+other = "県内3588"
+
+["patients-県内3589"]
+other = "県内3589"
+
+["patients-県内3593"]
+other = "県内3593"
+
+["patients-県内3599"]
+other = "県内3599"
+
+["patients-県内3743"]
+other = "県内3743"
+
+["patients-県内3769"]
+other = "県内3769"
+
+["patients-県内3770"]
+other = "県内3770"
+
+["patients-県内3840"]
+other = "県内3840"
+
+["patients-県内3970"]
+other = "県内3970"
+
+["patients-県内4001"]
+other = "県内4001"
+
+["patients-県内4041"]
+other = "県内4041"
+
+["patients-県内4086"]
+other = "県内4086"
+
+["patients-県内4089"]
+other = "県内4089"
+
+["patients-県内4162"]
+other = "県内4162"
+
+["patients-県内4189"]
+other = "県内4189"
+
+["patients-県内4222"]
+other = "県内4222"
+
+["patients-県内4223"]
+other = "県内4223"
+
+["patients-県内4338"]
+other = "県内4338"
+
+["patients-県内4410"]
+other = "県内4410"
+
+["patients-県内4413"]
+other = "県内4413"
+
+["patients-県内4414"]
+other = "県内4414"
+
+["patients-県内4415"]
+other = "県内4415"
+
+["patients-県内450"]
+other = "県内450"
+
+["patients-県内4500"]
+other = "県内4500"
+
+["patients-県内4529"]
+other = "県内4529"
+
+["patients-県内4530"]
+other = "県内4530"
+
+["patients-県内4569"]
+other = "県内4569"
+
+["patients-県内4572"]
+other = "県内4572"
+
+["patients-県内4621"]
+other = "県内4621"
+
+["patients-県内4623"]
+other = "県内4623"
+
+["patients-県内4681"]
+other = "県内4681"
+
+["patients-県内4683"]
+other = "県内4683"
+
+["patients-県内4685"]
+other = "県内4685"
+
+["patients-県内4730"]
+other = "県内4730"
+
+["patients-県内4736"]
+other = "県内4736"
+
+["patients-県内4864"]
+other = "県内4864"
+
+["patients-県内4927"]
+other = "県内4927"
+
+["patients-県内5045"]
+other = "県内5045"
+
+["patients-県内5048"]
+other = "県内5048"
+
+["patients-県内5136"]
+other = "県内5136"
+
+["patients-県内5137"]
+other = "県内5137"
+
+["patients-県内5138"]
+other = "県内5138"
+
+["patients-県内5212"]
+other = "県内5212"
+
+["patients-県内5219"]
+other = "県内5219"
+
+["patients-県内525"]
+other = "県内525"
+
+["patients-県内5299"]
+other = "県内5299"
+
+["patients-県内5347"]
+other = "県内5347"
+
+["patients-県内5372"]
+other = "県内5372"
+
+["patients-県内5373"]
+other = "県内5373"
+
+["patients-県内5374"]
+other = "県内5374"
+
+["patients-県内5375"]
+other = "県内5375"
+
+["patients-県内5376"]
+other = "県内5376"
+
+["patients-県内5377"]
+other = "県内5377"
+
+["patients-県内5386"]
+other = "県内5386"
+
+["patients-県内5444"]
+other = "県内5444"
+
+["patients-県内5478"]
+other = "県内5478"
+
+["patients-県内5525"]
+other = "県内5525"
+
+["patients-県内5530"]
+other = "県内5530"
+
+["patients-県内555"]
+other = "県内555"
+
+["patients-県内5620"]
+other = "県内5620"
+
+["patients-県内5621"]
+other = "県内5621"
+
+["patients-県内5698"]
+other = "県内5698"
+
+["patients-県内5699"]
+other = "県内5699"
+
+["patients-県内5700"]
+other = "県内5700"
+
+["patients-県内5706"]
+other = "県内5706"
+
+["patients-県内5837"]
+other = "県内5837"
+
+["patients-県内5893"]
+other = "県内5893"
+
+["patients-県内5894"]
+other = "県内5894"
+
+["patients-県内5899"]
+other = "県内5899"
+
+["patients-県内5945"]
+other = "県内5945"
+
+["patients-県内6034"]
+other = "県内6034"
+
+["patients-県内6041"]
+other = "県内6041"
+
+["patients-県内6045"]
+other = "県内6045"
+
+["patients-県内6046"]
+other = "県内6046"
+
+["patients-県内6101"]
+other = "県内6101"
+
+["patients-県内6233"]
+other = "県内6233"
+
+["patients-県内6237"]
+other = "県内6237"
+
+["patients-県内6282"]
+other = "県内6282"
+
+["patients-県内6300"]
+other = "県内6300"
+
+["patients-県内6321"]
+other = "県内6321"
+
+["patients-県内6322"]
+other = "県内6322"
+
+["patients-県内6323"]
+other = "県内6323"
+
+["patients-県内6374"]
+other = "県内6374"
+
+["patients-県内6387"]
+other = "県内6387"
+
+["patients-県内6388"]
+other = "県内6388"
+
+["patients-県内6441"]
+other = "県内6441"
+
+["patients-県内6495"]
+other = "県内6495"
+
+["patients-県内6498"]
+other = "県内6498"
+
+["patients-県内6499"]
+other = "県内6499"
+
+["patients-県内6553"]
+other = "県内6553"
+
+["patients-県内6720"]
+other = "県内6720"
+
+["patients-県内6723"]
+other = "県内6723"
+
+["patients-県内6729"]
+other = "県内6729"
+
+["patients-県内6730"]
+other = "県内6730"
+
+["patients-県内6791"]
+other = "県内6791"
+
+["patients-県内6863"]
+other = "県内6863"
+
+["patients-県内6864"]
+other = "県内6864"
+
+["patients-県内6869"]
+other = "県内6869"
+
+["patients-県内6872"]
+other = "県内6872"
+
+["patients-県内7070"]
+other = "県内7070"
+
+["patients-県内7073"]
+other = "県内7073"
+
+["patients-県内7074"]
+other = "県内7074"
+
+["patients-県内7078"]
+other = "県内7078"
+
+["patients-県内7081"]
+other = "県内7081"
+
+["patients-県内7138"]
+other = "県内7138"
+
+["patients-県内7164"]
+other = "県内7164"
+
+["patients-県内7165"]
+other = "県内7165"
+
+["patients-県内7251"]
+other = "県内7251"
+
+["patients-県内7273"]
+other = "県内7273"
+
+["patients-県内7279"]
+other = "県内7279"
+
+["patients-県内732"]
+other = "県内732"
+
+["patients-県内736"]
+other = "県内736"
+
+["patients-県内7522"]
+other = "県内7522"
+
+["patients-県内7601"]
+other = "県内7601"
+
+["patients-県内7632"]
+other = "県内7632"
+
+["patients-県内7843"]
+other = "県内7843"
+
+["patients-県内809"]
+other = "県内809"
+
+["patients-県内829家族"]
+other = "県内829家族"
+
+["patients-県内838"]
+other = "県内838"
+
+["patients-県内845"]
+other = "県内845"
+
+["patients-県内853"]
+other = "県内853"
+
+["patients-県内918"]
+other = "県内918"
+
+["patients-県内971"]
+other = "県内971"
+
+["patients-県内973"]
+other = "県内973"
+
+["patients-県内患者"]
+other = "県内患者"
+
+["patients-県内無症状1046"]
+other = "県内無症状1046"
+
+["patients-県内無症状1054"]
+other = "県内無症状1054"
+
+["patients-県内無症状111"]
+other = "県内無症状111"
+
+["patients-県内無症状1232"]
+other = "県内無症状1232"
+
+["patients-県内無症状1233"]
+other = "県内無症状1233"
+
+["patients-県内無症状1258"]
+other = "県内無症状1258"
+
+["patients-県内無症状1289"]
+other = "県内無症状1289"
+
+["patients-県内無症状1450"]
+other = "県内無症状1450"
+
+["patients-県内無症状1451"]
+other = "県内無症状1451"
+
+["patients-県内無症状368"]
+other = "県内無症状368"
+
+["patients-県内無症状369"]
+other = "県内無症状369"
+
+["patients-県内無症状579"]
+other = "県内無症状579"
+
+["patients-県内無症状584"]
+other = "県内無症状584"
+
+["patients-県内無症状585"]
+other = "県内無症状585"
+
+["patients-県内無症状586"]
+other = "県内無症状586"
+
+["patients-県内無症状593"]
+other = "県内無症状593"
+
+["patients-県内無症状606"]
+other = "県内無症状606"
+
+["patients-県内無症状684"]
+other = "県内無症状684"
+
+["patients-県内無症状816"]
+other = "県内無症状816"
+
+["patients-県内無症状947"]
+other = "県内無症状947"
+
+["patients-県内無症状949"]
+other = "県内無症状949"
+
+["patients-県内発生"]
+other = "県内発生"
+
+["patients-県外"]
+other = "outside the prefecture"
+
+["patients-県外患者"]
+other = "patient outside the prefecture"
+
+["patients-福祉事業所職員"]
+other = "welfare facility staff"
+
+["patients-福祉事業所関係"]
+other = "福祉事業所関係"
+
+["patients-福祉施設職員"]
+other = "welfare facility staff"
+
+["patients-職員"]
+other = "職員"
+
+["patients-職場"]
+other = "workplace"
+
+["patients-職業"]
+other = "Occupation"
+
+["patients-自営業"]
+other = "self-employed"
+
+["patients-自宅"]
+other = "home"
+
+["patients-自宅（介護施設）"]
+other = "home"
+
+["patients-船橋市内事業所関係"]
+other = "船橋市内事業所関係"
+
+["patients-薬剤師"]
+other = "pharmacist"
+
+["patients-行動歴"]
+other = "Activities"
+
+["patients-選手"]
+other = "athlete"
+
+["patients-高校生"]
+other = "高校生"
+
+[scroll-message]
+other = "Scroll to see off-screen contents."
+
+[search-button]
+other = "Search"
+
+[search-input]
+other = "Google Search"
+
+[share-button]
+other = "Share"
+
+[source]
+other = "View the source"
