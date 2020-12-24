@@ -6,7 +6,7 @@
     display: grid;
     gap: 2rem;
     grid-template-columns: repeat(
-        auto-fill,
+        auto-fit,
         minmax(clamp(calc(50% - 1rem), calc(384px - 3rem), 100%), 1fr)
     );
 
