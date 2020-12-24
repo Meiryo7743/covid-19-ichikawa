@@ -6,25 +6,25 @@
 :root {
     // @include global.color-scheme("light") {
     @include color-scheme("light") {
-        --bgcolor-body: #fff;
-        --bgcolor-card: #fff;
-        --bgcolor-header: #fff;
-        --bgcolor-nav-link-hover: #eee;
+        --bgcolor-body: var(--bw-f);
+        --bgcolor-card: var(--bw-f);
+        --bgcolor-header: var(--bw-f);
+        --bgcolor-nav-link-hover: var(--bw-e);
         --box-shadow: 0 1px 2px 0 rgba(51, 51, 51, 0.3),
             0 1px 4px 2px rgba(51, 51, 51, 0.15);
     }
 
     // @include global.color-scheme("dark") {
     @include color-scheme("dark") {
-        --bgcolor-body: #222;
-        --bgcolor-card: #333;
-        --bgcolor-header: #333;
-        --bgcolor-nav-link-hover: #444;
+        --bgcolor-body: var(--bw-2);
+        --bgcolor-card: var(--bw-3);
+        --bgcolor-header: var(--bw-3);
+        --bgcolor-nav-link-hover: var(--bw-4);
         --box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.6),
             0 1px 4px 2px rgba(0, 0, 0, 0.3);
     }
 
     --bgcolor-notice: var(--yellow);
     --block-size-data: 25rem;
-    --color-notice: #222;
+    --color-notice: var(--bw-2);
 }
