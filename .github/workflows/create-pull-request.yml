@@ -25,4 +25,4 @@ jobs:
           pr_allow_empty: false
           pr_body: "The website will not be updated unless you merge this pull request."
           pr_label: "auto-pr"
-          pr_title: "GitHub Actions: Update master"
+          pr_title: "Update master"
