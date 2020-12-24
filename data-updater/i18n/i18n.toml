@@ -390,9 +390,9 @@ ja = "812"
 en = "90s"
 ja = "90代"
 
-["patients-90代以上".other]
+["patients-90代超".other]
 en = ">90s"
-ja = "90代以上"
+ja = "90代超"
 
 [patients-948.other]
 en = "948"
