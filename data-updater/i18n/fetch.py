@@ -1,7 +1,6 @@
 import ruamel.yaml as yaml
 import toml
 import collections
-import sys
 
 
 def flatten_list(l: list):

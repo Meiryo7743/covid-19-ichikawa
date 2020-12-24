@@ -1,5 +1,4 @@
 import toml
-import sys
 
 with open('./data-updater/netlify/config.toml', 'r', encoding='utf-8', newline='\n') as f:
     load_config: dict = toml.load(f)
