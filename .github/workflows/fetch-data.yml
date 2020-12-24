@@ -30,6 +30,10 @@ jobs:
           pip install ruamel.yaml
           pip install toml
 
+      - name: Make a directory
+        run: |
+          mkdir -p data
+
       - name: Run scripts
         run: |
           python ./data-updater/patients/fetch.py && python ./data-updater/patients/get-details.py && python ./data-updater/patients/get-total.py;
