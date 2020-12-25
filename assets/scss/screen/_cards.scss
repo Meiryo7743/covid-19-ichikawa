@@ -7,8 +7,15 @@
     gap: 1.5rem;
     grid-template-columns: repeat(
         auto-fit,
-        minmax(clamp(calc(50% - 0.75rem), calc(384px - 2.25rem), 100%), 1fr)
-    );
+        minmax(
+            clamp(
+                calc(50% - 2.25rem),
+                calc(384px - 2.25rem),
+                calc(100% - 1.5rem)
+            ),
+            1fr
+        )
+    ); // .card-container inline-size: W, gap: g, the number of columns: n, .card inline-size: w = (W - g)/n
 
     &--home {
         display: block;
