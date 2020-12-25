@@ -1,5 +1,5 @@
-![Build and Deploy](https://github.com/Meiryo7743/covid-19-ichikawa/workflows/Build%20and%20Deploy/badge.svg)
-![Fetch Data of COVID-19 in Ichikawa](https://github.com/Meiryo7743/covid-19-ichikawa/workflows/Fetch%20Data/badge.svg)
+![Deploy](https://github.com/Meiryo7743/covid-19-ichikawa/workflows/Deploy/badge.svg)
+![Fetch Data](https://github.com/Meiryo7743/covid-19-ichikawa/workflows/Fetch%20Data/badge.svg)
 ![Netlify Status](https://api.netlify.com/api/v1/badges/b30d38da-34ef-424d-ac99-15754c78a693/deploy-status)
 
 - [日本語](#非公式市川市新型コロナウイルス感染症情報サイト)
@@ -9,18 +9,15 @@
 
 # 【非公式】市川市新型コロナウイルス感染症情報サイト
 
-![【非公式】市川市新型コロナウイルス感染症情報サイト](./static/img/ogp.ja.png)
+![【非公式】市川市新型コロナウイルス感染症情報サイト](./static/img/ja-ogp-20201225.png)
 
-## 概要
-
-**[【非公式】市川市新型コロナウイルス感染症情報サイト](https://stopcovid19-ichikawa.netlify.app/ja/)**（以下，当サイト）のレポジトリです。高速な静的サイトジェネレータ [Hugo](https://gohugo.io/) で作られており，軽量な設計となっています。
+「[**【非公式】市川市新型コロナウイルス感染症情報サイト**](https://stopcovid19-ichikawa.netlify.app/ja/)」のレポジトリです。市川市内における新型コロナウイルス感染症に関する情報をまとめています。
 
 - **URL**：[https://stopcovid19-ichikawa.netlify.app](https://stopcovid19-ichikawa.netlify.app/ja/)
+- **製作者**：[Meiryo7743](https://meiryo7743.net/ja/)（[@Meiryo7743](https://github.com/Meiryo7743)）
 - **ライセンス**：[MIT ライセンス](./LICENSE)
 
-## 開発者向けの情報
-
-開発・翻訳をお手伝いできる方は，[開発者向け情報](https://github.com/Meiryo7743/covid-19-ichikawa/wiki/%E9%96%8B%E7%99%BA%E8%80%85%E5%90%91%E3%81%91%E6%83%85%E5%A0%B1)をご覧ください。
+今のところ，製作者である Meiryo7743 がたった一人で開発及びメンテナンスを行っている状態です。開発・翻訳あるいは文章校正などの何かしらのお手伝いが可能な方は，ぜひ[開発者向け情報](https://github.com/Meiryo7743/covid-19-ichikawa/wiki/%E9%96%8B%E7%99%BA%E8%80%85%E5%90%91%E3%81%91%E6%83%85%E5%A0%B1)をご覧ください。
 
 ## その他
 
@@ -32,15 +29,18 @@
 
 # [UNOFFICIAL] Ichikawa COVID-19 Information Site
 
-![[UNOFFICIAL] Ichikawa COVID-19 Information Site](./static/img/ogp.en.png)
+![[UNOFFICIAL] Ichikawa COVID-19 Information Site](./static/img/en-ogp-20201225.png)
 
-## Overview
-
-This is the repository of “**[[UNOFFICIAL] Ichikawa COVID-19 Information Site](https://stopcovid19-ichikawa.netlify.app/en/)**”. The site is lightweight because it is built by [Hugo](https://gohugo.io/), a fast static site generator written in Go.
+This is the repository for “[**[UNOFFICIAL] Ichikawa COVID-19 Information Site**](https://stopcovid19-ichikawa.netlify.app/en/)”. The website provides information on COVID-19 in Ichikawa City, Chiba, Japan.
 
 - **URL**: [https://stopcovid19-ichikawa.netlify.app](https://stopcovid19-ichikawa.netlify.app/en/)
-- **License**: [MIT](./LICENSE)
+- **Author**: [Meiryo7743](https://meiryo7743.net/en/) ([@Meiryo7743](https://github.com/Meiryo7743))
+- **License**: [MIT License](./LICENSE)
 
-## For developers
+Currently, I am the only developer and maintainer for this repository.
 
-Would you like to help with this project? See [this page for developers](https://github.com/Meiryo7743/covid-19-ichikawa/wiki/%E9%96%8B%E7%99%BA%E8%80%85%E5%90%91%E3%81%91%E6%83%85%E5%A0%B1). At present, the information is available Japanese only; thus you have to read them through a translator. The English version will be released from now on.
+## Need your help to improve translations
+
+The city provides COVID-19 information in multiple languages by using an automatically translate service, but it is clear that the translation quality is not well, even for Japanese users. Can those who does not speak Japanese as the first language make out such information? -- Probably, no one answers "Yes".
+
+So I have begun to translate. The quality is definitely better although I am not good at English. However, more improvement will be needed. Please feel free to join and make your contributions! Of course, it is also welcome to add another language translation.
