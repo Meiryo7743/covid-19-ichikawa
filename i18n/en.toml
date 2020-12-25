@@ -277,6 +277,9 @@ other = "8019"
 [patients-8020]
 other = "8020"
 
+[patients-8038]
+other = "8038"
+
 ["patients-80代"]
 other = "80s"
 
@@ -288,6 +291,12 @@ other = "811"
 
 [patients-812]
 other = "812"
+
+[patients-8163]
+other = "8163"
+
+[patients-8164]
+other = "8164"
 
 ["patients-90代"]
 other = "90s"
@@ -535,6 +544,9 @@ other = "unemployed"
 
 ["patients-特別養護老人ホーム(松戸市)関係"]
 other = "特別養護老人ホーム(松戸市)関係"
+
+["patients-理学療法士"]
+other = "理学療法士"
 
 ["patients-生徒"]
 other = "student"
@@ -1112,6 +1124,9 @@ other = "県内7165"
 ["patients-県内7251"]
 other = "県内7251"
 
+["patients-県内7270"]
+other = "県内7270"
+
 ["patients-県内7273"]
 other = "県内7273"
 
@@ -1124,6 +1139,9 @@ other = "県内732"
 ["patients-県内736"]
 other = "県内736"
 
+["patients-県内7433"]
+other = "県内7433"
+
 ["patients-県内7522"]
 other = "県内7522"
 
@@ -1132,6 +1150,15 @@ other = "県内7601"
 
 ["patients-県内7632"]
 other = "県内7632"
+
+["patients-県内7636"]
+other = "県内7636"
+
+["patients-県内7703"]
+other = "県内7703"
+
+["patients-県内7771"]
+other = "県内7771"
 
 ["patients-県内7843"]
 other = "県内7843"
