@@ -15,7 +15,7 @@
             ),
             1fr
         )
-    ); // .card-container inline-size: W, gap: g, the number of columns: n, .card inline-size: w = (W - g)/n
+    ); // W: .card-container inline-size; g: gap, n: the number of columns; .card inline-size, w = (W - g)/n
 
     &--home {
         display: block;
