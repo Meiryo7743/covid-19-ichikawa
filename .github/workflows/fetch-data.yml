@@ -4,6 +4,8 @@ on:
   schedule:
     - cron: "30 10 * * *" # 19:30 JST
 
+  workflow_dispatch:
+
 jobs:
   fetch:
     runs-on: ubuntu-latest

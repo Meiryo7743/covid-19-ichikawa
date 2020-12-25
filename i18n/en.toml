@@ -292,7 +292,7 @@ other = "812"
 ["patients-90代"]
 other = "90s"
 
-["patients-90代以上"]
+["patients-90代超"]
 other = ">90s"
 
 [patients-948]

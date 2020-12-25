@@ -292,8 +292,8 @@ other = "812"
 ["patients-90代"]
 other = "90代"
 
-["patients-90代以上"]
-other = "90代以上"
+["patients-90代超"]
+other = "90代超"
 
 [patients-948]
 other = "948"
