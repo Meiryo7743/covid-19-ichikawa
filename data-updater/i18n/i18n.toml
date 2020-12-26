@@ -450,11 +450,11 @@ en = "workplace"
 ja = "アルバイト先"
 
 ["patients-クルーズ船".other]
-en = "クルーズ船"
+en = "cruise ship"
 ja = "クルーズ船"
 
 ["patients-ジム関係".other]
-en = "ジム関係"
+en = "gym"
 ja = "ジム関係"
 
 ["patients-不明".other]
@@ -462,7 +462,7 @@ en = "unknown"
 ja = "不明"
 
 ["patients-乳児".other]
-en = "乳児"
+en = "infant"
 ja = "乳児"
 
 ["patients-介護士".other]
@@ -482,7 +482,7 @@ en = "介護老人保健施設市川ゆうゆう"
 ja = "介護老人保健施設市川ゆうゆう"
 
 ["patients-介護職員".other]
-en = "介護職員"
+en = "care worker"
 ja = "介護職員"
 
 ["patients-会社員".other]
@@ -498,11 +498,11 @@ en = "business owner"
 ja = "会社経営"
 
 ["patients-作業療法士".other]
-en = "作業療法士"
+en = "occupational therapist"
 ja = "作業療法士"
 
 ["patients-保育園職員".other]
-en = "保育園職員"
+en = "childcare center worker"
 ja = "保育園職員"
 
 ["patients-保育士".other]
@@ -526,7 +526,7 @@ en = "入所者"
 ja = "入所者"
 
 ["patients-入院患者".other]
-en = "入院患者"
+en = "hospitalized patient"
 ja = "入院患者"
 
 ["patients-公務員".other]
@@ -546,11 +546,11 @@ en = "midwife"
 ja = "助産師"
 
 ["patients-医師".other]
-en = "医師"
+en = "doctor"
 ja = "医師"
 
 ["patients-医療事務".other]
-en = "医療事務"
+en = "medical office worker"
 ja = "医療事務"
 
 ["patients-医療従事者".other]
@@ -618,11 +618,11 @@ en = "infant"
 ja = "幼児"
 
 ["patients-幼稚園教諭".other]
-en = "幼稚園教諭"
+en = "kindergarten teacher"
 ja = "幼稚園教諭"
 
 ["patients-従業員".other]
-en = "従業員"
+en = "employee"
 ja = "従業員"
 
 ["patients-性別".other]
@@ -642,11 +642,11 @@ en = "我孫子市障害者福祉施設関係"
 ja = "我孫子市障害者福祉施設関係"
 
 ["patients-接客業".other]
-en = "接客業"
+en = "service trade"
 ja = "接客業"
 
 ["patients-接触確認アプリ(COCOA)で通知あり".other]
-en = "接触確認アプリ(COCOA)で通知あり"
+en = "notified on COCOA"
 ja = "接触確認アプリ(COCOA)で通知あり"
 
 ["patients-推定感染経路".other]
@@ -698,7 +698,7 @@ en = "浦安医療機関関係"
 ja = "浦安医療機関関係"
 
 ["patients-海外渡航者".other]
-en = "海外渡航者"
+en = "overseas returnee"
 ja = "海外渡航者"
 
 ["patients-無症状1232".other]
@@ -738,7 +738,7 @@ en = "特別養護老人ホーム(松戸市)関係"
 ja = "特別養護老人ホーム(松戸市)関係"
 
 ["patients-理学療法士".other]
-en = "理学療法士"
+en = "physical therapist"
 ja = "理学療法士"
 
 ["patients-生徒".other]
@@ -750,7 +750,7 @@ en = "male"
 ja = "男性"
 
 ["patients-病院職員".other]
-en = "病院職員"
+en = "hospital staff"
 ja = "病院職員"
 
 ["patients-発症日".other]
@@ -758,7 +758,7 @@ en = "Onset Date"
 ja = "発症日"
 
 ["patients-看護助手".other]
-en = "看護助手"
+en = "nursing assistant"
 ja = "看護助手"
 
 ["patients-看護師".other]
@@ -1768,10 +1768,6 @@ ja = "行動歴"
 ["patients-選手".other]
 en = "athlete"
 ja = "選手"
-
-["patients-高校生".other]
-en = "高校生"
-ja = "高校生"
 
 [scroll-message.other]
 en = "Scroll to see off-screen contents."
