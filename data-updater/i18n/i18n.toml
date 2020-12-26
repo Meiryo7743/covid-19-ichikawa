@@ -398,6 +398,14 @@ ja = "8163"
 en = "8164"
 ja = "8164"
 
+[patients-8340.other]
+en = "8340"
+ja = "8340"
+
+[patients-8341.other]
+en = "8341"
+ja = "8341"
+
 ["patients-90代".other]
 en = "90s"
 ja = "90代"
@@ -1521,9 +1529,17 @@ ja = "県内732"
 en = "県内736"
 ja = "県内736"
 
+["patients-県内7404".other]
+en = "県内7404"
+ja = "県内7404"
+
 ["patients-県内7433".other]
 en = "県内7433"
 ja = "県内7433"
+
+["patients-県内7469".other]
+en = "県内7469"
+ja = "県内7469"
 
 ["patients-県内7522".other]
 en = "県内7522"
@@ -1545,6 +1561,10 @@ ja = "県内7636"
 en = "県内7703"
 ja = "県内7703"
 
+["patients-県内7770".other]
+en = "県内7770"
+ja = "県内7770"
+
 ["patients-県内7771".other]
 en = "県内7771"
 ja = "県内7771"
@@ -1553,6 +1573,10 @@ ja = "県内7771"
 en = "県内7843"
 ja = "県内7843"
 
+["patients-県内7848".other]
+en = "県内7848"
+ja = "県内7848"
+
 ["patients-県内809".other]
 en = "県内809"
 ja = "県内809"
@@ -1560,6 +1584,14 @@ ja = "県内809"
 ["patients-県内829家族".other]
 en = "県内829家族"
 ja = "県内829家族"
+
+["patients-県内8345".other]
+en = "県内8345"
+ja = "県内8345"
+
+["patients-県内8346".other]
+en = "県内8346"
+ja = "県内8346"
 
 ["patients-県内838".other]
 en = "県内838"
