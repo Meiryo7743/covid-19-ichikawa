@@ -298,6 +298,12 @@ other = "8163"
 [patients-8164]
 other = "8164"
 
+[patients-8340]
+other = "8340"
+
+[patients-8341]
+other = "8341"
+
 ["patients-90代"]
 other = "90代"
 
@@ -1138,8 +1144,14 @@ other = "県内732"
 ["patients-県内736"]
 other = "県内736"
 
+["patients-県内7404"]
+other = "県内7404"
+
 ["patients-県内7433"]
 other = "県内7433"
+
+["patients-県内7469"]
+other = "県内7469"
 
 ["patients-県内7522"]
 other = "県内7522"
@@ -1156,17 +1168,29 @@ other = "県内7636"
 ["patients-県内7703"]
 other = "県内7703"
 
+["patients-県内7770"]
+other = "県内7770"
+
 ["patients-県内7771"]
 other = "県内7771"
 
 ["patients-県内7843"]
 other = "県内7843"
 
+["patients-県内7848"]
+other = "県内7848"
+
 ["patients-県内809"]
 other = "県内809"
 
 ["patients-県内829家族"]
 other = "県内829家族"
+
+["patients-県内8345"]
+other = "県内8345"
+
+["patients-県内8346"]
+other = "県内8346"
 
 ["patients-県内838"]
 other = "県内838"
