@@ -90,7 +90,7 @@
 .search {
     // @include global.set-margin("block", 1rem);
     @include set-margin("block", 1rem);
-    border: solid 1px var(--color-body);
+    border: solid var(--border-width) var(--color-body);
     display: flex;
 
     & > * {

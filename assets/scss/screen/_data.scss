@@ -23,14 +23,14 @@
     &__child {
         // @include global.element-type-plane-list;
         @include element-type-plane-list;
-        border-block-start: solid 1px var(--color-body);
-        border-inline-start: solid 1px var(--color-body);
+        border-block-start: solid var(--border-width) var(--color-body);
+        border-inline-start: solid var(--border-width) var(--color-body);
         margin-inline-start: 1.5em;
         padding-block-start: 0.25rem;
     }
 
     &__item {
-        border: solid 1px var(--color-body);
+        border: solid var(--border-width) var(--color-body);
 
         &--child {
             border-inline-end: none;
@@ -58,8 +58,8 @@
     // @include global.element-type-scroll-x;
     @include element-type-scroll-x;
     block-size: var(--block-size-data);
-    border-block-end: solid 1px var(--color-body);
-    border-block-start: solid 1px var(--color-body);
+    border-block-end: solid var(--border-width) var(--color-body);
+    border-block-start: solid var(--border-width) var(--color-body);
     display: flex;
     line-height: 1.25;
     text-align: center;
@@ -68,20 +68,17 @@
         border: none;
         inline-size: 100%;
 
-        thead {
-            border-block-end: solid 1px var(--color-body);
+        th {
+            background: var(--bgcolor-card);
+            box-shadow: 0 1px 0 0 var(--color-body);
+            position: sticky;
+            top: 0;
         }
 
         tr {
             &:not(:last-child) {
-                border-block-end: solid 1px var(--color-body);
+                border-block-end: solid var(--border-width) var(--color-body);
             }
-        }
-
-        th {
-            background: var(--bgcolor-card);
-            position: sticky;
-            top: 0;
         }
 
         ul {
