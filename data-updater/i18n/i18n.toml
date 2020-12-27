@@ -362,6 +362,10 @@ ja = "7176"
 en = "7177"
 ja = "7177"
 
+[patients-8016.other]
+en = "8016"
+ja = "8016"
+
 [patients-8019.other]
 en = "8019"
 ja = "8019"
@@ -405,6 +409,14 @@ ja = "8340"
 [patients-8341.other]
 en = "8341"
 ja = "8341"
+
+[patients-8488.other]
+en = "8488"
+ja = "8488"
+
+[patients-8489.other]
+en = "8489"
+ja = "8489"
 
 ["patients-90代".other]
 en = "90s"
@@ -708,6 +720,10 @@ ja = "無症状1232"
 ["patients-無症状1579".other]
 en = "無症状1579"
 ja = "無症状1579"
+
+["patients-無症状1674".other]
+en = "無症状1674"
+ja = "無症状1674"
 
 ["patients-無症状23".other]
 en = "無症状23"
@@ -1600,6 +1616,10 @@ ja = "県内838"
 ["patients-県内845".other]
 en = "県内845"
 ja = "県内845"
+
+["patients-県内8450".other]
+en = "県内8450"
+ja = "県内8450"
 
 ["patients-県内853".other]
 en = "県内853"
