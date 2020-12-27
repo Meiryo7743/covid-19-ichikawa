@@ -271,6 +271,9 @@ other = "7176"
 [patients-7177]
 other = "7177"
 
+[patients-8016]
+other = "8016"
+
 [patients-8019]
 other = "8019"
 
@@ -304,6 +307,12 @@ other = "8340"
 [patients-8341]
 other = "8341"
 
+[patients-8488]
+other = "8488"
+
+[patients-8489]
+other = "8489"
+
 ["patients-90代"]
 other = "90s"
 
@@ -336,16 +345,16 @@ other = "part-time job"
 other = "workplace"
 
 ["patients-クルーズ船"]
-other = "クルーズ船"
+other = "cruise ship"
 
 ["patients-ジム関係"]
-other = "ジム関係"
+other = "gym"
 
 ["patients-不明"]
 other = "unknown"
 
 ["patients-乳児"]
-other = "乳児"
+other = "infant"
 
 ["patients-介護士"]
 other = "caregiver"
@@ -360,7 +369,7 @@ other = "certified care worker"
 other = "介護老人保健施設市川ゆうゆう"
 
 ["patients-介護職員"]
-other = "介護職員"
+other = "care worker"
 
 ["patients-会社員"]
 other = "employee"
@@ -372,10 +381,10 @@ other = "executive"
 other = "business owner"
 
 ["patients-作業療法士"]
-other = "作業療法士"
+other = "occupational therapist"
 
 ["patients-保育園職員"]
-other = "保育園職員"
+other = "childcare center worker"
 
 ["patients-保育士"]
 other = "childcare worker"
@@ -393,7 +402,7 @@ other = "pupil"
 other = "入所者"
 
 ["patients-入院患者"]
-other = "入院患者"
+other = "hospitalized patient"
 
 ["patients-公務員"]
 other = "public servant"
@@ -408,10 +417,10 @@ other = "利用者"
 other = "midwife"
 
 ["patients-医師"]
-other = "医師"
+other = "doctor"
 
 ["patients-医療事務"]
-other = "医療事務"
+other = "medical office worker"
 
 ["patients-医療従事者"]
 other = "health professional"
@@ -462,10 +471,10 @@ other = "Age"
 other = "infant"
 
 ["patients-幼稚園教諭"]
-other = "幼稚園教諭"
+other = "kindergarten teacher"
 
 ["patients-従業員"]
-other = "従業員"
+other = "employee"
 
 ["patients-性別"]
 other = "Sex"
@@ -480,10 +489,10 @@ other = "患者5378"
 other = "我孫子市障害者福祉施設関係"
 
 ["patients-接客業"]
-other = "接客業"
+other = "service trade"
 
 ["patients-接触確認アプリ(COCOA)で通知あり"]
-other = "接触確認アプリ(COCOA)で通知あり"
+other = "notified on COCOA"
 
 ["patients-推定感染経路"]
 other = "Presumed Infection Sources"
@@ -522,13 +531,16 @@ other = "dental hygienist"
 other = "浦安医療機関関係"
 
 ["patients-海外渡航者"]
-other = "海外渡航者"
+other = "overseas returnee"
 
 ["patients-無症状1232"]
 other = "無症状1232"
 
 ["patients-無症状1579"]
 other = "無症状1579"
+
+["patients-無症状1674"]
+other = "無症状1674"
 
 ["patients-無症状23"]
 other = "無症状23"
@@ -552,7 +564,7 @@ other = "unemployed"
 other = "特別養護老人ホーム(松戸市)関係"
 
 ["patients-理学療法士"]
-other = "理学療法士"
+other = "physical therapist"
 
 ["patients-生徒"]
 other = "student"
@@ -561,13 +573,13 @@ other = "student"
 other = "male"
 
 ["patients-病院職員"]
-other = "病院職員"
+other = "hospital staff"
 
 ["patients-発症日"]
 other = "Onset Date"
 
 ["patients-看護助手"]
-other = "看護助手"
+other = "nursing assistant"
 
 ["patients-看護師"]
 other = "nurse"
@@ -1199,6 +1211,9 @@ other = "県内838"
 ["patients-県内845"]
 other = "県内845"
 
+["patients-県内8450"]
+other = "県内8450"
+
 ["patients-県内853"]
 other = "県内853"
 
@@ -1324,9 +1339,6 @@ other = "Activities"
 
 ["patients-選手"]
 other = "athlete"
-
-["patients-高校生"]
-other = "高校生"
 
 [scroll-message]
 other = "Scroll to see off-screen contents."

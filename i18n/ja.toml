@@ -271,6 +271,9 @@ other = "7176"
 [patients-7177]
 other = "7177"
 
+[patients-8016]
+other = "8016"
+
 [patients-8019]
 other = "8019"
 
@@ -303,6 +306,12 @@ other = "8340"
 
 [patients-8341]
 other = "8341"
+
+[patients-8488]
+other = "8488"
+
+[patients-8489]
+other = "8489"
 
 ["patients-90代"]
 other = "90代"
@@ -528,6 +537,9 @@ other = "無症状1232"
 
 ["patients-無症状1579"]
 other = "無症状1579"
+
+["patients-無症状1674"]
+other = "無症状1674"
 
 ["patients-無症状23"]
 other = "無症状23"
@@ -1198,6 +1210,9 @@ other = "県内838"
 ["patients-県内845"]
 other = "県内845"
 
+["patients-県内8450"]
+other = "県内8450"
+
 ["patients-県内853"]
 other = "県内853"
 
@@ -1323,9 +1338,6 @@ other = "行動歴"
 
 ["patients-選手"]
 other = "選手"
-
-["patients-高校生"]
-other = "高校生"
 
 [scroll-message]
 other = "スクロールすると，見切れている部分をご覧になれます。"
