@@ -2,7 +2,7 @@ name: Fetch Data
 
 on:
   schedule:
-    - cron: "30 10 * * *" # 19:30 JST
+    - cron: "0 10-13 * * *" # 19:00-22:00 JST
 
   workflow_dispatch:
 
