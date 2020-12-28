@@ -68,6 +68,10 @@
         border: none;
         inline-size: 100%;
 
+        thead {
+            border-block-end: none;
+        }
+
         th {
             background: var(--bgcolor-card);
             box-shadow: 0 1px 0 0 var(--color-body);

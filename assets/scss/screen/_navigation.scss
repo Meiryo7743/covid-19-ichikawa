@@ -25,6 +25,7 @@
         block-size: 100%;
         display: flex;
         padding: 1rem;
+        text-decoration: none !important;
 
         &:hover {
             background: var(--bgcolor-nav-link-hover);

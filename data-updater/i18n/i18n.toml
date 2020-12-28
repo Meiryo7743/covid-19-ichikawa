@@ -418,6 +418,14 @@ ja = "8488"
 en = "8489"
 ja = "8489"
 
+[patients-8594.other]
+en = "8594"
+ja = "8594"
+
+[patients-8595.other]
+en = "8595"
+ja = "8595"
+
 ["patients-90代".other]
 en = "90s"
 ja = "90代"
@@ -1589,13 +1597,25 @@ ja = "県内7771"
 en = "県内7843"
 ja = "県内7843"
 
+["patients-県内7845".other]
+en = "県内7845"
+ja = "県内7845"
+
 ["patients-県内7848".other]
 en = "県内7848"
 ja = "県内7848"
 
+["patients-県内8016".other]
+en = "県内8016"
+ja = "県内8016"
+
 ["patients-県内809".other]
 en = "県内809"
 ja = "県内809"
+
+["patients-県内8166".other]
+en = "県内8166"
+ja = "県内8166"
 
 ["patients-県内829家族".other]
 en = "県内829家族"
