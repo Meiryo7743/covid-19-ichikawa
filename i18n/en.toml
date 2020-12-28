@@ -313,6 +313,12 @@ other = "8488"
 [patients-8489]
 other = "8489"
 
+[patients-8594]
+other = "8594"
+
+[patients-8595]
+other = "8595"
+
 ["patients-90代"]
 other = "90s"
 
@@ -1190,11 +1196,20 @@ other = "県内7771"
 ["patients-県内7843"]
 other = "県内7843"
 
+["patients-県内7845"]
+other = "県内7845"
+
 ["patients-県内7848"]
 other = "県内7848"
 
+["patients-県内8016"]
+other = "県内8016"
+
 ["patients-県内809"]
 other = "県内809"
+
+["patients-県内8166"]
+other = "県内8166"
 
 ["patients-県内829家族"]
 other = "県内829家族"
