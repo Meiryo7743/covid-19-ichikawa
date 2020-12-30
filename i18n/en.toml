@@ -440,6 +440,9 @@ other = "medical facility"
 ["patients-医療関係"]
 other = "medical facility"
 
+["patients-千葉市飲食店関係"]
+other = "千葉市飲食店関係"
+
 ["patients-団体職員"]
 other = "団体職員"
 
@@ -1229,8 +1232,14 @@ other = "県内7771"
 ["patients-県内7843"]
 other = "県内7843"
 
+["patients-県内7844"]
+other = "県内7844"
+
 ["patients-県内7845"]
 other = "県内7845"
+
+["patients-県内7847"]
+other = "県内7847"
 
 ["patients-県内7848"]
 other = "県内7848"
@@ -1241,8 +1250,14 @@ other = "県内8016"
 ["patients-県内809"]
 other = "県内809"
 
+["patients-県内8162"]
+other = "県内8162"
+
 ["patients-県内8166"]
 other = "県内8166"
+
+["patients-県内8172"]
+other = "県内8172"
 
 ["patients-県内829家族"]
 other = "県内829家族"
@@ -1252,6 +1267,9 @@ other = "県内8345"
 
 ["patients-県内8346"]
 other = "県内8346"
+
+["patients-県内8360"]
+other = "県内8360"
 
 ["patients-県内838"]
 other = "県内838"
@@ -1264,6 +1282,12 @@ other = "県内8450"
 
 ["patients-県内853"]
 other = "県内853"
+
+["patients-県内8778"]
+other = "県内8778"
+
+["patients-県内8779"]
+other = "県内8779"
 
 ["patients-県内918"]
 other = "県内918"

@@ -589,6 +589,10 @@ ja = "医療機関"
 en = "medical facility"
 ja = "医療関係"
 
+["patients-千葉市飲食店関係".other]
+en = "千葉市飲食店関係"
+ja = "千葉市飲食店関係"
+
 ["patients-団体職員".other]
 en = "団体職員"
 ja = "団体職員"
@@ -1641,9 +1645,17 @@ ja = "県内7771"
 en = "県内7843"
 ja = "県内7843"
 
+["patients-県内7844".other]
+en = "県内7844"
+ja = "県内7844"
+
 ["patients-県内7845".other]
 en = "県内7845"
 ja = "県内7845"
+
+["patients-県内7847".other]
+en = "県内7847"
+ja = "県内7847"
 
 ["patients-県内7848".other]
 en = "県内7848"
@@ -1657,9 +1669,17 @@ ja = "県内8016"
 en = "県内809"
 ja = "県内809"
 
+["patients-県内8162".other]
+en = "県内8162"
+ja = "県内8162"
+
 ["patients-県内8166".other]
 en = "県内8166"
 ja = "県内8166"
+
+["patients-県内8172".other]
+en = "県内8172"
+ja = "県内8172"
 
 ["patients-県内829家族".other]
 en = "県内829家族"
@@ -1672,6 +1692,10 @@ ja = "県内8345"
 ["patients-県内8346".other]
 en = "県内8346"
 ja = "県内8346"
+
+["patients-県内8360".other]
+en = "県内8360"
+ja = "県内8360"
 
 ["patients-県内838".other]
 en = "県内838"
@@ -1688,6 +1712,14 @@ ja = "県内8450"
 ["patients-県内853".other]
 en = "県内853"
 ja = "県内853"
+
+["patients-県内8778".other]
+en = "県内8778"
+ja = "県内8778"
+
+["patients-県内8779".other]
+en = "県内8779"
+ja = "県内8779"
 
 ["patients-県内918".other]
 en = "県内918"
