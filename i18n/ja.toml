@@ -319,6 +319,9 @@ other = "8594"
 [patients-8595]
 other = "8595"
 
+[patients-8782]
+other = "8782"
+
 ["patients-90代"]
 other = "90代"
 
@@ -490,6 +493,30 @@ other = "患者5329"
 ["patients-患者5378"]
 other = "患者5378"
 
+["patients-患者7081"]
+other = "患者7081"
+
+["patients-患者7844"]
+other = "患者7844"
+
+["patients-患者7847"]
+other = "患者7847"
+
+["patients-患者8162"]
+other = "患者8162"
+
+["patients-患者8172"]
+other = "患者8172"
+
+["patients-患者8360"]
+other = "患者8360"
+
+["patients-患者8778"]
+other = "患者8778"
+
+["patients-患者8779"]
+other = "患者8779"
+
 ["patients-我孫子市障害者福祉施設関係"]
 other = "我孫子市障害者福祉施設関係"
 
@@ -541,11 +568,17 @@ other = "海外渡航者"
 ["patients-無症状1232"]
 other = "無症状1232"
 
+["patients-無症状1495"]
+other = "無症状1495"
+
 ["patients-無症状1579"]
 other = "無症状1579"
 
 ["patients-無症状1674"]
 other = "無症状1674"
+
+["patients-無症状1743"]
+other = "無症状1743"
 
 ["patients-無症状23"]
 other = "無症状23"
