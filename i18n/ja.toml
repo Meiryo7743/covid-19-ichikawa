@@ -1264,11 +1264,20 @@ other = "県内8016"
 ["patients-県内809"]
 other = "県内809"
 
+["patients-県内8159"]
+other = "県内8159"
+
 ["patients-県内8162"]
 other = "県内8162"
 
 ["patients-県内8166"]
 other = "県内8166"
+
+["patients-県内8169"]
+other = "県内8169"
+
+["patients-県内8170"]
+other = "県内8170"
 
 ["patients-県内8172"]
 other = "県内8172"
@@ -1281,6 +1290,9 @@ other = "県内8345"
 
 ["patients-県内8346"]
 other = "県内8346"
+
+["patients-県内8348"]
+other = "県内8348"
 
 ["patients-県内8360"]
 other = "県内8360"
@@ -1302,6 +1314,9 @@ other = "県内8778"
 
 ["patients-県内8779"]
 other = "県内8779"
+
+["patients-県内8918"]
+other = "県内8918"
 
 ["patients-県内918"]
 other = "県内918"
