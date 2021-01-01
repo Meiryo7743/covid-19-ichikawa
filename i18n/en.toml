@@ -497,6 +497,9 @@ other = "患者5329"
 ["patients-患者5378"]
 other = "患者5378"
 
+["patients-患者6669"]
+other = "患者6669"
+
 ["patients-患者7081"]
 other = "患者7081"
 
@@ -506,11 +509,17 @@ other = "患者7844"
 ["patients-患者7847"]
 other = "患者7847"
 
+["patients-患者8035"]
+other = "患者8035"
+
 ["patients-患者8159"]
 other = "患者8159"
 
 ["patients-患者8162"]
 other = "患者8162"
+
+["patients-患者8168"]
+other = "患者8168"
 
 ["patients-患者8169"]
 other = "患者8169"
@@ -527,14 +536,29 @@ other = "患者8348"
 ["patients-患者8360"]
 other = "患者8360"
 
+["patients-患者8361"]
+other = "患者8361"
+
 ["patients-患者8778"]
 other = "患者8778"
 
 ["patients-患者8779"]
 other = "患者8779"
 
+["patients-患者8905"]
+other = "患者8905"
+
+["patients-患者8915"]
+other = "患者8915"
+
 ["patients-患者8918"]
 other = "患者8918"
+
+["patients-患者9125"]
+other = "患者9125"
+
+["patients-患者9126"]
+other = "患者9126"
 
 ["patients-我孫子市障害者福祉施設関係"]
 other = "我孫子市障害者福祉施設関係"
@@ -598,6 +622,12 @@ other = "無症状1674"
 
 ["patients-無症状1743"]
 other = "無症状1743"
+
+["patients-無症状1845"]
+other = "無症状1845"
+
+["patients-無症状1846"]
+other = "無症状1846"
 
 ["patients-無症状23"]
 other = "無症状23"
