@@ -328,6 +328,12 @@ other = "90s"
 ["patients-90代超"]
 other = ">90s"
 
+[patients-9257]
+other = "9257"
+
+[patients-9258]
+other = "9258"
+
 [patients-948]
 other = "948"
 
@@ -527,6 +533,9 @@ other = "患者8169"
 ["patients-患者8170"]
 other = "患者8170"
 
+["patients-患者8171"]
+other = "患者8171"
+
 ["patients-患者8172"]
 other = "患者8172"
 
@@ -559,6 +568,18 @@ other = "患者9125"
 
 ["patients-患者9126"]
 other = "患者9126"
+
+["patients-患者9244"]
+other = "患者9244"
+
+["patients-患者9245"]
+other = "患者9245"
+
+["patients-患者9259"]
+other = "患者9259"
+
+["patients-患者9260"]
+other = "患者9260"
 
 ["patients-我孫子市障害者福祉施設関係"]
 other = "我孫子市障害者福祉施設関係"

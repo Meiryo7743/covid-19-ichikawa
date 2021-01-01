@@ -438,6 +438,14 @@ ja = "90代"
 en = ">90s"
 ja = "90代超"
 
+[patients-9257.other]
+en = "9257"
+ja = "9257"
+
+[patients-9258.other]
+en = "9258"
+ja = "9258"
+
 [patients-948.other]
 en = "948"
 ja = "948"
@@ -705,6 +713,10 @@ ja = "患者8169"
 en = "患者8170"
 ja = "患者8170"
 
+["patients-患者8171".other]
+en = "患者8171"
+ja = "患者8171"
+
 ["patients-患者8172".other]
 en = "患者8172"
 ja = "患者8172"
@@ -748,6 +760,22 @@ ja = "患者9125"
 ["patients-患者9126".other]
 en = "患者9126"
 ja = "患者9126"
+
+["patients-患者9244".other]
+en = "患者9244"
+ja = "患者9244"
+
+["patients-患者9245".other]
+en = "患者9245"
+ja = "患者9245"
+
+["patients-患者9259".other]
+en = "患者9259"
+ja = "患者9259"
+
+["patients-患者9260".other]
+en = "患者9260"
+ja = "患者9260"
 
 ["patients-我孫子市障害者福祉施設関係".other]
 en = "我孫子市障害者福祉施設関係"
