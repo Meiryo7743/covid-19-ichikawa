@@ -38,10 +38,10 @@ def format_date(value: str, replace_format: dict):
         else:
             result = datetime.datetime.strptime(
                 result,
-                '%Y-%m-%d'
+                '%Y-%m-%D'
             )
 
-        return result.strftime('%Y-%m-%d')
+        return result.strftime('%Y-%m-%D')
 
 
 def format_list(value: str, replace_format: dict):
