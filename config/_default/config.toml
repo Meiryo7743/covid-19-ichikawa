@@ -18,6 +18,7 @@ title = "[UNOFFICIAL] Ichikawa COVID-19 Information Site"
 weight = 20
 
 [languages.en.params]
+dateFormat = "Jan 2"
 description = "This site provides the latest information on COVID-19 in Ichikawa. Note that it is unofficial website developed by individual."
 ogp = "/img/en-ogp-2021-01-04.png"
 
@@ -32,6 +33,7 @@ title = "【非公式】市川市新型コロナウイルス感染症情報サ�
 weight = 10
 
 [languages.ja.params]
+dateFormat = "1月2日"
 description = "当サイトは，市川市内における新型コロナウイルス感染症（COVID-19）及びそれに関連する情報を提供いたします。当サイトは個人が制作した非公式サイトです。"
 ogp = "/img/ja-ogp-2021-01-04.png"
 

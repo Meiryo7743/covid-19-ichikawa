@@ -97,6 +97,10 @@ replace = ""
 find = "^調査中|None$"
 replace = ""
 
+[[replace-format.value."職業"]]
+find = "&nbsnbsp;"
+replace = ""
+
 [[replace-format.value."推定感染経路"]]
 find = "\\s{2}接触"
 replace = "接触"

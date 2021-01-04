@@ -17,16 +17,6 @@
                     {{- i18n "patients-県内" -}}
                 </th>
 
-                <th class="sort" data-sort="検査確定日">
-                    {{- i18n "patients-検査確定日" -}}
-                </th>
-
-                {{- if ne ($.Get "src") "details-of-patients-without-symptoms" -}}
-                    <th class="sort" data-sort="発症日">
-                            {{- i18n "patients-発症日" -}}
-                    </th>
-                {{- end -}}
-
                 <th>
                     {{- i18n "patients-年代" -}}
                 </th>
@@ -37,6 +27,16 @@
 
                 <th>
                     {{- i18n "patients-職業" -}}
+                </th>
+
+                {{- if ne ($.Get "src") "details-of-patients-without-symptoms" -}}
+                    <th class="sort" data-sort="発症日">
+                            {{- i18n "patients-発症日" -}}
+                    </th>
+                {{- end -}}
+
+                <th class="sort" data-sort="検査確定日">
+                    {{- i18n "patients-検査確定日" -}}
                 </th>
 
                 <th>
@@ -50,7 +50,6 @@
         </thead>
 
         <tbody class="list">
-            {{/* 表データの出力 */}}
             {{- range first $dataLength $src -}}
                 <tr>
                     <td class="市内">
@@ -64,28 +63,6 @@
                             {{- . -}}
                         {{- end -}}
                     </td>
-
-                    <td class="検査確定日">
-                        {{- with .検査確定日 -}}
-                            {{- if eq . "不明" -}}
-                                {{- i18n "patients-不明" -}}
-                            {{- else -}}
-                                {{- dateFormat "2006-01-02" . -}}
-                            {{- end -}}
-                        {{- end -}}
-                    </td>
-
-                    {{- if ne ($.Get "src") "details-of-patients-without-symptoms" -}}
-                        <td class="発症日">
-                            {{- with .発症日 -}}
-                                {{- if eq . "不明" -}}
-                                    {{- i18n "patients-不明" -}}
-                                {{- else -}}
-                                    {{- dateFormat "2006-01-02" . -}}
-                                {{- end -}}
-                            {{- end -}}
-                        </td>
-                    {{- end -}}
 
                     <td>
                         {{- with .年代 -}}
@@ -102,6 +79,28 @@
                     <td>
                         {{- with .職業 -}}
                             {{- i18n (print "patients-" . ) -}}
+                        {{- end -}}
+                    </td>
+
+                    {{- if ne ($.Get "src") "details-of-patients-without-symptoms" -}}
+                        <td class="発症日">
+                            {{- with .発症日 -}}
+                                {{- if eq . "不明" -}}
+                                    {{- i18n "patients-不明" -}}
+                                {{- else -}}
+                                    {{- dateFormat $.Site.Params.dateFormat . -}}
+                                {{- end -}}
+                            {{- end -}}
+                        </td>
+                    {{- end -}}
+
+                    <td class="検査確定日">
+                        {{- with .検査確定日 -}}
+                            {{- if eq . "不明" -}}
+                                {{- i18n "patients-不明" -}}
+                            {{- else -}}
+                                {{- dateFormat $.Site.Params.dateFormat . -}}
+                            {{- end -}}
                         {{- end -}}
                     </td>
 
