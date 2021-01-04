@@ -454,6 +454,18 @@ ja = "948"
 en = "949"
 ja = "949"
 
+[patients-9590.other]
+en = "9590"
+ja = "9590"
+
+[patients-9591.other]
+en = "9591"
+ja = "9591"
+
+[patients-9592.other]
+en = "9592"
+ja = "9592"
+
 [patients-996.other]
 en = "996"
 ja = "996"
@@ -813,6 +825,10 @@ ja = "患者9245"
 en = "患者9250"
 ja = "患者9250"
 
+["patients-患者9253".other]
+en = "患者9253"
+ja = "患者9253"
+
 ["patients-患者9259".other]
 en = "患者9259"
 ja = "患者9259"
@@ -832,6 +848,14 @@ ja = "患者9449"
 ["patients-患者9450".other]
 en = "患者9450"
 ja = "患者9450"
+
+["patients-患者9586".other]
+en = "患者9586"
+ja = "患者9586"
+
+["patients-患者9587".other]
+en = "患者9587"
+ja = "患者9587"
 
 ["patients-我孫子市障害者福祉施設関係".other]
 en = "我孫子市障害者福祉施設関係"

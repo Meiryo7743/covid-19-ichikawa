@@ -340,6 +340,15 @@ other = "948"
 [patients-949]
 other = "949"
 
+[patients-9590]
+other = "9590"
+
+[patients-9591]
+other = "9591"
+
+[patients-9592]
+other = "9592"
+
 [patients-996]
 other = "996"
 
@@ -608,6 +617,9 @@ other = "患者9245"
 ["patients-患者9250"]
 other = "患者9250"
 
+["patients-患者9253"]
+other = "患者9253"
+
 ["patients-患者9259"]
 other = "患者9259"
 
@@ -622,6 +634,12 @@ other = "患者9449"
 
 ["patients-患者9450"]
 other = "患者9450"
+
+["patients-患者9586"]
+other = "患者9586"
+
+["patients-患者9587"]
+other = "患者9587"
 
 ["patients-我孫子市障害者福祉施設関係"]
 other = "我孫子市障害者福祉施設関係"
