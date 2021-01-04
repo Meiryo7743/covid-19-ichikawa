@@ -442,6 +442,10 @@ ja = "90代"
 en = ">90s"
 ja = "90代超"
 
+[patients-9126.other]
+en = "9126"
+ja = "9126"
+
 [patients-9257.other]
 en = "9257"
 ja = "9257"
@@ -469,6 +473,18 @@ ja = "9591"
 [patients-9592.other]
 en = "9592"
 ja = "9592"
+
+[patients-9823.other]
+en = "9823"
+ja = "9823"
+
+[patients-9824.other]
+en = "9824"
+ja = "9824"
+
+[patients-9825.other]
+en = "9825"
+ja = "9825"
 
 [patients-996.other]
 en = "996"
@@ -853,6 +869,10 @@ ja = "患者9449"
 en = "患者9450"
 ja = "患者9450"
 
+["patients-患者9560".other]
+en = "患者9560"
+ja = "患者9560"
+
 ["patients-患者9586".other]
 en = "患者9586"
 ja = "患者9586"
@@ -860,6 +880,14 @@ ja = "患者9586"
 ["patients-患者9587".other]
 en = "患者9587"
 ja = "患者9587"
+
+["patients-患者9813".other]
+en = "患者9813"
+ja = "患者9813"
+
+["patients-患者9814".other]
+en = "患者9814"
+ja = "患者9814"
 
 ["patients-我孫子市障害者福祉施設関係".other]
 en = "我孫子市障害者福祉施設関係"
@@ -2076,6 +2104,10 @@ ja = "行動歴"
 ["patients-選手".other]
 en = "athlete"
 ja = "選手"
+
+["patients-飲食店関係".other]
+en = "飲食店関係"
+ja = "飲食店関係"
 
 [scroll-message.other]
 en = "Scroll to see off-screen contents."
