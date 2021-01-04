@@ -19,6 +19,9 @@ other = "Contents will not be displayed correctly when JavaScript is disabled.\n
 [notice-translate]
 other = "This page has been translated from Japanese by contributors.\n"
 
+["patients-&nbsnbsp;"]
+other = "&nbsnbsp;"
+
 ["patients-10代"]
 other = "10s"
 

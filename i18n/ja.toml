@@ -19,6 +19,9 @@ other = "JavaScript が無効な場合，ページが正常に表示されない
 [notice-translate]
 other = ""
 
+["patients-&nbsnbsp;"]
+other = "&nbsnbsp;"
+
 ["patients-10代"]
 other = "10代"
 

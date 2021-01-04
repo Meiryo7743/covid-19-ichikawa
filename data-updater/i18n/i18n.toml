@@ -26,6 +26,10 @@ ja = "JavaScript が無効な場合，ページが正常に表示されない場
 en = "This page has been translated from Japanese by contributors.\n"
 ja = ""
 
+["patients-&nbsnbsp;".other]
+en = "&nbsnbsp;"
+ja = "&nbsnbsp;"
+
 ["patients-10代".other]
 en = "10s"
 ja = "10代"
