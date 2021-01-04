@@ -1,5 +1,5 @@
-![Deploy](https://github.com/Meiryo7743/covid-19-ichikawa/workflows/Deploy/badge.svg)
 ![Fetch Data](https://github.com/Meiryo7743/covid-19-ichikawa/workflows/Fetch%20Data/badge.svg)
+![Deploy](https://github.com/Meiryo7743/covid-19-ichikawa/workflows/Deploy/badge.svg)
 ![Netlify Status](https://api.netlify.com/api/v1/badges/b30d38da-34ef-424d-ac99-15754c78a693/deploy-status)
 
 - [日本語](#非公式市川市新型コロナウイルス感染症情報サイト)
@@ -9,7 +9,7 @@
 
 # 【非公式】市川市新型コロナウイルス感染症情報サイト
 
-![【非公式】市川市新型コロナウイルス感染症情報サイト](./static/img/ja-ogp-20201225.png)
+![【非公式】市川市新型コロナウイルス感染症情報サイト](./static/img/ja-ogp-2021-01-04.png)
 
 「[**【非公式】市川市新型コロナウイルス感染症情報サイト**](https://stopcovid19-ichikawa.netlify.app/ja/)」のレポジトリです。市川市内における新型コロナウイルス感染症に関する情報をまとめています。
 
@@ -29,7 +29,7 @@
 
 # [UNOFFICIAL] Ichikawa COVID-19 Information Site
 
-![[UNOFFICIAL] Ichikawa COVID-19 Information Site](./static/img/en-ogp-20201225.png)
+![[UNOFFICIAL] Ichikawa COVID-19 Information Site](./static/img/en-ogp-2021-01-04.png)
 
 This is the repository for “[**[UNOFFICIAL] Ichikawa COVID-19 Information Site**](https://stopcovid19-ichikawa.netlify.app/en/)”. The website provides information on COVID-19 in Ichikawa City, Chiba, Japan.
 
