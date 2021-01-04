@@ -331,6 +331,9 @@ other = "90代"
 ["patients-90代超"]
 other = "90代超"
 
+[patients-9126]
+other = "9126"
+
 [patients-9257]
 other = "9257"
 
@@ -351,6 +354,15 @@ other = "9591"
 
 [patients-9592]
 other = "9592"
+
+[patients-9823]
+other = "9823"
+
+[patients-9824]
+other = "9824"
+
+[patients-9825]
+other = "9825"
 
 [patients-996]
 other = "996"
@@ -637,11 +649,20 @@ other = "患者9449"
 ["patients-患者9450"]
 other = "患者9450"
 
+["patients-患者9560"]
+other = "患者9560"
+
 ["patients-患者9586"]
 other = "患者9586"
 
 ["patients-患者9587"]
 other = "患者9587"
+
+["patients-患者9813"]
+other = "患者9813"
+
+["patients-患者9814"]
+other = "患者9814"
 
 ["patients-我孫子市障害者福祉施設関係"]
 other = "我孫子市障害者福祉施設関係"
@@ -1554,6 +1575,9 @@ other = "行動歴"
 
 ["patients-選手"]
 other = "選手"
+
+["patients-飲食店関係"]
+other = "飲食店関係"
 
 [scroll-message]
 other = "スクロールすると，見切れている部分をご覧になれます。"
