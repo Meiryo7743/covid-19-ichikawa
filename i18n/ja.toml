@@ -49,8 +49,17 @@ other = "2165"
 [patients-2166]
 other = "2166"
 
+[patients-21662167]
+other = "21662167"
+
+[patients-21662168]
+other = "21662168"
+
 [patients-2167]
 other = "2167"
+
+[patients-21672168]
+other = "21672168"
 
 [patients-2168]
 other = "2168"
@@ -889,6 +898,9 @@ other = "県内2367"
 ["patients-県内237"]
 other = "県内237"
 
+["patients-県内237接触市川老健施設関係"]
+other = "県内237接触市川老健施設関係"
+
 ["patients-県内2449"]
 other = "県内2449"
 
@@ -1537,6 +1549,9 @@ other = "県外"
 ["patients-県外患者"]
 other = "県外患者"
 
+["patients-県外患者接触県内845"]
+other = "県外患者接触県内845"
+
 ["patients-福祉事業所職員"]
 other = "福祉事業所職員"
 
@@ -1551,6 +1566,9 @@ other = "職員"
 
 ["patients-職場"]
 other = "職場"
+
+["patients-職場医療関係"]
+other = "職場医療関係"
 
 ["patients-職業"]
 other = "職業"
