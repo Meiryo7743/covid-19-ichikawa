@@ -66,9 +66,21 @@ ja = "2165"
 en = "2166"
 ja = "2166"
 
+[patients-21662167.other]
+en = "21662167"
+ja = "21662167"
+
+[patients-21662168.other]
+en = "21662168"
+ja = "21662168"
+
 [patients-2167.other]
 en = "2167"
 ja = "2167"
+
+[patients-21672168.other]
+en = "21672168"
+ja = "21672168"
 
 [patients-2168.other]
 en = "2168"
@@ -1189,6 +1201,10 @@ ja = "県内2367"
 en = "県内237"
 ja = "県内237"
 
+["patients-県内237接触市川老健施設関係".other]
+en = "県内237接触市川老健施設関係"
+ja = "県内237接触市川老健施設関係"
+
 ["patients-県内2449".other]
 en = "県内2449"
 ja = "県内2449"
@@ -2053,6 +2069,10 @@ ja = "県外"
 en = "patient outside the prefecture"
 ja = "県外患者"
 
+["patients-県外患者接触県内845".other]
+en = "県外患者接触県内845"
+ja = "県外患者接触県内845"
+
 ["patients-福祉事業所職員".other]
 en = "welfare facility staff"
 ja = "福祉事業所職員"
@@ -2072,6 +2092,10 @@ ja = "職員"
 ["patients-職場".other]
 en = "workplace"
 ja = "職場"
+
+["patients-職場医療関係".other]
+en = "職場医療関係"
+ja = "職場医療関係"
 
 ["patients-職業".other]
 en = "Occupation"
