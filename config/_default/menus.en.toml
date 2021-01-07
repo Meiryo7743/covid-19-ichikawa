@@ -14,7 +14,7 @@ url = "https://www.city.ichikawa.lg.jp/cul05/1111000002.html"
 weight = 30
 
 [[header]]
-name = "Reopening the Facilities"
+name = "Public Facilities Info"
 url = "https://www.city.ichikawa.lg.jp/pla04/infoheisa.html"
 weight = 40
 

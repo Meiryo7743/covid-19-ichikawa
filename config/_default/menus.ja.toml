@@ -14,8 +14,8 @@ url = "https://www.city.ichikawa.lg.jp/new01/shingatacoronatokusetupage.html"
 weight = 30
 
 [[header]]
-name = "施設等の再開"
-url = "https://www.city.ichikawa.lg.jp/pla04/infoheisa.html"
+name = "公共施設の情報"
+url = "https://www.city.ichikawa.lg.jp/covic/declaration.html"
 weight = 40
 
 [[header]]
