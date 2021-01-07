@@ -10,7 +10,7 @@ weight = 20
 
 [[header]]
 name = "新型コロナ情報"
-url = "https://www.city.ichikawa.lg.jp/new01/shingatacoronatokusetupage.html"
+url = "https://www.city.ichikawa.lg.jp/catpage/kurashi-shingatacorona.html"
 weight = 30
 
 [[header]]

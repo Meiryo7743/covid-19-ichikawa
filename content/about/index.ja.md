@@ -45,10 +45,17 @@ Google アナリティクスによる情報収集を望まない場合は，[Goo
 
 当サイトはリンクフリーです。
 
-## データの出典
+## データのソース
 
-当サイトに掲載されているデータは，[市川市公式サイト](https://www.city.ichikawa.lg.jp)から取得しています。ただし，都営地下鉄のデータに関しては，[東京都のレポジトリ](https://github.com/tokyo-metropolitan-gov/covid19/)の情報を基にしています。
+当サイトに掲載されているデータは，[市川市](https://www.city.ichikawa.lg.jp)，[千葉県](https://www.pref.chiba.lg.jp)，[東京都](https://github.com/tokyo-metropolitan-gov/covid19)の内容を基にしています。
 
 ## ソースコード
 
-当サイトのソースコードは MIT ライセンスで公開されており，誰でも自由に利用することができます。詳細につきましては，[GitHub リポジトリ](https://github.com/Meiryo7743/covid-19-ichikawa/)をご覧ください。
+当サイトのソースコードは MIT ライセンスで公開されており，誰でも自由に利用することができます。詳細につきましては，[GitHub リポジトリ](https://github.com/Meiryo7743/covid-19-ichikawa)をご覧ください。
+
+
+## 多言語による情報提供
+
+当サイトでは，日本語以外の言語による情報発信も行っております。日本語から他の言語への翻訳は，**正確な情報を届ける**という観点から，**機械翻訳ではなく有志による手作業**で行われています。
+
+誤訳の指摘・修正や新たな言語の追加など，**翻訳作業のお手伝いは大歓迎です**。ご協力いただける方は，是非とも[当サイトの GitHub レポジトリ](https://github.com/Meiryo7743/covid-19-ichikawa/issues)をご覧ください。

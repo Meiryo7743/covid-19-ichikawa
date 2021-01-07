@@ -47,11 +47,11 @@ No permission is required to link this website.
 
 ## Data sources
 
-The data posted on this site is got from [Ichikawa City official website](https://www.city.ichikawa.lg.jp), but about Toei Subway is based on the [Tokyo Gov. repository](https://github.com/tokyo-metropolitan-gov/covid19/).
+The data posted on this site are based on [Ichikawa City](https://www.city.ichikawa.lg.jp), [Chiba Prefectural Government](https://www.pref.chiba.lg.jp) and [Tokyo Metropolitan Government](https://github.com/tokyo-metropolitan-gov/covid19/).
 
 ## Source codes
 
-The source code of this site is MIT licensed code. You can use it for free. For more details, see [GitHub repository](https://github.com/Meiryo7743/covid-19-ichikawa/).
+The source code of this site is MIT licensed code. You can use it for free. For more details, see [GitHub repository](https://github.com/Meiryo7743/covid-19-ichikawa).
 
 ## Translations
 
