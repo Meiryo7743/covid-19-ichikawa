@@ -9,15 +9,17 @@
 <nav class="card__footer">
     <ul>
         {{- with .Page.Params.source -}}
-            <li>
-                <a
-                    href='{{- . | safeURL | absLangURL -}}'
-                    rel="noopener"
-                    target="_blank"
-                >
-                    {{- i18n "source" -}}
-                </a>
-            </li>
+            {{- range $index, $value := . -}}
+                <li>
+                    <a
+                        href='{{- $value | safeURL | absLangURL -}}'
+                        rel="noopener"
+                        target="_blank"
+                    >
+                        {{- print (i18n "source") (add $index 1) -}}
+                    </a>
+                </li>
+            {{- end -}}
         {{- end -}}
 
         <li class="share">

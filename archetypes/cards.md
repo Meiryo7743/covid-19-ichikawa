@@ -1,6 +1,7 @@
 ---
 date: "{{- .Date -}}"
-source: ""
+source:
+  - ""
 title: '{{- replace .Name "-" " " | title -}}'
 weight: 10
 ---
