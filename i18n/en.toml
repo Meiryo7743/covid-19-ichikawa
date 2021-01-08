@@ -497,6 +497,9 @@ other = "student"
 ["patients-市内"]
 other = "Ichikawa"
 
+["patients-市内医療機関関係"]
+other = "市内医療機関関係"
+
 ["patients-市内医療関係"]
 other = "市内医療関係"
 
