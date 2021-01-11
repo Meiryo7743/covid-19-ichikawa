@@ -1,7 +1,9 @@
-{{- with .Site.Params.notice.emergency -}}
-    <article class="notice">
-        <div class="notice__content">
-            {{- i18n "notice-emergency" | markdownify -}}
-        </div>
-    </article>
+{{- if le (now.Format "2006-01-02") "2021-02-07" -}}
+    {{- with .Site.Params.notice.emergency -}}
+        <article class="notice">
+            <div class="notice__content">
+                {{- i18n "notice-emergency" | markdownify -}}
+            </div>
+        </article>
+    {{- end -}}
 {{- end -}}
