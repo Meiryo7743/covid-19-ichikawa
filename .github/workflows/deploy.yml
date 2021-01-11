@@ -5,7 +5,9 @@ on:
     branches:
       - master
   schedule:
-    - cron: "0 15 31 12 *" # YYYY-01-01 00:00 JST (automatically update copyright year)
+    - cron: "0 15 31,8 12,2 *"
+    # YYYY-01-01 00:00 JST (automatically update copyright year)
+    # YYYY-02-08 00:00 JST (緊急事態宣言メッセージの掲示を終了するため)
 
 jobs:
   deploy:

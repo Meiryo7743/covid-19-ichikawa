@@ -65,10 +65,7 @@ for i in config:
 
     details: list = [
         {
-            '市内': format_int(
-                j['市内'],
-                replace['市内']
-            ),
+            '市内': len(dfs_dict) - index,
             '県内': format_int(
                 j['県内'],
                 replace['県内']
@@ -106,7 +103,7 @@ for i in config:
                 replace['行動歴']
             )
         }
-        for j in dfs_dict
+        for index, j in enumerate(dfs_dict)
     ]
 
     with open(i['dst'], 'w', encoding='utf-8', newline='\n') as f:

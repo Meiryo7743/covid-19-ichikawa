@@ -11,7 +11,7 @@ other = "Publish date"
 other = "News"
 
 [notice-emergency]
-other = ""
+other = "The government has declared a state of emergency, which will last until February 7."
 
 [notice-noscript]
 other = "Contents will not be displayed correctly when JavaScript is disabled.\n"
@@ -20,7 +20,7 @@ other = "Contents will not be displayed correctly when JavaScript is disabled.\n
 other = "This page has been translated from Japanese by contributors.\n"
 
 ["patients-&nbsnbsp;"]
-other = "&nbsnbsp;"
+other = ""
 
 ["patients-10代"]
 other = "10s"

@@ -23,7 +23,7 @@ description = "This site provides the latest information on COVID-19 in Ichikawa
 ogp = "/img/en-ogp-2021-01-04.png"
 
 [languages.en.params.notice]
-emergency = false
+emergency = true
 translate = true
 
 [languages.ja]
@@ -38,7 +38,7 @@ description = "当サイトは，市川市内における新型コロナウイ�
 ogp = "/img/ja-ogp-2021-01-04.png"
 
 [languages.ja.params.notice]
-emergency = false
+emergency = true
 translate = false
 
 [markup.goldmark.renderer]

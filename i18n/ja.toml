@@ -11,7 +11,7 @@ other = "公開日"
 other = "更新情報"
 
 [notice-emergency]
-other = ""
+other = "緊急事態宣言が発令されています。期間は 2 月 7 日迄です。"
 
 [notice-noscript]
 other = "JavaScript が無効な場合，ページが正常に表示されない場合があります。\n"
