@@ -25,14 +25,6 @@ src = "./data/details-of-patients-with-symptoms.yaml"
 dst = "./data/the-number-of-patients-without-symptoms.yaml"
 src = "./data/details-of-patients-without-symptoms.yaml"
 
-[[replace-format.value."市内"]]
-find = "\\s+"
-replace = ""
-
-[[replace-format.value."市内"]]
-find = "\\D+"
-replace = ""
-
 [[replace-format.value."県内"]]
 find = "\\s+"
 replace = ""
