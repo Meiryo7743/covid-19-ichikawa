@@ -15,8 +15,8 @@ en = "News"
 ja = "更新情報"
 
 [notice-emergency.other]
-en = ""
-ja = ""
+en = "The government has declared a state of emergency, which will last until February 7."
+ja = "緊急事態宣言が発令されています。期間は 2 月 7 日迄です。"
 
 [notice-noscript.other]
 en = "Contents will not be displayed correctly when JavaScript is disabled.\n"
@@ -25,10 +25,6 @@ ja = "JavaScript が無効な場合，ページが正常に表示されない場
 [notice-translate.other]
 en = "This page has been translated from Japanese by contributors.\n"
 ja = ""
-
-["patients-&nbsnbsp;".other]
-en = "&nbsnbsp;"
-ja = "&nbsnbsp;"
 
 ["patients-10代".other]
 en = "10s"
@@ -676,6 +672,10 @@ ja = "市内医療関係"
 ["patients-市内通所介護施設".other]
 en = "市内通所介護施設"
 ja = "市内通所介護施設"
+
+["patients-市内高齢者施設".other]
+en = "市内高齢者施設"
+ja = "市内高齢者施設"
 
 ["patients-市川事業所関係".other]
 en = "市川事業所関係"

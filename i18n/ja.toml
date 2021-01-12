@@ -19,9 +19,6 @@ other = "JavaScript が無効な場合，ページが正常に表示されない
 [notice-translate]
 other = ""
 
-["patients-&nbsnbsp;"]
-other = "&nbsnbsp;"
-
 ["patients-10代"]
 other = "10代"
 
@@ -504,6 +501,9 @@ other = "市内医療関係"
 
 ["patients-市内通所介護施設"]
 other = "市内通所介護施設"
+
+["patients-市内高齢者施設"]
+other = "市内高齢者施設"
 
 ["patients-市川事業所関係"]
 other = "市川事業所関係"

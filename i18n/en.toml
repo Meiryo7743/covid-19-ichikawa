@@ -19,9 +19,6 @@ other = "Contents will not be displayed correctly when JavaScript is disabled.\n
 [notice-translate]
 other = "This page has been translated from Japanese by contributors.\n"
 
-["patients-&nbsnbsp;"]
-other = ""
-
 ["patients-10代"]
 other = "10s"
 
@@ -505,6 +502,9 @@ other = "市内医療関係"
 
 ["patients-市内通所介護施設"]
 other = "市内通所介護施設"
+
+["patients-市内高齢者施設"]
+other = "市内高齢者施設"
 
 ["patients-市川事業所関係"]
 other = "市川事業所関係"
