@@ -1598,6 +1598,9 @@ other = "Activities"
 ["patients-選手"]
 other = "athlete"
 
+["patients-陽性者と接触有"]
+other = "陽性者と接触有"
+
 ["patients-飲食店関係"]
 other = "飲食店関係"
 

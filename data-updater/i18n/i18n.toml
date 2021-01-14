@@ -2133,6 +2133,10 @@ ja = "行動歴"
 en = "athlete"
 ja = "選手"
 
+["patients-陽性者と接触有".other]
+en = "陽性者と接触有"
+ja = "陽性者と接触有"
+
 ["patients-飲食店関係".other]
 en = "飲食店関係"
 ja = "飲食店関係"
