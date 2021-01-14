@@ -1597,6 +1597,9 @@ other = "行動歴"
 ["patients-選手"]
 other = "選手"
 
+["patients-陽性者と接触有"]
+other = "陽性者と接触有"
+
 ["patients-飲食店関係"]
 other = "飲食店関係"
 
