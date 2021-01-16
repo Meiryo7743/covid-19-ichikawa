@@ -15,7 +15,7 @@ weight = 30
 
 [[header]]
 name = "Public Facilities Info"
-url = "https://www.city.ichikawa.lg.jp/pla04/infoheisa.html"
+url = "https://www.city.ichikawa.lg.jp/covic/declaration.html"
 weight = 40
 
 [[header]]
