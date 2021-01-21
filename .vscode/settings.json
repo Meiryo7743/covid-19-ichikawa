@@ -1,4 +1,5 @@
 {
+  "editor.formatOnSave": true,
   "[html]": {
     "editor.formatOnSave": false,
     "editor.tabSize": 2,
@@ -19,6 +20,5 @@
   },
   "[scss]": {
     "editor.tabSize": 4
-  },
-  "prettier.disableLanguages": ["html"]
+  }
 }
