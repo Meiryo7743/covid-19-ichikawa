@@ -1,0 +1,9 @@
+[[redirects]]
+force = true
+from = "/en/*"
+to = "/en/"
+
+[[redirects]]
+force = true
+from = "/ja/*"
+to = "/ja/"

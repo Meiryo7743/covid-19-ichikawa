@@ -1,0 +1,163 @@
+html {
+    font-size: calc(16px + 100vmin / 512);
+}
+
+footer {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li:first-child {
+    inline-size: 100%;
+    text-align: center;
+}
+
+nav ul li img {
+    vertical-align: bottom;
+    inline-size: 2rem;
+    block-size: 2rem;
+}
+
+body {
+    color: #333;
+    line-height: 1.75;
+    text-align: justify;
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, Segoe UI,
+        Source Han Sans, Source Han Sans JP, Noto Sans CJK JP, BIZ UDGothic,
+        Hiragino Sans, sans-serif;
+    margin: 0 auto;
+    max-width: 43rem;
+    padding: 0 1.5rem;
+}
+h1 {
+    text-align: center;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 1rem 0 0.5rem 0;
+}
+a:link,
+a:visited {
+    color: #03c;
+    text-decoration: none;
+}
+a:hover,
+a:active,
+a:focus {
+    color: #06f;
+    text-decoration: underline;
+}
+h1 a:empty:before,
+h2 a:empty:before,
+h3 a:empty:before,
+h4 a:empty:before,
+h5 a:empty:before,
+h6 a:empty:before {
+    content: "#";
+}
+h1 a:empty,
+h2 a:empty,
+h3 a:empty,
+h4 a:empty,
+h5 a:empty,
+h6 a:empty {
+    visibility: hidden;
+    padding-left: 0.25rem;
+}
+h1:hover a:empty,
+h2:hover a:empty,
+h3:hover a:empty,
+h4:hover a:empty,
+h5:hover a:empty,
+h6:hover a:empty {
+    visibility: visible;
+}
+img {
+    max-width: 100%;
+}
+figure {
+    margin: 1rem 0;
+    text-align: center;
+}
+figcaption {
+    font-size: small;
+}
+pre,
+code,
+samp,
+kbd {
+    color: #009;
+    font-family: monospace, monospace;
+}
+pre kbd {
+    color: #060;
+}
+pre,
+blockquote {
+    background: #eee;
+    padding: 0.5rem;
+}
+pre {
+    overflow: auto;
+}
+blockquote {
+    border-left: medium solid #ccc;
+    margin: 1rem 0;
+}
+blockquote :first-child {
+    margin-top: 0;
+}
+blockquote :last-child {
+    margin-bottom: 0;
+}
+table {
+    border-collapse: collapse;
+}
+th,
+td {
+    border: thin solid #999;
+    padding: 0.3rem 0.4rem;
+    text-align: left;
+}
+@media (prefers-color-scheme: dark) {
+    body {
+        color: #bbb;
+        background: #222;
+    }
+    a:link,
+    a:visited {
+        color: #9bf;
+    }
+    a:hover,
+    a:active {
+        color: #acf;
+    }
+    pre,
+    code,
+    samp,
+    kbd {
+        color: #6cf;
+    }
+    pre kbd {
+        color: #9c9;
+    }
+    pre,
+    blockquote {
+        background: #111;
+    }
+    blockquote {
+        border-color: #444;
+    }
+    th,
+    td {
+        border-color: #666;
+    }
+}
