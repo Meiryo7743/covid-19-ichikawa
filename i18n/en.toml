@@ -500,6 +500,9 @@ other = "Ichikawa"
 ["patients-市内介護事業所関係"]
 other = "市内介護事業所関係"
 
+["patients-市内保育所関係"]
+other = "市内保育所関係"
+
 ["patients-市内医療機関関係"]
 other = "市内医療機関関係"
 
@@ -514,6 +517,9 @@ other = "市内通所介護施設"
 
 ["patients-市内高齢者施設"]
 other = "市内高齢者施設"
+
+["patients-市内高齢者施設関係"]
+other = "市内高齢者施設関係"
 
 ["patients-市川事業所関係"]
 other = "市川事業所関係"
