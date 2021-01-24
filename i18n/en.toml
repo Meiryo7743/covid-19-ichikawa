@@ -10,6 +10,9 @@ other = "Publish date"
 [news]
 other = "News"
 
+[notice-close]
+other = "[This website will be shut down on January 31.](https://stopcovid19-ichikawa.netlify.app/en/articles/20210120233106/)"
+
 [notice-emergency]
 other = "The government has declared a state of emergency, which will last until February 7."
 
@@ -494,11 +497,17 @@ other = "student"
 ["patients-市内"]
 other = "Ichikawa"
 
+["patients-市内介護事業所関係"]
+other = "市内介護事業所関係"
+
 ["patients-市内医療機関関係"]
 other = "市内医療機関関係"
 
 ["patients-市内医療関係"]
 other = "市内医療関係"
+
+["patients-市内学校関係"]
+other = "市内学校関係"
 
 ["patients-市内通所介護施設"]
 other = "市内通所介護施設"

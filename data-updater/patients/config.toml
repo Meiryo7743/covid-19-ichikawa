@@ -30,6 +30,10 @@ find = "\\s+"
 replace = ""
 
 [[replace-format.value."県内"]]
+find = "\\.\\d+"
+replace = ""
+
+[[replace-format.value."県内"]]
 find = "^\\D+\\d+\\D+"
 replace = ""
 

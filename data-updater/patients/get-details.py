@@ -16,7 +16,7 @@ def format_str(value: str, replace_format: dict):
             str(value) if i == 0 else result
         )
 
-    if result == '':
+    if result == 'None' or result == '':
         return None
     else:
         return result
@@ -25,14 +25,18 @@ def format_str(value: str, replace_format: dict):
 def format_int(value: str, replace_format: dict):
     result = format_str(value, replace_format)
 
-    if result is not None:
+    if result is None:
+        return None
+    else:
         return int(result)
 
 
 def format_date(value: str, replace_format: dict):
     result = format_str(value, replace_format)
 
-    if result is not None:
+    if result is None:
+        return None
+    else:
         if result == '不明':
             return result
         else:
@@ -47,7 +51,9 @@ def format_date(value: str, replace_format: dict):
 def format_list(value: str, replace_format: dict):
     result = format_str(value, replace_format)
 
-    if result is not None:
+    if result is None:
+        return None
+    else:
         return result.split(',')
 
 
