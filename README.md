@@ -7,6 +7,8 @@
 
 ---
 
+> [2021 年 1 月 31 日（日本時間）をもちまして，サイト及びレポジトリの更新を終了いたします。](https://stopcovid19-ichikawa.netlify.app/ja/articles/20210120233106/)
+
 # 【非公式】市川市新型コロナウイルス感染症情報サイト
 
 ![【非公式】市川市新型コロナウイルス感染症情報サイト](./static/img/ja-ogp-2021-01-04.png)
@@ -26,6 +28,8 @@
 > 市川市の非公式新型コロナウイルス対策サイト【<a href="https://t.co/t9LR1xZXbV">https://t.co/t9LR1xZXbV</a>】のロゴマークデザインを担当させていただきました。市民の方はぜひご活用ください。<br><br>仲介をしていただきました、本八幡 bot( <a href="https://twitter.com/motoyawata__bot?ref_src=twsrc%5Etfw">@motoyawata\_\_bot</a> )さんにはこの場を借りて感謝御礼を申し上げます。 <a href="https://t.co/1yYhUmACI0">pic.twitter.com/1yYhUmACI0</a></p>&mdash; 8wakei (@8wakei) <a href="https://twitter.com/8wakei/status/1270536608740077569?ref_src=twsrc%5Etfw">June 10, 2020</a>
 
 ---
+
+> [The website and this repository will stop updating on January 31st, 2021 (JST).](https://stopcovid19-ichikawa.netlify.app/en/articles/20210120233106/)
 
 # [UNOFFICIAL] Ichikawa COVID-19 Information Site
 
@@ -47,6 +51,6 @@ So I have begun to translate. The quality is definitely better although I am not
 
 ## Favicon
 
-[8wakei](https://twitter.com/8wakei) gave me the favicon. Thank you so much.
+[8wakei](https://twitter.com/8wakei) gave me the favicon.
 
 > 市川市の非公式新型コロナウイルス対策サイト【<a href="https://t.co/t9LR1xZXbV">https://t.co/t9LR1xZXbV</a>】のロゴマークデザインを担当させていただきました。市民の方はぜひご活用ください。<br><br>仲介をしていただきました、本八幡 bot( <a href="https://twitter.com/motoyawata__bot?ref_src=twsrc%5Etfw">@motoyawata\_\_bot</a> )さんにはこの場を借りて感謝御礼を申し上げます。 <a href="https://t.co/1yYhUmACI0">pic.twitter.com/1yYhUmACI0</a></p>&mdash; 8wakei (@8wakei) <a href="https://twitter.com/8wakei/status/1270536608740077569?ref_src=twsrc%5Etfw">June 10, 2020</a>
