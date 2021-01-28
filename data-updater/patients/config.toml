@@ -53,6 +53,10 @@ replace = ""
 find = "(\\d+)月(\\d+)日"
 replace = "2020-\\1-\\2"
 
+[[replace-format.value."検査確定日"]]
+find = "2020-1-"
+replace = "2021-1-"
+
 [[replace-format.value."発症日"]]
 find = "\\s+"
 replace = ""
@@ -64,6 +68,10 @@ replace = ""
 [[replace-format.value."発症日"]]
 find = "(\\d+)月(\\d+)日"
 replace = "2020-\\1-\\2"
+
+[[replace-format.value."発症日"]]
+find = "2020-1-"
+replace = "2021-1-"
 
 [[replace-format.value."年代"]]
 find = "\\s+"
