@@ -88,7 +88,7 @@
                                 {{- if eq . "不明" -}}
                                     {{- i18n "patients-不明" -}}
                                 {{- else -}}
-                                    {{- dateFormat $.Site.Params.dateFormat . -}}
+                                    {{- dateFormat "2006-01-02" . -}}
                                 {{- end -}}
                             {{- end -}}
                         </td>
@@ -99,7 +99,7 @@
                             {{- if eq . "不明" -}}
                                 {{- i18n "patients-不明" -}}
                             {{- else -}}
-                                {{- dateFormat $.Site.Params.dateFormat . -}}
+                                {{- dateFormat "2006-01-02" . -}}
                             {{- end -}}
                         {{- end -}}
                     </td>

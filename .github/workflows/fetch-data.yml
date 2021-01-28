@@ -2,7 +2,7 @@ name: Fetch Data
 
 on:
   schedule:
-    - cron: "0 10-13 * * *" # 19:00-22:00 JST
+    - cron: "0 11 * * *" # 19:00-22:00 JST
 
   workflow_dispatch:
 
@@ -38,9 +38,7 @@ jobs:
 
       - name: Run scripts
         run: |
-          python ./data-updater/patients/fetch.py && python ./data-updater/patients/get-details.py && python ./data-updater/patients/get-total.py;
           python ./data-updater/toei-subway/fetch.py && python data-updater/toei-subway/get-google-charts-data.py;
-          python ./data-updater/i18n/fetch.py && python data-updater/i18n/get-translations.py;
 
       - name: Remove temp files
         run: |
