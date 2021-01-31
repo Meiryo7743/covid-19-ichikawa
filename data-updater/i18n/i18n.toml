@@ -2149,6 +2149,10 @@ ja = "薬剤師"
 en = "Activities"
 ja = "行動歴"
 
+["patients-通院患者".other]
+en = "通院患者"
+ja = "通院患者"
+
 ["patients-選手".other]
 en = "athlete"
 ja = "選手"
