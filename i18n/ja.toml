@@ -1609,6 +1609,9 @@ other = "薬剤師"
 ["patients-行動歴"]
 other = "行動歴"
 
+["patients-通院患者"]
+other = "通院患者"
+
 ["patients-選手"]
 other = "選手"
 
