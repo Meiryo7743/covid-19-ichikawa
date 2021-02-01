@@ -9,3 +9,9 @@ force = false
 from = "/ja/*"
 status = 404
 to = "/ja/404.html"
+
+[[redirects]]
+force = false
+from = "/"
+status = 404
+to = "/ja/404.html"
