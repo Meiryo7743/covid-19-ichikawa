@@ -2,10 +2,10 @@
 force = false
 from = "/en/*"
 status = 404
-to = "/en"
+to = "/en/404.html"
 
 [[redirects]]
 force = false
 from = "/ja/*"
 status = 404
-to = "/ja"
+to = "/ja/404.html"
